@@ -1485,6 +1485,26 @@
                         <div class="col pe-0 spell-display dark-5 rounded dark-shadow py-2 border border-dark" id="powder-special-stats"></div>
                     </div>
                 </div>
+                <div id="custom-spell-display" class="row row-cols-1 gy-3 mb-4 text-center scaled-font">
+                    <div class = "col pe-0">
+                        <div class = "dark-5 rounded dark-shadow pt-2 border border-dark" id="custom-info">
+                            <b>Custom Damage Calculation</b>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="Neutral"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="nInput">%</span>
+                                <span class="Earth"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="eInput">%</span>
+                                <span class="Thunder"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="tInput">%</span>
+                                <span class="Water"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="wInput">%</span>
+                                <span class="Fire"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="fInput">%</span>
+                                <span class="Air"><input type="number" min="0" class="damage-input border-dark dark-7 text-light text-center rounded" id="aInput">%</span>
+                            </div>
+                            <div class = "justify-content-center row">
+                                Is Melee? <input type="checkbox" class="damage-input" id="meleeInput">
+                                Ignore Str/Dex? <input type="checkbox" class="damage-input" id="strdexInput">
+                            </div>
+                            <div clas="col spell-display spell-expand dark-5 rounded dark-shadow pt-2 border border-dark" id="custom-infoAvg"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row mx-2 mx-lg-3">
@@ -1587,6 +1607,7 @@
     <script type="text/javascript" src="../js/icons.js"></script>
     <script type="text/javascript" src="../js/powders.js"></script>
     <script type="text/javascript" src="../js/skillpoints.js"></script>
+    <script type="text/javascript" src="../js/custom_damage_calc.js"></script>
     <script type="text/javascript" src="../js/damage_calc.js"></script>
     <script type="text/javascript" src="../js/display_constants.js"></script>
     <script type="text/javascript" src="../js/display.js"></script>

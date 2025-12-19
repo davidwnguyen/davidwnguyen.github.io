@@ -29,6 +29,7 @@ function get_base_dps(item) {
 
 
 function calculateSpellDamage(stats, weapon, _conversions, use_spell_damage, ignore_speed=false, part_filter=undefined, ignore_str=false, ignored_mults=[]) {
+    cached_stats = stats;
     // TODO: Roll all the loops together maybe
 
     // Array of neutral + ewtfa damages. Each entry is a pair (min, max).

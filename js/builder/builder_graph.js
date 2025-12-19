@@ -743,6 +743,7 @@ class SpellDisplayNode extends ComputeNode {
         let parent_elem = document.getElementById("spell"+i+"-info");
         let overallparent_elem = document.getElementById("spell"+i+"-infoAvg");
         displaySpellDamage(parent_elem, overallparent_elem, stats, spell, i, damages);
+        recalcDamage();
     }
 }
 
