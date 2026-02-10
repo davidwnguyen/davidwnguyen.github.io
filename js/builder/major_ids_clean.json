@@ -2647,7 +2647,10 @@
             },
             {
                 "class": "Archer",
-                "base_abil": "Guardian Angels",
+                "base_abil": "Arrow Shield",
+                "dependencies": [
+                    "Guardian Angels"
+                ],
                 "properties": {
                     "charges": 1
                 },
@@ -2670,6 +2673,11 @@
                                 "type": "stat",
                                 "name": "damMult.Heartbeat:4.Shield Damage",
                                 "value": 100
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.Arrow Wall:4.Single Shot",
+                                "value": 40
                             },
                             {
                                 "type": "prop",
