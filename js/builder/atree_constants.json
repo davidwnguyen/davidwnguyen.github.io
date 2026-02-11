@@ -6039,54 +6039,6 @@
             ]
         },
         {
-            "display_name": "RF",
-            "desc": "Keeps you alive with 30% of your health remaining and makes all nearby allies invincible after receiving a fatal blow. </br> </br>Effect: Invincibility to Allies </br>Duration: 3s </br>Area of Effect: 12 Blocks (Circle-Shaped) </br>Cooldown: 10m",
-            "archetype": "Paladin",
-            "archetype_req": 0,
-            "parents": [
-                "Heavenly Trumpet"
-            ],
-            "dependencies": [],
-            "blockers": [],
-            "cost": 2,
-            "display": {
-                "row": 36,
-                "col": 6,
-                "icon": "node_4"
-            },
-            "properties": {
-                "duration": 3,
-                "aoe": 12
-            },
-            "effects": [
-                {
-                    "type": "replace_spell",
-                    "name": "Righteous Fire",
-                    "base_spell": 11,
-                    "display": "DPS",
-                    "parts": [
-                        {
-                            "name": "Damage Tick",
-                            "multipliers": [
-                                75,
-                                0,
-                                0,
-                                0,
-                                125,
-                                0
-                            ]
-                        },
-                        {
-                            "name": "DPS",
-                            "hits": {
-                                "Damage Tick": 2
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "display_name": "Second Chance",
             "desc": "Keeps you alive with 30% of your health remaining and makes all nearby allies invincible after receiving a fatal blow. </br> </br>Effect: Invincibility to Allies </br>Duration: 3s </br>Area of Effect: 12 Blocks (Circle-Shaped) </br>Cooldown: 10m",
             "archetype": "Paladin",
