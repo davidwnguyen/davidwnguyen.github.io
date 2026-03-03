@@ -452,7 +452,7 @@
     },
     "STRINGS_OF_FATE": {
         "displayName": "Strings of Fate",
-        "description": "Your puppets have a lifetime of 3 seconds and deal 50% more damage with attacks and explosions.",
+        "description": "Your puppets have a lifetime of 3 seconds and deal double damage with attacks and explosions.",
         "abilities": [
             {
                 "class": "Shaman",
@@ -908,7 +908,7 @@
     },
     "LIFESTREAM": {
         "displayName": "Lifestream",
-        "description": "Blood Sorrow deals 3.5 times damage and grants 4 times the overhealth, but shortens its duration by 75%.",
+        "description": "Blood Sorrow deals [neutral]450% and grants 4 times the overhealth, but shortens its duration by 75%.",
         "abilities": [
             {
                 "class": "Shaman",
@@ -2569,6 +2569,131 @@
     "SPECTRAL_MEMORY": {
         "displayName": "Spectral Memory",
         "description": "Ghostly Trigger lasts until landing, but no longer increases attack speed. Its cooldown is reduced by 33%.",
+        "abilities": []
+    },
+    "MANA_SURGE": {
+        "displayName": "Mana Surge",
+        "description": "Curse instead releases a calming wave with a radius of 8 blocks. Allies affected will have their Mana Regen and Mana Steal are increased by 25% for 6s.",
+        "abilities": []
+    },
+    "DESPERATE_MEASURES": {
+        "displayName": "Desperate Measures",
+        "description": "Walk Speed increases by 1% and Jump Height increases by 2% for every 1% hp missing.",
+        "abilities": []
+    },
+    "PIROUETTE": {
+        "displayName": "Pirouette",
+        "description": "Dashing into an enemy vaults you upwards and resets dash as if you touched the ground.",
+        "abilities": []
+    },
+    "FLIGHT_BURST": {
+        "displayName": "Flight Burst",
+        "description": "Arrow Storm recoil is increased and activates while grounded.",
+        "abilities": []
+    },
+    "BRUTAL_BLOW": {
+        "displayName": "Brutal Blow",
+        "description": "Armour Breaker now gives an extra +10% damage and has its cooldown reduced by 5s, but lasts half as long.",
+        "abilities": []
+    },
+    "CULICIDAE_CREED": {
+        "displayName": "Culicidae Creed",
+        "description": "Leap becomes fully vertical, and Spectral Hover lasts twice as long.",
+        "abilities": []
+    },
+    "SPLIT_SECOND": {
+        "displayName": "Split Second",
+        "description": "Commander charges three times faster, but only boosts puppet attack speed by 10%, and Main Attack Damage by 2%.",
+        "abilities": []
+    },
+    "MOB_MENTALITY": {
+        "displayName": "Mob Mentality",
+        "description": "Commander places puppets ahead of where you are facing.",
+        "abilities": []
+    },
+    "BOUND_BY_BLOOD": {
+        "displayName": "Bound by Blood",
+        "description": "Shadow Projection's teleport range, duration, and launch strength is doubled.",
+        "abilities": []
+    },
+    "LASSO": {
+        "displayName": "Lasso",
+        "description": "Grappling Hook, War Scream, and Uproot now pull enemies with much more force.",
+        "abilities": []
+    },
+    "GUNK_SHOT": {
+        "displayName": "Gunk Shot",
+        "description": "Shocking Bomb's velocity is doubled but loses -66% radius. Arrow Bomb and Grape Bomb suffer a -40% damage penalty.",
+        "abilities": []
+    },
+    "NET_SHOT": {
+        "displayName": "Net Shot",
+        "description": "Bryophyte Roots is now triggered from Buckshot, doubling its slowness and damage.",
+        "abilities": []
+    },
+    "RIVER_OF_SOULS": {
+        "displayName": "River of Souls",
+        "description": "Phantom Ray gains massive radius, but reduced damage by 20%.",
+        "abilities": []
+    },
+    "FINAL_GAMBIT": {
+        "displayName": "Final Gambit",
+        "description": "When Second Chance Activates, all allies within 10 blocks of you get a 20% damage boost for 15s.",
+        "abilities": []
+    },
+    "SLOW_BOIL": {
+        "displayName": "Slow Boil",
+        "description": "Bakal's Grasp and Enraged Blow have their caps doubled, but Corruption charges 20% as fast.",
+        "abilities": []
+    },
+    "STAGNANT_AIR": {
+        "displayName": "Stagnant Air",
+        "description": "Air Shout gains doubled area and damage, but is delayed with decreased velocity and hit rate.",
+        "abilities": []
+    },
+    "ONESELF_UNTO_ALL": {
+        "displayName": "Oneself Unto All",
+        "description": "Radiance's radius extends 4 blocks beyond Bash and buffs allies with your stats instead of theirs",
+        "abilities": []
+    },
+    "BATTLEFIELD_BRILLIANCE": {
+        "displayName": "Battlefield Brilliance",
+        "description": "Generalist instead makes your next Main Attack deal quadruple damage, followed by a tactical retreat.",
+        "abilities": []
+    },
+    "ONEIRO": {
+        "displayName": "Oneiro",
+        "description": "Your maximum Mana Bank is increased by 50, but your spells now charge it more slowly.",
+        "abilities": []
+    },
+    "SOLAR_WIND": {
+        "displayName": "Solar Wind",
+        "description": "Thunderstorm disables Meteor and grants +5 thunderbolts which deal 100% Neutral damage each.",
+        "abilities": []
+    },
+    "FISSURE": {
+        "displayName": "Fissure",
+        "description": "Ice Snake moves much more slowly, but deals massive damage and knockback.",
+        "abilities": []
+    },
+    "DISASSOCIATE": {
+        "displayName": "Disassociate",
+        "description": "You can now have up to 3 additional Nightcloak Knives, but they each deal 3% less damage.",
+        "abilities": []
+    },
+    "LIGHTNING_CRASH": {
+        "displayName": "Lightning Crash",
+        "description": "Dash becomes a downward dive. Ripple has tripled height amplification and deals 250% and 100%.",
+        "abilities": []
+    },
+    "CHAOS_REACH": {
+        "displayName": "Chaos Reach",
+        "description": "Blood Sorrow spends 20 less points of Blood Pool and inflicts enemies with 0.3 seconds of Bleeding per hit, but no longer grants overhealth.",
+        "abilities": []
+    },
+    "LIT_FUSE": {
+        "displayName": "Lit Fuse",
+        "description": "Friendly Fire now works on Totem as well. When Totem's timer runs out, it explodes, firing 5 beams in all directions, each dealing 500% N.",
         "abilities": []
     }
 }
