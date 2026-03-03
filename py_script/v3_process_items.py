@@ -198,6 +198,8 @@ with open("../ingreds_clean.json", "r") as ingfile:
 with open("../tomes.json", "r") as tomefile:
     old_tome_data = json.load(tomefile)
     old_tomes = old_tome_data['tomes']
+with open("./fruma_items_compress.json", "r") as frumafile:
+    fruma_items = json.load(frumafile)
 
 known_item_names = set()
 known_ingred_names = set()
@@ -318,6 +320,60 @@ for tome in tomes:
         if 'alias' in old_tome:
             tome['alias'] = old_tome['alias']
     tome['id'] = tome_map[tome['name']]
+
+# dumb temp hack for frumer items. will remove when it comes time.
+items_dict = {item["name"]: item for item in items}
+for item in fruma_items:
+    if 'majorIds' in item:
+        majorIds = []
+        for majorId in item["majorIds"]:
+            if ':' in majorId:
+                split = re.sub('<[^<]+?>', '', majorId).split(':', 2)
+                majid_name = split[0].strip()
+                desc = split[1].strip()
+
+            for k, v in replace_strings.items():
+                desc = re.sub(k, v, desc)
+
+            if majid_name not in major_ids_reverse_map:
+                caps_name = majid_name.upper().replace(' ', '_')
+                caps_name = re.sub('[^0-9A-Z_]', '', caps_name)
+                major_ids_map[caps_name] = {
+                    'displayName': majid_name,
+                    'description': desc,
+                    'abilities': []
+                }
+                print(f'New Major ID: {majid_name} ({caps_name})')
+                major_ids_reverse_map[majid_name] = caps_name
+            else:
+                major_ids_map[major_ids_reverse_map[majid_name]]['description'] = desc
+            majorIds.append(major_ids_reverse_map[majid_name])
+        item['majorIds'] = majorIds
+
+    if item['category'] == 'weapon':
+        if 'nDam' not in item:
+            item['nDam'] = "0-0"
+        if 'eDam' not in item:
+            item['eDam'] = "0-0"
+        if 'tDam' not in item:
+            item['tDam'] = "0-0"
+        if 'wDam' not in item:
+            item['wDam'] = "0-0"
+        if 'fDam' not in item:
+            item['fDam'] = "0-0"
+        if 'aDam' not in item:
+            item['aDam'] = "0-0"
+
+    if not (item["name"] in id_map):
+        while max_id in used_ids:
+            max_id += 1
+        used_ids.add(max_id)
+        id_map[item["name"]] = max_id
+        print(f'New item: {item["name"]} (id: {max_id})')
+    item["id"] = id_map[item["name"]]
+    items_dict[item["name"]] = item
+
+items = list(items_dict.values())
 
 #write items back into data
 old_data["items"] = items
