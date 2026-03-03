@@ -14474,7 +14474,7 @@
       "strReq": 105,
       "str": 25,
       "majorIds": [
-        "MAGNET"
+        "EARTHEN_SPLINTER"
       ],
       "skillpoints": [
         25,
@@ -156371,7 +156371,7 @@
       "str": 8,
       "dex": 8,
       "majorIds": [
-        "MAGNET"
+        "EXPLOSIVE_IMPACT"
       ],
       "skillpoints": [
         8,
@@ -158638,7 +158638,7 @@
       "agi": 15,
       "def": 10,
       "majorIds": [
-        "MAGNET"
+        "INTANGIBLE"
       ],
       "skillpoints": [
         0,
@@ -158678,7 +158678,7 @@
       "str": 8,
       "def": -8,
       "majorIds": [
-        "MAGNET"
+        "LUNGE"
       ],
       "skillpoints": [
         8,
@@ -158716,7 +158716,7 @@
       "strReq": 60,
       "intReq": 45,
       "majorIds": [
-        "MAGNET"
+        "FOREST_BLESSING"
       ],
       "skillpoints": [
         0,
@@ -160624,7 +160624,7 @@
       "dex": 5,
       "def": 10,
       "majorIds": [
-        "MAGNET"
+        "SEEKING_MODULE"
       ],
       "skillpoints": [
         0,
@@ -160698,7 +160698,7 @@
       "defReq": 85,
       "agi": -25,
       "majorIds": [
-        "MANA_SURGE"
+        "LOCKDOWN"
       ],
       "skillpoints": [
         0,
@@ -160737,7 +160737,7 @@
       "strReq": 65,
       "agiReq": 65,
       "majorIds": [
-        "MANA_SURGE"
+        "ALTRUISM"
       ],
       "skillpoints": [
         0,
@@ -162778,7 +162778,7 @@
       "dex": 16,
       "agi": -18,
       "majorIds": [
-        "MANA_SURGE"
+        "TACKLE"
       ],
       "skillpoints": [
         0,
@@ -162855,7 +162855,7 @@
       "agi": -12,
       "def": 6,
       "majorIds": [
-        "DESPERATE_MEASURES"
+        "ROCK_SHIELD"
       ],
       "skillpoints": [
         8,
@@ -164990,7 +164990,7 @@
       "str": 4,
       "agi": 2,
       "majorIds": [
-        "CULICIDAE_CREED"
+        "TEMBLOR"
       ],
       "skillpoints": [
         4,
@@ -166177,7 +166177,7 @@
       "defReq": 50,
       "str": 5,
       "majorIds": [
-        "CULICIDAE_CREED"
+        "FAUSTIAN_GAMBIT"
       ],
       "skillpoints": [
         5,
@@ -167655,7 +167655,7 @@
       "str": 4,
       "def": 4,
       "majorIds": [
-        "SPLIT_SECOND"
+        "GEOCENTRISM"
       ],
       "skillpoints": [
         4,
@@ -169117,7 +169117,7 @@
       "lvl": 111,
       "defReq": 70,
       "majorIds": [
-        "GUNK_SHOT"
+        "NAPALM"
       ],
       "skillpoints": [
         0,
@@ -169202,7 +169202,7 @@
       "intReq": 60,
       "defReq": 65,
       "majorIds": [
-        "NET_SHOT"
+        "COMBO_STOMP"
       ],
       "skillpoints": [
         0,
@@ -169288,7 +169288,7 @@
       "defReq": 50,
       "str": 10,
       "majorIds": [
-        "RIVER_OF_SOULS"
+        "HEARTBEAT"
       ],
       "skillpoints": [
         10,
@@ -174036,7 +174036,7 @@
       "intReq": 85,
       "int": 20,
       "majorIds": [
-        "FISSURE"
+        "GENTLE_GLOW"
       ],
       "skillpoints": [
         0,
@@ -176440,7 +176440,7 @@
       "strReq": 60,
       "defReq": 50,
       "majorIds": [
-        "LIGHTNING_CRASH"
+        "CHERRY_BOMBS"
       ],
       "skillpoints": [
         0,
@@ -176482,7 +176482,7 @@
       "dex": 7,
       "int": -77,
       "majorIds": [
-        "LIGHTNING_CRASH"
+        "JUGGLE"
       ],
       "skillpoints": [
         7,
@@ -178581,7 +178581,7 @@
       "defReq": 70,
       "agi": -35,
       "majorIds": [
-        "LIT_FUSE"
+        "GRUESOME_KNOTS"
       ],
       "skillpoints": [
         0,
