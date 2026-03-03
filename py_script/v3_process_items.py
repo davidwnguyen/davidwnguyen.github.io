@@ -331,6 +331,9 @@ for item in fruma_items:
                 split = re.sub('<[^<]+?>', '', majorId).split(':', 2)
                 majid_name = split[0].strip()
                 desc = split[1].strip()
+            else:
+                majorIds.append(majorId)
+                continue
 
             for k, v in replace_strings.items():
                 desc = re.sub(k, v, desc)
