@@ -102,6 +102,7 @@ def validate_atree_graph(atree):
     # Set up lookup mapping
     abil_lookup = {998: 'elemental master', 999: 'melee'}
     for abil in atree:
+        abil_name = abil['display_name']
         # Sanity check for display.
         fatal_err = False
         if 'display' not in abil:
@@ -112,6 +113,13 @@ def validate_atree_graph(atree):
                 if field not in abil['display']:
                     print(f"ERROR: '{abil_name}'.display missing '{field}'")
                     fatal_err = True
+            abil_icon = abil['display']['icon']
+            if abil['cost'] == 1:
+                if abil_icon == 'node_2' or abil_icon == 'node_3' or abil_icon == 'node_4':
+                    print(f"WARNING: '{abil_name}' is a different cost than standard, should be 2 if icon is '{abil_icon}'")
+            elif abil['cost'] == 2:
+                if abil_icon == 'node_0' or abil_icon == 'node_1':
+                    print(f"WARNING: '{abil_name}' is a different cost than standard, should be 1 if icon is '{abil_icon}'")
         if 'parents' not in abil:
             print(f"ERROR: '{abil_name}' missing 'parents'")
             fatal_err = True
@@ -204,6 +212,14 @@ def validate_atree_graph(atree):
             if abil_r == parent_r:
                 if abil_id not in parent['parents']:
                     print(f"WARNING: parent of '{abil_name}' ('{parent_name}') has same row but no path")
+            
+            if abil_c == parent['display']['col']:
+                for other_target in abil['parents']:
+                    other_parent = abil_lookup[other_target]
+                    if target == other_parent:
+                        continue
+                    if other_parent['display']['row'] == parent_r and target in other_parent['parents']:
+                        print(f"WARNING: '{other_parent['display_name']}' to '{abil_name}' goes through parent '{parent_name}', check '{abil_name}'")
             
             for pos in get_path_positions(parent, abil):
                 if pos not in abil_path_parents:

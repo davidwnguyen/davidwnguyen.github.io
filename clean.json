@@ -5539,42 +5539,42 @@
     },
     {
       "name": "Dark Matter\u058e",
-      "category": "armor",
+      "lore": "It permeates around you, so subtly, enveloping your very being with a shroud on the cusp of impalpability.  Nothing can affect you now - the incorporeal hiding in plain sight.",
+      "tier": "Fabled",
+      "slots": 4,
       "type": "helmet",
-      "armourMaterial": "diamond",
-      "drop": "normal",
+      "hp": 3000,
       "lvl": 100,
-      "agiReq": 55,
-      "defReq": 50,
-      "strReq": 45,
-      "dexReq": 45,
-      "intReq": 55,
+      "strReq": 40,
+      "dexReq": 40,
+      "intReq": 50,
+      "defReq": 45,
+      "agiReq": 50,
       "majorIds": [
         "INTANGIBLE"
       ],
-      "slots": 4,
-      "lore": "It permeates around you, so subtly, enveloping your very being with a shroud on the cusp of impalpability.  Nothing can affect you now - the incorporeal hiding in plain sight.",
-      "icon": {
-        "format": "attribute",
-        "value": {
-          "id": "minecraft:leather_helmet",
-          "customModelData": {
-            "rangeDispatch": [
-              8
-            ]
-          },
-          "name": "helmet.diamond"
-        }
-      },
-      "thorns": 40,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        40,
+        40,
+        50,
+        45,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Dark Matter\u058e",
+      "sdPct": 23,
       "ms": -24,
       "ref": 40,
-      "sdPct": 23,
-      "nDamRaw": -200,
+      "thorns": 40,
       "rSdRaw": 269,
-      "hp": 3000,
-      "tier": "Fabled",
-      "displayName": "Dark Matter\u058e",
+      "nDamRaw": -200,
       "id": 4210
     },
     {
@@ -5954,41 +5954,41 @@
     },
     {
       "name": "Fermion",
-      "category": "armor",
-      "type": "boots",
-      "armourMaterial": "diamond",
-      "drop": "normal",
-      "lvl": 100,
-      "agiReq": 40,
-      "defReq": 40,
-      "strReq": 40,
-      "dexReq": 40,
-      "intReq": 40,
+      "tier": "Unique",
       "slots": 3,
-      "icon": {
-        "format": "attribute",
-        "value": {
-          "id": "minecraft:leather_boots",
-          "customModelData": {
-            "rangeDispatch": [
-              8
-            ]
-          },
-          "name": "boots.diamond"
-        }
-      },
-      "damPct": -10,
-      "thorns": 20,
+      "type": "boots",
+      "hp": 3775,
+      "fDef": 150,
+      "wDef": 150,
+      "aDef": 150,
+      "tDef": 150,
+      "eDef": 150,
+      "lvl": 100,
+      "strReq": 30,
+      "dexReq": 30,
+      "intReq": 30,
+      "defReq": 30,
+      "agiReq": 30,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "category": "armor",
+      "displayName": "Fermion",
       "mr": 15,
       "ref": 20,
-      "hp": 3775,
-      "aDef": 150,
-      "fDef": 150,
-      "eDef": 150,
-      "wDef": 150,
-      "tDef": 150,
-      "tier": "Unique",
-      "displayName": "Fermion",
+      "thorns": 20,
+      "damPct": -10,
       "id": 1034
     },
     {
@@ -6129,49 +6129,49 @@
     },
     {
       "name": "Gravity",
-      "category": "armor",
+      "lore": "No one knows how this extremely dense chestplate can even logically exist. It is almost paradoxical in nature, and affects its wearers in unfathomable ways.",
+      "tier": "Legendary",
+      "slots": 5,
       "type": "chestplate",
-      "armourMaterial": "diamond",
-      "drop": "normal",
+      "hp": 5850,
+      "fDef": 350,
+      "wDef": 350,
+      "aDef": 350,
+      "tDef": 350,
+      "eDef": 350,
       "lvl": 100,
-      "agiReq": 50,
-      "defReq": 50,
-      "strReq": 50,
-      "dexReq": 50,
-      "intReq": 50,
+      "strReq": 40,
+      "dexReq": 40,
+      "intReq": 40,
+      "defReq": 40,
+      "agiReq": 40,
       "majorIds": [
         "MAGNET"
       ],
-      "slots": 5,
-      "lore": "No one knows how this extremely dense chestplate can even logically exist. It is almost paradoxical in nature, and affects its wearers in unfathomable ways.",
-      "icon": {
-        "format": "attribute",
-        "value": {
-          "id": "minecraft:leather_chestplate",
-          "customModelData": {
-            "rangeDispatch": [
-              8
-            ]
-          },
-          "name": "chestplate.diamond"
-        }
-      },
-      "thorns": 30,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "category": "armor",
+      "displayName": "Gravity",
       "ls": 450,
       "ms": 10,
       "ref": 30,
+      "thorns": 30,
       "spd": -20,
-      "hprRaw": 325,
       "atkTier": -1,
+      "hprRaw": 325,
       "sdRaw": -165,
-      "hp": 5850,
-      "aDef": 350,
-      "fDef": 350,
-      "eDef": 350,
-      "wDef": 350,
-      "tDef": 350,
-      "tier": "Legendary",
-      "displayName": "Gravity",
       "id": 1231
     },
     {
@@ -156357,6 +156357,43 @@
       "id": 3650
     },
     {
+      "name": "Melancholia",
+      "tier": "Fabled",
+      "type": "bracelet",
+      "fDef": -20,
+      "wDef": -20,
+      "aDef": -20,
+      "eDef": -20,
+      "lvl": 86,
+      "dexReq": 40,
+      "dex": 1,
+      "majorIds": [
+        "ENTROPY"
+      ],
+      "skillpoints": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        40,
+        0,
+        0,
+        0
+      ],
+      "category": "accessory",
+      "displayName": "Melancholia",
+      "sdPct": -15,
+      "ref": 7,
+      "thorns": 7,
+      "mdRaw": 80,
+      "spPct3": -6,
+      "id": 4910
+    },
+    {
       "name": "Ahriman",
       "lore": "Your limbs fail you, and yet you still stand. Something, someone, has invaded your body, and it will use you until your last breath.",
       "tier": "Fabled",
@@ -156436,6 +156473,47 @@
       "rMdRaw": 250,
       "mainAttackRange": 27,
       "id": 4264
+    },
+    {
+      "name": "Phanerozoic",
+      "lore": "An age of transformation. To shape the evolution of life, as if molding a piece of clay. To gain intelligence, and become the harbingers of creation and destruction. To build control, and become the hand of fate. Here, we begin.",
+      "tier": "Legendary",
+      "slots": 4,
+      "type": "helmet",
+      "hp": 5000,
+      "fDef": 120,
+      "wDef": 120,
+      "aDef": 120,
+      "eDef": 120,
+      "lvl": 120,
+      "strReq": 45,
+      "intReq": 45,
+      "defReq": 45,
+      "agiReq": 45,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        45,
+        0,
+        45,
+        45,
+        45
+      ],
+      "category": "armor",
+      "displayName": "Phanerozoic",
+      "spd": 20,
+      "atkTier": -8,
+      "hprRaw": 280,
+      "mdRaw": 1150,
+      "tDamPct": -25,
+      "maxMana": 23,
+      "eDamRaw": 185,
+      "id": 4955
     },
     {
       "name": "Nexus",
@@ -156542,6 +156620,44 @@
       "spRaw2": -7,
       "nDamRaw": 200,
       "id": 4267
+    },
+    {
+      "name": "Gambler's Ruin",
+      "lore": "Those who believe in chances are the most foolish - every step forward is a step closer to demise. Greed blinds their eyes, as it guides their souls to eternal despair",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "helmet",
+      "hp": 3500,
+      "fDef": -110,
+      "wDef": -160,
+      "eDef": -110,
+      "lvl": 114,
+      "dexReq": 60,
+      "agiReq": 60,
+      "int": -20,
+      "skillpoints": [
+        0,
+        0,
+        -20,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        60,
+        0,
+        0,
+        60
+      ],
+      "category": "armor",
+      "displayName": "Gambler's Ruin",
+      "sdPct": 20,
+      "spd": 17,
+      "eSteal": 8,
+      "maxMana": -30,
+      "tDamRaw": 231,
+      "healPct": 14,
+      "id": 4911
     },
     {
       "name": "Last Stand",
@@ -156655,6 +156771,43 @@
       "id": 4270
     },
     {
+      "name": "Moirai",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "helmet",
+      "hp": 3400,
+      "wDef": 250,
+      "aDef": -75,
+      "eDef": -75,
+      "lvl": 110,
+      "intReq": 55,
+      "dex": -10,
+      "int": 10,
+      "skillpoints": [
+        0,
+        -10,
+        10,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        55,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Moirai",
+      "mr": 12,
+      "ref": 21,
+      "wDamPct": 27,
+      "spRaw3": 1,
+      "spRaw4": 1,
+      "maxMana": 31,
+      "id": 4912
+    },
+    {
       "name": "Crown of Vicious Leaves",
       "tier": "Legendary",
       "slots": 3,
@@ -156691,6 +156844,40 @@
       "spRaw3": -5,
       "damPct": 23,
       "id": 4271
+    },
+    {
+      "name": "Studhorn",
+      "tier": "Rare",
+      "slots": 4,
+      "type": "helmet",
+      "hp": 4900,
+      "lvl": 120,
+      "strReq": 35,
+      "defReq": 30,
+      "dex": -3,
+      "skillpoints": [
+        0,
+        -3,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        35,
+        0,
+        0,
+        30,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Studhorn",
+      "spd": 11,
+      "hprRaw": 242,
+      "mdRaw": 308,
+      "tDefPct": -20,
+      "damPct": 21,
+      "mainAttackRange": 27,
+      "id": 4913
     },
     {
       "name": "Contradiction",
@@ -157614,6 +157801,43 @@
       "id": 4296
     },
     {
+      "name": "Canary",
+      "tier": "Rare",
+      "slots": 2,
+      "type": "helmet",
+      "hp": 3500,
+      "aDef": 175,
+      "eDef": -125,
+      "lvl": 105,
+      "dexReq": 45,
+      "agiReq": 50,
+      "dex": 4,
+      "agi": 4,
+      "skillpoints": [
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      "reqs": [
+        0,
+        45,
+        0,
+        0,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Canary",
+      "spd": 20,
+      "poison": -2420,
+      "sdRaw": 154,
+      "aDefPct": 16,
+      "eDefPct": -24,
+      "jh": 3,
+      "id": 4914
+    },
+    {
       "name": "Nutrient",
       "tier": "Unique",
       "slots": 2,
@@ -157647,6 +157871,38 @@
       "healPct": 13,
       "rDefPct": 23,
       "id": 4297
+    },
+    {
+      "name": "Counterfeit Coronet",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "helmet",
+      "hp": 3000,
+      "fDef": 250,
+      "wDef": -150,
+      "lvl": 120,
+      "defReq": 50,
+      "int": -10,
+      "skillpoints": [
+        0,
+        0,
+        -10,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        50,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Counterfeit Coronet",
+      "ls": 345,
+      "eSteal": 6,
+      "hprRaw": 230,
+      "id": 4956
     },
     {
       "name": "Flicker",
@@ -157796,6 +158052,40 @@
       "mainAttackRange": -15,
       "kb": 25,
       "id": 4301
+    },
+    {
+      "name": "Albino",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "helmet",
+      "hp": 2600,
+      "fDef": -150,
+      "aDef": 200,
+      "lvl": 118,
+      "agiReq": 60,
+      "agi": 10,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        0,
+        60
+      ],
+      "category": "armor",
+      "displayName": "Albino",
+      "hprPct": -20,
+      "ms": 8,
+      "fDefPct": -25,
+      "spRaw4": -3,
+      "aDamRaw": 174,
+      "id": 4915
     },
     {
       "name": "Bleeding Mind",
@@ -158001,6 +158291,41 @@
       "fDefPct": 23,
       "damPct": -19,
       "id": 4307
+    },
+    {
+      "name": "Hollow Ice Brick",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "helmet",
+      "hp": 3700,
+      "wDef": 135,
+      "aDef": 115,
+      "lvl": 113,
+      "intReq": 40,
+      "agiReq": 40,
+      "int": 15,
+      "skillpoints": [
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        40,
+        0,
+        40
+      ],
+      "category": "armor",
+      "displayName": "Hollow Ice Brick",
+      "mr": 16,
+      "ref": 25,
+      "spd": -20,
+      "critDamPct": -16,
+      "rDefPct": 20,
+      "id": 4957
     },
     {
       "name": "Rancid Effluvia",
@@ -158261,6 +158586,38 @@
       "sprint": 50,
       "healPct": 15,
       "id": 4314
+    },
+    {
+      "name": "Dearth",
+      "tier": "Unique",
+      "type": "helmet",
+      "hp": 2600,
+      "lvl": 109,
+      "dexReq": 55,
+      "dex": 10,
+      "skillpoints": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        55,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Dearth",
+      "hprPct": -200,
+      "mr": -10,
+      "ls": 308,
+      "ms": 16,
+      "xpb": 23,
+      "damRaw": 165,
+      "id": 4916
     },
     {
       "name": "Polydipsia",
@@ -158625,6 +158982,40 @@
       "id": 4324
     },
     {
+      "name": "Inosculation",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "helmet",
+      "hp": 3100,
+      "wDef": 100,
+      "eDef": 100,
+      "lvl": 105,
+      "strReq": 50,
+      "intReq": 40,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        50,
+        0,
+        40,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Inosculation",
+      "ls": 269,
+      "eDamPct": 12,
+      "spRaw1": -2,
+      "spRaw2": 4,
+      "healPct": 12,
+      "id": 4917
+    },
+    {
       "name": "Soul Unmade",
       "tier": "Fabled",
       "slots": 2,
@@ -158702,6 +159093,47 @@
       "jh": 1,
       "eDamRaw": 200,
       "id": 4326
+    },
+    {
+      "name": "Baleful Blizzard",
+      "lore": "Whipping, chilling winds, and circling hailstones the size of boulders-the eye of your storm is the only safe place to be.",
+      "tier": "Fabled",
+      "slots": 2,
+      "type": "chestplate",
+      "hp": 3900,
+      "wDef": 175,
+      "aDef": 175,
+      "tDef": -100,
+      "lvl": 110,
+      "intReq": 50,
+      "agiReq": 50,
+      "int": 7,
+      "majorIds": [
+        "ICE_STORM"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        50,
+        0,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Baleful Blizzard",
+      "mr": 12,
+      "ref": 27,
+      "wDefPct": 27,
+      "sprintReg": 36,
+      "maxMana": -40,
+      "aSdRaw": 223,
+      "id": 4958
     },
     {
       "name": "Heart of the Forest",
@@ -158855,6 +159287,81 @@
       "fDefPct": 46,
       "spRaw3": -3,
       "id": 4330
+    },
+    {
+      "name": "Shogun",
+      "lore": "The law of the ancients was clear on the matter. The law of the jungle was, too. Tradition and nature agree: power can only be held by those with the strength to wield it.",
+      "tier": "Legendary",
+      "slots": 5,
+      "type": "chestplate",
+      "hp": 5100,
+      "wDef": 225,
+      "eDef": 225,
+      "lvl": 115,
+      "strReq": 55,
+      "intReq": 45,
+      "str": 5,
+      "int": 5,
+      "skillpoints": [
+        5,
+        0,
+        5,
+        0,
+        0
+      ],
+      "reqs": [
+        55,
+        0,
+        45,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Shogun",
+      "ls": 460,
+      "atkTier": -1,
+      "sprint": -15,
+      "eSdPct": 18,
+      "wSdPct": 18,
+      "id": 4959
+    },
+    {
+      "name": "Fidelius",
+      "lore": "Fiddle with the Fidelius",
+      "tier": "Legendary",
+      "slots": 100,
+      "type": "chestplate",
+      "hp": 5200,
+      "fDef": 100,
+      "wDef": 100,
+      "aDef": 100,
+      "lvl": 109,
+      "intReq": 65,
+      "defReq": 50,
+      "agiReq": 50,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        65,
+        50,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Fidelius",
+      "mr": 8,
+      "ms": -8,
+      "ref": 25,
+      "hprRaw": 260,
+      "rDamRaw": 170,
+      "rDefPct": 25,
+      "id": 4918
     },
     {
       "name": "Libertas",
@@ -159084,6 +159591,40 @@
       "id": 4336
     },
     {
+      "name": "Marble Core",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "chestplate",
+      "hp": 4750,
+      "eDef": 200,
+      "lvl": 117,
+      "strReq": 60,
+      "str": 8,
+      "agi": -15,
+      "skillpoints": [
+        8,
+        0,
+        0,
+        0,
+        -15
+      ],
+      "reqs": [
+        60,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Marble Core",
+      "spd": -25,
+      "aDefPct": -40,
+      "spRaw1": -3,
+      "eSdRaw": 173,
+      "eSdPct": 30,
+      "id": 4919
+    },
+    {
       "name": "Addiction",
       "tier": "Rare",
       "type": "chestplate",
@@ -159150,6 +159691,82 @@
       "aDamPct": 13,
       "aDamRaw": 231,
       "id": 4338
+    },
+    {
+      "name": "Cortina",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "chestplate",
+      "hp": 4200,
+      "fDef": -250,
+      "aDef": 225,
+      "eDef": 275,
+      "lvl": 116,
+      "strReq": 75,
+      "agiReq": 55,
+      "agi": 15,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "reqs": [
+        75,
+        0,
+        0,
+        0,
+        55
+      ],
+      "category": "armor",
+      "displayName": "Cortina",
+      "spd": 23,
+      "hprRaw": -180,
+      "aDamPct": 19,
+      "eDamPct": 14,
+      "spPct3": -10,
+      "jh": 3,
+      "id": 4960
+    },
+    {
+      "name": "Viridescence",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "chestplate",
+      "hp": 4300,
+      "wDef": 100,
+      "eDef": 100,
+      "lvl": 116,
+      "strReq": 45,
+      "dexReq": 20,
+      "intReq": 35,
+      "defReq": 25,
+      "agiReq": 20,
+      "int": 10,
+      "skillpoints": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      "reqs": [
+        45,
+        20,
+        35,
+        25,
+        20
+      ],
+      "category": "armor",
+      "displayName": "Viridescence",
+      "mr": 10,
+      "poison": 10000,
+      "hprRaw": 240,
+      "wDamPct": 30,
+      "eDamPct": 30,
+      "spRaw4": 5,
+      "id": 4920
     },
     {
       "name": "Symbologue",
@@ -159348,6 +159965,48 @@
       "eMdPct": 77,
       "tMdPct": 77,
       "id": 4343
+    },
+    {
+      "name": "Larrikin",
+      "tier": "Rare",
+      "slots": 4,
+      "type": "chestplate",
+      "hp": 4300,
+      "fDef": 250,
+      "wDef": 250,
+      "aDef": -500,
+      "tDef": 250,
+      "eDef": 250,
+      "lvl": 109,
+      "strReq": 35,
+      "dexReq": 35,
+      "intReq": 35,
+      "defReq": 35,
+      "agi": -50,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        -50
+      ],
+      "reqs": [
+        35,
+        35,
+        35,
+        35,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Larrikin",
+      "hprPct": 58,
+      "ms": 18,
+      "lb": 17,
+      "spPct2": 10,
+      "rSdRaw": 158,
+      "rSdPct": 23,
+      "healPct": -25,
+      "id": 4921
     },
     {
       "name": "Subduction",
@@ -159676,6 +160335,47 @@
       "spPct3": -10,
       "rSdPct": 14,
       "id": 4352
+    },
+    {
+      "name": "Golden Curiass",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "chestplate",
+      "hp": 4500,
+      "fDef": 150,
+      "wDef": -100,
+      "aDef": -100,
+      "tDef": 150,
+      "eDef": 150,
+      "lvl": 117,
+      "strReq": 45,
+      "dexReq": 40,
+      "defReq": 45,
+      "str": 8,
+      "def": 5,
+      "skillpoints": [
+        8,
+        0,
+        0,
+        5,
+        0
+      ],
+      "reqs": [
+        45,
+        40,
+        0,
+        45,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Golden Curiass",
+      "ls": 292,
+      "lb": 14,
+      "spd": -14,
+      "eMdRaw": 246,
+      "mainAttackRange": 23,
+      "kb": 31,
+      "id": 4922
     },
     {
       "name": "Decree",
@@ -160585,6 +161285,39 @@
       "id": 4377
     },
     {
+      "name": "Forest Fire",
+      "tier": "Unique",
+      "slots": 5,
+      "type": "chestplate",
+      "hp": 4000,
+      "fDef": 150,
+      "lvl": 105,
+      "defReq": 60,
+      "def": 10,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        60,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Forest Fire",
+      "thorns": 15,
+      "hprRaw": 231,
+      "sprintReg": -10,
+      "fSdRaw": 130,
+      "rDefPct": 21,
+      "id": 4923
+    },
+    {
       "name": "Tempered Titanium Chestplate",
       "tier": "Normal",
       "slots": 3,
@@ -160764,6 +161497,42 @@
       "id": 4382
     },
     {
+      "name": "Alstroemania",
+      "lore": "Look around and observe! An overcast sky; yet the blue of the day seeps through the gloom, illuminating the land around you. A patch of weeds; yet flowers bloom vividly in spite of the wretched foliage surrounding them. The struggles of nature create your own personal utopia. A world, tailormade, just for you. Only you.",
+      "tier": "Legendary",
+      "type": "leggings",
+      "hp": 4300,
+      "wDef": -245,
+      "tDef": 175,
+      "eDef": 175,
+      "lvl": 120,
+      "strReq": 65,
+      "dexReq": 80,
+      "int": 12,
+      "skillpoints": [
+        0,
+        0,
+        12,
+        0,
+        0
+      ],
+      "reqs": [
+        65,
+        80,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Alstroemania",
+      "atkTier": -8,
+      "mdRaw": 1077,
+      "tSdPct": 16,
+      "eDamRaw": 237,
+      "mainAttackRange": 20,
+      "id": 4924
+    },
+    {
       "name": "Firewall",
       "tier": "Legendary",
       "slots": 3,
@@ -160866,6 +161635,83 @@
       "damPct": 15,
       "healPct": -50,
       "id": 4385
+    },
+    {
+      "name": "Enshrouded Eruption",
+      "lore": "Recovered from subterranean ash deposits, these timeworn greaves are one of many relics in war buried in combat by an ancient eruption. Entombed by millenia of rock and soil, the ideologies of the belligerents have been long forgotten: all that remains is their endless desire for absolution.",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "leggings",
+      "hp": 5100,
+      "fDef": 150,
+      "wDef": -100,
+      "aDef": 100,
+      "eDef": 100,
+      "lvl": 116,
+      "strReq": 50,
+      "defReq": 50,
+      "agiReq": 50,
+      "str": 10,
+      "skillpoints": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        50,
+        0,
+        0,
+        50,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Enshrouded Eruption",
+      "hprPct": 23,
+      "hprRaw": 269,
+      "mdRaw": 346,
+      "spPct2": -20,
+      "maxMana": -20,
+      "wDamRaw": -600,
+      "id": 4961
+    },
+    {
+      "name": "Rhyolitic Wrath",
+      "lore": "A rage has built up in the stones around you. A slow burn, a creeping fury gradually grows throughout the ages. It demands release.",
+      "tier": "Legendary",
+      "slots": 3,
+      "type": "leggings",
+      "fDef": 250,
+      "eDef": 250,
+      "lvl": 116,
+      "strReq": 60,
+      "defReq": 60,
+      "str": 5,
+      "int": 10,
+      "def": 5,
+      "skillpoints": [
+        5,
+        0,
+        10,
+        5,
+        0
+      ],
+      "reqs": [
+        60,
+        0,
+        0,
+        60,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Rhyolitic Wrath",
+      "ls": 480,
+      "atkTier": -1,
+      "spPct4": -25,
+      "eMdRaw": 250,
+      "fMdRaw": 250,
+      "id": 4925
     },
     {
       "name": "Archean",
@@ -161353,6 +162199,48 @@
       "id": 4398
     },
     {
+      "name": "Dealbreaker",
+      "tier": "Rare",
+      "slots": 4,
+      "type": "leggings",
+      "hp": 4800,
+      "fDef": -100,
+      "wDef": -100,
+      "aDef": -100,
+      "tDef": -100,
+      "eDef": -100,
+      "lvl": 115,
+      "strReq": 45,
+      "dexReq": 40,
+      "intReq": 40,
+      "defReq": 40,
+      "agiReq": 45,
+      "str": 5,
+      "agi": 5,
+      "skillpoints": [
+        5,
+        0,
+        0,
+        0,
+        5
+      ],
+      "reqs": [
+        45,
+        40,
+        40,
+        40,
+        45
+      ],
+      "category": "armor",
+      "displayName": "Dealbreaker",
+      "sdPct": 20,
+      "ms": 14,
+      "spd": 20,
+      "hprRaw": -650,
+      "sdRaw": 231,
+      "id": 4962
+    },
+    {
       "fixID": true,
       "name": "Basal Burl",
       "tier": "Rare",
@@ -161390,6 +162278,42 @@
       "sprint": -30,
       "rDefPct": 50,
       "id": 4399
+    },
+    {
+      "name": "Haze Striders",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "leggings",
+      "hp": 4000,
+      "aDef": 80,
+      "tDef": -70,
+      "eDef": 110,
+      "lvl": 113,
+      "strReq": 65,
+      "agiReq": 40,
+      "str": 10,
+      "agi": 5,
+      "skillpoints": [
+        10,
+        0,
+        0,
+        0,
+        5
+      ],
+      "reqs": [
+        65,
+        0,
+        0,
+        0,
+        40
+      ],
+      "category": "armor",
+      "displayName": "Haze Striders",
+      "eDamPct": 27,
+      "tDefPct": -20,
+      "mainAttackRange": 17,
+      "kb": -25,
+      "id": 4963
     },
     {
       "name": "Blue Grotto",
@@ -161902,6 +162826,42 @@
       "id": 4413
     },
     {
+      "name": "Novocaine",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "chestplate",
+      "hp": 3400,
+      "aDef": 225,
+      "tDef": 225,
+      "eDef": -125,
+      "lvl": 120,
+      "dexReq": 50,
+      "agiReq": 50,
+      "agi": 10,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        10
+      ],
+      "reqs": [
+        0,
+        50,
+        0,
+        0,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Novocaine",
+      "ms": 8,
+      "spPct3": -20,
+      "jh": 3,
+      "maxMana": -25,
+      "damPct": 20,
+      "id": 4926
+    },
+    {
       "name": "Bleeding Crura",
       "tier": "Unique",
       "slots": 3,
@@ -162006,6 +162966,39 @@
       "id": 4416
     },
     {
+      "name": "Shock Therapy",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "leggings",
+      "hp": 3200,
+      "tDef": 250,
+      "lvl": 118,
+      "dexReq": 55,
+      "dex": 5,
+      "skillpoints": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        55,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Shock Therapy",
+      "hprPct": -23,
+      "tDamPct": 19,
+      "spRaw1": -1,
+      "spRaw3": -1,
+      "spRaw4": -4,
+      "id": 4964
+    },
+    {
       "name": "Hydrostatic Greaves",
       "tier": "Unique",
       "type": "leggings",
@@ -162107,6 +163100,38 @@
       "wSdPct": 27,
       "aSdPct": 27,
       "id": 4419
+    },
+    {
+      "name": "Inflammation",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "leggings",
+      "hp": 3700,
+      "fDef": 150,
+      "lvl": 116,
+      "defReq": 65,
+      "def": 10,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        65,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Inflammation",
+      "ls": 346,
+      "fDamPct": 28,
+      "fDefPct": 15,
+      "healPct": -17,
+      "id": 4927
     },
     {
       "name": "Thunderous Gale",
@@ -162253,6 +163278,43 @@
       "eDamPct": 15,
       "kb": 30,
       "id": 4423
+    },
+    {
+      "name": "Primal Instinct",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "leggings",
+      "hp": 3600,
+      "wDef": -250,
+      "tDef": 180,
+      "eDef": 180,
+      "lvl": 113,
+      "strReq": 60,
+      "dexReq": 50,
+      "str": 10,
+      "int": -15,
+      "skillpoints": [
+        10,
+        0,
+        -15,
+        0,
+        0
+      ],
+      "reqs": [
+        60,
+        50,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Primal Instinct",
+      "mdPct": 31,
+      "xpb": 12,
+      "spd": 15,
+      "mdRaw": 231,
+      "mainAttackRange": -15,
+      "id": 4965
     },
     {
       "name": "Flames of Wrath",
@@ -162689,6 +163751,43 @@
       "id": 4435
     },
     {
+      "name": "Aplomb",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "leggings",
+      "hp": 4400,
+      "fDef": 175,
+      "wDef": -75,
+      "aDef": 175,
+      "lvl": 105,
+      "defReq": 50,
+      "agiReq": 50,
+      "def": 9,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        50,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Aplomb",
+      "spd": 18,
+      "atkTier": 1,
+      "hprRaw": 231,
+      "sprintReg": 31,
+      "maxMana": -15,
+      "fMdRaw": 181,
+      "id": 4966
+    },
+    {
       "name": "Gleaming Titanium Leggings",
       "tier": "Normal",
       "slots": 3,
@@ -162918,6 +164017,84 @@
       "id": 4442
     },
     {
+      "name": "Static Cling",
+      "lore": "Forged in a hidden workshop, these boots were imbued with earthen quartz and bound lightning. Their wearer crackles with static energy, amplifying every strike. Many have chased this power, only to find themselves uprooted by its shocking embrace.",
+      "tier": "Legendary",
+      "slots": 3,
+      "type": "boots",
+      "hp": 2700,
+      "fDef": -200,
+      "aDef": -200,
+      "tDef": 200,
+      "eDef": 200,
+      "lvl": 120,
+      "strReq": 70,
+      "dexReq": 70,
+      "dex": 15,
+      "skillpoints": [
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        70,
+        70,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Static Cling",
+      "ms": 15,
+      "atkTier": -6,
+      "sdRaw": 200,
+      "eSdPct": 23,
+      "tSdPct": 23,
+      "mainAttackRange": -50,
+      "id": 4967
+    },
+    {
+      "name": "Embrittlement",
+      "lore": "Shards of frost and bone, fragments of memories and worlds; it all shatters under your step. The cracks reach deep. Too deep. Your soul rests on thin ice.",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3800,
+      "fDef": -125,
+      "wDef": 100,
+      "aDef": 100,
+      "lvl": 120,
+      "intReq": 65,
+      "agiReq": 50,
+      "agi": 8,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "reqs": [
+        0,
+        0,
+        65,
+        0,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Embrittlement",
+      "mr": -12,
+      "expd": 25,
+      "spd": -25,
+      "atkTier": -8,
+      "sdRaw": 215,
+      "wSdPct": 25,
+      "kb": 25,
+      "id": 4928
+    },
+    {
       "name": "Sea of Fire",
       "lore": "An oasis of flame, where no one can hurt you. Through abhorrence and loathing, you may create a world where all things burn, and a perfectly beautiful world it will be indeed.",
       "tier": "Legendary",
@@ -162996,6 +164173,45 @@
       "id": 4444
     },
     {
+      "name": "Wysteria Glooms",
+      "tier": "Legendary",
+      "slots": 3,
+      "type": "boots",
+      "hp": 3500,
+      "wDef": 100,
+      "tDef": 100,
+      "eDef": 100,
+      "lvl": 117,
+      "strReq": 70,
+      "dexReq": 70,
+      "intReq": 70,
+      "str": 10,
+      "dex": 10,
+      "int": 10,
+      "skillpoints": [
+        10,
+        10,
+        10,
+        0,
+        0
+      ],
+      "reqs": [
+        70,
+        70,
+        70,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Wysteria Glooms",
+      "ls": 354,
+      "atkTier": -15,
+      "spRaw2": -4,
+      "maxMana": 50,
+      "rSdPct": 19,
+      "id": 4968
+    },
+    {
       "name": "Serene Storm",
       "lore": "Barrages of rain and ice can bite and break; symphonies thunder and wind can deafen and crash. The worst storms, though, the kind that leave no survivors; those creep up quietly, steal in through the moonlit fields, and whisk the world away without a trace.",
       "tier": "Legendary",
@@ -163067,6 +164283,78 @@
       "mainAttackRange": 58,
       "rDefPct": 25,
       "id": 4446
+    },
+    {
+      "name": "Carcinization",
+      "lore": "You awake in a cold sweat, finding yourself in control of two more arms and a hard exterior. You cannot make any sense of what is happening inside yourself. You cannot even explain it to yourself. How about you sleep a little bit longer and forget all this nonsense?",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "boots",
+      "hp": 6000,
+      "wDef": 180,
+      "tDef": -220,
+      "eDef": 180,
+      "lvl": 116,
+      "strReq": 50,
+      "defReq": 55,
+      "str": 10,
+      "dex": -10,
+      "def": 10,
+      "skillpoints": [
+        10,
+        -10,
+        0,
+        10,
+        0
+      ],
+      "reqs": [
+        50,
+        0,
+        0,
+        55,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Carcinization",
+      "hprPct": 26,
+      "spd": -18,
+      "wDamPct": 25,
+      "eDamPct": 25,
+      "maxMana": 36,
+      "id": 4969
+    },
+    {
+      "name": "Song of the Sea",
+      "lore": "A sweet tune permeates the air. A whistle on the waves; a melody from the depths. It calls forth destruction in seafoam and sand, and those who hear its call do not breathe for long.",
+      "tier": "Legendary",
+      "type": "boots",
+      "hp": 4100,
+      "wDef": 220,
+      "lvl": 115,
+      "intReq": 85,
+      "int": 15,
+      "skillpoints": [
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        85,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Song of the Sea",
+      "ls": -290,
+      "atkTier": -6,
+      "wDamPct": 31,
+      "spRaw1": -3,
+      "maxMana": 46,
+      "id": 4970
     },
     {
       "name": "Null Space",
@@ -163286,6 +164574,50 @@
       "id": 4452
     },
     {
+      "name": "Inequality",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "boots",
+      "hp": 3900,
+      "fDef": 150,
+      "wDef": 140,
+      "aDef": 120,
+      "tDef": 110,
+      "eDef": 130,
+      "lvl": 118,
+      "strReq": 25,
+      "dexReq": 45,
+      "intReq": 35,
+      "defReq": 40,
+      "agiReq": 30,
+      "str": 4,
+      "dex": 6,
+      "int": 3,
+      "agi": 5,
+      "def": 2,
+      "skillpoints": [
+        4,
+        6,
+        3,
+        2,
+        5
+      ],
+      "reqs": [
+        25,
+        45,
+        35,
+        40,
+        30
+      ],
+      "category": "armor",
+      "displayName": "Inequality",
+      "mr": -9,
+      "ls": 308,
+      "mdRaw": -209,
+      "rSdPct": 27,
+      "id": 4971
+    },
+    {
       "name": "Willow",
       "tier": "Rare",
       "slots": 2,
@@ -163434,6 +164766,45 @@
       "id": 4456
     },
     {
+      "name": "Conviction",
+      "tier": "Rare",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3350,
+      "fDef": -250,
+      "aDef": 100,
+      "tDef": 80,
+      "eDef": 100,
+      "lvl": 115,
+      "strReq": 35,
+      "dexReq": 30,
+      "agiReq": 35,
+      "dex": 8,
+      "skillpoints": [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        35,
+        30,
+        0,
+        0,
+        35
+      ],
+      "category": "armor",
+      "displayName": "Conviction",
+      "xpb": 16,
+      "spd": 14,
+      "spPct3": -13,
+      "sprint": 31,
+      "aSdRaw": 192,
+      "rDefPct": -30,
+      "id": 4972
+    },
+    {
       "name": "Diurnal",
       "tier": "Rare",
       "slots": 3,
@@ -163470,6 +164841,77 @@
       "tSdRaw": 127,
       "wSdRaw": 127,
       "id": 4457
+    },
+    {
+      "name": "Topsoil",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "boots",
+      "hp": 4200,
+      "aDef": -100,
+      "eDef": 250,
+      "lvl": 114,
+      "strReq": 65,
+      "str": 8,
+      "skillpoints": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        65,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Topsoil",
+      "mr": 8,
+      "lb": 18,
+      "spd": -14,
+      "aDefPct": -30,
+      "eSdRaw": 158,
+      "eSdPct": 27,
+      "id": 4973
+    },
+    {
+      "name": "Fight-or-Flight",
+      "tier": "Rare",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3500,
+      "fDef": -100,
+      "aDef": 130,
+      "lvl": 113,
+      "strReq": 55,
+      "agiReq": 50,
+      "int": -12,
+      "agi": 12,
+      "skillpoints": [
+        0,
+        0,
+        -12,
+        0,
+        12
+      ],
+      "reqs": [
+        55,
+        0,
+        0,
+        0,
+        50
+      ],
+      "category": "armor",
+      "displayName": "Fight-or-Flight",
+      "hprPct": -20,
+      "mdRaw": 240,
+      "eDamPct": 20,
+      "spPct2": -20,
+      "sprintReg": 31,
+      "id": 4974
     },
     {
       "name": "Abundance",
@@ -163579,6 +165021,39 @@
       "sprintReg": -20,
       "healPct": 22,
       "id": 4460
+    },
+    {
+      "name": "Neigezug",
+      "tier": "Rare",
+      "type": "boots",
+      "fDef": -200,
+      "aDef": 200,
+      "lvl": 110,
+      "agiReq": 105,
+      "agi": 15,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        0,
+        105
+      ],
+      "category": "armor",
+      "displayName": "Neigezug",
+      "spd": 40,
+      "atkTier": -1,
+      "fDefPct": -50,
+      "spRaw2": -8,
+      "aDamRaw": 165,
+      "kb": 50,
+      "id": 4975
     },
     {
       "name": "World Glass",
@@ -164471,6 +165946,42 @@
       "id": 4484
     },
     {
+      "name": "Euphonia",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "boots",
+      "hp": 3400,
+      "wDef": 90,
+      "aDef": 120,
+      "eDef": -120,
+      "lvl": 113,
+      "intReq": 45,
+      "agiReq": 55,
+      "agi": 15,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "reqs": [
+        0,
+        0,
+        45,
+        0,
+        55
+      ],
+      "category": "armor",
+      "displayName": "Euphonia",
+      "mr": 8,
+      "spd": 12,
+      "eDamPct": -20,
+      "jh": 2,
+      "aSdPct": 12,
+      "id": 4976
+    },
+    {
       "name": "Bunker",
       "tier": "Unique",
       "slots": 3,
@@ -164734,6 +166245,75 @@
       "id": 4491
     },
     {
+      "name": "Hotfoot",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3900,
+      "fDef": 175,
+      "lvl": 108,
+      "defReq": 70,
+      "def": 8,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        70,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Hotfoot",
+      "hprPct": -25,
+      "thorns": 14,
+      "expd": 20,
+      "spd": 23,
+      "aDefPct": 27,
+      "fSdRaw": 142,
+      "id": 4929
+    },
+    {
+      "name": "Lily Pad",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "boots",
+      "hp": 3200,
+      "wDef": 100,
+      "eDef": 100,
+      "lvl": 107,
+      "strReq": 50,
+      "intReq": 45,
+      "str": 3,
+      "int": 3,
+      "skillpoints": [
+        3,
+        0,
+        3,
+        0,
+        0
+      ],
+      "reqs": [
+        50,
+        0,
+        45,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Lily Pad",
+      "mr": 10,
+      "ls": 300,
+      "spd": -20,
+      "spPct1": -10,
+      "id": 4930
+    },
+    {
       "fixID": true,
       "name": "Liffmail Sollerets",
       "tier": "Unique",
@@ -164842,6 +166422,139 @@
       "spPct2": -21,
       "damPct": 21,
       "id": 4494
+    },
+    {
+      "name": "Razor Leaf",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3600,
+      "eDef": 125,
+      "lvl": 106,
+      "strReq": 60,
+      "str": 8,
+      "skillpoints": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        60,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Razor Leaf",
+      "hprPct": 15,
+      "spd": 10,
+      "mdRaw": 181,
+      "eMdPct": 27,
+      "kb": -60,
+      "id": 4931
+    },
+    {
+      "name": "Leafgliders",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "boots",
+      "hp": 3100,
+      "aDef": 150,
+      "eDef": 100,
+      "lvl": 105,
+      "strReq": 35,
+      "agiReq": 55,
+      "str": 5,
+      "agi": 10,
+      "def": -5,
+      "skillpoints": [
+        5,
+        0,
+        0,
+        -5,
+        10
+      ],
+      "reqs": [
+        35,
+        0,
+        0,
+        0,
+        55
+      ],
+      "category": "armor",
+      "displayName": "Leafgliders",
+      "spd": 20,
+      "fDamPct": -20,
+      "fDefPct": -30,
+      "spPct2": -15,
+      "id": 4932
+    },
+    {
+      "name": "Happenstance",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "boots",
+      "hp": 2400,
+      "fDef": 50,
+      "wDef": 50,
+      "aDef": 50,
+      "tDef": 50,
+      "eDef": 50,
+      "lvl": 105,
+      "strReq": 25,
+      "dexReq": 25,
+      "intReq": 25,
+      "defReq": 25,
+      "agiReq": 25,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "category": "armor",
+      "displayName": "Happenstance",
+      "xpb": 23,
+      "lb": 23,
+      "spd": 23,
+      "nDamRaw": 242,
+      "rDefPct": 23,
+      "id": 4933
+    },
+    {
+      "name": "Gleaming Titanium Boots",
+      "tier": "Normal",
+      "type": "boots",
+      "hp": 3200,
+      "lvl": 118,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "armor",
+      "displayName": "Gleaming Titanium Boots",
+      "id": 4934
     },
     {
       "name": "Tempered Titanium Boots",
@@ -165206,7 +166919,7 @@
       "ms": 7,
       "hprRaw": -115,
       "sdRaw": 55,
-      "spRaw3": 1,
+      "spRaw3": -1,
       "maxMana": 14,
       "id": 4505
     },
@@ -165596,6 +167309,37 @@
       "hprRaw": -65,
       "mdRaw": 154,
       "id": 4517
+    },
+    {
+      "name": "Burning Brand",
+      "tier": "Unique",
+      "type": "ring",
+      "hp": 800,
+      "fDef": 80,
+      "lvl": 120,
+      "defReq": 60,
+      "int": -5,
+      "skillpoints": [
+        0,
+        0,
+        -5,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        60,
+        0
+      ],
+      "category": "accessory",
+      "displayName": "Burning Brand",
+      "spd": -8,
+      "wDamPct": -15,
+      "fMdRaw": 92,
+      "fMdPct": 16,
+      "id": 4977
     },
     {
       "name": "Twisted Gemstone",
@@ -166167,6 +167911,45 @@
       "id": 4535
     },
     {
+      "name": "The Peak",
+      "lore": "Looking over the horizon, you suddenly realize the span of your journey. How far you've come. How far you'll go.",
+      "tier": "Fabled",
+      "type": "bracelet",
+      "fDef": 50,
+      "wDef": 60,
+      "aDef": 60,
+      "tDef": 50,
+      "eDef": 50,
+      "lvl": 120,
+      "intReq": 40,
+      "agiReq": 50,
+      "majorIds": [
+        "CLAMBER"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        40,
+        0,
+        50
+      ],
+      "category": "accessory",
+      "displayName": "The Peak",
+      "mr": 8,
+      "ref": 14,
+      "jh": 1,
+      "damPct": -8,
+      "rDefPct": 10,
+      "id": 4935
+    },
+    {
       "name": "Devil's Oath",
       "tier": "Fabled",
       "type": "bracelet",
@@ -166429,6 +168212,37 @@
       "id": 4543
     },
     {
+      "name": "Eternal Toil",
+      "tier": "Legendary",
+      "type": "bracelet",
+      "hp": 1000,
+      "lvl": 112,
+      "strReq": 55,
+      "defReq": 55,
+      "str": 3,
+      "def": 3,
+      "skillpoints": [
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      "reqs": [
+        55,
+        0,
+        0,
+        55,
+        0
+      ],
+      "category": "accessory",
+      "displayName": "Eternal Toil",
+      "ms": -10,
+      "atkTier": -6,
+      "mdRaw": 500,
+      "id": 4936
+    },
+    {
       "name": "Amplifier",
       "tier": "Legendary",
       "type": "bracelet",
@@ -166652,7 +168466,7 @@
       "id": 4550
     },
     {
-      "name": "Firemoss Set",
+      "name": "Firemoss Band",
       "tier": "Rare",
       "type": "bracelet",
       "hp": 650,
@@ -166678,12 +168492,12 @@
         0
       ],
       "category": "accessory",
-      "displayName": "Firemoss Set",
+      "displayName": "Firemoss Band",
       "hprPct": 10,
       "thorns": 17,
       "hprRaw": 115,
       "fSdPct": 13,
-      "id": 4551
+      "id": 4937
     },
     {
       "fixID": true,
@@ -166972,8 +168786,9 @@
       "eDef": 60,
       "lvl": 107,
       "strReq": 50,
+      "str": 6,
       "skillpoints": [
-        0,
+        6,
         0,
         0,
         0,
@@ -168093,6 +169908,38 @@
       "id": 4594
     },
     {
+      "name": "Concord Protocol",
+      "tier": "Rare",
+      "type": "necklace",
+      "hp": 625,
+      "wDef": 75,
+      "tDef": -35,
+      "lvl": 116,
+      "intReq": 50,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        50,
+        0,
+        0
+      ],
+      "category": "accessory",
+      "displayName": "Concord Protocol",
+      "mr": 7,
+      "ms": 7,
+      "lb": 13,
+      "damRaw": -53,
+      "damPct": -15,
+      "id": 4938
+    },
+    {
       "name": "Multifaceted",
       "tier": "Rare",
       "type": "necklace",
@@ -168500,6 +170347,37 @@
       "damPct": -10,
       "rDefPct": 12,
       "id": 4607
+    },
+    {
+      "fixID": true,
+      "name": "Melaleuca",
+      "tier": "Unique",
+      "type": "necklace",
+      "wDef": 30,
+      "lvl": 106,
+      "intReq": 50,
+      "int": 3,
+      "skillpoints": [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        50,
+        0,
+        0
+      ],
+      "category": "accessory",
+      "displayName": "Melaleuca",
+      "hprPct": 10,
+      "lb": 10,
+      "spRaw1": -3,
+      "wDamRaw": 70,
+      "id": 4978
     },
     {
       "name": "Drop of Void",
@@ -169064,6 +170942,94 @@
       "id": 4625
     },
     {
+      "name": "Revolution",
+      "lore": "A boiling rage has been gathering, the pain of an entore empire yearnin gto be freed. With all the power of the downtrodden and the overlooked and teh starved, you echo out a shout with ten thousand voices, each too quiet to hear by itself, but together a catastrophic force to make the heavens cower.",
+      "tier": "Mythic",
+      "slots": 3,
+      "type": "bow",
+      "nDam": "55-65",
+      "wDam": "55-95",
+      "aDam": "45-105",
+      "eDam": "65-85",
+      "atkSpd": "FAST",
+      "lvl": 111,
+      "classReq": "Archer",
+      "strReq": 60,
+      "intReq": 55,
+      "agiReq": 65,
+      "str": 10,
+      "int": 10,
+      "agi": 10,
+      "majorIds": [
+        "REGICIDES_VANTAGE"
+      ],
+      "skillpoints": [
+        10,
+        0,
+        10,
+        0,
+        10
+      ],
+      "reqs": [
+        60,
+        0,
+        55,
+        0,
+        65
+      ],
+      "category": "weapon",
+      "displayName": "Revolution",
+      "hpBonus": -2423,
+      "spRaw2": -9,
+      "mainAttackRange": 70,
+      "kb": 154,
+      "slowEnemy": 17,
+      "tDam": "0-0",
+      "fDam": "0-0",
+      "id": 4979
+    },
+    {
+      "name": "Chaos Theory",
+      "lore": "War does not bring destruction. With war comes chaos, and with chaos comes destruction.",
+      "tier": "Fabled",
+      "slots": 2,
+      "type": "bow",
+      "aDam": "80-100",
+      "tDam": "90-160",
+      "eDam": "60-70",
+      "atkSpd": "VERY_FAST",
+      "lvl": 118,
+      "classReq": "Archer",
+      "strReq": 39,
+      "dexReq": 53,
+      "agiReq": 47,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        39,
+        53,
+        0,
+        0,
+        47
+      ],
+      "category": "weapon",
+      "displayName": "Chaos Theory",
+      "expd": 30,
+      "spPct1": -11,
+      "spPct3": 17,
+      "damPct": 24,
+      "rDefPct": -44,
+      "nDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "id": 4939
+    },
+    {
       "name": "Biohazard",
       "tier": "Fabled",
       "slots": 3,
@@ -169105,6 +171071,49 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4626
+    },
+    {
+      "name": "Mark of the Huntsman",
+      "lore": "They tense. They know they must hide. You will find them. The bow will see to it. They will heed your call. They will know your face. The bow will see to it.",
+      "tier": "Fabled",
+      "slots": 3,
+      "type": "bow",
+      "nDam": "140-180",
+      "fDam": "85-130",
+      "tDam": "45-170",
+      "eDam": "130-140",
+      "atkSpd": "SLOW",
+      "lvl": 114,
+      "strReq": 65,
+      "dexReq": 50,
+      "defReq": 50,
+      "majorIds": [
+        "SEEKING_MODULE"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        65,
+        50,
+        0,
+        50,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Mark of the Huntsman",
+      "hprPct": 40,
+      "spd": -15,
+      "mdRaw": 595,
+      "spPct3": -18,
+      "slowEnemy": 10,
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4980
     },
     {
       "name": "Firebomb",
@@ -170320,6 +172329,43 @@
       "id": 4656
     },
     {
+      "name": "Insurmountable",
+      "tier": "Rare",
+      "type": "bow",
+      "fDam": "410-440",
+      "aDam": "390-460",
+      "atkSpd": "VERY_SLOW",
+      "lvl": 109,
+      "defReq": 45,
+      "agiReq": 45,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        45,
+        45
+      ],
+      "category": "weapon",
+      "displayName": "Insurmountable",
+      "mdPct": 31,
+      "hpBonus": 1600,
+      "aMdRaw": 530,
+      "kb": -120,
+      "weakenEnemy": 9,
+      "nDam": "0-0",
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "id": 4940
+    },
+    {
       "name": "Overexertion",
       "tier": "Rare",
       "slots": 3,
@@ -170475,6 +172521,45 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4660
+    },
+    {
+      "name": "Scavenger",
+      "tier": "Rare",
+      "slots": 2,
+      "type": "bow",
+      "nDam": "50-50",
+      "fDam": "100-200",
+      "tDam": "100-400",
+      "atkSpd": "SLOW",
+      "lvl": 105,
+      "dexReq": 50,
+      "defReq": 50,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        50,
+        0,
+        50,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Scavenger",
+      "ls": 627,
+      "ms": 11,
+      "hpBonus": -1200,
+      "maxMana": -20,
+      "aSdRaw": 170,
+      "eMdRaw": 365,
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4941
     },
     {
       "name": "Brief Breath",
@@ -171228,6 +173313,46 @@
       "id": 4679
     },
     {
+      "name": "Kinetic",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "bow",
+      "fDam": "65-120",
+      "tDam": "65-120",
+      "atkSpd": "VERY_FAST",
+      "lvl": 113,
+      "dexReq": 45,
+      "defReq": 35,
+      "dex": 10,
+      "skillpoints": [
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        45,
+        0,
+        35,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Kinetic",
+      "hprPct": -30,
+      "ls": 480,
+      "atkTier": 1,
+      "spPct1": -14,
+      "damRaw": 160,
+      "kb": 50,
+      "nDam": "0-0",
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4981
+    },
+    {
       "name": "Sludge Slinger",
       "tier": "Unique",
       "slots": 3,
@@ -171761,6 +173886,50 @@
       "id": 4693
     },
     {
+      "name": "Ascendancy",
+      "lore": "There is very little outside the purview of those with power. No matter the circumstance, those in a higher position can, will, and have justified their actions in different ways. Some reasons are fine, some are weak. But what sort of justification is there, for those in the highest position? You have the floor.",
+      "tier": "Mythic",
+      "slots": 3,
+      "type": "spear",
+      "nDam": "30-30",
+      "fDam": "50-75",
+      "wDam": "50-75",
+      "aDam": "25-100",
+      "atkSpd": "FAST",
+      "lvl": 112,
+      "classReq": "Warrior",
+      "intReq": 75,
+      "defReq": 75,
+      "agiReq": 75,
+      "majorIds": [
+        "DIVINE_RIGHT"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        75,
+        75,
+        75
+      ],
+      "category": "weapon",
+      "displayName": "Ascendancy",
+      "ref": 50,
+      "hpBonus": 2692,
+      "sdRaw": 250,
+      "fDamPct": 58,
+      "jh": 3,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "id": 4982
+    },
+    {
       "name": "Calculated Sacrifice",
       "lore": "A true tactician knows to throw even himself on the pyre, if it is for the greater good.",
       "tier": "Fabled",
@@ -171933,7 +174102,7 @@
     {
       "name": "Tactician",
       "tier": "Fabled",
-      "slots": 3,
+      "slots": 4,
       "type": "spear",
       "nDam": "1000-1150",
       "atkSpd": "SUPER_SLOW",
@@ -172352,12 +174521,11 @@
       "name": "Lunacy",
       "lore": "The real power in madness comes not from some supernatural vigour, but from a sudden lack of interest in self-preservation, and the ensuing ability to do whatever you want.",
       "tier": "Legendary",
-      "slots": 3,
       "type": "spear",
       "wDam": "240-450",
       "aDam": "240-450",
       "atkSpd": "VERY_SLOW",
-      "lvl": 111,
+      "lvl": 1,
       "intReq": 66,
       "agiReq": 66,
       "skillpoints": [
@@ -172587,6 +174755,47 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4713
+    },
+    {
+      "name": "Meteor Hammer",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "spear",
+      "nDam": "20-300",
+      "fDam": "65-250",
+      "aDam": "31-300",
+      "tDam": "10-475",
+      "eDam": "45-450",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 115,
+      "strReq": 55,
+      "dexReq": 55,
+      "defReq": 40,
+      "agiReq": 40,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        55,
+        55,
+        0,
+        40,
+        40
+      ],
+      "category": "weapon",
+      "displayName": "Meteor Hammer",
+      "mr": -10,
+      "spd": -25,
+      "mdRaw": 550,
+      "damPct": 20,
+      "mainAttackRange": 40,
+      "slowEnemy": 12,
+      "wDam": "0-0",
+      "id": 4983
     },
     {
       "name": "Echoing Hatred",
@@ -173389,6 +175598,47 @@
       "id": 4733
     },
     {
+      "name": "Contact High",
+      "tier": "Unique",
+      "slots": 2,
+      "type": "spear",
+      "aDam": "30-65",
+      "tDam": "7-90",
+      "atkSpd": "SUPER_FAST",
+      "lvl": 114,
+      "classReq": "Warrior",
+      "dexReq": 45,
+      "agiReq": 45,
+      "str": -12,
+      "dex": 8,
+      "agi": 8,
+      "def": -12,
+      "skillpoints": [
+        -12,
+        8,
+        0,
+        -12,
+        8
+      ],
+      "reqs": [
+        0,
+        45,
+        0,
+        0,
+        45
+      ],
+      "category": "weapon",
+      "displayName": "Contact High",
+      "atkTier": 1,
+      "mdRaw": 140,
+      "sprint": 28,
+      "nDam": "0-0",
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "id": 4942
+    },
+    {
       "fixID": true,
       "name": "Banshee Javelin",
       "tier": "Unique",
@@ -173860,6 +176110,48 @@
       "id": 4745
     },
     {
+      "name": "Shun the Flesh",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "spear",
+      "nDam": "10-31",
+      "fDam": "31-40",
+      "wDam": "31-40",
+      "aDam": "31-40",
+      "tDam": "31-40",
+      "atkSpd": "FAST",
+      "lvl": 106,
+      "classReq": "Warrior",
+      "dexReq": 40,
+      "intReq": 40,
+      "defReq": 40,
+      "agiReq": 40,
+      "str": -20,
+      "skillpoints": [
+        -20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        40,
+        40,
+        40,
+        40
+      ],
+      "category": "weapon",
+      "displayName": "Shun the Flesh",
+      "spd": 15,
+      "sdRaw": 160,
+      "spRaw2": -6,
+      "damPct": -20,
+      "weakenEnemy": 10,
+      "eDam": "0-0",
+      "id": 4943
+    },
+    {
       "name": "Stalwart Peacekeeper",
       "tier": "Unique",
       "slots": 3,
@@ -173937,6 +176229,82 @@
       "id": 4747
     },
     {
+      "name": "Masterwork Limestone Spear",
+      "tier": "Normal",
+      "slots": 3,
+      "type": "spear",
+      "nDam": "325-425",
+      "atkSpd": "VERY_SLOW",
+      "lvl": 110,
+      "classReq": "Warrior",
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Masterwork Limestone Spear",
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4944
+    },
+    {
+      "name": "Riptide",
+      "tier": "Mythic",
+      "slots": 3,
+      "type": "wand",
+      "nDam": "150-190",
+      "wDam": "245-375",
+      "tDam": "115-235",
+      "eDam": "270-350",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 110,
+      "strReq": 60,
+      "dexReq": 40,
+      "intReq": 70,
+      "int": 20,
+      "def": -25,
+      "majorIds": [
+        "WAVEBREAK"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        20,
+        -25,
+        0
+      ],
+      "reqs": [
+        60,
+        40,
+        70,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Riptide",
+      "ms": 12,
+      "spRaw3": -4,
+      "maxMana": 100,
+      "wSdRaw": 296,
+      "kb": -154,
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4945
+    },
+    {
       "name": "Dreamer's Soul",
       "lore": "The world is only as small as your heart makes it out to be.",
       "tier": "Fabled",
@@ -173978,6 +176346,49 @@
       "tDam": "0-0",
       "fDam": "0-0",
       "id": 4748
+    },
+    {
+      "name": "Hellbound",
+      "lore": "Face the flames with resolution in your eyes. Once you're down in the brimstone, you're not going back.",
+      "tier": "Fabled",
+      "slots": 3,
+      "type": "wand",
+      "nDam": "200-230",
+      "fDam": "600-600",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 119,
+      "classReq": "Mage",
+      "defReq": 85,
+      "def": 15,
+      "majorIds": [
+        "DAUNTLESS_INFERNO"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        15,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        85,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Hellbound",
+      "ls": 400,
+      "hpBonus": 2000,
+      "spPct4": 27,
+      "fMdRaw": 500,
+      "damPct": 31,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4984
     },
     {
       "name": "Starcaller",
@@ -174105,6 +176516,47 @@
       "eDam": "0-0",
       "aDam": "0-0",
       "id": 4751
+    },
+    {
+      "name": "Hydrotoxemia",
+      "lore": "Only years of training, of building tolerance, has allowed you resistance to the onslaught; channeling the unstoppability of a torrent unleashes. Your enemy stands no chance.",
+      "tier": "Legendary",
+      "slots": 3,
+      "type": "wand",
+      "nDam": "50-90",
+      "wDam": "95-165",
+      "atkSpd": "NORMAL",
+      "lvl": 116,
+      "classReq": "Mage",
+      "intReq": 80,
+      "int": 15,
+      "skillpoints": [
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Hydrotoxemia",
+      "sdPct": 27,
+      "hpBonus": -4000,
+      "wDefPct": 60,
+      "maxMana": 192,
+      "fSdRaw": -229,
+      "healPct": 18,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4985
     },
     {
       "name": "Thicket",
@@ -176342,6 +178794,50 @@
       "id": 4807
     },
     {
+      "name": "Vengeance",
+      "lore": "A strength fueled by rage, merciless, unending. A hatred, all-consuming, that erodes all other thought, all sense of being. An ally so fickle, so selfish, that leaves you aimless at the moment of pyrrhic triumph.",
+      "tier": "Mythic",
+      "slots": 3,
+      "type": "dagger",
+      "nDam": "550-850",
+      "fDam": "150-350",
+      "tDam": "100-400",
+      "eDam": "200-300",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 116,
+      "classReq": "Assassin",
+      "strReq": 60,
+      "dexReq": 60,
+      "defReq": 50,
+      "majorIds": [
+        "MANIC_EDGE"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        60,
+        60,
+        0,
+        50,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Vengeance",
+      "hprPct": 333,
+      "ms": -20,
+      "hprRaw": -800,
+      "spPct3": -14,
+      "damPct": 21,
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4986
+    },
+    {
       "name": "Incognito",
       "tier": "Fabled",
       "slots": 3,
@@ -177081,6 +179577,45 @@
       "id": 4825
     },
     {
+      "name": "Patience",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "dagger",
+      "nDam": "750-850",
+      "fDam": "400-500",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 117,
+      "defReq": 65,
+      "def": 15,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        15,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        65,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Patience",
+      "hprPct": 23,
+      "lb": 20,
+      "spd": -14,
+      "hprRaw": 300,
+      "damPct": -15,
+      "slowEnemy": 14,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4946
+    },
+    {
       "fixID": true,
       "name": "Fraudulence",
       "tier": "Unique",
@@ -177119,6 +179654,46 @@
       "wDam": "0-0",
       "fDam": "0-0",
       "id": 4826
+    },
+    {
+      "name": "Downpour",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "dagger",
+      "nDam": "12-35",
+      "wDam": "110-210",
+      "atkSpd": "VERY_FAST",
+      "lvl": 115,
+      "classReq": "Assassin",
+      "intReq": 75,
+      "int": 15,
+      "def": -15,
+      "skillpoints": [
+        0,
+        0,
+        15,
+        -15,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        75,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Downpour",
+      "mr": 10,
+      "fDamPct": -30,
+      "fDefPct": -30,
+      "spPct3": -14,
+      "wSdPct": 23,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4987
     },
     {
       "fixID": true,
@@ -177320,6 +179895,44 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4831
+    },
+    {
+      "name": "Squall",
+      "tier": "Rare",
+      "type": "dagger",
+      "wDam": "40-100",
+      "aDam": "25-120",
+      "tDam": "0-150",
+      "atkSpd": "FAST",
+      "lvl": 109,
+      "classReq": "Assassin",
+      "dexReq": 40,
+      "intReq": 45,
+      "agiReq": 45,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        40,
+        45,
+        0,
+        45
+      ],
+      "category": "weapon",
+      "displayName": "Squall",
+      "spd": 18,
+      "hpBonus": -1400,
+      "eDefPct": -27,
+      "spPct1": -20,
+      "nDam": "0-0",
+      "eDam": "0-0",
+      "fDam": "0-0",
+      "id": 4988
     },
     {
       "name": "Scaldshard",
@@ -178372,6 +180985,46 @@
       "id": 4858
     },
     {
+      "name": "Breakneck Knuckledusters",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "dagger",
+      "nDam": "15-25",
+      "aDam": "25-45",
+      "tDam": "15-55",
+      "atkSpd": "SUPER_FAST",
+      "lvl": 105,
+      "dexReq": 40,
+      "agiReq": 40,
+      "dex": 7,
+      "agi": 7,
+      "skillpoints": [
+        0,
+        7,
+        0,
+        0,
+        7
+      ],
+      "reqs": [
+        0,
+        40,
+        0,
+        0,
+        40
+      ],
+      "category": "weapon",
+      "displayName": "Breakneck Knuckledusters",
+      "spd": 27,
+      "atkTier": 4,
+      "hpBonus": -1714,
+      "mdRaw": 100,
+      "mainAttackRange": -31,
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "id": 4947
+    },
+    {
       "name": "Electropoet",
       "tier": "Unique",
       "slots": 2,
@@ -178478,6 +181131,92 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4861
+    },
+    {
+      "name": "Transfiguration",
+      "lore": "Desperation breeds creativity. What would it take to force your will upon the world? To bend and break and weave existence, to bypass the immutable? The result is different, wrong, anathema to your being... but it is freedom from the chains that bind you. It is enough.",
+      "tier": "Mythic",
+      "slots": 3,
+      "type": "relik",
+      "aDam": "30-100",
+      "tDam": "0-130",
+      "eDam": "60-70",
+      "atkSpd": "SUPER_FAST",
+      "lvl": 117,
+      "strReq": 70,
+      "dexReq": 70,
+      "agiReq": 55,
+      "agi": 20,
+      "majorIds": [
+        "FLAIN_REMNANTS"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      "reqs": [
+        70,
+        70,
+        0,
+        0,
+        55
+      ],
+      "category": "weapon",
+      "displayName": "Transfiguration",
+      "ms": 20,
+      "atkTier": 4,
+      "sprintReg": 30,
+      "maxMana": -40,
+      "rMdRaw": 154,
+      "nDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "id": 4948
+    },
+    {
+      "name": "Scattered Psyche",
+      "lore": "The whispers crescedo to cackles, creeping cries clouding your mind. You can't think. They eat away at the edges of your consciousness. You can't think. It's too loud in your brain. You can't think.",
+      "tier": "Fabled",
+      "slots": 4,
+      "type": "relik",
+      "nDam": "0-240",
+      "wDam": "0-125",
+      "atkSpd": "SUPER_FAST",
+      "lvl": 116,
+      "classReq": "Shaman",
+      "intReq": 75,
+      "int": -25,
+      "majorIds": [
+        "PSYCHIC_OBSESSION"
+      ],
+      "skillpoints": [
+        0,
+        0,
+        -25,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        0,
+        75,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Scattered Psyche",
+      "hpBonus": -2150,
+      "spPct4": -25,
+      "rDamPct": 23,
+      "rDefPct": -75,
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4989
     },
     {
       "name": "Latent Disorder",
@@ -178653,6 +181392,44 @@
       "id": 4865
     },
     {
+      "name": "Arachnid Effigy",
+      "tier": "Legendary",
+      "slots": 2,
+      "type": "relik",
+      "nDam": "390-430",
+      "eDam": "1000-1000",
+      "atkSpd": "SUPER_SLOW",
+      "lvl": 117,
+      "strReq": 75,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        75,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Arachnid Effigy",
+      "ls": 496,
+      "spd": 18,
+      "poison": 13000,
+      "hpBonus": -1900,
+      "eMdRaw": 1050,
+      "mainAttackRange": -65,
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4949
+    },
+    {
       "name": "Lunar Acropolis",
       "lore": "The mirror at the core of this artefact reflects back an image of a citadel that does not exist anywhere on this planet.",
       "tier": "Legendary",
@@ -178692,6 +181469,50 @@
       "tDam": "0-0",
       "fDam": "0-0",
       "id": 4866
+    },
+    {
+      "name": "Ehrfurcht",
+      "lore": "The world is a well of wonder. To open your eyes each day is the greatest gift that can be given. The strength of a thousand lives flows through your veins, and the world embraces you with a reckless, terrible, beautiful, incredible power.",
+      "tier": "Legendary",
+      "slots": 3,
+      "type": "relik",
+      "nDam": "85-130",
+      "fDam": "150-190",
+      "wDam": "140-200",
+      "aDam": "130-210",
+      "tDam": "110-210",
+      "eDam": "120-225",
+      "atkSpd": "VERY_SLOW",
+      "lvl": 115,
+      "strReq": 39,
+      "dexReq": 33,
+      "intReq": 27,
+      "defReq": 27,
+      "agiReq": 27,
+      "str": 9,
+      "dex": 5,
+      "skillpoints": [
+        9,
+        5,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        39,
+        33,
+        27,
+        27,
+        27
+      ],
+      "category": "weapon",
+      "displayName": "Ehrfurcht",
+      "ls": 500,
+      "expd": 23,
+      "eSdRaw": 192,
+      "damPct": 19,
+      "rDefPct": -31,
+      "id": 4950
     },
     {
       "name": "Paroxysm",
@@ -178736,7 +181557,7 @@
     {
       "name": "Incoherence",
       "tier": "Legendary",
-      "slots": 2,
+      "slots": 3,
       "type": "relik",
       "nDam": "16-155",
       "tDam": "12-160",
@@ -178973,6 +181794,84 @@
       "id": 4873
     },
     {
+      "name": "Starbuster",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "relik",
+      "nDam": "70-80",
+      "fDam": "85-125",
+      "tDam": "95-125",
+      "atkSpd": "FAST",
+      "lvl": 120,
+      "classReq": "Shaman",
+      "dexReq": 55,
+      "defReq": 55,
+      "dex": 15,
+      "skillpoints": [
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        55,
+        0,
+        55,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Starbuster",
+      "mr": -20,
+      "ms": 25,
+      "hpBonus": -1750,
+      "spRaw4": -7,
+      "fDamRaw": 180,
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "aDam": "0-0",
+      "id": 4951
+    },
+    {
+      "name": "Incantation",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "relik",
+      "nDam": "200-300",
+      "eDam": "200-300",
+      "atkSpd": "SLOW",
+      "lvl": 119,
+      "classReq": "Shaman",
+      "strReq": 60,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        60,
+        0,
+        0,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Incantation",
+      "sdPct": 20,
+      "hprRaw": -340,
+      "spPct1": -40,
+      "healPct": 15,
+      "weakenEnemy": 5,
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4952
+    },
+    {
       "name": "Bubblestream",
       "tier": "Rare",
       "slots": 3,
@@ -179168,6 +182067,48 @@
       "fDam": "0-0",
       "aDam": "0-0",
       "id": 4878
+    },
+    {
+      "name": "Solar Wind",
+      "tier": "Rare",
+      "slots": 3,
+      "type": "relik",
+      "fDam": "80-100",
+      "aDam": "70-110",
+      "atkSpd": "VERY_FAST",
+      "lvl": 115,
+      "classReq": "Shaman",
+      "defReq": 50,
+      "agiReq": 50,
+      "agi": 8,
+      "def": 8,
+      "skillpoints": [
+        0,
+        0,
+        0,
+        8,
+        8
+      ],
+      "reqs": [
+        0,
+        0,
+        0,
+        50,
+        50
+      ],
+      "category": "weapon",
+      "displayName": "Solar Wind",
+      "hprPct": 27,
+      "spd": 27,
+      "eDefPct": -20,
+      "damPct": -20,
+      "healPct": 27,
+      "weakenEnemy": 7,
+      "nDam": "0-0",
+      "eDam": "0-0",
+      "tDam": "0-0",
+      "wDam": "0-0",
+      "id": 4990
     },
     {
       "fixID": true,
@@ -179519,6 +182460,8 @@
       "category": "weapon",
       "displayName": "Empty Downpour",
       "ls": 460,
+      "nDamPct": 46,
+      "kb": 46,
       "slowEnemy": 10,
       "rDefPct": -31,
       "eDam": "0-0",
@@ -179971,6 +182914,51 @@
       "id": 4898
     },
     {
+      "name": "Phantom Roots",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "relik",
+      "wDam": "46-70",
+      "aDam": "35-80",
+      "tDam": "31-85",
+      "eDam": "40-75",
+      "atkSpd": "FAST",
+      "lvl": 113,
+      "strReq": 30,
+      "dexReq": 30,
+      "intReq": 30,
+      "agiReq": 30,
+      "str": 5,
+      "dex": 5,
+      "int": 5,
+      "agi": 5,
+      "def": -10,
+      "skillpoints": [
+        5,
+        5,
+        5,
+        -10,
+        5
+      ],
+      "reqs": [
+        30,
+        30,
+        30,
+        0,
+        30
+      ],
+      "category": "weapon",
+      "displayName": "Phantom Roots",
+      "ms": 10,
+      "xpb": 19,
+      "spPct4": -31,
+      "rDamPct": 23,
+      "slowEnemy": 10,
+      "nDam": "0-0",
+      "fDam": "0-0",
+      "id": 4953
+    },
+    {
       "name": "Racing Stormcloud",
       "tier": "Unique",
       "slots": 3,
@@ -180282,6 +183270,44 @@
       "tDam": "0-0",
       "aDam": "0-0",
       "id": 4906
+    },
+    {
+      "name": "Anion",
+      "tier": "Unique",
+      "slots": 3,
+      "type": "relik",
+      "nDam": "50-95",
+      "tDam": "140-225",
+      "atkSpd": "FAST",
+      "lvl": 107,
+      "dexReq": 60,
+      "dex": -10,
+      "skillpoints": [
+        0,
+        -10,
+        0,
+        0,
+        0
+      ],
+      "reqs": [
+        0,
+        60,
+        0,
+        0,
+        0
+      ],
+      "category": "weapon",
+      "displayName": "Anion",
+      "hprPct": -20,
+      "sdPct": -15,
+      "xpb": 14,
+      "spPct3": -15,
+      "spPct4": -15,
+      "eDam": "0-0",
+      "wDam": "0-0",
+      "fDam": "0-0",
+      "aDam": "0-0",
+      "id": 4954
     },
     {
       "name": "Shun the Heart",

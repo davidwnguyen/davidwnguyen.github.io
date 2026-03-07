@@ -1970,7 +1970,7 @@
     },
     "DAUNTLESS_INFERNO": {
         "displayName": "Dauntless Inferno",
-        "description": "Courage casts a series of 5 infernos that expand after the last, dealing [fire]125% each, and grants 20% resistance instead of a damage boost.",
+        "description": "Courage casts a series of 5 infernos that expand after the last, dealing 125% Fire each, and grants 20% resistance instead of a damage boost.",
         "abilities": [
             {
                 "class": "Any",
@@ -2056,28 +2056,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "class": "Warrior",
-                "base_abil": "Luster Purge",
-                "effects": [
-                    {
-                        "type": "raw_stat",
-                        "toggle": "Activate Luster Purge",
-                        "bonuses": [
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:20.Single Inferno",
-                                "value": 40
-                            },
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:20.First Inferno",
-                                "value": 40
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     },
@@ -2148,28 +2126,6 @@
                                 "type": "stat",
                                 "name": "damMult.Satsujin:20.First Lightning Bolt",
                                 "value": 100
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "class": "Warrior",
-                "base_abil": "Luster Purge",
-                "effects": [
-                    {
-                        "type": "raw_stat",
-                        "toggle": "Activate Luster Purge",
-                        "bonuses": [
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:20.Single Lightning Bolt",
-                                "value": 40
-                            },
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:20.First Lightning Bolt",
-                                "value": 40
                             }
                         ]
                     }
@@ -2337,28 +2293,6 @@
                                     "Quake Charge Damage": 1,
                                     "Quake Stomp Damage": 1
                                 }
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "class": "Warrior",
-                "base_abil": "Luster Purge",
-                "effects": [
-                    {
-                        "type": "raw_stat",
-                        "toggle": "Activate Luster Purge",
-                        "bonuses": [
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:21.Quake Charge Damage",
-                                "value": 40
-                            },
-                            {
-                                "type": "stat",
-                                "name": "damMult.Luster Purge:21.Quake Stomp Damage",
-                                "value": 40
                             }
                         ]
                     }
@@ -2594,7 +2528,17 @@
     "BRUTAL_BLOW": {
         "displayName": "Brutal Blow",
         "description": "Armour Breaker now gives an extra +10% damage and has its cooldown reduced by 5s, but lasts half as long.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "Uppercut",
+                "dependencies": [],
+                "properties": {
+                    "potency": 10
+                },
+                "effects": []
+            }
+        ]
     },
     "CULICIDAE_CREED": {
         "displayName": "Culicidae Creed",
@@ -2604,7 +2548,45 @@
     "SPLIT_SECOND": {
         "displayName": "Split Second",
         "description": "Commander charges three times faster, but only boosts puppet attack speed by 10%, and Main Attack Damage by 2%.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Shaman",
+                "base_abil": "Commander",
+                "properties":{},
+                "effects":[
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Commander",
+                        "bonuses": [
+                            {
+                                "type": "prop",
+                                "abil": "Puppet Master",
+                                "name": "attack_frequency",
+                                "value": -0.3
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_scaling",
+                        "slider": false,
+                        "inputs": [
+                            {
+                                "type": "prop",
+                                "abil": "Puppet Master",
+                                "name": "rallied_puppets"
+                            }
+                        ],
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Commander:0.Single Beam"
+                        },
+                        "scaling": [
+                            -3
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "MOB_MENTALITY": {
         "displayName": "Mob Mentality",
@@ -2623,23 +2605,106 @@
     },
     "GUNK_SHOT": {
         "displayName": "Gunk Shot",
-        "description": "Shocking Bomb's velocity is doubled but loses -66% radius. Arrow Bomb and Grape Bomb suffer a -40% damage penalty.",
-        "abilities": []
+        "description": "Shocking Bomb's velocity is doubled but loses -66% radius. Arrow Bomb and Grape Bomb suffer a -20% damage penalty.",
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Arrow Bomb",
+                "dependencies": [
+                    "Shocking Bomb"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.GunkShot:3.Arrow Bomb",
+                                "value": -20
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.GunkShot:3.Grape Bomb",
+                                "value": -20
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "NET_SHOT": {
         "displayName": "Net Shot",
         "description": "Bryophyte Roots is now triggered from Buckshot, doubling its slowness and damage.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Arrow Storm",
+                "dependencies": [
+                    "Bryophyte Roots"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.NetShot:1.Bryophyte Roots",
+                                "value": 100
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "RIVER_OF_SOULS": {
         "displayName": "River of Souls",
         "description": "Phantom Ray gains massive radius, but reduced damage by 20%.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Arrow Storm",
+                "dependencies": [
+                    "Phantom Ray"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.RiverOfSouls:1.Single Tick",
+                                "value": -20
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "FINAL_GAMBIT": {
         "displayName": "Final Gambit",
         "description": "When Second Chance Activates, all allies within 10 blocks of you get a 20% damage boost for 15s.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "Second Chance",
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Final Gambit",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Potion",
+                                "value": 20
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "SLOW_BOIL": {
         "displayName": "Slow Boil",
@@ -2649,7 +2714,27 @@
     "STAGNANT_AIR": {
         "displayName": "Stagnant Air",
         "description": "Air Shout gains doubled area and damage, but is delayed with decreased velocity and hit rate.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "War Scream",
+                "dependencies": [
+                    "Air Shout"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.RiverOfSouls:4.Air Shout",
+                                "value": 100
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "ONESELF_UNTO_ALL": {
         "displayName": "Oneself Unto All",
@@ -2659,7 +2744,39 @@
     "BATTLEFIELD_BRILLIANCE": {
         "displayName": "Battlefield Brilliance",
         "description": "Generalist instead makes your next Main Attack deal quadruple damage, followed by a tactical retreat.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": 999,
+                "dependencies": [
+                    "Generalist"
+                ],
+                "effects": [
+                    {
+                        "type": "replace_spell",
+                        "name": "Battlefield Brilliance",
+                        "base_spell": 22,
+                        "scaling": "melee",
+                        "use_atkspd": false,
+                        "display": "Total Damage",
+                        "parts": [
+                            {
+                                "name": "Total Damage",
+                                "type": "damage",
+                                "multipliers": [
+                                    400,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "ONEIRO": {
         "displayName": "Oneiro",
@@ -2669,22 +2786,140 @@
     "SOLAR_WIND": {
         "displayName": "Solar Wind",
         "description": "Thunderstorm disables Meteor and grants +5 thunderbolts which deal 100% Neutral damage each.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Meteor",
+                "dependencies": [
+                    "Thunderstorm"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.SolarWind:3.Meteor Damage",
+                                "value": -100
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Lightning Damage",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            100,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "target_part": "Total Damage",
+                        "base_spell": 3,
+                        "hits": {
+                            "Lightning Damage": 5
+                        }
+                    }
+                ]
+            }
+        ]
     },
     "FISSURE": {
         "displayName": "Fissure",
-        "description": "Ice Snake moves much more slowly, but deals massive damage and knockback.",
-        "abilities": []
+        "description": "Ice Snake moves much more slowly, but deals [neutral]+275% [water]+155% damage and much more knockback.",
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Ice Snake",
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 4,
+                        "target_part": "Ice Snake Damage",
+                        "behavior": "modify",
+                        "multipliers": [
+                            275,
+                            0,
+                            0,
+                            155,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "DISASSOCIATE": {
         "displayName": "Disassociate",
         "description": "You can now have up to 3 additional Nightcloak Knives, but they each deal 3% less damage.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": "Nightcloak Knife",
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Knives Active",
+                        "slider_max": 3,
+                        "output": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Nightcloak"
+                            }
+                        ],
+                        "scaling": [
+                            -3
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "LIGHTNING_CRASH": {
         "displayName": "Lightning Crash",
         "description": "Dash becomes a downward dive. Ripple has tripled height amplification and deals 250% and 100%.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": "Ripple",
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Blocks Fallen",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Ripple:9.Ripple Damage"
+                        },
+                        "scaling": [
+                            24
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 9,
+                        "target_part": "Ripple Damage",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            250,
+                            0,
+                            100,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "CHAOS_REACH": {
         "displayName": "Chaos Reach",
@@ -2694,6 +2929,275 @@
     "LIT_FUSE": {
         "displayName": "Lit Fuse",
         "description": "Friendly Fire now works on Totem as well. When Totem's timer runs out, it explodes, firing 5 beams in all directions, each dealing 500% N.",
+        "abilities": [
+            {
+                "class": "Shaman",
+                "base_abil": "Totem",
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 1,
+                        "target_part": "Lit Fuse",
+                        "multipliers": [
+                            500,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "CLAMBER": {
+        "displayName": "Clamber",
+        "description": "Wall Jump becomes a sheer vertical climb.",
+        "abilities": []
+    },
+    "WAVEBREAK": {
+        "displayName": "Wavebreak",
+        "description": "Meteor's Earth damage is replaced with Water damage. Psychokinesis can bounce up to 5 times, dealing 100%N 50%W area damage, as well as 200%N and 100%W direct hit damage, increasing by 10% after each bounce.",
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Meteor",
+                "properties": {
+                    "meteor_bounces": 0  
+                },
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Meteor Damage",
+                        "multipliers": [
+                            0,
+                            -70,
+                            0,
+                            70,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Meteor Bounce",
+                        "multipliers": [
+                            200,
+                            0,
+                            0,
+                            100,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Meteor Bounces",
+                        "slider_max": 5,
+                        "output": {
+                            "type": "prop",
+                            "name": "meteor_bounces",
+                            "abil": "Meteor"
+                        },
+                        "scaling": [
+                            1
+                        ]
+                    },
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Meteor Bounces",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Wavebreak:3.Meteor Bounce"
+                        },
+                        "scaling": [
+                            4
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Total Damage",
+                        "hits": {
+                            "Meteor Bounce": "Meteor.meteor_bounces"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "FLAIN_REMNANTS": {
+        "displayName": "Flain Remnants",
+        "description": "Destroying a puppet with Friendly Fire calls forth a Remnant. (Max 5) Each Remnant lasts for 15 seconds, fires an explosive tracking projectile every second that deals 75%N, and increases your Main Attack damage by 15%.",
+        "abilities": [
+            {
+                "class": "Shaman",
+                "base_abil": "Friendly Fire",
+                "properties": {
+                    "remnant_count": 0
+                },
+                "effects": [
+                    {
+                        "type": "replace_spell",
+                        "name": "Flain Remnants",
+                        "base_spell": 23,
+                        "display": "Total Remnant DPS",
+                        "parts": [
+                            {
+                                "name": "Remnant Hit",
+                                "multipliers": [
+                                    75,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "name": "Total Remnant DPS",
+                                "hits": {
+                                    "Remnant Hit": "Friendly Fire.remnant_count"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Active Remnants",
+                        "slider_max": 5,
+                        "output": [
+                            {
+                                "type": "prop",
+                                "abil": "Friendly Fire",
+                                "name": "remnant_count"
+                            }
+                        ],
+                        "scaling": [
+                            1
+                        ]
+                    },
+                    {
+                        "type": "stat_scaling",
+                        "slider": false,
+                        "inputs": [
+                            {
+                                "type": "prop",
+                                "abil": "Friendly Fire",
+                                "name": "remnant_count"
+                            }
+                        ],
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Remnant:0.Single Beam"
+                        },
+                        "scaling": [
+                            15
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "ICE_STORM": {
+        "displayName": "Ice Storm",
+        "description": "Arrow Shield and Snowstorm's radius' increase by 6 blocks. Arrow Shield's charges are doubled, but no longer give defense.",
+        "abilities": []
+    },
+    "REGICIDES_VANTAGE": {
+        "displayName": "Regicide's Vantage",
+        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 100%",
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": 999,
+                "effects":[
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distance Rampup",
+                        "slider_max": 50,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.RegicidesVantage"
+                        },
+                        "scaling": [
+                            2
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "DIVINE_RIGHT": {
+        "displayName": "Divine Right",
+        "description": "Sacred Surge's damage is increased by 4% for every 1000 max HP you have when it triggers.",
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "Sacred Surge",
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": false,
+                        "inputs": [
+                            {
+                                "type": "stat",
+                                "name": "hpBonus"
+                            },
+                            {
+                                "type": "stat",
+                                "name": "hp"
+                            }
+                        ],
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.DivineRight:3.Smite Damage"
+                        },
+                        "scaling": [
+                            0.004,
+                            0.004
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "MANIC_EDGE": {
+        "displayName": "Manic Edge",
+        "description": "While vanished, lose 5% of your max mana per second. Increase Surprise Strike's damage bonus by 3% per mana lost in vanish, up to 80%.",
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": 999,
+                "effects":[
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Mana Lost",
+                        "slider_max": 27,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.SurpriseStrike"
+                        },
+                        "scaling": [
+                            3
+                        ],
+                        "max": 80
+                    }
+                ]
+            }
+        ]
+    },
+    "PSYCHIC_OBSESSION": {
+        "displayName": "+Psychic Obsession",
+        "description": "Your Totems will now all move towards you at an increased rate, if you are using Mask of the Heretic.",
         "abilities": []
     }
 }
