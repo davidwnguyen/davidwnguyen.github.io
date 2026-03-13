@@ -1508,7 +1508,7 @@
         "abilities": [
             {
                 "class": "Warrior",
-                "base_abil": "Collide",
+                "base_abil": "Charge",
                 "dependencies": [
                     "Collide"
                 ],
@@ -1992,7 +1992,7 @@
                                     0,
                                     0,
                                     0,
-                                    125,
+                                    150,
                                     0
                                 ]
                             },
@@ -2004,7 +2004,7 @@
                                     0,
                                     0,
                                     0,
-                                    125,
+                                    150,
                                     0
                                 ],
                                 "ignored_mults": [
@@ -2081,7 +2081,7 @@
                                 "multipliers": [
                                     0,
                                     0,
-                                    225,
+                                    270,
                                     0,
                                     0,
                                     0
@@ -2093,7 +2093,7 @@
                                 "multipliers": [
                                     0,
                                     0,
-                                    225,
+                                    270,
                                     0,
                                     0,
                                     0
@@ -3039,7 +3039,8 @@
                 "class": "Shaman",
                 "base_abil": "Friendly Fire",
                 "properties": {
-                    "remnant_count": 0
+                    "remnant_count": 0,
+                    "remnant_atkspd": 1
                 },
                 "effects": [
                     {
@@ -3060,9 +3061,15 @@
                                 ]
                             },
                             {
+                                "name": "Remnant DPS",
+                                "hits": {
+                                    "Remnant Hit": "Friendly Fire.remnant_atkspd"
+                                }
+                            },
+                            {
                                 "name": "Total Remnant DPS",
                                 "hits": {
-                                    "Remnant Hit": "Friendly Fire.remnant_count"
+                                    "Remnant DPS": "Friendly Fire.remnant_count"
                                 }
                             }
                         ]
@@ -3099,6 +3106,49 @@
                         },
                         "scaling": [
                             15
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Shaman",
+                "base_abil": "Bullwhip",
+                "dependencies": [
+                    "Friendly Fire"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Bullwhip",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Bullwhip:23.Remnant Hit",
+                                "value": "Bullwhip.damage_boost"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Shaman",
+                "base_abil": "Invigorating Wave",
+                "dependencies": [
+                    "Friendly Fire"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Invigorate Puppets",
+                        "bonuses": [
+                            {
+                                "type": "prop",
+                                "abil": "Friendly Fire",
+                                "name": "remnant_atkspd",
+                                "value": 0.3
+                            }
                         ]
                     }
                 ]
@@ -3171,7 +3221,7 @@
     },
     "MANIC_EDGE": {
         "displayName": "Manic Edge",
-        "description": "While vanished, lose 5% of your max mana per second. Increase Surprise Strike's damage bonus by 3% per mana lost in vanish, up to 80%.",
+        "description": "While vanished, lose 5% of your max mana per second. Increase Surprise Strike's damage bonus by 5% per mana lost from this effect, up to 130%.",
         "abilities": [
             {
                 "class": "Assassin",
@@ -3181,15 +3231,15 @@
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Mana Lost",
-                        "slider_max": 27,
+                        "slider_max": 26,
                         "output": {
                             "type": "stat",
                             "name": "damMult.SurpriseStrike"
                         },
                         "scaling": [
-                            3
+                            5
                         ],
-                        "max": 80
+                        "max": 130
                     }
                 ]
             }

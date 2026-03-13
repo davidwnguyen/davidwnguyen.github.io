@@ -1636,58 +1636,22 @@
             "effects": []
         },
         {
-            "display_name": "Traveler",
-            "desc": "For every 1% Walk Speed you have from items, gain +1 Raw Spell Damage (Max 100)",
-            "parents": [
-                "Recycling",
-                "Mana Trap"
-            ],
-            "dependencies": [],
-            "blockers": [],
-            "cost": 1,
-            "display": {
-                "row": 32,
-                "col": 2,
-                "icon": "node_0"
-            },
-            "properties": {},
-            "effects": [
-                {
-                    "type": "stat_scaling",
-                    "slider": false,
-                    "inputs": [
-                        {
-                            "type": "stat",
-                            "name": "spd"
-                        }
-                    ],
-                    "output": {
-                        "type": "stat",
-                        "name": "sdRaw"
-                    },
-                    "scaling": [
-                        1
-                    ],
-                    "max": 100
-                }
-            ]
-        },
-        {
             "display_name": "Bouncing Bomb",
             "desc": "Arrow Bomb will bounce once when hitting a block or enemy.",
             "base_abil": "Arrow Bomb",
             "parents": [
                 "Vigilant Sentinels",
-                "Parting Gift"
+                "Parting Gift",
+                "Cheaper Arrow Storm II"
             ],
             "archetype": "Boltslinger",
             "dependencies": [],
             "blockers": [],
-            "cost": 1,
+            "cost": 2,
             "display": {
                 "row": 34,
-                "col": 0,
-                "icon": "node_1"
+                "col": 2,
+                "icon": "node_2"
             },
             "properties": {},
             "effects": []
@@ -1957,7 +1921,7 @@
                             "type": "prop",
                             "abil": "Arrow Shield",
                             "name": "attack_frequency",
-                            "value": 2.77777777778
+                            "value": 1.11111111111
                         }
                     ]
                 },
@@ -2258,7 +2222,7 @@
             "desc": "Reduce the Mana cost of Arrow Storm. </br> Mana Cost: -5",
             "base_abil": "Arrow Storm",
             "parents": [
-                "Parting Gift",
+                "Bouncing Bomb",
                 "Murder Flock",
                 "Cheaper Arrow Shield II"
             ],
@@ -2320,7 +2284,8 @@
             "archetype_req": 0,
             "base_abil": "Arrow Shield",
             "parents": [
-                "Recycling"
+                "Recycling",
+                "Mana Trap"
             ],
             "dependencies": [
                 "Guardian Angels"
@@ -2329,7 +2294,7 @@
             "cost": 2,
             "display": {
                 "row": 32,
-                "col": 0,
+                "col": 2,
                 "icon": "node_4"
             },
             "properties": {
@@ -2370,16 +2335,15 @@
             "desc": "When casting Escape, release a cluster bomb mid-air that explodes, sending a payload of 150 arrows to your previous location. (Each enemy can only be hit by one arrow) </br> </br><span class='mc-white'>Total Damage</span>: 350% (of your DPS, per arrow)   </br>&emsp;(<span class='nDam'>Damage</span>: 300%)   </br>&emsp;(<span class='tDam'>Thunder</span>: 50%) </br>Cooldown: 4s",
             "base_abil": "Escape",
             "parents": [
-                "Traveler",
-                "Bouncing Bomb",
-                "Cheaper Arrow Storm II"
+                "Courier's Edict",
+                "Bouncing Bomb"
             ],
             "dependencies": [],
             "blockers": [],
             "cost": 1,
             "display": {
                 "row": 34,
-                "col": 2,
+                "col": 0,
                 "icon": "node_1"
             },
             "properties": {},
@@ -2699,7 +2663,7 @@
             "base_abil": "Escape",
             "parents": [
                 "Cheaper Arrow Storm II",
-                "Parting Gift"
+                "Bouncing Bomb"
             ],
             "dependencies": [
                 "Grappling Hook"
@@ -2962,20 +2926,39 @@
                 "col": 4,
                 "icon": "node_3"
             },
-            "properties": {},
+            "properties": {
+                "snare_duration": 5
+            },
             "effects": [
                 {
-                    "type": "add_spell_prop",
-                    "base_spell": 7,
-                    "target_part": "Trap Damage",
-                    "cost": 0,
-                    "multipliers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
+                    "type": "replace_spell",
+                    "name": "Chilling Snare",
+                    "base_spell": 14,
+                    "display": "Total Damage",
+                    "parts": [
+                        {
+                            "name": "Chilling Snare Damage",
+                            "multipliers": [
+                                40,
+                                0,
+                                0,
+                                10,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "name": "Chilling Snare DPS",
+                            "hits": {
+                                "Chilling Snare Damage": 5
+                            }
+                        },
+                        {
+                            "name": "Total Damage",
+                            "hits": {
+                                "Chilling Snare DPS": "Basaltic Trap.snare_duration"
+                            }
+                        }
                     ]
                 },
                 {
@@ -2999,7 +2982,7 @@
             "base_abil": "Arrow Bomb",
             "parents": [
                 "Wild Light",
-                "Feedback Loop"
+                "Shrieking Arrows"
             ],
             "dependencies": [],
             "blockers": [],
@@ -3189,7 +3172,7 @@
         },
         {
             "display_name": "Elusive",
-            "desc": "\u00a77\u00a7nArrow Bomb\u00a77 and \u00a77\u00a7nArrow Storm\u00a77 will no longer have recoil, and your \u00a77\u00a7nArrow Bombs\u00a77 will not deal self-damage.",
+            "desc": "Arrow Bomb and Arrow Storm will no longer have recoil, and your Arrow Bombs will not deal self-damage.",
             "archetype": "Boltslinger",
             "archetype_req": 0,
             "parents": [
@@ -3271,7 +3254,7 @@
         },
         {
             "display_name": "Transcience",
-            "desc": "Arrow Storm will pierce enemies and deal increased damage.</br></br>Damage: [2%n/1%a]",
+            "desc": "Arrow Storm will pierce enemies.",
             "archetype": "Boltslinger",
             "archetype_req": 13,
             "parents": [
@@ -3289,30 +3272,14 @@
                 "icon": "node_4"
             },
             "properties": {},
-            "effects": [
-                {
-                    "type": "add_spell_prop",
-                    "base_spell": 1,
-                    "target_part": "Single Arrow",
-                    "multipliers": [
-                        2,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                }
-            ]
+            "effects": []
         },
         {
             "display_name": "Feedback Loop",
             "desc": "Hitting 1 flint arrow will add +1 arrow to your next Arrow Storm.",
             "archetype": "Boltslinger",
             "parents": [
-                "Transcience",
-                "Overgrowth",
-                "Snow Storm"
+                "Arrow Hurricane"
             ],
             "dependencies": [
                 "Arsenal Synergy"
@@ -3320,9 +3287,9 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 44,
-                "col": 2,
-                "icon": "node_0"
+                "row": 39,
+                "col": 0,
+                "icon": "node_1"
             },
             "properties": {},
             "effects": [
@@ -3390,10 +3357,10 @@
         },
         {
             "display_name": "Courier's Edict",
-            "desc": "Fierce Stomp sends a wave of heavenly light around you.</br>[100%n/100%t]",
+            "desc": "Fierce Stomp sends a wave of heavenly light around you.</br>Damage: [100%n/100%t]",
             "archetype": "Boltslinger",
             "parents": [
-                "Arrow Hurricane"
+                "Recycling"
             ],
             "dependencies": [
                 "Fierce Stomp"
@@ -3401,7 +3368,7 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 39,
+                "row": 32,
                 "col": 0,
                 "icon": "node_1"
             },
@@ -3436,6 +3403,8 @@
         {
             "display_name": "Fimbulwinter",
             "desc": "Enemies are frozen after standing inside of Chilling Snare for 3s.</br>[1000%n/500%w]",
+            "base_abil": "Basaltic Trap",
+            "archetype": "Trapper",
             "parents": [
                 "Snow Storm",
                 "Cheaper Arrow Bomb II"
@@ -3454,7 +3423,7 @@
             "effects": [
                 {
                     "type": "add_spell_prop",
-                    "base_spell": 7,
+                    "base_spell": 14,
                     "target_part": "Fimbulwinter",
                     "multipliers": [
                         1000,
@@ -3464,6 +3433,14 @@
                         0,
                         0
                     ]
+                },
+                {
+                    "type": "add_spell_prop",
+                    "base_spell": 14,
+                    "target_part": "Total Damage",
+                    "hits": {
+                        "Fimbulwinter": 1
+                    }
                 }
             ]
         },
@@ -3474,7 +3451,7 @@
             "base_abil": "Arrow Storm",
             "parents": [
                 "Fimbulwinter",
-                "Feedback Loop",
+                "Shrieking Arrows",
                 "Quick Draw"
             ],
             "dependencies": [
@@ -3500,7 +3477,7 @@
             "base_abil": "Arrow Shield",
             "parents": [
                 "Overgrowth",
-                "Feedback Loop"
+                "Shrieking Arrows"
             ],
             "dependencies": [
                 "Call of the Hound"
@@ -3639,6 +3616,57 @@
             ]
         },
         {
+            "display_name": "Shrieking Arrows",
+            "desc": "Arrow Storm and Phantom Ray will deal additional damage.</br></br>Damage: [6%n/1%t/1%a] for Arrow Storm</br>Damage: [2%n/1%w] for Phantom Ray",
+            "archetype": "Boltslinger",
+            "parents": [
+                "Overgrowth",
+                "Transcience",
+                "Snow Storm"
+            ],
+            "dependencies": [
+                "Arrow Storm"
+            ],
+            "blockers": [],
+            "cost": 1,
+            "display": {
+                "row": 44,
+                "col": 2,
+                "icon": "node_1"
+            },
+            "properties": {},
+            "effects": [
+                {
+                    "type": "add_spell_prop",
+                    "base_spell": 1,
+                    "target_part": "Single Arrow",
+                    "behavior": "modify",
+                    "multipliers": [
+                        6,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "type": "add_spell_prop",
+                    "base_spell": 1,
+                    "target_part": "Single Tick",
+                    "behavior": "modify",
+                    "multipliers": [
+                        2,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
             "display_name": "Warding Wisps",
             "desc": "Gain a Wisp after losing an Arrow Shield Charge. (Max 12)</br>Wisps possess nearby enemies for 3s, dealing damage every 0.75s and slowing them.</br>Effect: 20% Slowness",
             "archetype": "Sharpshooter",
@@ -3695,11 +3723,31 @@
                             "type": "stat",
                             "name": "aConvBase:3.Heart Shatter",
                             "value": 100
+                        }
+                    ]
+                },
+                {
+                    "type": "replace_spell",
+                    "name": "Angelic Ascension",
+                    "base_spell": 13,
+                    "display": "Light Arrows DPS",
+                    "parts": [
+                        {
+                            "name": "Light Arrows Damage",
+                            "multipliers": [
+                                100,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
                         },
                         {
-                            "type": "stat",
-                            "name": "damMult.AngelicAscension:0.Single Shot",
-                            "value": 400
+                            "name": "Light Arrows DPS",
+                            "hits": {
+                                "Light Arrows Damage": 2
+                            }
                         }
                     ]
                 }
@@ -4917,7 +4965,9 @@
             "dependencies": [
                 "War Scream"
             ],
-            "blockers": [],
+            "blockers": [
+                "Emboldening Cry"
+            ],
             "cost": 2,
             "display": {
                 "row": 16,
@@ -5214,8 +5264,7 @@
             ],
             "dependencies": [],
             "blockers": [
-                "Bloodlust",
-                "Massacre"
+                "Bloodlust"
             ],
             "cost": 2,
             "display": {
@@ -5271,7 +5320,9 @@
                 "Sacred Surge"
             ],
             "dependencies": [],
-            "blockers": [],
+            "blockers": [
+                "Bak'al's Grasp"
+            ],
             "cost": 2,
             "display": {
                 "row": 24,
@@ -5293,7 +5344,9 @@
             "dependencies": [
                 "Bak'al's Grasp"
             ],
-            "blockers": [],
+            "blockers": [
+                "Radiance"
+            ],
             "cost": 2,
             "display": {
                 "row": 21,
@@ -6150,9 +6203,7 @@
             "dependencies": [
                 "Bak'al's Grasp"
             ],
-            "blockers": [
-                "Sacred Surge"
-            ],
+            "blockers": [],
             "cost": 1,
             "display": {
                 "row": 24,
@@ -6211,14 +6262,16 @@
             "display_name": "Radiance",
             "desc": "Bash will buff positive IDs of yourself and allies. (XP Bonus, Loot Bonus, Loot Quality, Gather XP Bonus, and Gather Speed Bonus are excluded) </br> </br>Effect: +20% ID Effectiveness to Allies </br>Duration: 8s </br>Cooldown: 15s",
             "archetype": "Paladin",
-            "archetype_req": 10,
+            "archetype_req": 11,
             "base_abil": "Bash",
             "parents": [
                 "Blessed Bulwark",
                 "Thunderclap"
             ],
             "dependencies": [],
-            "blockers": [],
+            "blockers": [
+                "Enraged Blow"
+            ],
             "cost": 2,
             "display": {
                 "row": 33,
@@ -6910,7 +6963,7 @@
         },
         {
             "display_name": "Rumble",
-            "desc": "Increase Bash's damage by 5%</br> per 1 Area of Effect it has.",
+            "desc": "Increase Bash's damage by 4%</br> per 1 Area of Effect it has.",
             "base_abil": "Bash",
             "archetype": "Fallen",
             "archetype_req": 10,
@@ -7420,8 +7473,8 @@
                         {
                             "name": "Summon Spike Hit",
                             "multipliers": [
-                                2000,
                                 1000,
+                                500,
                                 0,
                                 0,
                                 0,
@@ -7458,7 +7511,7 @@
         },
         {
             "display_name": "Zenith Stance",
-            "desc": "Manifest your combat mastery as 2 floating fists that you freely command.</br></br>Casting Main Attack with them active performs an attack, and casting Offhand switches between dealing spell and melee damage.</br></br>Damage: [2800%n/400%a]</br>Area of Effect: 5 Blocks</br>Range: 7 Blocks</br>Duration: 10s",
+            "desc": "Manifest your combat mastery as 2 floating fists that you freely command.</br></br>Casting Main Attack with them active performs an attack, and casting Offhand switches between dealing spell and melee damage.</br></br>Damage: [2100%n/300%a]</br>Area of Effect: 5 Blocks</br>Range: 7 Blocks</br>Duration: 10s",
             "archetype": "Battle Monk",
             "archetype_req": 16,
             "parents": [
@@ -7484,12 +7537,12 @@
                         {
                             "name": "Hit Damage",
                             "multipliers": [
-                                2800,
+                                2100,
                                 0,
                                 0,
                                 0,
                                 0,
-                                400
+                                300
                             ]
                         },
                         {
@@ -9452,7 +9505,7 @@
                     "target_part": "Vacuokinesis",
                     "base_spell": 0,
                     "multipliers": [
-                        80,
+                        100,
                         0,
                         0,
                         0,
@@ -9623,7 +9676,7 @@
         },
         {
             "display_name": "Time Dilation",
-            "desc": "Creates an area of effect when sprinting that increases the walk speed of all allies the longer they run in it. (You lose 20% Speed Bonus every second once you stop running) </br> </br>Effect: +10% Walk Speed to Allies (per 1s, +100% Max) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
+            "desc": "Creates an area of effect when sprinting that increases the walk speed of all allies the longer they run in it. (You lose 20% Speed Bonus every second once you stop running) </br> </br>Effect: +10% Walk Speed to Allies (per 1s, +200% Max) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
             "archetype": "Riftwalker",
             "archetype_req": 5,
             "parents": [
@@ -9653,7 +9706,7 @@
                     "scaling": [
                         10
                     ], 
-                    "max": 100
+                    "max": 200
                 }
             ]
         },
@@ -9859,7 +9912,7 @@
             "desc": "Increase the amount of Distortion generated by +20% and maximum Distortion by +30.",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
-            "archetype_req": 6,
+            "archetype_req": 10,
             "parents": [
                 "Time Dilation",
                 "Devitalize"
@@ -10492,6 +10545,7 @@
         {
             "display_name": "Portal to the Beyond",
             "archetype": "Riftwalker",
+            "archetype_req": 12,
             "desc": "Dimensional Tear is now inhabited by Riftspawn while active.</br></br>The Riftspawn shoots homing distorting blasts to nearby enemies every 0.5s, dealing damage and increasing your Distortion by +1</br></br>Total Damage: [120%n/30%e/30%a]",
             "parents": [
                 "Riftbound",
