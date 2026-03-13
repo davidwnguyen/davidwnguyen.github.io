@@ -812,7 +812,7 @@
       "tiers": [
         {
           "threshold": 1,
-          "description": "Divine Intervention will cause Guardian Angels to fire 3x faster instead.",
+          "description": "Divine Intervention will cause Guardian Angels to fire 1.8x faster instead.",
           "abilities": [
             {
               "base_abil": "Arrow Shield",
@@ -825,7 +825,7 @@
                       "type": "prop",
                       "abil": "Arrow Shield",
                       "name": "attack_frequency",
-                      "value": 1.66666666667
+                      "value": 0.666666666668
                     }
                   ]
                 }
@@ -835,7 +835,7 @@
         },
         {
           "threshold": 5,
-          "description": "Divine Intervention will cause Guardian Angels to fire 3x faster instead. </br> Arrow Storm gains +1 arrow per stream. </br> Triple Shots gains +2 arrows. </br> Main Attack Damage: -15%",
+          "description": "Divine Intervention will cause Guardian Angels to fire 1.8x faster instead. </br> Arrow Storm gains +1 arrow per stream. </br> Triple Shots gains +2 arrows. </br> Main Attack Damage: -15%",
           "abilities": [
             {
               "base_abil": "Arrow Shield",
@@ -848,7 +848,7 @@
                       "type": "prop",
                       "abil": "Arrow Shield",
                       "name": "attack_frequency",
-                      "value": 1.66666666667
+                      "value": 0.666666666668
                     }
                   ]
                 }
@@ -895,7 +895,7 @@
         },
         {
           "threshold": 15,
-          "description": "Divine Intervention will cause Guardian Angels to fire 3x faster instead, and cause explosive shots to deal +15% more damage. </br> Arrow Storm gains +1 arrow per stream. </br> Triple Shots gains +2 arrows. </br> Main Attack Damage: -15%",
+          "description": "Divine Intervention will cause Guardian Angels to fire 1.8x faster instead, and cause explosive shots to deal +15% more damage. </br> Arrow Storm gains +1 arrow per stream. </br> Triple Shots gains +2 arrows. </br> Main Attack Damage: -15%",
           "abilities": [
             {
               "base_abil": "Arrow Shield",
@@ -908,7 +908,7 @@
                       "type": "prop",
                       "abil": "Arrow Shield",
                       "name": "attack_frequency",
-                      "value": 1.66666666667
+                      "value": 0.666666666668
                     }
                   ]
                 },
@@ -1039,12 +1039,46 @@
         {
           "threshold": 5,
           "description": "Patient Hunter gains +10% damage per second. </br> Chilling Snare gains +3s Duration.",
-          "abilities": []
+          "abilities": [
+            {
+              "base_abil": "Basaltic Trap",
+              "properties": {
+                "snare_duration": 3
+              },
+              "effects": [
+                {
+                  "type": "add_spell_prop",
+                  "base_spell": 14,
+                  "target_part": "Total Damage",
+                  "hits": {
+                      "Fimbulwinter": 1
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
           "threshold": 15,
           "description": "Patient Hunter gains +15% damage per second. </br> Chilling Snare gains +3s Duration.",
-          "abilities": []
+          "abilities": [
+            {
+              "base_abil": "Basaltic Trap",
+              "properties": {
+                "snare_duration": 3
+              },
+              "effects": [
+                {
+                  "type": "add_spell_prop",
+                  "base_spell": 14,
+                  "target_part": "Total Damage",
+                  "hits": {
+                      "Fimbulwinter": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1911,7 +1945,7 @@
       "tiers": [
         {
           "threshold": 1,
-          "description": "Your Main Attack gains +0.65 Range.",
+          "description": "Your Main Attack and Bloodied Armory gains +0.65 Range.",
           "abilities": [
             {
               "base_abil": 999,
@@ -1924,7 +1958,7 @@
         },
         {
           "threshold": 5,
-          "description": "Your Main Attack gains +1.15 Range.",
+          "description": "Your Main Attack and Bloodied Armory gains +1.15 Range.",
           "abilities": [
             {
               "base_abil": 999,
@@ -1937,7 +1971,7 @@
         },
         {
           "threshold": 30,
-          "description": "Your Main Attack gains +1.65 Range.",
+          "description": "Your Main Attack and Bloodied Armory gains +1.65 Range.",
           "abilities": [
             {
               "base_abil": 999,
@@ -1950,7 +1984,7 @@
         },
         {
           "threshold": 150,
-          "description": "Your Main Attack gains +2 Range.",
+          "description": "Your Main Attack and Bloodied Armory gains +2 Range.",
           "abilities": [
             {
               "base_abil": 999,
@@ -2181,13 +2215,13 @@
         },
         {
           "threshold": 5,
-          "description": "Blood Pact's health cost is reduced by 15%. Blood Pact adds +5% to +8.35% more damage when using health.",
+          "description": "Blood Pact's health cost is reduced by 15%. Blood Pact adds +4% to +6.25% more damage when using health.",
           "abilities": [
             {
               "base_abil": "Blood Pact",
               "properties": {
                 "health_cost": -0.05,
-                "damage_boost": 8.35
+                "damage_boost": 6.25
               },
               "effects": []
             }
@@ -2195,13 +2229,13 @@
         },
         {
           "threshold": 15,
-          "description": "Blood Pact's health cost is reduced by 15%. Blood Pact adds +8% to +13.35% more damage when using health.",
+          "description": "Blood Pact's health cost is reduced by 15%. Blood Pact adds +6% to +10% more damage when using health.",
           "abilities": [
             {
               "base_abil": "Blood Pact",
               "properties": {
                 "health_cost": -0.05,
-                "damage_boost": 13.35
+                "damage_boost": 10
               },
               "effects": []
             }
@@ -2449,7 +2483,7 @@
       "tiers": [
         {
           "threshold": 1,
-          "description": "Armour Breaker gains +4% Damage Bonus to Self.",
+          "description": "Armour Breaker gains +3% Damage Bonus to Self.",
           "abilities": [
             {
               "base_abil": "Uppercut",
@@ -2457,7 +2491,7 @@
                 "Armour Breaker"
               ],
               "properties": {
-                "potency": 4
+                "potency": 3
               },
               "effects": []
             }
@@ -2465,6 +2499,22 @@
         },
         {
           "threshold": 15,
+          "description": "Armour Breaker gains +5% Damage Bonus to Self.",
+          "abilities": [
+            {
+              "base_abil": "Uppercut",
+              "dependencies": [
+                "Armour Breaker"
+              ],
+              "properties": {
+                "potency": 5
+              },
+              "effects": []
+            }
+          ]
+        },
+        {
+          "threshold": 75,
           "description": "Armour Breaker gains +6% Damage Bonus to Self.",
           "abilities": [
             {
@@ -2474,22 +2524,6 @@
               ],
               "properties": {
                 "potency": 6
-              },
-              "effects": []
-            }
-          ]
-        },
-        {
-          "threshold": 75,
-          "description": "Armour Breaker gains +8% Damage Bonus to Self.",
-          "abilities": [
-            {
-              "base_abil": "Uppercut",
-              "dependencies": [
-                "Armour Breaker"
-              ],
-              "properties": {
-                "potency": 8
               },
               "effects": []
             }
