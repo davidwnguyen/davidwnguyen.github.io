@@ -1139,7 +1139,9 @@
                 "Phantom Ray"
             ],
             "dependencies": [],
-            "blockers": [],
+            "blockers": [
+                "Beast Lore"
+            ],
             "cost": 2,
             "display": {
                 "row": 19,
@@ -1940,7 +1942,7 @@
         },
         {
             "display_name": "Fierce Stomp",
-            "desc": "When using Escape, hold shift to quickly drop down to deal damage and blind enemies. </br> </br><span class='mc-white'>Total Damage</span>: 250% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 250%) </br>Area of Effect: 6 Blocks (Circle-Shaped) </br>Effect: Blindness to Enemies </br>Duration: 1s",
+            "desc": "When using Escape, hold shift to quickly drop down to deal damage and blind enemies. </br> </br><span class='mc-white'>Total Damage</span>: 250% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 250%) </br>Area of Effect: 6 Blocks (Circle-Shaped) </br>Effect: Blindness to Enemies </br>Duration: 0.5s",
             "archetype": "Boltslinger",
             "archetype_req": 0,
             "base_abil": "Escape",
@@ -2813,7 +2815,9 @@
             "dependencies": [
                 "Call of the Hound"
             ],
-            "blockers": [],
+            "blockers": [
+                "Focus"
+            ],
             "cost": 1,
             "display": {
                 "row": 37,
@@ -3095,7 +3099,7 @@
             "parents": [
                 "Cheaper Arrow Bomb II",
                 "Swift Primer",
-                "Transcience"
+                "Transience"
             ],
             "dependencies": [],
             "blockers": [],
@@ -3253,7 +3257,7 @@
             ]
         },
         {
-            "display_name": "Transcience",
+            "display_name": "Transience",
             "desc": "Arrow Storm will pierce enemies.",
             "archetype": "Boltslinger",
             "archetype_req": 13,
@@ -3276,7 +3280,8 @@
         },
         {
             "display_name": "Feedback Loop",
-            "desc": "Hitting 1 flint arrow will add +1 arrow to your next Arrow Storm.",
+            "desc": "Hitting 1 flint arrow will add +1 stream of arrows to your next Arrow Storm.",
+            "base_abil": "Arrow Storm",
             "archetype": "Boltslinger",
             "parents": [
                 "Arrow Hurricane"
@@ -3294,15 +3299,16 @@
             "properties": {},
             "effects": [
                 {
-                    "type": "raw_stat",
-                    "toggle": "Activate Feedback Loop",
-                    "bonuses": [
-                        {
-                            "type": "prop",
-                            "abil": "Arrow Storm",
-                            "name": "arrows_per_stream",
-                            "value": 1
-                        }
+                    "type": "stat_scaling",
+                    "slider": true,
+                    "slider_name": "Flint Arrows",
+                    "output": {
+                        "type": "prop",
+                        "abil": "Arrow Storm",
+                        "name": "arrows_per_stream"
+                    },
+                    "scaling": [
+                        1
                     ]
                 }
             ]
@@ -3313,7 +3319,7 @@
             "base_abil": "Frenzy",
             "archetype": "Boltslinger",
             "parents": [
-                "Transcience"
+                "Transience"
             ],
             "dependencies": [
                 "Frenzy"
@@ -3621,7 +3627,7 @@
             "archetype": "Boltslinger",
             "parents": [
                 "Overgrowth",
-                "Transcience",
+                "Transience",
                 "Snow Storm"
             ],
             "dependencies": [
@@ -3689,7 +3695,7 @@
         },
         {
             "display_name": "Angelic Ascension",
-            "desc": "Call upon the power of the Light to empower your attacks for 15s.</br></br>Main Attack will instead shoot Light Arrows that deal 400% more damage over 2s.</br></br>Arrow Storm will home onto enemies.</br></br>Arrow Bomb will smite enemies it hits directly with a bolt from the heavens.</br></br>Guardian Angels will have unlimited ammunition.</br></br>Damage: [300%n/150%t/100%a] for Smite",
+            "desc": "Call upon the power of the Light to empower your attacks for 15s.</br></br>Main Attack will instead shoot Light Arrows that deal 50% more damage over 2s.</br></br>Arrow Storm will home onto enemies.</br></br>Arrow Bomb will smite enemies it hits directly with a bolt from the heavens.</br></br>Guardian Angels will have unlimited ammunition.</br></br>Damage: [300%n/150%t/100%a] for Smite",
             "archetype": "Boltslinger",
             "archetype_req": 16,
             "parents": [
@@ -3723,31 +3729,16 @@
                             "type": "stat",
                             "name": "aConvBase:3.Heart Shatter",
                             "value": 100
-                        }
-                    ]
-                },
-                {
-                    "type": "replace_spell",
-                    "name": "Angelic Ascension",
-                    "base_spell": 13,
-                    "display": "Light Arrows DPS",
-                    "parts": [
-                        {
-                            "name": "Light Arrows Damage",
-                            "multipliers": [
-                                100,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
                         },
                         {
-                            "name": "Light Arrows DPS",
-                            "hits": {
-                                "Light Arrows Damage": 2
-                            }
+                            "type": "stat",
+                            "name": "damMult.AngelicAscension:0.Single Shot",
+                            "value": 50
+                        },
+                        {
+                            "type": "stat",
+                            "name": "damMult.AngelicAscension:0.Flint Arrows",
+                            "value": 50
                         }
                     ]
                 }
@@ -5895,7 +5886,9 @@
             "dependencies": [
                 "Bak'al's Grasp"
             ],
-            "blockers": [],
+            "blockers": [
+                "Pressure"
+            ],
             "cost": 2,
             "display": {
                 "row": 27,
@@ -6260,7 +6253,7 @@
         },
         {
             "display_name": "Radiance",
-            "desc": "Bash will buff positive IDs of yourself and allies. (XP Bonus, Loot Bonus, Loot Quality, Gather XP Bonus, and Gather Speed Bonus are excluded) </br> </br>Effect: +20% ID Effectiveness to Allies </br>Duration: 8s </br>Cooldown: 15s",
+            "desc": "Bash will buff positive IDs of yourself and allies. (XP Bonus, Loot Bonus, Loot Quality, Gather XP Bonus, and Gather Speed Bonus are excluded) </br> </br>Effect: +15% ID Effectiveness to Allies </br>Duration: 8s </br>Cooldown: 15s",
             "archetype": "Paladin",
             "archetype_req": 11,
             "base_abil": "Bash",
@@ -6392,7 +6385,7 @@
         },
         {
             "display_name": "Discombobulate",
-            "desc": "Damaging enemies will inflict them with +2 Discombobulated. (Max 150) </br> You will deal +1 neutral and elemental damage to enemies for every Discombobulated they have. -4 of the bonus decays every second.",
+            "desc": "Damaging enemies will inflict them with +2 Discombobulated. (Max 150) </br> You will deal +3 damage to enemies for every Discombobulated they have. -4 of the bonus decays every second.",
             "archetype": "Battle Monk",
             "archetype_req": 10,
             "parents": [
@@ -6414,37 +6407,16 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Hits dealt",
-                    "slider_max": 30,
+                    "slider_max": 75,
                     "output": [
                         {
                             "type": "stat",
-                            "name": "nDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "eDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "tDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "wDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "fDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "aDamRaw"
+                            "name": "damRaw"
                         }
                     ],
                     "scaling": [
-                        5
-                    ],
-                    "max": 150
+                        6
+                    ]
                 }
             ]
         },
@@ -6841,7 +6813,7 @@
         },
         {
             "display_name": "Pressure",
-            "desc": "When Generalist acts on a spell, it is enhanced. </br> Bash gains 4x as many hits and is 0.2s faster. </br> Uppercut deals additional damage. </br><span class='mc-white'>Total Damage</span>: +395% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +170%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +45%) </br> War Scream grants a damage boost, but effect duration is reduced. </br>Effect: +10% Damage Bonus to Players </br>Duration: 12s",
+            "desc": "When Generalist acts on a spell, it is enhanced. </br> Bash gains 3x as many hits and is 0.1s faster. </br> Uppercut deals additional damage. </br><span class='mc-white'>Total Damage</span>: +395% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +170%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +45%) </br> War Scream grants a damage boost, but effect duration is reduced. </br>Effect: +10% Damage Bonus to Players </br>Duration: 12s",
             "base_abil": "War Scream",
             "archetype": "Battle Monk",
             "archetype_req": 10,
@@ -6852,7 +6824,9 @@
             "dependencies": [
                 "Generalist"
             ],
-            "blockers": [],
+            "blockers": [
+                "Armour Breaker"
+            ],
             "cost": 2,
             "display": {
                 "row": 33,
@@ -6862,7 +6836,7 @@
             "properties": {
                 "pressure_rainbow_uppercut": 55,
                 "pressure_neutral_uppercut": 170,
-                "pressure_bash_hits": 4,
+                "pressure_bash_hits": 3,
                 "pressure_scream_boost": 10
             },
             "effects": [
@@ -6969,7 +6943,7 @@
             "archetype_req": 10,
             "parents": [
                 "Haemorrhage",
-                "Tenmpestuous Winds"
+                "Tempestuous Winds"
             ],
             "dependencies": [
                 "Massive Bash"
@@ -7028,7 +7002,7 @@
             "archetype_req": 10,
             "parents": [
                 "Rumble",
-                "Tenmpestuous Winds"
+                "Tempestuous Winds"
             ],
             "dependencies": [],
             "blockers": [
@@ -7116,7 +7090,7 @@
         },
         {
             "display_name": "Spectacle",
-            "desc": "Increase Fireworks' damage by [30%n/30%t] and Comet's damage by [30%n/30%e]",
+            "desc": "Increase Fireworks' damage by [30%n/30%t] and Comet's damage by [60%n/60%e]",
             "base_abil": "Uppercut",
             "parents": [
                 "Ecstasy"
@@ -7151,8 +7125,8 @@
                     "target_part": "Comet",
                     "behavior": "modify",
                     "multipliers": [
-                        30,
-                        30,
+                        60,
+                        60,
                         0,
                         0,
                         0,
@@ -7162,7 +7136,7 @@
             ]
         },
         {
-            "display_name": "Tenmpestuous Winds",
+            "display_name": "Tempestuous Winds",
             "desc": "Cyclone will deal damage 0.15s faster.",
             "base_abil": "War Scream",
             "archetype": "Battle Monk",
@@ -7197,7 +7171,7 @@
             "desc": "Increase Flying Kick's damage by +10% per block travelled.</br>(Max +150%)",
             "archetype": "Battle Monk",
             "parents": [
-                "Tenmpestuous Winds",
+                "Tempestuous Winds",
                 "Cheaper Uppercut 2",
                 "Shine"
             ],
@@ -7268,6 +7242,7 @@
         {
             "display_name": "Baffling Blows",
             "desc": "Increase your maximum Discombobulate by +50.",
+            "base_abil": "Discombobulate",
             "archetype": "Battle Monk",
             "parents": [
                 "Harmony"
@@ -7288,43 +7263,13 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Hits dealt",
-                    "slider_max": 10,
-                    "output": [
-                        {
-                            "type": "stat",
-                            "name": "nDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "eDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "tDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "wDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "fDamRaw"
-                        },
-                        {
-                            "type": "stat",
-                            "name": "aDamRaw"
-                        }
-                    ],
-                    "scaling": [
-                        1
-                    ],
-                    "max": 50
+                    "slider_max": 25
                 }
             ]
         },
         {
             "display_name": "Shine",
-            "desc": "Increase Radiance's Effectiveness by +10%.",
+            "desc": "Increase Radiance's Effectiveness by +5%.",
             "archetype": "Paladin",
             "parents": [
                 "Heavenly Trumpet",
@@ -7345,7 +7290,7 @@
         },
         {
             "display_name": "Buried Light",
-            "desc": "Casting Shift + Bash will consume 25 Holy Power to summon a beam of light which slowly moves forward,</br>damaging enemies every 0.5s.</br></br>Damage: [160%n/40%t/40%f]",
+            "desc": "Casting Shift + Bash will consume 25 Holy Power to summon a beam of light which slowly moves forward,</br>damaging enemies every 0.5s.</br></br>Damage: [200%n/50%t/50%f]",
             "archetype": "Paladin",
             "parents": [
                 "Shine"
@@ -7372,11 +7317,11 @@
                         {
                             "name": "Damage per Tick",
                             "multipliers": [
-                                160,
+                                200,
                                 0,
-                                40,
+                                50,
                                 0,
-                                40,
+                                50,
                                 0
                             ]
                         },
@@ -8453,7 +8398,8 @@
             "dependencies": [],
             "blockers": [
                 "Thunderstorm",
-                "Psychokinesis"
+                "Psychokinesis",
+                "Meteor Shower"
             ],
             "cost": 2,
             "display": {
@@ -8540,7 +8486,7 @@
             "blockers": [
                 "Larger Heal",
                 "Orphion's Pulse",
-                "Riftbound"
+                "Rewind"
             ],
             "cost": 2,
             "display": {
@@ -8566,7 +8512,7 @@
             "desc": "Reduce the mana cost of Heal. </br> Mana Cost: -5",
             "base_abil": "Heal",
             "parents": [
-                "Frozen Tornado",
+                "Time Vortex",
                 "Purification"
             ],
             "dependencies": [],
@@ -8607,11 +8553,11 @@
         },
         {
             "display_name": "Sentient Snake",
-            "desc": "Ice Snake will follow the direction you're facing, allowing you to control it. </br> </br><span class='mc-white'>Total Damage</span>: +40% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +25%)   </br>&emsp;(<span class='wDam'>Water</span>: +15%)",
+            "desc": "Ice Snake and Time Vortex will follow the direction you're facing, allowing you to control it. </br> </br><span class='mc-white'>Total Damage</span>: +40% (of your DPS, for Ice Snake)   </br>&emsp;(<span class='nDam'>Damage</span>: +25%)   </br>&emsp;(<span class='wDam'>Water</span>: +15%)</br><span class='mc-white'>Total Damage</span>: +25% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +20%)   </br>&emsp;(<span class='wDam'>Water</span>: +5%)",
             "base_abil": "Ice Snake",
             "parents": [
                 "Arcane Transfer",
-                "Frozen Tornado"
+                "Time Vortex"
             ],
             "dependencies": [
                 "Ice Snake"
@@ -8628,6 +8574,7 @@
                 {
                     "type": "add_spell_prop",
                     "target_part": "Ice Snake Damage",
+                    "behavior": "modify",
                     "base_spell": 4,
                     "multipliers": [
                         25,
@@ -8637,12 +8584,26 @@
                         0,
                         0
                     ]
+                },
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "Damage per Tick",
+                    "behavior": "modify",
+                    "base_spell": 4,
+                    "multipliers": [
+                        20,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0
+                    ]
                 }
             ]
         },
         {
-            "display_name": "Frozen Tornado",
-            "desc": "At +25 Distortion, Casting Ice Snake instead summons a frozen tornado that deals damage every 0.5s.</br></br>For every +1 Distortion above 25, the tornado gains +0.025 Area of Effect and +1.6% damage.</br></br>Damage: [70%n/15%w/15%a]</br>Area of Effect: 5 Blocks</br>Effect: 50% Slowness to enemies</br>Duration: 1s",
+            "display_name": "Time Vortex",
+            "desc": "At +25 Distortion, Casting Ice Snake instead summons a Time Vortex that deals damage every 0.5s.</br></br>For every +1 Distortion above 25, the tornado gains +0.025 Area of Effect and +1.6% damage.</br></br>Damage: [70%n/15%w/15%a]</br>Area of Effect: 5 Blocks</br>Effect: 50% Slowness to enemies</br>Duration: 1s",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "parents": [
@@ -8664,7 +8625,7 @@
             "effects": [
                 {
                     "type": "replace_spell",
-                    "name": "Frozen Tornado",
+                    "name": "Time Vortex",
                     "base_spell": 4,
                     "display": "Total Damage",
                     "parts": [
@@ -8689,7 +8650,7 @@
                         {
                             "name": "Total Damage",
                             "hits": {
-                                "DPS": 1
+                                "DPS": 2
                             }
                         }
                     ]
@@ -8754,7 +8715,7 @@
             "archetype_req": 0,
             "parents": [
                 "Sentient Snake",
-                "Frozen Tornado"
+                "Time Vortex"
             ],
             "dependencies": [
                 "Arcane Transfer"
@@ -8786,7 +8747,7 @@
             "desc": "Reduce the mana cost of Ice Snake. </br> Mana Cost: -5",
             "base_abil": "Ice Snake",
             "parents": [
-                "Frozen Tornado",
+                "Time Vortex",
                 "Fortitude",
                 "Pyrokinesis"
             ],
@@ -8906,7 +8867,7 @@
             "desc": "Main Attack builds up to +4 Distortion over 2s.</br></br>Hitting an enemy with it adds the Distortion to you.",
             "archetype": "Riftwalker",
             "parents": [
-                "Frozen Tornado",
+                "Time Vortex",
                 "Cheaper Heal"
             ],
             "dependencies": [
@@ -9003,12 +8964,13 @@
         },
         {
             "display_name": "Snake Nest",
-            "desc": "Ice Snake will summon 3 snakes. </br> </br><span class='mc-white'>Total Damage</span>: +50% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +35%)   </br>&emsp;(<span class='wDam'>Water</span>: +15%)",
+            "desc": "Ice Snake will summon 3 snakes.</br>Time Vortex will summon 3 vortexes.</br> </br><span class='mc-white'>Total Damage</span>: +50% (of your DPS, for Ice Snake)   </br>&emsp;(<span class='nDam'>Damage</span>: +35%)   </br>&emsp;(<span class='wDam'>Water</span>: +15%)</br><span class='mc-white'>Total Damage</span>: +30% (of your DPS, for Time Vortex)   </br>&emsp;(<span class='nDam'>Damage</span>: +20%)   </br>&emsp;(<span class='wDam'>Water</span>: +5%)</br>&emsp;(<span class='aDam'>Air</span>: +5%)",
             "base_abil": "Ice Snake",
             "parents": [
                 "Pyrokinesis",
                 "Seance",
-                "Cheaper Ice Snake"
+                "Cheaper Ice Snake",
+                "Vacuokinesis"
             ],
             "dependencies": [
                 "Ice Snake"
@@ -9042,7 +9004,7 @@
                     "behavior": "modify",
                     "base_spell": 4,
                     "multipliers": [
-                        15,
+                        20,
                         0,
                         0,
                         5,
@@ -9103,7 +9065,9 @@
             "dependencies": [
                 "Distortion"
             ],
-            "blockers": [],
+            "blockers": [
+                "Ophanim"
+            ],
             "cost": 2,
             "display": {
                 "row": 23,
@@ -9486,7 +9450,8 @@
             "archetype_req": 0,
             "parents": [
                 "Cheaper Ice Snake",
-                "Fortitude"
+                "Fortitude",
+                "Snake Nest"
             ],
             "dependencies": [
                 "Distortion"
@@ -9698,21 +9663,20 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Time Dilated",
-                    "slider_max": 10,
+                    "slider_max": 20,
                     "output": {
                         "type": "stat",
                         "name": "spd"
                     },
                     "scaling": [
                         10
-                    ], 
-                    "max": 200
+                    ]
                 }
             ]
         },
         {
             "display_name": "Frigid Grasp",
-            "desc": "Ice Snake and Frozen Tornado's slow is stronger and deals increased damage.</br></br>Damage: [15%n/15%w] for Ice Snake</br>Damage: [10%n/5%w] for Frozen Tornado",
+            "desc": "Ice Snake and Time Vortex's slow is stronger and deals increased damage.</br></br>Damage: [15%n/15%w] for Ice Snake</br>Damage: [15%n/5%w] for Time Vortex",
             "base_abil": "Ice Snake",
             "parents": [
                 "Cheaper Meteor II",
@@ -9752,7 +9716,7 @@
                     "behavior": "modify",
                     "base_spell": 4,
                     "multipliers": [
-                        10,
+                        15,
                         0,
                         0,
                         5,
@@ -9855,7 +9819,7 @@
         },
         {
             "display_name": "Accelerated Strike",
-            "desc": "Time Dilation increases your Main Attack damage for every 10% Walk Speed you gain from it.</br></br>Main Attack Damage: +4% (per 10% Walk Speed)",
+            "desc": "Time Dilation increases your Main Attack damage for every 10% Walk Speed you gain from it.</br></br>Main Attack Damage: +4% (per 10% Walk Speed)</br></br>Hitting an enemy with your Main Attack stops Time Dilation from decaying for 4s.",
             "archetype": "Riftwalker",
             "parents": [
                 "Frigid Grasp",
@@ -10279,7 +10243,7 @@
         },
         {
             "display_name": "Riftbound",
-            "desc": "Casting Heal while holding shift binds you to your rift, making you Riftbound.</br></br>While Riftbound, your rift follows you, reaches further, your Distortion stops decaying for 4s and gets increased by +150%, overflowing beyond the capacity but you can't gain Distortion and your Distortion decay is increased to -30 every second.</br></br>Riftbound ends when you run out of Distortion.</br></br>Cooldown: 25s</br>Range: +100% Blocks",
+            "desc": "Casting Heal while holding shift binds you to your rift, making you Riftbound.</br></br>While Riftbound, your rift follows you, reaches further, your Distortion stops decaying for 4s and gets increased by +100%, overflowing beyond the capacity but you can't gain Distortion and your Distortion decay is increased to -30 every second.</br></br>Riftbound ends when you run out of Distortion.</br></br>Cooldown: 25s</br>Range: +100% Blocks",
             "archetype": "Riftwalker",
             "archetype_req": 11,
             "base_abil": "Distortion",
@@ -10302,7 +10266,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 195
+                    "slider_max": 130
                 }
             ]
         },
@@ -10545,7 +10509,6 @@
         {
             "display_name": "Portal to the Beyond",
             "archetype": "Riftwalker",
-            "archetype_req": 12,
             "desc": "Dimensional Tear is now inhabited by Riftspawn while active.</br></br>The Riftspawn shoots homing distorting blasts to nearby enemies every 0.5s, dealing damage and increasing your Distortion by +1</br></br>Total Damage: [120%n/30%e/30%a]",
             "parents": [
                 "Riftbound",
@@ -10606,7 +10569,7 @@
         },
         {
             "display_name": "Blitz",
-            "desc": "Increase the damage of Ice Snake and double its speed.</br></br>Increase the damage of Frozen Tornado.</br></br>Damage: [40%n/25%t] for Ice Snake</br>Damage: [15%n/5%w/5%a] for Frozen Tornado",
+            "desc": "Increase the damage of Ice Snake and double its speed.</br></br>Increase the damage of Time Vortex.</br></br>Damage: [40%n/25%t] for Ice Snake</br>Damage: [20%n/5%w/5%a] for Time Vortex",
             "base_abil": "Ice Snake",
             "parents": [
                 "Arcane Overflow",
@@ -10642,7 +10605,7 @@
                     "behavior": "modify",
                     "base_spell": 4,
                     "multipliers": [
-                        15,
+                        20,
                         0,
                         0,
                         5,
@@ -10654,8 +10617,9 @@
         },
         {
             "display_name": "Stabilized Anomaly",
-            "desc": "Effects gained from Distortion beyond the requirement are increased by +25%.</br></br>Meteor Shower requires -5 Distortion to gain additional meteors.",
+            "desc": "Effects gained from Distortion beyond the requirement are increased by +35%.</br></br>Meteor Shower requires -5 Distortion to gain additional meteors.",
             "archetype": "Riftwalker",
+            "archetype_req": 12,
             "base_abil": "Distortion",
             "parents": [
                 "Portal to the Beyond"
@@ -10696,7 +10660,7 @@
                         "name": "damMult.Distortion:4.Damage per Tick"
                     },
                     "scaling": [
-                        0.4
+                        0.56
                     ]
                 },
                 {
@@ -10709,7 +10673,7 @@
                         "name": "damMult.Distortion:0.Vacuokinesis"
                     },
                     "scaling": [
-                        0.25
+                        0.35
                     ]
                 }
             ]
@@ -10751,7 +10715,9 @@
                 "Unravelment"
             ],
             "dependencies": [],
-            "blockers": [],
+            "blockers": [
+                "Arcane Transfer"
+            ],
             "cost": 2,
             "display": {
                 "row": 40,
@@ -10763,7 +10729,7 @@
         },
         {
             "display_name": "Gravitational Collapse",
-            "desc": "Overload your Dimensional Rift.</br></br>It grows, pulls all nearby enemies towards it, and deals +200% damage.</br></br>While the Rift is overloaded and for 6s after, Teleport turns into a deadly piercing ray, provides flight, prevents mana drain, and grants the benefits of your Rift.</br></br>The overloaded Rift implodes when its duration expires, dealing massive damage and stunning enemies inside of it for 3s.</br></br>Damage: [3000%n/500%e/500%a]</br>Area of Effect: +100% Blocks</br>Duration 4s",
+            "desc": "Overload your Dimensional Rift.</br></br>It grows, pulls all nearby enemies towards it, and deals +300% damage.</br></br>While the Rift is overloaded and for 6s after, Teleport turns into a deadly piercing ray, provides flight, prevents mana drain, and grants the benefits of your Rift.</br></br>The overloaded Rift implodes when its duration expires, dealing massive damage and stunning enemies inside of it for 3s.</br></br>Damage: [475%n/125%a] for Teleport</br>Damage: [4500%n/750%e/750%a] for Collapse</br>Area of Effect: +100% Blocks</br>Duration 10s",
             "archetype": "Riftwalker",
             "archetype_req": 16,
             "parents": [
@@ -10787,12 +10753,12 @@
                         {
                             "type": "stat",
                             "name": "damMult.GravitationalCollapse:8.Damage per Tick",
-                            "value": 200
+                            "value": 300
                         },
                         {
                             "type": "stat",
                             "name": "damMult.GravitationalCollapse:8.Riftspawn Damage",
-                            "value": 200
+                            "value": 300
                         }
                     ]
                 },
@@ -10806,12 +10772,12 @@
                             "name": "Rift Implosion",
                             "type": "damage",
                             "multipliers": [
-                                3000,
-                                500,
+                                4500,
+                                750,
                                 0,
                                 0,
                                 0,
-                                500
+                                750
                             ]
                         }
                     ]
@@ -12561,7 +12527,7 @@
         },
         {
             "display_name": "Echo",
-            "desc": "After losing a Mirror Clone, your next Spin Attack or Smoke Bomb will be copied by all active Clones.",
+            "desc": "After losing a Mirror Clone, your next Spin Attack or Smoke Bomb will be copied by all active Clones, but deal -25% damage.",
             "archetype": "Trickster",
             "archetype_req": 5,
             "base_abil": "Mirror Image",
@@ -12607,7 +12573,7 @@
                         }
                     ],
                     "scaling": [
-                        100
+                        75
                     ]
                 }
             ]
@@ -13410,7 +13376,8 @@
             "archetype": "Acrobat",
             "archetype_req": 0,
             "parents": [
-                "Jasmine Bloom"
+                "Celerity",
+                "Paranoia"
             ],
             "dependencies": [
                 "Swan Dive"
@@ -13418,8 +13385,8 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 40,
-                "col": 6,
+                "row": 44,
+                "col": 7,
                 "icon": "node_1"
             },
             "properties": {},
@@ -14153,7 +14120,7 @@
             "archetype": "Trickster",
             "parents": [
                 "Doppelganger",
-                "Dextrous Hands"
+                "Petal Storm"
             ],
             "dependencies": [
                 "Mirror Image"
@@ -14276,7 +14243,8 @@
             "archetype": "Acrobat",
             "parents": [
                 "Paranoia",
-                "Celerity"
+                "Petal Storm",
+                "Thermobaric Smoke"
             ],
             "dependencies": [
                 "Shurikens"
@@ -14284,8 +14252,8 @@
             "blockers": [],
             "cost": 2,
             "display": {
-                "row": 44,
-                "col": 7,
+                "row": 45,
+                "col": 6,
                 "icon": "node_2"
             },
             "properties": {},
@@ -14297,7 +14265,8 @@
             "archetype": "Acrobat",
             "base_abil": "Smoke Bomb",
             "parents": [
-                "Dextrous Hands"
+                "Dextrous Hands",
+                "Petal Storm"
             ],
             "dependencies": [
                 "Smoke Bomb"
@@ -14336,8 +14305,7 @@
             "archetype": "Acrobat",
             "archetype_req": 14,
             "parents": [
-                "Dextrous Hands",
-                "Paranoia"
+                "Jasmine Bloom"
             ],
             "dependencies": [
                 "Swan Dive"
@@ -14345,7 +14313,7 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 45,
+                "row": 40,
                 "col": 6,
                 "icon": "node_1"
             },
@@ -14390,6 +14358,7 @@
             "archetype": "Acrobat",
             "archetype_req": 18,
             "parents": [
+                "Dextrous Hands",
                 "Thermobaric Smoke"
             ],
             "dependencies": [],
@@ -17779,7 +17748,7 @@
             "effects": []
         },
         {
-            "display_name": "Mana Pool",
+            "display_name": "Pool of Rejuvenation",
             "desc": "While wearing the Mask of the Heretic, Frog Dance will create a small pool when hitting the ground. (Max 3)</br></br>Gain +1 Mana every 0.2s while inside at least one pool.</br></br>Duration: 8s</br>Area of Effect: 5 Blocks",
             "archetype": "Ritualist",
             "parents": [
@@ -17804,7 +17773,7 @@
             "desc": "While wearing the Mask of the Awakened, all of your other Masks will spin around you, dealing damage and applying Haunting Memory's effects.</br></br>Range: 3 Blocks",
             "archetype": "Ritualist",
             "parents": [
-                "Mana Pool"
+                "Pool of Rejuvenation"
             ],
             "dependencies": [
                 "Haunting Memory"
@@ -18003,7 +17972,7 @@
         },
         {
             "display_name": "Patchwork Abomination",
-            "desc": "Summons the Patchwork Abomination, a highly unstable summon.</br></br>Hit the Abomination with Overseer to switch between close-ranged and long-range attack mode.</br></br>The Abomination will attack enemies every 1.25s in close-ranged mode, and every 1.75s in long-ranged mode.</br></br>Damage: [1600%n/500%e/300%t]</br>Duration: 15s</br>Vision: 32 Blocks",
+            "desc": "Summons the Patchwork Abomination, a highly unstable summon.</br></br>Hit the Abomination with Overseer to switch between close-ranged and long-range attack mode.</br></br>The Abomination will attack enemies every 1.25s in close-ranged mode, and every 1.75s in long-ranged mode.</br></br>Damage: [1600%n/500%e/300%t]</br>Duration: 20s</br>Vision: 32 Blocks",
             "archetype": "Summoner",
             "archetype_req": 18,
             "parents": [

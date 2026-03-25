@@ -466,15 +466,15 @@ function displayExpandedItem(item, parent_id){
         let element;
         let power_index;
         for (let i = 0; i < powders.length; i++) {
-            const firstPowderType = skp_elements[Math.floor(powders[i]/6)];
-            const powder1_power = powders[i] % 6;
+            const firstPowderType = skp_elements[Math.floor(powders[i]/POWDER_TIERS)];
+            const powder1_power = powders[i] % POWDER_TIERS;
             if (powder1_power > 2) { //t4+
                 for (let j = i+1; j < powders.length; j++) {
-                    const currentPowderType = skp_elements[Math.floor(powders[j]/6)]
-                    const powder2_power = powders[j] % 6;
+                    const currentPowderType = skp_elements[Math.floor(powders[j]/POWDER_TIERS)]
+                    const powder2_power = powders[j] % POWDER_TIERS;
                     if (powder2_power > 2 && firstPowderType === currentPowderType) {
                         element = currentPowderType;
-                        power_index = powder1_power + powder2_power - 6;
+                        power_index = powder1_power + powder2_power - POWDER_TIERS;
                         break;
                     }
                 }

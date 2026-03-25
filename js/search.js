@@ -229,7 +229,7 @@ function create_filter() {
 
     let min = make_elem("input",
         ["col", "border-dark", "text-light", "dark-5", "rounded", "scaled-font", "form-control", "form-control-sm", "min-max-input"],
-        {id: "filter-min-input-" + filter_id_counter, type: "textfield", placeholder: "-\u221E"}
+        {id: "filter-min-input-" + filter_id_counter, type: "text", placeholder: "-\u221E"}
     );
     col.appendChild(min);
     data.min_elem = min;
@@ -239,7 +239,7 @@ function create_filter() {
 
     let max = make_elem("input",
         ["col", "border-dark", "text-light", "dark-5", "rounded", "scaled-font", "form-control", "form-control-sm", "min-max-input"],
-        {id: "filter-max-input-" + filter_id_counter, type: "textfield", placeholder: "\u221E"}
+        {id: "filter-max-input-" + filter_id_counter, type: "text", placeholder: "\u221E"}
     );
     col.appendChild(max);
     data.max_elem = max;
@@ -387,7 +387,7 @@ function create_filter_string() {
 
     let operator = make_elem("input",
         ["col", "border-dark", "text-light", "dark-5", "rounded", "scaled-font", "form-control", "form-control-sm", "min-max-input"],
-        {id: "filter-min-input-" + filter_id_counter, type: "textfield", placeholder: "Operator"}
+        {id: "filter-min-input-" + filter_id_counter, type: "text", placeholder: "Operator"}
     );
     operator.style.marginLeft = "25px";
     row_2.appendChild(operator);
@@ -395,7 +395,7 @@ function create_filter_string() {
 
     let value = make_elem("input",
         ["col", "border-dark", "text-light", "dark-5", "rounded", "scaled-font", "form-control", "form-control-sm", "min-max-input"],
-        {id: "filter-max-input-" + filter_id_counter, type: "textfield", placeholder: "Value"}
+        {id: "filter-max-input-" + filter_id_counter, type: "text", placeholder: "Value"}
     );
     row_2.appendChild(value);
     data.value_elem = value;
@@ -412,7 +412,7 @@ function create_filter_string() {
 
 function init_filter_dropdown(filter, input_filters, is_string = false) {
     let field_choice = filter.input_elem;
-    field_choice.onclick = function() {field_choice.dispatchEvent(new Event('input', {bubbles:true}));};
+    field_choice.onclick = function() {field_choice.dispatchEvent(new Event('input'));};
     filter.autoComplete = new autoComplete({
         data: {
             src: input_filters,
@@ -457,7 +457,7 @@ function init_filter_dropdown(filter, input_filters, is_string = false) {
 }
 
 function init_string_operator_dropdown(filter) {
-    filter.onclick = function() {filter.dispatchEvent(new Event('input', {bubbles:true}));};
+    filter.onclick = function() {filter.dispatchEvent(new Event('input'));};
     filter.autoComplete = new autoComplete({
         data: {
             src: Object.keys(operation_mappings),
@@ -499,7 +499,7 @@ function init_string_operator_dropdown(filter) {
 }
 
 function init_string_options_dropdown(filter, value_filter) {
-    filter.onclick = function() {filter.dispatchEvent(new Event('input', {bubbles:true}));};
+    filter.onclick = function() {filter.dispatchEvent(new Event('input'));};
     console.log(filter.autoComplete);
     if (filter.autoComplete) {
         filter.autoComplete.data = {src: value_filter}

@@ -386,7 +386,7 @@
     },
     "FOREST_BLESSING": {
         "displayName": "Forest's Blessing",
-        "description": "Your hound gains increased movement speed, attack speed, vision, and [neutral]+60%. Arrow Bomb's damage is reduced by [neutral] -30%.",
+        "description": "Your hound gains increased movement speed, attack speed & vision. Arrow Bomb's damage is reduced by [neutral] -30%.",
         "abilities": [
             {
                 "class": "Archer",
@@ -399,19 +399,6 @@
                         "behavior": "modify",
                         "multipliers": [
                             -30,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0
-                        ]
-                    },
-                    {
-                        "type": "add_spell_prop",
-                        "base_spell": 8,
-                        "target_part": "Single Hit",
-                        "multipliers": [
-                            60,
                             0,
                             0,
                             0,
@@ -946,8 +933,161 @@
     },
     "FIXATE": {
         "displayName": "Fixate",
-        "description": "Devitalize doubles your Winded cap, but lowers Winded damage effects by 30%. Timelock absorbs up to 120 Winded.",
-        "abilities": []
+        "description": "Your Distortion cap and Devitalize effects are doubled, but effects gained by distortion beyond the requirements are reduced by 40%.",
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "slider_max": 100
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Influx Shift"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "slider_max": 30
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Riftbound"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "slider_max": 130
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Devitalize"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Devitalize",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "defMult.Devitalize",
+                                "value": 15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 25,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.64
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex",
+                    "Stabilized Anomaly"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 25,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.224
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Vacuokinesis"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 40,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
+                        },
+                        "scaling": [
+                            -0.4
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Vacuokinesis",
+                    "Stabilized Anomaly"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 40,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
+                        },
+                        "scaling": [
+                            -0.14
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "INSOLUBLE": {
         "displayName": "Insoluble",
@@ -2727,7 +2867,7 @@
                         "bonuses": [
                             {
                                 "type": "stat",
-                                "name": "damMult.RiverOfSouls:4.Air Shout",
+                                "name": "damMult.StagnantAir:4.Air Shout",
                                 "value": 100
                             }
                         ]
@@ -3033,7 +3173,7 @@
     },
     "FLAIN_REMNANTS": {
         "displayName": "Flain Remnants",
-        "description": "Destroying a puppet with Friendly Fire calls forth a Remnant. (Max 5) Each Remnant lasts for 15 seconds, fires an explosive tracking projectile every second that deals 75%N, and increases your Main Attack damage by 15%.",
+        "description": "Destroying a puppet with Friendly Fire calls forth a Remnant. (Max 5) Each Remnant lasts for 20 seconds, fires an explosive tracking projectile every second that deals 95%N, and increases your Main Attack damage by 15%.",
         "abilities": [
             {
                 "class": "Shaman",
@@ -3052,7 +3192,7 @@
                             {
                                 "name": "Remnant Hit",
                                 "multipliers": [
-                                    75,
+                                    95,
                                     0,
                                     0,
                                     0,
@@ -3161,8 +3301,8 @@
         "abilities": []
     },
     "REGICIDES_VANTAGE": {
-        "displayName": "Regicide's Vantage",
-        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 100%",
+        "displayName": "Regicide",
+        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%",
         "abilities": [
             {
                 "class": "Archer",
@@ -3172,7 +3312,7 @@
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Distance Rampup",
-                        "slider_max": 50,
+                        "slider_max": 60,
                         "output": {
                             "type": "stat",
                             "name": "damMult.RegicidesVantage"
@@ -3187,7 +3327,7 @@
     },
     "DIVINE_RIGHT": {
         "displayName": "Divine Right",
-        "description": "Sacred Surge's damage is increased by 4% for every 1000 max HP you have when it triggers.",
+        "description": "Sacred Surge's damage is increased by 4% (Maximum 200%) for every 1000 max HP you have when it triggers.",
         "abilities": [
             {
                 "class": "Warrior",
@@ -3213,7 +3353,8 @@
                         "scaling": [
                             0.004,
                             0.004
-                        ]
+                        ],
+                        "max": 200
                     }
                 ]
             }
@@ -3225,7 +3366,10 @@
         "abilities": [
             {
                 "class": "Assassin",
-                "base_abil": 999,
+                "base_abil": "Dash",
+                "dependencies": [
+                    "Surprise Strike"
+                ],
                 "effects":[
                     {
                         "type": "stat_scaling",
@@ -3238,8 +3382,7 @@
                         },
                         "scaling": [
                             5
-                        ],
-                        "max": 130
+                        ]
                     }
                 ]
             }

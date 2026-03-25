@@ -116,10 +116,6 @@ function apply_weapon_powders(item) {
             item.set(damage_keys[i], [damage_low[i], damage_high[i]]);
         }
     }
-    // Weirdly enough, neutral damage is counted as present if it exists before powdering.
-    if (item.get("nDam") !== "0-0") {
-        present[0] = true;
-    }
     item.set(damage_present_key, present);
 }
 

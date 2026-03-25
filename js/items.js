@@ -143,13 +143,12 @@ const special_mappings = {
     "Sum (Life Sustain)": "hpr+ls",
     "Sum (Health + Health Bonus)": "hp+hpBonus",
     "Sum (Base Damage)": "sumdmg",
-    "Base DPS (Pre-Powder)": "sumdmg * atkspdmod(atkspd)",
-    "Base DPS (Post-Powder)": "(sumdmg+powders*11.5) * atkspdmod(atkspd)",
-    "Sum (Melee Damages Raw)": "mdRaw+rMdRaw+nMdRaw+eMdRaw+tMdRaw+wMdRaw+fMdRaw+aMdRaw",
-    "Sum (Spell Damages Raw)": "sdRaw+rSdRaw+nSdRaw+eSdRaw+tSdRaw+wSdRaw+fSdRaw+aSdRaw",
-    "Sum (All Damages Raw)": "damRaw+rDamRaw+nDamRaw+eDamRaw+tDamRaw+wDamRaw+fDamRaw+aDamRaw",
-    "Sum (Spell Damages %)": "sdPct+eSdPct+tSdPct+wSdPct+fSdPct+aSdPct+nSdPct+rSdPct",
-    "Sum (Melee Damages %)": "mdPct+eMdPct+tMdPct+wMdPct+fMdPct+aMdPct+nMdPct+rMdPct",
+    "Base DPS (Pre-Powder)": "sumdmg*atkspdmod(atkspd)",
+    "Base DPS (Post-Powder)": "(sumdmg+powders*13)*atkspdmod(atkspd)",
+    "Sum (Melee Damage Raw)": "summeleedamraw+sumdamraw",
+    "Sum (Spell Damage Raw)": "sumspelldamraw+sumdamraw",
+    "Sum (Spell Damages %)": "sumspelldampct+sumdampct",
+    "Sum (Melee Damages %)": "summeleedampct+sumdampct",
     "Sum (Elemental Defense Raw)": "eDef+tDef+wDef+fDef+aDef"
 };
 
@@ -160,12 +159,14 @@ const string_mappings = {
     "Restriction": "restrict"
 }
 
-for (let x in translate_mappings) {
-    item_filters.push(x);
-}
 for (let x in special_mappings) {
     item_filters.push(x);
 }
+
+for (let x in translate_mappings) {
+    item_filters.push(x);
+}
+
 for (let x in string_mappings) {
     string_item_filters.push(x);
 }

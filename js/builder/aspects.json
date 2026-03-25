@@ -2250,14 +2250,14 @@
       "tiers": [
         {
           "threshold": 1,
-          "description": "Pressure is stronger. </br> Bash gains +1x as many hits. </br> Uppercut deals +50% neutral and +8% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +90%   </br>&emsp;(<span class='nDam'>Damage</span>: +50%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +8%)",
+          "description": "Pressure is stronger. </br> Bash gains +0.5x as many hits. </br> Uppercut deals +50% neutral and +8% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +90%   </br>&emsp;(<span class='nDam'>Damage</span>: +50%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +8%)",
           "abilities": [
             {
               "base_abil": "War Scream",
               "properties": {
                 "pressure_rainbow_uppercut": 8,
                 "pressure_neutral_uppercut": 50,
-                "pressure_bash_hits": 1.0
+                "pressure_bash_hits": 0.5
               },
               "effects": []
             }
@@ -2265,14 +2265,14 @@
         },
         {
           "threshold": 5,
-          "description": "Pressure is stronger. </br> Bash gains +1x as many hits. </br> Uppercut deals +50% neutral and +8% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +90%   </br>&emsp;(<span class='nDam'>Damage</span>: +50%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +8%) </br> War Scream grants a higher damage boost. Effect: +3% Damage Bonus to Players",
+          "description": "Pressure is stronger. </br> Bash gains +0.5x as many hits. </br> Uppercut deals +50% neutral and +8% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +90%   </br>&emsp;(<span class='nDam'>Damage</span>: +50%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +8%) </br> War Scream grants a higher damage boost. Effect: +3% Damage Bonus to Players",
           "abilities": [
             {
               "base_abil": "War Scream",
               "properties": {
                 "pressure_rainbow_uppercut": 8,
                 "pressure_neutral_uppercut": 50,
-                "pressure_bash_hits": 1.0,
+                "pressure_bash_hits": 0.5,
                 "pressure_scream_boost": 3
               },
               "effects": []
@@ -2281,14 +2281,14 @@
         },
         {
           "threshold": 15,
-          "description": "Pressure is stronger. </br> Bash gains +1x as many hits and more damage. </br><span class='mc-white'>Total Damage</span>: +5%   </br>&emsp;(<span class='tDam'>Thunder</span>: +5%) </br> Uppercut deals +70% neutral and +10% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +120%   </br>&emsp;(<span class='nDam'>Damage</span>: +70%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +10%) </br> War Scream grants a higher damage boost. Effect: +4% Damage Bonus to Players",
+          "description": "Pressure is stronger. </br> Bash gains +0.5x as many hits and more damage. </br><span class='mc-white'>Total Damage</span>: +5%   </br>&emsp;(<span class='tDam'>Thunder</span>: +5%) </br> Uppercut deals +70% neutral and +10% Damage in all Elements. </br><span class='mc-white'>Total Damage</span>: +120%   </br>&emsp;(<span class='nDam'>Damage</span>: +70%)   </br>&emsp;(<span class='nDam'>Rainbow Damage</span>: +10%) </br> War Scream grants a higher damage boost. Effect: +4% Damage Bonus to Players",
           "abilities": [
             {
               "base_abil": "War Scream",
               "properties": {
                 "pressure_rainbow_uppercut": 10,
                 "pressure_neutral_uppercut": 70,
-                "pressure_bash_hits": 1.0,
+                "pressure_bash_hits": 0.5,
                 "pressure_scream_boost": 4
               },
               "effects": []
@@ -2316,37 +2316,7 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 6,
-                  "output": [
-                    {
-                      "type": "stat",
-                      "name": "nDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "eDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "tDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "wDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "fDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "aDamRaw"
-                    }
-                  ],
-                  "max": 25,
-                  "scaling": [
-                    5
-                  ]
+                  "slider_max": 12
                 }
               ]
             }
@@ -2363,37 +2333,7 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 6,
-                  "output": [
-                    {
-                      "type": "stat",
-                      "name": "nDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "eDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "tDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "wDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "fDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "aDamRaw"
-                    }
-                  ],
-                  "max": 40,
-                  "scaling": [
-                    5
-                  ]
+                  "slider_max": 20
                 }
               ]
             }
@@ -2410,37 +2350,7 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 6,
-                  "output": [
-                    {
-                      "type": "stat",
-                      "name": "nDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "eDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "tDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "wDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "fDamRaw"
-                    },
-                    {
-                      "type": "stat",
-                      "name": "aDamRaw"
-                    }
-                  ],
-                  "max": 50,
-                  "scaling": [
-                    5
-                  ]
+                  "slider_max": 25
                 }
               ]
             }
@@ -6943,7 +6853,7 @@
           "description": "Corporeal Manifestation spins 25% faster.",
           "abilities": [
             {
-              "base_abil": "Haunting Memory",
+              "base_abil": "Uproot",
               "dependencies": [
                 "Corporeal Manifestation"
               ],
@@ -6965,7 +6875,7 @@
           "description": "Corporeal Manifestation spins 40% faster.",
           "abilities": [
             {
-              "base_abil": "Haunting Memory",
+              "base_abil": "Uproot",
               "dependencies": [
                 "Corporeal Manifestation"
               ],
@@ -6987,7 +6897,7 @@
           "description": "Corporeal Manifestation spins 55% faster.",
           "abilities": [
             {
-              "base_abil": "Haunting Memory",
+              "base_abil": "Uproot",
               "dependencies": [
                 "Corporeal Manifestation"
               ],
@@ -7009,7 +6919,7 @@
           "description": "Corporeal Manifestation spins 65% faster.",
           "abilities": [
             {
-              "base_abil": "Haunting Memory",
+              "base_abil": "Uproot",
               "dependencies": [
                 "Corporeal Manifestation"
               ],
