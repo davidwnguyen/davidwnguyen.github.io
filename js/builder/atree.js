@@ -98,6 +98,8 @@ stat_scaling: {
                                             //     The slider scaling value is interpreted as a "multiplier" (100+x)/100,
                                             //     which is raised to the power of the slider value.
   slider_max: Optional[int]                 // affected by behavior
+  slider_max_mult: Optional[float]          // Multiplicative factor applied to slider_max after all additive
+                                            //     slider_max contributions are merged. Multiple sources multiply together.
   slider_default: Optional[int]             // affected by behavior
   inputs: Optional[list[scaling_target]]    // List of things to scale. Omit this if using slider
 
@@ -639,6 +641,9 @@ const atree_make_interactives = new (class extends ComputeNode {
                         }
                         else if (!slider_info.overwritten) {
                             slider_info.max += slider_max;
+                            if ('slider_max_mult' in effect) {
+                                slider_info.max_mult = (slider_info.max_mult ?? 1) * effect.slider_max_mult;
+                            }
                             slider_info.default_val += slider_default;
                         }
                     }
@@ -667,6 +672,12 @@ const atree_make_interactives = new (class extends ComputeNode {
             if (unprocessed.length == to_process.length) { break; }
             to_process = unprocessed;
             unprocessed = [];
+        }
+        // apply accumulated slider_max_mult factors (multiplicative phase)
+        for (const [_, info] of slider_map) {
+            if (info.max_mult != null && info.max_mult !== 1) {
+                info.max = Math.round(info.max * info.max_mult);
+            }
         }
         // next, render the sliders and toggles onto the abilities.
         for (const [slider_name, slider_info] of slider_map.entries()) {

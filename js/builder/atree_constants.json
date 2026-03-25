@@ -10266,7 +10266,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 130
+                    "slider_max_mult": 2
                 }
             ]
         },

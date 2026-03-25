@@ -938,42 +938,15 @@
             {
                 "class": "Mage",
                 "base_abil": "Distortion",
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "slider_max": 100
-                    }
-                ]
-            },
-            {
-                "class": "Mage",
-                "base_abil": "Distortion",
                 "dependencies": [
-                    "Influx Shift"
+                    "Distortion"
                 ],
                 "effects": [
                     {
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Distortion",
-                        "slider_max": 30
-                    }
-                ]
-            },
-            {
-                "class": "Mage",
-                "base_abil": "Distortion",
-                "dependencies": [
-                    "Riftbound"
-                ],
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "slider_max": 130
+                        "slider_max_mult": 2
                     }
                 ]
             },
