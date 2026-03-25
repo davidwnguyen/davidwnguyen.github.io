@@ -65,6 +65,11 @@ def translate_effect(id_data, effect):
             if isinstance(val, str):
                 abil_id, propname = val.split('.')
                 effect["slider_max"] = str(id_data[abil_id])+'.'+propname
+        if "slider_max_mult" in effect:
+            val = effect["slider_max_mult"]
+            if isinstance(val, str):
+                abil_id, propname = val.split('.')
+                effect["slider_max_mult"] = str(id_data[abil_id])+'.'+propname
 
 def translate_abil(id_data, abil, tree=True):
     def translate(path, ref):

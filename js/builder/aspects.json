@@ -3466,20 +3466,6 @@
                     "slider_max": 10
                 }
               ]
-            },
-            {
-              "base_abil": "Distortion",
-              "dependencies": [
-                "Riftbound"
-              ],
-              "effects": [
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Distortion",
-                    "slider_max": 15
-                }
-              ]
             }
           ]
         },
@@ -3497,20 +3483,6 @@
                     "slider_max": 10
                 }
               ]
-            },
-            {
-              "base_abil": "Distortion",
-              "dependencies": [
-                "Riftbound"
-              ],
-              "effects": [
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Distortion",
-                    "slider_max": 15
-                }
-              ]
             }
           ]
         },
@@ -3526,20 +3498,6 @@
                     "slider": true,
                     "slider_name": "Distortion",
                     "slider_max": 15
-                }
-              ]
-            },
-            {
-              "base_abil": "Distortion",
-              "dependencies": [
-                "Riftbound"
-              ],
-              "effects": [
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Distortion",
-                    "slider_max": 23
                 }
               ]
             }
