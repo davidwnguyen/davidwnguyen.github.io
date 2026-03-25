@@ -9274,7 +9274,7 @@
             "display_name": "Dimensional Tear",
             "desc": "Hitting an enemy with Wind Slash tears open a dimensional rift between you and your destination.</br></br>The rift damages enemies every 0.4s, increases your Distortion gain by +25% and reduces the damage you take while standing inside it.</br></br>The rift's benefits linger for 4s upon leaving its area.</br></br>Damage: [60%n/20%e/20%a]</br>Effect: 15% Resistance Bonus</br>Area of Effect: 8 Blocks</br>Duration: 8s</br>Cooldown 8s",
             "archetype": "Riftwalker",
-            "archetype_req": 8,
+            "archetype_req": 7,
             "base_abil": "Distortion",
             "parents": [
                 "Meteor Shower",
