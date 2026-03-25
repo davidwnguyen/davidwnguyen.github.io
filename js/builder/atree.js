@@ -1315,6 +1315,14 @@ function render_AT(UI_elem, list_elem, tree) {
                 });
                 generateTooltip(node_wrap.tooltip_elem, node_elem, ability, atree_map);
                 UI_elem.appendChild(node_wrap.tooltip_elem);
+
+                // If the tooltip overflows the bottom of the viewport, show it above the node instead.
+                // Use the same 50px gap as the normal (below) case to keep the tooltip clear of the hitbox.
+                const tooltipRect = node_wrap.tooltip_elem.getBoundingClientRect();
+                if (tooltipRect.bottom > window.innerHeight) {
+                    const nodePageY = node_elem.getBoundingClientRect().top + window.pageYOffset;
+                    node_wrap.tooltip_elem.style.top = (nodePageY - node_wrap.tooltip_elem.offsetHeight - 50) + "px";
+                }
             });
 
             hitbox.addEventListener('mouseout', function(e) {
