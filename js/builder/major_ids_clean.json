@@ -1957,7 +1957,7 @@
                         "bonuses": [
                             {
                                 "type": "stat",
-                                "name": "damMult.Punishment",
+                                "name": "damMult.Vulnerability",
                                 "value": 10
                             }
                         ]
@@ -3364,6 +3364,126 @@
     "PSYCHIC_OBSESSION": {
         "displayName": "+Psychic Obsession",
         "description": "Your Totems will now all move towards you at an increased rate, if you are using Mask of the Heretic.",
+        "abilities": []
+    },
+    "BURNT_SHADOWS": {
+        "displayName": "+Burnt Shadows",
+        "description": "Buried Light is faster and is controlled by the direction you face. Enemies in the light instead take 80%F and recieve 10% more damage.",
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "Buried Light",
+                "properties":{
+                    "hitsPerSecond": 2
+                },
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 10,
+                        "target_part": "Damage per Tick",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            80,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Burnt Shadows",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Vulnerability",
+                                "value": 10
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "THREE_BODIES": {
+        "displayName": "Three Bodies",
+        "description": "Pressure grants additional effects: Bash gains +4 radius, Uppercut gains [water]+75%, and War Scream's buff gains +12s duration",
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "War Scream",
+                "dependencies":[
+                    "Pressure"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Pressure",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "wConvBase:3.Uppercut",
+                                "value": 75
+                            },
+                            {
+                                "type": "prop",
+                                "abil": "Bash",
+                                "name": "aoe",
+                                "value": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "COSMIC_CAPTURE": {
+        "displayName": "+Cosmic Capture",
+        "description": "Meteor falls twice as fast, has +3 blast radius, and pulls enemies upon impact.",
+        "abilities": []
+    },
+    "GRAND_INFLUENCE": {
+        "displayName": "+Grand Influence",
+        "description": "While above 80% maximum health, nearby allies gain 15% increased health gain from all sources and 25% Walk Speed",
+        "abilities": []
+    },
+    "IGNITION_WHIRLWIND": {
+        "displayName": "Ignition Whirlwind",
+        "description": "Blazing Powder adds +8 rotations to spin attack, but lowers the damage by 75%.",
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": "Spin Attack",
+                "dependencies":[
+                    "Blazing Powder"
+                ],
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 1,
+                        "target_part": "Total Damage",
+                        "hits": {
+                            "Spin Attack": 8
+                        }
+                    },
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.IgnitionWhirlwind:1.Spin Attack",
+                                "value": -75
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "INCISION_ELEGY": {
+        "displayName": "Incision Elegy",
+        "description": "Lacerate turns into a forward-moving projectile, but no longer moves you.",
         "abilities": []
     }
 }
