@@ -44,13 +44,19 @@ class Build {
 
         // calc skillpoints requires statmaps only
         let result = calculate_skillpoints(_wynn_order_equipment.map((x) => x.statMap), this.weapon.statMap);
-        // How many skillpoints the player had to assign (5 numbers)
-        this.base_skillpoints = result[0];
-        // How many skillpoints the build ended up with (5 numbers)
-        this.total_skillpoints = result[1];
+        const _equip_order = result[0].slice();
+        this.equip_order = [];
+        for (const item of _equip_order) {
+            if (item.get('category') === 'tome' || item.has('NONE')) { continue; }
+            this.equip_order.push(item);
+        }
+        // How many skillpoints the player had to assign (5 number)
+        this.base_skillpoints = result[1];
+        // How many skillpoints the build ended up with (5 number)
+        this.total_skillpoints = result[2];
         // How many skillpoints assigned (1 number, sum of base_skillpoints)
-        this.assigned_skillpoints = result[2];
-        this.activeSetCounts = result[3];
+        this.assigned_skillpoints = result[3];
+        this.activeSetCounts = result[4];
 
         this.initBuildStats();
     }  

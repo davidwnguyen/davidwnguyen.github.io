@@ -226,7 +226,8 @@ const wynn_version_names = [
     '2.2.0.0',
     '2.2.0.7',
     '2.2.0.12',
-    '2.2.0.14'
+    '2.2.0.14',
+    '2.2.0.19'
 ];
 
 const WYNN_VERSION_LATEST = wynn_version_names.length - 1;

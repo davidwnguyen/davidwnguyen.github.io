@@ -14187,7 +14187,7 @@
             "archetype": "Trickster",
             "desc": "Smoke Bomb releases a cloud of dust every 0.5s, applying Hypoxia for +2s.</br>(Max 10s)</br></br>Enemies suffering from Hypoxia are slowed by 20% and take +30% more Air damage from you.",
             "parents": [
-                "Disappearing Act"
+                "Paranoia"
             ],
             "dependencies": [
                 "Smoke Bomb"
@@ -14195,8 +14195,8 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 47,
-                "col": 4,
+                "row": 46,
+                "col": 5,
                 "icon": "node_1"
             },
             "properties": {},
@@ -14367,6 +14367,57 @@
             "display": {
                 "row": 50,
                 "col": 7,
+                "icon": "node_3"
+            },
+            "properties": {},
+            "effects": [
+                {
+                    "type": "replace_spell",
+                    "name": "Serpent's Garden",
+                    "base_spell": 16,
+                    "display": "Total DPS",
+                    "parts": [
+                        {
+                            "name": "Damage per Tick",
+                            "multipliers": [
+                                200,
+                                100,
+                                0,
+                                0,
+                                0,
+                                100
+                            ]
+                        },
+                        {
+                            "name": "Total DPS",
+                            "hits": {
+                                "Damage per Tick": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_scaling",
+                    "slider": true,
+                    "slider_name": "Momentum",
+                    "slider_max": 5
+                }
+            ]
+        },
+        {
+            "display_name": "Another Self",
+            "desc": "Create a perfect clone of yourself to work with as a united duet, it copying every spell you cast.</br></br>The clone's health is proportional to your own effective health, and while it lives, the effectiveness of your debuffs is doubled.</br></br>Casting Offhand again swaps your positions, detonates Tricks on nearby enemies, and makes your clone cast all available Damage Spells.</br></br>If no enemy had more than 10 Tricks detonated in the swap, the clone loses -2000 health. However, for every Trick detonates over the threshold, those Damage Spells deal 3% more damage.</br></br>Duration: 20s",
+            "archetype": "Trickster",
+            "archetype_req": 19,
+            "parents": [
+                "Disappearing Act"
+            ],
+            "dependencies": [],
+            "blockers": [],
+            "cost": 1,
+            "display": {
+                "row": 51,
+                "col": 4,
                 "icon": "node_3"
             },
             "properties": {},
