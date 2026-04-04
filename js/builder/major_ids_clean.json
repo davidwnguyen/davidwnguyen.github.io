@@ -1445,9 +1445,6 @@
             {
                 "class": "Warrior",
                 "base_abil": "Bloodlust",
-                "dependencies": [
-                    "Bloodlust"
-                ],
                 "properties": {},
                 "effects": [
                     {
@@ -1475,6 +1472,29 @@
                         },
                         "scaling": [
                             5.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Warrior",
+                "base_abil": "Bloodlust",
+                "dependencies": [
+                    "Ecstasy"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "behavior": "modify",
+                        "slider_name": "Corrupted",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Bloodlust:10.Annihilation"
+                        },
+                        "scaling": [
+                            2.0
                         ]
                     }
                 ]
