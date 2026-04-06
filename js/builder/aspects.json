@@ -221,12 +221,12 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 15,
+                  "slider_max": 10,
                   "output": {
                     "type": "stat",
                     "name": "spd"
                   },
-                  "max": 15,
+                  "max": 10,
                   "scaling": [
                     1
                   ]
@@ -246,12 +246,12 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 30,
+                  "slider_max": 15,
                   "output": {
                     "type": "stat",
                     "name": "spd"
                   },
-                  "max": 30,
+                  "max": 15,
                   "scaling": [
                     1
                   ]
@@ -271,12 +271,12 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Hits dealt",
-                  "slider_max": 40,
+                  "slider_max": 20,
                   "output": {
                     "type": "stat",
                     "name": "spd"
                   },
-                  "max": 40,
+                  "max": 20,
                   "scaling": [
                     1
                   ]
@@ -959,7 +959,7 @@
                     {
                       "type": "stat",
                       "name": "damMult.ArrowBombBoost:4.Single Shot",
-                      "value": 15
+                      "value": 10
                     }
                   ]
                 }
@@ -3492,19 +3492,7 @@
         {
           "threshold": 1,
           "description": "Distortion decays -10% slower.",
-          "abilities": [
-            {
-              "base_abil": "Distortion",
-              "effects": [
-                {
-                  "type": "stat_scaling",
-                  "slider": true,
-                  "slider_name": "Distortion",
-                  "slider_max_mult": 1.15
-                }
-              ]
-            }
-          ]
+          "abilities": []
         },
         {
           "threshold": 5,
@@ -3512,14 +3500,7 @@
           "abilities": [
             {
               "base_abil": "Distortion",
-              "effects": [
-                {
-                  "type": "stat_scaling",
-                  "slider": true,
-                  "slider_name": "Distortion",
-                  "slider_max_mult": 1.15
-                }
-              ]
+              "effects": []
             }
           ]
         },
@@ -3529,14 +3510,7 @@
           "abilities": [
             {
               "base_abil": "Distortion",
-              "effects": [
-                {
-                  "type": "stat_scaling",
-                  "slider": true,
-                  "slider_name": "Distortion",
-                  "slider_max_mult": 1.2
-                }
-              ]
+              "effects": []
             }
           ]
         }
@@ -6194,7 +6168,7 @@
         },
         {
           "threshold": 150,
-          "description": "Flaming Tongue gains +4 hits, and doubles in speed. Flamint Tongue inflicts -0.65s of Bleeding. </br><span class='mc-white'>Total Damage</span>: -34% (of your DPS, for Uproot, per hit)   </br>&emsp;(<span class='nDam'>Damage</span>: -22%)   </br>&emsp;(<span class='tDam'>Thunder</span>: -4%)   </br>&emsp;(<span class='fDam'>Fire</span>: -8%)",
+          "description": "Flaming Tongue gains +4 hits, and doubles in speed. Flaming Tongue inflicts -0.65s of Bleeding. </br><span class='mc-white'>Total Damage</span>: -34% (of your DPS, for Uproot, per hit)   </br>&emsp;(<span class='nDam'>Damage</span>: -22%)   </br>&emsp;(<span class='tDam'>Thunder</span>: -4%)   </br>&emsp;(<span class='fDam'>Fire</span>: -8%)",
           "abilities": [
             {
               "base_abil": "Uproot",

@@ -1557,42 +1557,39 @@
             ]
         },
         {
-            "display_name": "Call of the Hound",
-            "desc": "Arrow Shield summons a Hound that will attack aggressive enemies every 0.25s and drag them towards your traps. </br> </br><span class='mc-white'>Total Damage</span>: 40% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 40%) </br>Vision: 18 Blocks (Circle-Shaped) </br>Duration: 60s",
+            "display_name": "Murder Flock",
+            "desc": "Basaltic Trap summons a Crow upon detonation that will peck at aggressive enemies every 0.9s. (Max 2) Damaged enemies will be distracted for 0.2s. </br> </br><span class='mc-white'>Total Damage</span>: 60% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 60%) </br>Effect: Blindness to Enemies </br>Vision: 18 Blocks (Circle-Shaped) </br>Duration: 12s",
             "archetype": "Trapper",
-            "archetype_req": 4,
+            "archetype_req": 0,
             "base_abil": "Arrow Shield",
             "parents": [
-                "Mana Trap",
-                "Cheaper Escape II",
-                "Decimator"
+                "Patient Hunter"
             ],
             "dependencies": [
-                "Arrow Shield"
+                "Basaltic Trap"
             ],
             "blockers": [],
             "cost": 2,
             "display": {
-                "row": 32,
-                "col": 4,
+                "row": 23,
+                "col": 3,
                 "icon": "node_4"
             },
             "properties": {
                 "vision": 18,
-                "duration": 60,
-                "houndCount": 1
+                "duration": 12
             },
             "effects": [
                 {
                     "type": "replace_spell",
-                    "name": "Call of the Hound",
-                    "base_spell": 8,
+                    "name": "Murder Flock",
+                    "base_spell": 10,
                     "display": "Total DPS",
                     "parts": [
                         {
                             "name": "Single Hit",
                             "multipliers": [
-                                40,
+                                60,
                                 0,
                                 0,
                                 0,
@@ -1601,16 +1598,15 @@
                             ]
                         },
                         {
-                            "name": "DPS",
+                            "name": "Crow DPS",
                             "hits": {
-                                "Single Hit": 4
-                            },
-                            "hide": true
+                                "Single Hit": 1.1111111111
+                            }
                         },
                         {
                             "name": "Total DPS",
                             "hits": {
-                                "DPS": "Arrow Shield.houndCount"
+                                "Crow DPS": 2
                             }
                         }
                     ]
@@ -1780,6 +1776,7 @@
         {
             "display_name": "Rocket Jump",
             "desc": "Arrow Bomb's recoil is increased, and its self-damage is reduced to 1%.",
+            "archetype": "Trapper",
             "base_abil": "Arrow Bomb",
             "parents": [
                 "Ivyroot Mamba",
@@ -2377,38 +2374,42 @@
             ]
         },
         {
-            "display_name": "Murder Flock",
-            "desc": "Basaltic Trap summons a Crow upon detonation that will peck at aggressive enemies every 0.9s. (Max 2) Damaged enemies will be distracted for 0.2s. </br> </br><span class='mc-white'>Total Damage</span>: 60% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 60%) </br>Effect: Blindness to Enemies </br>Vision: 18 Blocks (Circle-Shaped) </br>Duration: 12s",
+            "display_name": "Call of the Hound",
+            "desc": "Arrow Shield summons a Hound that will attack aggressive enemies every 0.25s and drag them towards your traps. </br> </br><span class='mc-white'>Total Damage</span>: 40% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 40%) </br>Vision: 18 Blocks (Circle-Shaped) </br>Duration: 60s",
             "archetype": "Trapper",
+            "archetype_req": 4,
             "base_abil": "Arrow Shield",
             "parents": [
-                "Patient Hunter"
+                "Mana Trap",
+                "Cheaper Escape II",
+                "Decimator"
             ],
             "dependencies": [
-                "Basaltic Trap"
+                "Arrow Shield"
             ],
             "blockers": [],
             "cost": 2,
             "display": {
-                "row": 23,
-                "col": 3,
+                "row": 32,
+                "col": 4,
                 "icon": "node_4"
             },
             "properties": {
                 "vision": 18,
-                "duration": 12
+                "duration": 60,
+                "houndCount": 1
             },
             "effects": [
                 {
                     "type": "replace_spell",
-                    "name": "Murder Flock",
-                    "base_spell": 10,
+                    "name": "Call of the Hound",
+                    "base_spell": 8,
                     "display": "Total DPS",
                     "parts": [
                         {
                             "name": "Single Hit",
                             "multipliers": [
-                                60,
+                                40,
                                 0,
                                 0,
                                 0,
@@ -2417,15 +2418,16 @@
                             ]
                         },
                         {
-                            "name": "Crow DPS",
+                            "name": "DPS",
                             "hits": {
-                                "Single Hit": 1.1111111111
-                            }
+                                "Single Hit": 4
+                            },
+                            "hide": true
                         },
                         {
                             "name": "Total DPS",
                             "hits": {
-                                "Crow DPS": 2
+                                "DPS": "Arrow Shield.houndCount"
                             }
                         }
                     ]
@@ -2794,8 +2796,8 @@
                     "bonuses": [
                         {
                             "type": "prop",
-                            "abil": "Basaltic Trap",
-                            "name": "traps",
+                            "abil": "Grape Bomb",
+                            "name": "grapes",
                             "value": 1
                         }
                     ]
@@ -2870,7 +2872,7 @@
             "blockers": [],
             "cost": 2,
             "display": {
-                "row": 37,
+                "row": 39,
                 "col": 7,
                 "icon": "node_3"
             },
@@ -3129,8 +3131,8 @@
             "blockers": [],
             "cost": 1,
             "display": {
-                "row": 39,
-                "col": 7,
+                "row": 40,
+                "col": 8,
                 "icon": "node_0"
             },
             "properties": {},
@@ -3235,7 +3237,7 @@
             "base_abil": "Arrow Bomb",
             "parents": [
                 "Chilling Snare",
-                "More Focus II",
+                "Crepuscular Ray",
                 "Snow Storm"
             ],
             "dependencies": [],
@@ -3431,10 +3433,10 @@
                     "base_spell": 14,
                     "target_part": "Fimbulwinter",
                     "multipliers": [
-                        1000,
+                        800,
                         0,
                         0,
-                        500,
+                        400,
                         0,
                         0
                     ]
@@ -3446,6 +3448,17 @@
                     "hits": {
                         "Fimbulwinter": 1
                     }
+                },
+                {
+                    "type": "raw_stat",
+                    "bonuses": [
+                        {
+                            "type": "prop",
+                            "abil": "Basaltic Trap",
+                            "name": "traps",
+                            "value": 1
+                        }
+                    ]
                 }
             ]
         },
@@ -3661,10 +3674,10 @@
                     "target_part": "Single Tick",
                     "behavior": "modify",
                     "multipliers": [
+                        4,
+                        0,
+                        0,
                         2,
-                        0,
-                        0,
-                        1,
                         0,
                         0
                     ]
@@ -8139,8 +8152,8 @@
             ]
         },
         {
-            "display_name": "Wind Slash",
-            "desc": "When using Teleport, slash through the air and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 160% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 120%)   </br>&emsp;(<span class='aDam'>Air</span>: 40%) </br>Area of Effect: 1.5 Blocks (Circle-Shaped)",
+            "display_name": "Etheric Slash",
+            "desc": "When using Teleport, slash through the air and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='aDam'>Air</span>: 50%) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
             "archetype": "Riftwalker",
             "base_abil": "Teleport",
             "parents": [
@@ -8160,7 +8173,7 @@
             "effects": [
                 {
                     "type": "add_spell_prop",
-                    "target_part": "Wind Slash",
+                    "target_part": "Etheric Slash",
                     "base_spell": 2,
                     "multipliers": [
                         150,
@@ -8173,10 +8186,10 @@
                 },
                 {
                     "type": "add_spell_prop",
-                    "target_part": "Wind Slash Total",
+                    "target_part": "Etheric Slash Total",
                     "base_spell": 2,
                     "hits": {
-                        "Wind Slash": 1
+                        "Etheric Slash": 1
                     },
                     "hide": true
                 },
@@ -8186,7 +8199,7 @@
                     "base_spell": 2,
                     "display": "Total Damage",
                     "hits": {
-                        "Wind Slash Total": 1
+                        "Etheric Slash Total": 1
                     }
                 }
             ]
@@ -8362,11 +8375,11 @@
             "archetype": "Riftwalker",
             "archetype_req": 2,
             "parents": [
-                "Wind Slash",
+                "Etheric Slash",
                 "Displacement"
             ],
             "dependencies": [
-                "Wind Slash"
+                "Etheric Slash"
             ],
             "blockers": [],
             "cost": 2,
@@ -8499,7 +8512,7 @@
         },
         {
             "display_name": "Arcane Transfer",
-            "desc": "Meteor, Ice Snake, and Wind Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado adds 4 Mana to the Mana Bank every hit. With Meteor Shower, Mana gain from Meteor is reduced to 4. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
+            "desc": "Meteor, Ice Snake, and Etheric Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado adds 4 Mana to the Mana Bank every hit. With Meteor Shower, Mana gain from Meteor is reduced to 4. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
             "archetype": "Arcanist",
             "archetype_req": 2,
             "parents": [
@@ -9889,7 +9902,7 @@
         },
         {
             "display_name": "Arcane Power",
-            "desc": "Meteor, Ice Snake, and Wind Slash will add +8 Mana to your Mana Bank for each aggressive enemy you hit. Frozen Tornado adds +2 Mana to the Mana Bank every hit. With Meteor Shower, Meteor only adds +2 Mana. </br> Arcane Restoration will restore mana 0.1s faster.",
+            "desc": "Meteor, Ice Snake, and Etheric Slash will add +8 Mana to your Mana Bank for each aggressive enemy you hit. Frozen Tornado adds +2 Mana to the Mana Bank every hit. With Meteor Shower, Meteor only adds +2 Mana. </br> Arcane Restoration will restore mana 0.1s faster.",
             "base_abil": "Arcane Transfer",
             "archetype": "Arcanist",
             "archetype_req": 0,
@@ -10325,14 +10338,7 @@
                 "icon": "node_3"
             },
             "properties": {},
-            "effects": [
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Distortion",
-                    "slider_max_mult": 1.45
-                }
-            ]
+            "effects": []
         },
         {
             "display_name": "Cheaper Heal II",
@@ -16467,7 +16473,7 @@
         },
         {
             "display_name": "Depersonalization",
-            "desc": "Masquerade will trigger after -1 less Mask switch. Reduces mana  bonus by -10.",
+            "desc": "Masquerade will trigger after -1 less Mask switch. Reduces mana bonus by -10.",
             "archetype": "Ritualist",
             "archetype_req": 7,
             "base_abil": "Uproot",
