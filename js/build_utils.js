@@ -145,8 +145,7 @@ let nonRolledIDs = [
     "nDam_", "fDam_", "wDam_", "aDam_", "tDam_", "eDam_",
     "majorIds",
     "damMobs",
-    "defMobs",
-    "atkTier"
+    "defMobs"
 ];
 let rolledIDs = [
     "hprPct",
@@ -161,6 +160,7 @@ let rolledIDs = [
     "thorns",
     "expd",
     "spd",
+    "atkTier",
     "poison",
     "hpBonus",
     "spRegen",

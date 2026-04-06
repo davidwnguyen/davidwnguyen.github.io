@@ -380,21 +380,7 @@ function displayExpandedItem(item, parent_id){
                         container.appendChild(bckgrd);
                         parent_div.appendChild(container);
                     }
-                }
-                else if (id === "atkTier"){
-                    let style = "positive";
-                    if (item.get(id) < 0) {
-                        style = "negative";
-                    }
-                    if(reversedIDs.includes(id)){
-                        style === "positive" ? style = "negative" : style = "positive"; 
-                    }
-                    p_elem = document.createElement("div");
-                    p_elem.classList.add("col", "text-nowrap");
-                    displayFixedID(p_elem, id, item.get(id), elemental_format, style);
-                    parent_div.appendChild(p_elem);
-                } 
-                else {
+                } else {
                     if (id.endsWith('Dam_')) {
                         // TODO: kinda jank but replacing lists with txt at this step
                         let damages = item.get(id);
