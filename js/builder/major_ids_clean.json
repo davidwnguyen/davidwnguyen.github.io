@@ -78,12 +78,12 @@
                         "target_part": "Single Arrow",
                         "behavior": "overwrite",
                         "multipliers": [
-                            33,
+                            45,
                             0,
-                            4,
+                            6,
                             0,
                             0,
-                            4
+                            6
                         ]
                     }
                 ]
@@ -104,11 +104,6 @@
     "GREED": {
         "displayName": "Greed",
         "description": "Picking up emeralds heals you and nearby players for 8% max health.",
-        "abilities": []
-    },
-    "CAVALRYMAN": {
-        "displayName": "Cavalryman",
-        "description": "You may cast spells and attack with a -30% damage penalty while on a horse.",
         "abilities": []
     },
     "GUARDIAN": {
@@ -911,7 +906,7 @@
                             {
                                 "type": "stat",
                                 "name": "damMult.Lifestream:10.Beam Tick Damage",
-                                "value": 250
+                                "value": 300
                             }
                         ]
                     },
@@ -2194,7 +2189,7 @@
     },
     "SUPERCONDUCTOR": {
         "displayName": "Superconductor",
-        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]225% and stunning them for 1s. You take 10% more damage for 4s.",
+        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]270% and stunning them for 1s. You take 10% more damage for 4s.",
         "abilities": [
             {
                 "class": "Any",
@@ -2290,7 +2285,7 @@
     },
     "PHOENIXBORN": {
         "displayName": "Phoenix-Born",
-        "description": "ArrowHealth Regeneration is increased by 0.75% for every 1% Health missing.",
+        "description": "Health Regeneration is increased by 0.75% for every 1% Health missing.",
         "abilities": []
     },
     "SUN_EATER": {
@@ -2945,7 +2940,7 @@
                         "multipliers": [
                             100,
                             0,
-                            0,
+                            110,
                             0,
                             0,
                             0
@@ -2956,7 +2951,7 @@
                         "target_part": "Total Damage",
                         "base_spell": 3,
                         "hits": {
-                            "Lightning Damage": 5
+                            "Lightning Damage": 3
                         }
                     }
                 ]
@@ -2991,26 +2986,27 @@
     },
     "DISASSOCIATE": {
         "displayName": "Disassociate",
-        "description": "You can now have up to 3 additional Nightcloak Knives, but they each deal 3% less damage.",
+        "description": "You can now have twice the Nightcloak Knives, but they each deal 30% less damage.",
         "abilities": [
             {
                 "class": "Assassin",
                 "base_abil": "Nightcloak Knife",
                 "effects": [
                     {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Nightcloak",
+                                "value": -30
+                            }
+                        ]
+                    },
+                    {
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Knives Active",
-                        "slider_max": 3,
-                        "output": [
-                            {
-                                "type": "stat",
-                                "name": "damMult.Nightcloak"
-                            }
-                        ],
-                        "scaling": [
-                            -3
-                        ]
+                        "slider_max_mult": 2
                     }
                 ]
             }
@@ -3291,11 +3287,25 @@
     "ICE_STORM": {
         "displayName": "Ice Storm",
         "description": "Arrow Shield and Snowstorm's radius' increase by 6 blocks. Arrow Shield's charges are doubled, but no longer give defense.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Arrow Shield",
+                "dependencies": [
+                    "Arrow Shield"
+                ],
+                "properties": {
+                    "range": 6,
+                    "charges": 3,
+                    "resistance": -20
+                },
+                "effects": []
+            }
+        ]
     },
     "REGICIDES_VANTAGE": {
         "displayName": "Regicide",
-        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%",
+        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%.",
         "abilities": [
             {
                 "class": "Archer",
@@ -3389,7 +3399,42 @@
     "BURNT_SHADOWS": {
         "displayName": "Burnt Shadows",
         "description": "Buried Light is faster and is controlled by the direction you face. Enemies in the light instead take [fire]80% and recieve 10% more damage.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Warrior",
+                "base_abil": "Buried Light",
+                "properties": {
+                    "hitsPerSecond": 2
+                },
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 10,
+                        "target_part": "Damage per Tick",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            80,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Burnt Shadows",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Vulnerability",
+                                "value": 10
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "THREE_BODIES": {
         "displayName": "Three Bodies",
