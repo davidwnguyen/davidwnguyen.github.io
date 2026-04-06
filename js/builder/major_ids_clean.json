@@ -2189,7 +2189,7 @@
     },
     "SUPERCONDUCTOR": {
         "displayName": "Superconductor",
-        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]270% and stunning them for 1s. You take 10% more damage for 4s.",
+        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]225% and stunning them for 1s. You take 10% more damage for 4s.",
         "abilities": [
             {
                 "class": "Any",
@@ -2813,7 +2813,7 @@
     },
     "FINAL_GAMBIT": {
         "displayName": "Final Gambit",
-        "description": "When Second Chance Activates, all allies within 10 blocks of you get a 20% damage boost for 15s.",
+        "description": "When Second Chance activates, all allies within 10 blocks of you get a 20% damage boost for 15s.",
         "abilities": [
             {
                 "class": "Warrior",
@@ -3305,7 +3305,7 @@
     },
     "REGICIDES_VANTAGE": {
         "displayName": "Regicide",
-        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%.",
+        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%",
         "abilities": [
             {
                 "class": "Archer",
