@@ -182,6 +182,7 @@ if __name__ == "__main__":
 
             else:
                 aspect_id = id_map[name]
+
                 if old_class_data is not None:
                     if name not in old_class_data:
                         print(f"Already registered new aspect [{name}]? Likely a bug!")
@@ -195,6 +196,10 @@ if __name__ == "__main__":
                 "tier": aspect['rarity'][0].upper() + aspect['rarity'][1:],
                 "tiers": tier_data
             }
+
+            if name in known_aspect_map and 'aliases' in known_aspect_map[name]:
+                aspect_info['aliases'] = known_aspect_map[name]['aliases']
+
             all_output_unordered[wynn_class][name] = aspect_info
 
     all_output = {c: [] for c in classes}

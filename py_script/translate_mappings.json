@@ -12,7 +12,8 @@
         "dropRestriction": "drop",
         "restrictions": "restrict",
         "tomeType": "type",
-        "tomeVariant": "DELETE;"
+        "tomeVariant": "DELETE;",
+        "subType": "type"
     },
     "tome.base": {
         "gatheringXP": "tomeGatherXP",
@@ -63,10 +64,8 @@
         "rarity": "CAPS;tier",
         "set": "set",
         "powderSlots": "slots",
-        "type": "type",
         "armourType": "type",
         "weaponType": "type",
-        "accessoryType": "type",
         "material": "material",
         "dropRestriction": "drop",
         "dropMeta": "dropInfo",
@@ -76,6 +75,7 @@
         "identified": "fixID",
         "skin": "skin",
         "type": "category",
+        "subType": "type",
         "attackSpeed": "ALLCAPS;atkSpd",
         "base": "UNWRAP;item.base",
         "requirements": "UNWRAP;requirements",

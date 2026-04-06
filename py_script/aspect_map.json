@@ -24,7 +24,11 @@
     "Aspect of a Thunderbolt": 21,
     "Aspect of the Iron String": 22,
     "Aspect of the Heavenly Mandate": 23,
-    "Aspect of the Thunderbolt": 24
+    "Aspect of the Thunderbolt": 24,
+    "Aspect of the Battle-Fletcher": 25,
+    "Aspect of the Barley-Woven": 26,
+    "Aspect of Olfactorial Enhancement": 27,
+    "Archer's Embodiment of Perceptive Finesse": 28
   },
   "Warrior": {
     "Aspect of Searing Friction": 0,
@@ -49,7 +53,12 @@
     "Aspect of the Berserker": 19,
     "Aspect of the Tightrope Walk": 20,
     "Aspect of Maniacal Frisson": 21,
-    "Aspect of Bovine Inspiration": 22
+    "Aspect of Bovine Inspiration": 22,
+    "Aspect of the Enforcer": 23,
+    "Aspect of the Humming Choir": 24,
+    "Aspect of the Crimson Scrivener": 25,
+    "Aspect of the Golden Dawn": 26,
+    "Warrior's Embodiment of Everlasting Perseverance": 27
   },
   "Mage": {
     "Aspect of Runic Extravagance": 0,
@@ -71,7 +80,16 @@
     "Arcanist's Embodiment of Total Obliteration": 16,
     "Aspect of Manaflux": 17,
     "Aspect of a Thousand Hours": 18,
-    "Aspect of a Scorching Sun": 19
+    "Aspect of a Scorching Sun": 19,
+    "Aspect of Limitless Knowledge": 20,
+    "Aspect of Futures Rewritten": 21,
+    "Aspect of the Forbidden Ritual": 22,
+    "Aspect of the Indescribable": 23,
+    "Aspect of the Inescapable Void": 24,
+    "Aspect of Indoctrination": 25,
+    "Aspect of the Vast Emptiness": 26,
+    "Mage's Embodiment of Morbid Curiosity": 27,
+    "Riftwalker's Embodiment of Reality Alteration": 28
   },
   "Assassin": {
     "Aspect of Seeking Stars": 0,
@@ -102,7 +120,8 @@
     "Aspect of Athlethicism": 25,
     "Aspect of Enduring Illusions": 26,
     "Trickster's Embodiment of Malevolent Mischief": 27,
-    "Aspect of Athleticism": 28
+    "Aspect of Athleticism": 28,
+    "Assassin's Embodiment of Otherworldly Detachment": 29
   },
   "Shaman": {
     "Aspect of Stances": 0,
@@ -125,6 +144,10 @@
     "Aspect of Summer Storms": 17,
     "Aspect of Acceleration": 18,
     "Aspect of Incineration": 19,
-    "Aspect of Empathy": 20
+    "Aspect of Empathy": 20,
+    "Aspect of the Artisan": 21,
+    "Aspect of the Blurred Line": 22,
+    "Aspect of the Bodyguard": 23,
+    "Shaman's Embodiment of Serene Harmony": 24
   }
 }

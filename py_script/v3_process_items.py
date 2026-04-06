@@ -130,35 +130,37 @@ def translate_entry(entry):
     and converted might be None if the conversion failed.
     """
     # sketchily infer what kind of item we're dealing with, and translate it appropriately.
-    if "type" in entry and entry['type'] in ['weapon', 'armour']:
-        # only items have this field.
-        res = recursive_translate(entry, {}, "item", translate_single_item)
-        if res['type'] in armor_types:
-            res['category'] = 'armor'
-        else:
-            res['category'] = 'weapon'
-            for element in 'netwfa':
-                damage_key = element + 'Dam'
-                if damage_key not in res:
-                    res[damage_key] = '0-0'
-        return res, 'item'
-    if "accessoryType" in entry:
-        # only accessories have this field.
-        return recursive_translate(entry, {'category': 'accessory'}, "item", translate_single_item), "item"
-    if "itemOnlyIDs" in entry:
-        # only ingredients have this field.
-        res = recursive_translate(entry, {}, "ingredient", translate_single_ing)
-        return res, "ingredient"
-        #return recursive_translate(entry, {}, "ing"), "ingredient"
-    if "tomeType" in entry:
-        # only tomes have this field.
-        res = recursive_translate(entry, {}, "tome", translate_single_item)
-        res['category'] = 'tome'
-        res['fixID'] = False
-        res['type'] = tome_type_translation[res['type']]
-        return res, "tome"
-    if "craftable" in entry:
-        return None, "material"
+    if "type" in entry:
+        if entry['type'] in ['weapon', 'armour']:
+            # only items have this field.
+            res = recursive_translate(entry, {}, "item", translate_single_item)
+            if res['type'] in armor_types:
+                res['category'] = 'armor'
+            else:
+                res['category'] = 'weapon'
+                for element in 'netwfa':
+                    damage_key = element + 'Dam'
+                    if damage_key not in res:
+                        res[damage_key] = '0-0'
+            return res, 'item'
+        if entry['type'] == 'accessory':
+            # only accessories have this field.
+            return recursive_translate(entry, {'category': 'accessory'}, "item", translate_single_item), "item"
+        if entry['type'] == 'ingredient':
+            # only ingredients have this field.
+            res = recursive_translate(entry, {}, "ingredient", translate_single_ing)
+            return res, "ingredient"
+            #return recursive_translate(entry, {}, "ing"), "ingredient"
+        if entry['type'] == 'tome':
+            # only tomes have this field.
+            res = recursive_translate(entry, {}, "tome", translate_single_item)
+            res['category'] = 'tome'
+            res['fixID'] = False
+            print(res)
+            res['type'] = tome_type_translation[res['type']]
+            return res, "tome"
+        if entry['type'] == 'material':
+            return None, "material"
     
     # I think the only things left are charms, we just don't classify them.
     return None, None
@@ -198,8 +200,6 @@ with open("../ingreds_clean.json", "r") as ingfile:
 with open("../tomes.json", "r") as tomefile:
     old_tome_data = json.load(tomefile)
     old_tomes = old_tome_data['tomes']
-with open("./fruma_items_compress.json", "r") as frumafile:
-    fruma_items = json.load(frumafile)
 
 known_item_names = set()
 known_ingred_names = set()
@@ -248,15 +248,25 @@ attack_speed_dict = {
     "SUPERFAST": "SUPER_FAST"
 }
 
+rarity_dict = {
+    "mythic": "Mythic",
+    "fabled": "Fabled",
+    "legendary": "Legendary",
+    "rare": "Rare",
+    "unique": "Unique",
+    "normal": "Normal"
+}
+
 for item in items:
     # NOTE: HACKY ITEM FIXES!
-    if 'majorIds' in item:
+    if 'majorIds' in item and 'persistent' not in item:
         majorIds = []
         for majid_name, majid_desc in item['majorIds'].items():
-            if ':' in majid_desc:
-                desc = re.sub('<[^<]+?>', '', majid_desc).split(':', 2)[1].strip()
-            else:
-                print(f'Hidden Major ID: {majid_name}')
+            try:
+                desc = re.sub('<[^<]+?>', '', majid_desc).strip()
+            except Exception as e:
+                print(f'Exception occured!: name = {majid_name} | desc = {majid_desc}')
+                continue
 
             for k, v in replace_strings.items():
                 desc = re.sub(k, v, desc)
@@ -275,11 +285,15 @@ for item in items:
                 major_ids_map[major_ids_reverse_map[majid_name]]['description'] = desc
             majorIds.append(major_ids_reverse_map[majid_name])
         item['majorIds'] = majorIds
-    if item['tier'] == 'Common':
-        item['tier'] = 'Normal'
+    
+    if 'tier' in item and item['tier'] in rarity_dict:
+        item['tier'] = rarity_dict[item['tier']]
 
     if 'atkSpd' in item and item['atkSpd'] in attack_speed_dict:
         item['atkSpd'] = attack_speed_dict[item['atkSpd']]
+
+    if 'lore' in item:
+        item['lore'] = re.sub('<[^<]+?>', '', item['lore']).strip()
 
     if not (item["name"] in id_map):
         while max_id in used_ids:
@@ -315,68 +329,11 @@ for tome in tomes:
         tome_map[tome['name']] = new_id
         print(f'New tome: {tome["name"]} (id: {new_id})')
         tome['alias'] = 'NO_ALIAS'
-    else:
+    elif tome['name'] in tome_value_map:
         old_tome = tome_value_map[tome['name']]
         if 'alias' in old_tome:
             tome['alias'] = old_tome['alias']
     tome['id'] = tome_map[tome['name']]
-
-# dumb temp hack for frumer items. will remove when it comes time.
-items_dict = {item["name"]: item for item in items}
-for item in fruma_items:
-    if 'majorIds' in item:
-        majorIds = []
-        for majorId in item["majorIds"]:
-            if ':' in majorId:
-                split = re.sub('<[^<]+?>', '', majorId).split(':', 2)
-                majid_name = split[0].strip()
-                desc = split[1].strip()
-            else:
-                majorIds.append(majorId)
-                continue
-
-            for k, v in replace_strings.items():
-                desc = re.sub(k, v, desc)
-
-            if majid_name not in major_ids_reverse_map:
-                caps_name = majid_name.upper().replace(' ', '_')
-                caps_name = re.sub('[^0-9A-Z_]', '', caps_name)
-                major_ids_map[caps_name] = {
-                    'displayName': majid_name,
-                    'description': desc,
-                    'abilities': []
-                }
-                print(f'New Major ID: {majid_name} ({caps_name})')
-                major_ids_reverse_map[majid_name] = caps_name
-            else:
-                major_ids_map[major_ids_reverse_map[majid_name]]['description'] = desc
-            majorIds.append(major_ids_reverse_map[majid_name])
-        item['majorIds'] = majorIds
-
-    if item['category'] == 'weapon':
-        if 'nDam' not in item:
-            item['nDam'] = "0-0"
-        if 'eDam' not in item:
-            item['eDam'] = "0-0"
-        if 'tDam' not in item:
-            item['tDam'] = "0-0"
-        if 'wDam' not in item:
-            item['wDam'] = "0-0"
-        if 'fDam' not in item:
-            item['fDam'] = "0-0"
-        if 'aDam' not in item:
-            item['aDam'] = "0-0"
-
-    if not (item["name"] in id_map):
-        while max_id in used_ids:
-            max_id += 1
-        used_ids.add(max_id)
-        id_map[item["name"]] = max_id
-        print(f'New item: {item["name"]} (id: {max_id})')
-    item["id"] = id_map[item["name"]]
-    items_dict[item["name"]] = item
-
-items = list(items_dict.values())
 
 #write items back into data
 old_data["items"] = items

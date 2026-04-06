@@ -18143,6 +18143,1758 @@
       },
       "name": "Scroll-103-105",
       "id": 626
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2513,
+        "maximum": 2595
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Helmet-105-107",
+      "id": 630
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2595,
+        "maximum": 2700
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Helmet-107-109",
+      "id": 631
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2700,
+        "maximum": 2785
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Helmet-110-113",
+      "id": 632
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2785,
+        "maximum": 2870
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Helmet-113-115",
+      "id": 633
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2870,
+        "maximum": 2955
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Helmet-115-117",
+      "id": 634
+    },
+    {
+      "type": "HELMET",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2955,
+        "maximum": 3004
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Helmet-117-119",
+      "id": 635
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2513,
+        "maximum": 2595
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Chestplate-105-107",
+      "id": 636
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2595,
+        "maximum": 2700
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Chestplate-107-109",
+      "id": 637
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2700,
+        "maximum": 2785
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Chestplate-110-113",
+      "id": 638
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2785,
+        "maximum": 2870
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Chestplate-113-115",
+      "id": 639
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2870,
+        "maximum": 2955
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Chestplate-115-117",
+      "id": 640
+    },
+    {
+      "type": "CHESTPLATE",
+      "skill": "ARMOURING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2955,
+        "maximum": 3004
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Chestplate-117-119",
+      "id": 641
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic String",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2513,
+        "maximum": 2595
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Leggings-105-107",
+      "id": 642
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic String",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2595,
+        "maximum": 2700
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Leggings-107-109",
+      "id": 643
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Jute String",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2700,
+        "maximum": 2785
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Leggings-110-113",
+      "id": 644
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Jute String",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2785,
+        "maximum": 2870
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Leggings-113-115",
+      "id": 645
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Heather String",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2870,
+        "maximum": 2955
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Leggings-115-117",
+      "id": 646
+    },
+    {
+      "type": "LEGGINGS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Heather String",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2955,
+        "maximum": 3004
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Leggings-117-119",
+      "id": 647
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic String",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2513,
+        "maximum": 2595
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Boots-105-107",
+      "id": 648
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic String",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2595,
+        "maximum": 2700
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Boots-107-109",
+      "id": 649
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Jute String",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2700,
+        "maximum": 2785
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Boots-110-113",
+      "id": 650
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Jute String",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2785,
+        "maximum": 2870
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Boots-113-115",
+      "id": 651
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Heather String",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2870,
+        "maximum": 2955
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Boots-115-117",
+      "id": 652
+    },
+    {
+      "type": "BOOTS",
+      "skill": "TAILORING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Heather String",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 2955,
+        "maximum": 3004
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Boots-117-119",
+      "id": 653
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Ring-105-107",
+      "id": 654
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Ring-107-109",
+      "id": 655
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 7
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Ring-110-113",
+      "id": 656
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 7
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Ring-113-115",
+      "id": 657
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 7
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Ring-115-117",
+      "id": 658
+    },
+    {
+      "type": "RING",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 7
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Ring-117-119",
+      "id": 659
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Bracelet-105-107",
+      "id": 660
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Bracelet-107-109",
+      "id": 661
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 14
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Bracelet-110-113",
+      "id": 662
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 14
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Bracelet-113-115",
+      "id": 663
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 14
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Bracelet-115-117",
+      "id": 664
+    },
+    {
+      "type": "BRACELET",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 14
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Bracelet-117-119",
+      "id": 665
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 18
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Necklace-105-107",
+      "id": 666
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Dernic Gem",
+          "amount": 18
+        },
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Necklace-107-109",
+      "id": 667
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 21
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Necklace-110-113",
+      "id": 668
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Titanium Gem",
+          "amount": 21
+        },
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Necklace-113-115",
+      "id": 669
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 21
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Necklace-115-117",
+      "id": 670
+    },
+    {
+      "type": "NECKLACE",
+      "skill": "JEWELING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Gem",
+          "amount": 21
+        },
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 0,
+        "maximum": 0
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Necklace-117-119",
+      "id": 671
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 3741,
+        "maximum": 3892
+      },
+      "duration": {
+        "minimum": 972,
+        "maximum": 978
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Scroll-105-107",
+      "id": 672
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Paper",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 3892,
+        "maximum": 4042
+      },
+      "duration": {
+        "minimum": 978,
+        "maximum": 984
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Scroll-107-109",
+      "id": 673
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 4112,
+        "maximum": 4277
+      },
+      "duration": {
+        "minimum": 992,
+        "maximum": 998
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Scroll-110-113",
+      "id": 674
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 4277,
+        "maximum": 4435
+      },
+      "duration": {
+        "minimum": 998,
+        "maximum": 1004
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Scroll-113-115",
+      "id": 675
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 4435,
+        "maximum": 4585
+      },
+      "duration": {
+        "minimum": 1004,
+        "maximum": 1010
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Scroll-115-117",
+      "id": 676
+    },
+    {
+      "type": "SCROLL",
+      "skill": "SCRIBING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Paper",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 4634,
+        "maximum": 4813
+      },
+      "duration": {
+        "minimum": 1010,
+        "maximum": 1016
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Scroll-117-119",
+      "id": 677
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Grains",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5345,
+        "maximum": 5560
+      },
+      "duration": {
+        "minimum": 972,
+        "maximum": 978
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Potion-105-107",
+      "id": 678
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Grains",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5560,
+        "maximum": 5775
+      },
+      "duration": {
+        "minimum": 978,
+        "maximum": 984
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Potion-107-109",
+      "id": 679
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Jute Grains",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5875,
+        "maximum": 6110
+      },
+      "duration": {
+        "minimum": 992,
+        "maximum": 998
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Potion-110-113",
+      "id": 680
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Jute Grains",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6110,
+        "maximum": 6335
+      },
+      "duration": {
+        "minimum": 998,
+        "maximum": 1004
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Potion-113-115",
+      "id": 681
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Heather Grains",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6335,
+        "maximum": 6550
+      },
+      "duration": {
+        "minimum": 1004,
+        "maximum": 1010
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Potion-115-117",
+      "id": 682
+    },
+    {
+      "type": "POTION",
+      "skill": "ALCHEMISM",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 7
+        },
+        {
+          "item": "Refined Heather Grains",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6620,
+        "maximum": 6876
+      },
+      "duration": {
+        "minimum": 1010,
+        "maximum": 1016
+      },
+      "basicDuration": {
+        "minimum": 3,
+        "maximum": 3
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Potion-117-119",
+      "id": 683
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Dernic Meat",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Grains",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5345,
+        "maximum": 5560
+      },
+      "duration": {
+        "minimum": 2916,
+        "maximum": 2934
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Food-105-107",
+      "id": 684
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Dernic Meat",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Grains",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5560,
+        "maximum": 5775
+      },
+      "duration": {
+        "minimum": 2934,
+        "maximum": 2952
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Food-107-109",
+      "id": 685
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Meat",
+          "amount": 14
+        },
+        {
+          "item": "Refined Jute Grains",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 5875,
+        "maximum": 6610
+      },
+      "duration": {
+        "minimum": 2976,
+        "maximum": 2994
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Food-110-113",
+      "id": 686
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Meat",
+          "amount": 14
+        },
+        {
+          "item": "Refined Jute Grains",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6610,
+        "maximum": 6335
+      },
+      "duration": {
+        "minimum": 2994,
+        "maximum": 3012
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Food-113-115",
+      "id": 687
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Meat",
+          "amount": 14
+        },
+        {
+          "item": "Refined Heather Grains",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6335,
+        "maximum": 6550
+      },
+      "duration": {
+        "minimum": 3012,
+        "maximum": 3030
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Food-115-117",
+      "id": 688
+    },
+    {
+      "type": "FOOD",
+      "skill": "COOKING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Meat",
+          "amount": 14
+        },
+        {
+          "item": "Refined Heather Grains",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 6620,
+        "maximum": 6876
+      },
+      "duration": {
+        "minimum": 3030,
+        "maximum": 3048
+      },
+      "basicDuration": {
+        "minimum": 60,
+        "maximum": 60
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Food-117-119",
+      "id": 689
     }
   ],
   "version": 2.0

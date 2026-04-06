@@ -57,6 +57,10 @@ replace_strings = {
     " \u2698": "", # Puppets
     " \u265a": "", # Awakened
     " \u21f6": "", # Whipped
+    " \ue022": "", # Heretic Mask
+    " \ue023": "", # Fanatic Mask
+    " \ue024": "", # Lunatic Mask
+
 
     " \\(\ue00d\\)": "", # Slowness
     " \\(\ue00b\\)": "", # Blindness
@@ -72,6 +76,15 @@ replace_strings = {
     " \u2764": "", # Overhealth
 
     "\u00b0": " degrees", # Degree symbol
+    "\u00b1": "", # Range
+
+    " \ue044": "", # Ultimate charge
+    " \ue04b": "", # Twilight stacks
+    " \ue045": "", # Crystallize
+    " \ue046": "", # Unstable
+    " \ue047": "", # Shining
+    " \ue049": "", # Paradox
+    " \ue03b": "", # Hypoxia
 
     "Total Damage": "</br><span class='mc-white'>Total Damage</span>", # Total Damage Breakdown
     "\\(\ue005 Damage": "</br>&emsp;(<span class='nDam'>Damage</span>", # Neutral
