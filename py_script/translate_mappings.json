@@ -129,6 +129,7 @@
         "lifeSteal": "ls",
         "manaSteal": "ms",
         "xpBonus": "xpb",
+        "combatExperience": "xpb",
         "lootBonus": "lb",
         "leveledXpBonus": "lxpb",
         "leveledLootBonus": "llb",

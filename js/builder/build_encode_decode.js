@@ -463,7 +463,10 @@ function decodeEquipment(cursor) {
         // Decode equipment kind
         switch (kind) {
             case DEC.EQUIPMENT_KIND.NORMAL: {
-                const id = cursor.advanceBy(DEC.ITEM_ID_BITLEN);
+                let id = cursor.advanceBy(DEC.ITEM_ID_BITLEN);
+                if (redirectMap.has(id-1)){
+                    id = redirectMap.get(id-1)+1;
+                }
                 if (id === 0) {
                     equipments.push(null);
                 } else {

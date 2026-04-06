@@ -22,11 +22,12 @@ from items_common import translate_mappings
 parser = argparse.ArgumentParser(description="Process raw pulled item data.")
 parser.add_argument('infile', help='input file to read data from', default=None, nargs='?')
 #parser.add_argument('outfile', help='output file to dump clean data into')
+parser.add_argument('--token','-T', help='auth token, get one from wynncraft website', default=None)
 args = parser.parse_args()
 if args.infile is None:
     print("Grabbing json data from wynn api")
     from item_wrapper import Items
-    api_data = Items().get_all_items()
+    api_data = Items().get_all_items(args.token)
     #print(api_data)
     json.dump(api_data, open('dump.json', 'w'))
 else:
@@ -257,6 +258,13 @@ rarity_dict = {
     "normal": "Normal"
 }
 
+ing_tier_dict = {
+    "TIER_0": 0,
+    "TIER_1": 1,
+    "TIER_2": 2,
+    "TIER_3": 3
+}
+
 for item in items:
     # NOTE: HACKY ITEM FIXES!
     if 'majorIds' in item and 'persistent' not in item:
@@ -316,6 +324,11 @@ for ingred in ingreds:
     if 'consumableIDs' not in ingred:
         ingred['consumableIDs'] = {'dura': 0, 'charges': 0}
         print(f"ing missing 'consumableIDs': {ingred['name']}")
+    if 'base' in ingred and 'baseDamage' in ingred['base']:
+        ingred['ids']['damPct'] = {'minimum': ingred['base']['baseDamage']['min'], 'maximum': ingred['base']['baseDamage']['max'],}
+        del ingred['base']
+    if 'tier' in ingred and ingred['tier'] in ing_tier_dict:
+        ingred['tier'] = ing_tier_dict[ingred['tier']]
 
     if not (ingred["name"] in ing_map):
         new_id = len(ing_map)

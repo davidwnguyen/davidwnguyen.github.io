@@ -76,7 +76,7 @@ function handleHashInput(hash_input, inputEvent) {
 
 function updateMaterials() {
     let recipeName = getValue("recipe-choice") ? getValue("recipe-choice") : "Potion";
-    let levelRange = getValue("level-choice") ? getValue("level-choice") : "103-105";
+    let levelRange = getValue("level-choice") ? getValue("level-choice") : "117-119";
     let recipe = expandRecipe(recipeMap.get(recipeName + "-" + levelRange));
     if (recipe !== undefined) {
         try{
@@ -128,7 +128,7 @@ function calculateCraft() {
     }
     //define the fields that will go into crafting the craft.
     let recipe = getValue("recipe-choice") === "" ? "Potion" : getValue("recipe-choice");
-    let levelrange = getValue("level-choice") === "" ? "103-105" : getValue("level-choice"); 
+    let levelrange = getValue("level-choice") === "" ? "117-119" : getValue("level-choice"); 
     let maxlevel = levelrange.split("-").slice(1);
     recipe = expandRecipe(recipeMap.get(recipe+"-"+levelrange));
     let mat_tiers = [];
