@@ -19895,6 +19895,846 @@
       },
       "name": "Food-117-119",
       "id": 689
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 221,
+        "maximum": 224
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Dagger-105-107",
+      "id": 690
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 225,
+        "maximum": 228
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Dagger-107-109",
+      "id": 691
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 229,
+        "maximum": 232
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Dagger-110-113",
+      "id": 692
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 233,
+        "maximum": 236
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Dagger-113-115",
+      "id": 693
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 237,
+        "maximum": 240
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Dagger-115-117",
+      "id": 694
+    },
+    {
+      "type": "DAGGER",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 241,
+        "maximum": 243
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Dagger-117-119",
+      "id": 695
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 177,
+        "maximum": 180
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Spear-105-107",
+      "id": 696
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Dernic Ingot",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 180,
+        "maximum": 182
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Spear-107-109",
+      "id": 697
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 183,
+        "maximum": 185
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Spear-110-113",
+      "id": 698
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Titanium Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 185,
+        "maximum": 188
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Spear-113-115",
+      "id": 699
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 188,
+        "maximum": 190
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Spear-115-117",
+      "id": 700
+    },
+    {
+      "type": "SPEAR",
+      "skill": "WEAPONSMITHING",
+      "materials": [
+        {
+          "item": "Refined Cinnabar Ingot",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 191,
+        "maximum": 193
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Spear-117-119",
+      "id": 701
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic String",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 266,
+        "maximum": 269
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Bow-105-107",
+      "id": 702
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic String",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 270,
+        "maximum": 273
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Bow-107-109",
+      "id": 703
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Jute String",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 274,
+        "maximum": 277
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Bow-110-113",
+      "id": 704
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Jute String",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 278,
+        "maximum": 281
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Bow-113-115",
+      "id": 705
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Heather String",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 282,
+        "maximum": 286
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Bow-115-117",
+      "id": 706
+    },
+    {
+      "type": "BOW",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Heather String",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 288,
+        "maximum": 291
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Bow-117-119",
+      "id": 707
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic String",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 134,
+        "maximum": 135
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Wand-105-107",
+      "id": 708
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic String",
+          "amount": 6
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 12
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 136,
+        "maximum": 137
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Wand-107-109",
+      "id": 709
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Jute String",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 139,
+        "maximum": 141
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Wand-110-113",
+      "id": 710
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Jute String",
+          "amount": 7
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 142,
+        "maximum": 143
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Wand-113-115",
+      "id": 711
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Heather String",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 143,
+        "maximum": 144
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Wand-115-117",
+      "id": 712
+    },
+    {
+      "type": "WAND",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Heather String",
+          "amount": 7
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 14
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 145,
+        "maximum": 146
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Wand-117-119",
+      "id": 713
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 266,
+        "maximum": 269
+      },
+      "durability": {
+        "minimum": 529,
+        "maximum": 536
+      },
+      "lvl": {
+        "minimum": 105,
+        "maximum": 107
+      },
+      "name": "Relik-105-107",
+      "id": 714
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Dernic Oil",
+          "amount": 12
+        },
+        {
+          "item": "Refined Dernic Wood",
+          "amount": 6
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 270,
+        "maximum": 273
+      },
+      "durability": {
+        "minimum": 536,
+        "maximum": 543
+      },
+      "lvl": {
+        "minimum": 107,
+        "maximum": 109
+      },
+      "name": "Relik-107-109",
+      "id": 715
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 274,
+        "maximum": 277
+      },
+      "durability": {
+        "minimum": 547,
+        "maximum": 554
+      },
+      "lvl": {
+        "minimum": 110,
+        "maximum": 113
+      },
+      "name": "Relik-110-113",
+      "id": 716
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Sturgeon Oil",
+          "amount": 14
+        },
+        {
+          "item": "Refined Maple Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 278,
+        "maximum": 281
+      },
+      "durability": {
+        "minimum": 554,
+        "maximum": 561
+      },
+      "lvl": {
+        "minimum": 113,
+        "maximum": 115
+      },
+      "name": "Relik-113-115",
+      "id": 717
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 282,
+        "maximum": 286
+      },
+      "durability": {
+        "minimum": 561,
+        "maximum": 568
+      },
+      "lvl": {
+        "minimum": 115,
+        "maximum": 117
+      },
+      "name": "Relik-115-117",
+      "id": 718
+    },
+    {
+      "type": "RELIK",
+      "skill": "WOODWORKING",
+      "materials": [
+        {
+          "item": "Refined Mahseer Oil",
+          "amount": 14
+        },
+        {
+          "item": "Refined Redwood Wood",
+          "amount": 7
+        }
+      ],
+      "healthOrDamage": {
+        "minimum": 288,
+        "maximum": 291
+      },
+      "durability": {
+        "minimum": 571,
+        "maximum": 575
+      },
+      "lvl": {
+        "minimum": 117,
+        "maximum": 119
+      },
+      "name": "Relik-117-119",
+      "id": 719
     }
   ],
   "version": 2.0

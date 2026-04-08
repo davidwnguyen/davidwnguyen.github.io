@@ -2,7 +2,7 @@
     "tome": {
         "name": "displayName",
         "internalName": "name",
-        "rarity": "CAPS;tier",
+        "tier": "CAPS;tier",
         "material": "DELETE;",
         "base": "UNWRAP;tome.base",
         "dropMeta": "DELETE;",
@@ -10,7 +10,7 @@
         "requirements": "UNWRAP;requirements",
         "raidReward": "DELETE;",
         "dropRestriction": "drop",
-        "restrictions": "restrict",
+        "restriction": "restrict",
         "tomeType": "type",
         "tomeVariant": "DELETE;",
         "subType": "type"
@@ -61,7 +61,7 @@
     "item": {
         "name": "displayName",
         "internalName": "name",
-        "rarity": "CAPS;tier",
+        "tier": "CAPS;tier",
         "set": "set",
         "powderSlots": "slots",
         "armourType": "type",
@@ -70,7 +70,7 @@
         "dropRestriction": "drop",
         "dropMeta": "dropInfo",
         "quest": "quest",
-        "restrictions": "restrict",
+        "restriction": "restrict",
         "accessoryType": "type",
         "identified": "fixID",
         "skin": "skin",
