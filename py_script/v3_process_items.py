@@ -249,15 +249,6 @@ attack_speed_dict = {
     "SUPERFAST": "SUPER_FAST"
 }
 
-rarity_dict = {
-    "mythic": "Mythic",
-    "fabled": "Fabled",
-    "legendary": "Legendary",
-    "rare": "Rare",
-    "unique": "Unique",
-    "normal": "Normal"
-}
-
 ing_tier_dict = {
     "TIER_0": 0,
     "TIER_1": 1,
@@ -293,9 +284,6 @@ for item in items:
                 major_ids_map[major_ids_reverse_map[majid_name]]['description'] = desc
             majorIds.append(major_ids_reverse_map[majid_name])
         item['majorIds'] = majorIds
-    
-    if 'tier' in item and item['tier'] in rarity_dict:
-        item['tier'] = rarity_dict[item['tier']]
 
     if 'atkSpd' in item and item['atkSpd'] in attack_speed_dict:
         item['atkSpd'] = attack_speed_dict[item['atkSpd']]

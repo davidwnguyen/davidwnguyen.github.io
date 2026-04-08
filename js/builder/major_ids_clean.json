@@ -3575,5 +3575,10 @@
         "displayName": "Elven Current",
         "description": "Escape can be re-cast twice in mid-air.",
         "abilities": []
+    },
+    "TORMENT_LITURGY": {
+        "displayName": "Torment Liturgy",
+        "description": "Shadow Siphon now immediately refreshes Vanish when triggered.",
+        "abilities": []
     }
 }
