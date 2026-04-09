@@ -8394,7 +8394,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 75,
+                    "slider_max": 300,
                     "output": {
                         "type": "stat",
                         "name": "damRaw"
@@ -8924,7 +8924,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 25
+                    "slider_max": 100
                 }
             ]
         },
@@ -9121,7 +9121,8 @@
                 "icon": "node_4"
             },
             "properties": {
-                "meteorCount": 1
+                "meteorCount": 1,
+                "meteorRate": 0.05
             },
             "effects": [
                 {
@@ -9156,9 +9157,9 @@
                         }
                     ],
                     "scaling": [
-                        0.05
+                        "Distortion.meteorRate"
                     ],
-                    "max": 15
+                    "max": 14
                 }
             ]
         },
@@ -9382,7 +9383,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 30
+                    "slider_max": 100
                 }
             ]
         },
@@ -9948,7 +9949,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 20
+                    "slider_max": 100
                 },
                 {
                     "type": "stat_scaling",
@@ -10619,7 +10620,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 50
+                    "slider_max": 200
                 }
             ]
         },
@@ -10727,7 +10728,7 @@
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Distortion",
-                    "slider_max": 100
+                    "slider_max": 200
                 }
             ]
         },
