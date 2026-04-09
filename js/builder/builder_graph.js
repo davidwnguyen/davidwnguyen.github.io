@@ -10,14 +10,14 @@ let armor_powder_node = new (class extends ComputeNode {
         let def_boost = 0;
         let statMap = new Map();
         for (const [e, elem] of zip2(skp_elements, skp_order)) {
-            let val = parseInt(document.getElementById(elem+"_boost_armor").value);
-            statMap.set(e+'DamPct', val);
+            let val = parseInt(document.getElementById(elem + "_boost_armor").value);
+            statMap.set(e + 'DamPct', val);
         }
         return statMap;
     }
 })();
 
-const damageMultipliers = new Map([ ["totem", 0.2], ["warscream", 0.0], ["emboldeningcry", 0.0], ["fortitude", 0.40], ["radiance", 0.0], ["eldritchcall", 0.0], ["divinehonor", 0.0] ]);
+const damageMultipliers = new Map([["totem", 0.2], ["warscream", 0.0], ["emboldeningcry", 0.0], ["fortitude", 0.40], ["radiance", 0.0], ["eldritchcall", 0.0], ["divinehonor", 0.0]]);
 
 let boosts_node = new (class extends ComputeNode {
     constructor() { super('builder-boost-input'); }
@@ -37,10 +37,10 @@ let boosts_node = new (class extends ComputeNode {
             }
         }
         let res = new Map();
-        res.set('damMult.Potion', 100*damage_boost);
-        res.set('damMult.Strength', 100*str_boost);
-        res.set('damMult.Vulnerability', 100*vuln_boost);
-        res.set('defMult.Potion', 100*def_boost);
+        res.set('damMult.Potion', 100 * damage_boost);
+        res.set('damMult.Strength', 100 * str_boost);
+        res.set('damMult.Vulnerability', 100 * vuln_boost);
+        res.set('defMult.Potion', 100 * def_boost);
 
         if (document.getElementById('judgement-boost').classList.contains("toggleOn")) {
             res.set('damMult.Judgement', 20);
@@ -69,12 +69,12 @@ let powder_special_input = new (class extends ComputeNode {
     compute_func(input_map) {
         let powder_specials = []; // [ [special, power], [special, power]]
         for (const sName of specialNames) {
-            for (let i = 1;i < 8; i++) {
-                if (document.getElementById(sName.replace(" ","_") + "-" + i).classList.contains("toggleOn")) {
-                    let powder_special = powderSpecialStats[specialNames.indexOf(sName.replace("_"," "))]; 
+            for (let i = 1; i < 8; i++) {
+                if (document.getElementById(sName.replace(" ", "_") + "-" + i).classList.contains("toggleOn")) {
+                    let powder_special = powderSpecialStats[specialNames.indexOf(sName.replace("_", " "))];
                     powder_specials.push([powder_special, i]);
                     break;
-                }   
+                }
             }
         }
         return powder_specials;
@@ -86,13 +86,13 @@ function updatePowderSpecials(buttonId) {
     let elem = document.getElementById(buttonId);
     if (elem.classList.contains("toggleOn")) { elem.classList.remove("toggleOn"); }
     else {
-        for (let i = 1;i < 8; i++) { //toggle all pressed buttons of the same powder special off
+        for (let i = 1; i < 8; i++) { //toggle all pressed buttons of the same powder special off
             //name is same, power is i
             const elem2 = document.getElementById(prefix + i);
-            if(elem2.classList.contains("toggleOn")) { elem2.classList.remove("toggleOn"); }
+            if (elem2.classList.contains("toggleOn")) { elem2.classList.remove("toggleOn"); }
         }
         //toggle the pressed button on
-        elem.classList.add("toggleOn"); 
+        elem.classList.add("toggleOn");
     }
     powder_special_input.mark_dirty().update();
 }
@@ -104,12 +104,12 @@ class PowderSpecialCalcNode extends ComputeNode {
         const powder_specials = input_map.get('powder-specials');
         let stats = new Map();
         for (const [special, power] of powder_specials) {
-            if (special["weaponSpecialEffects"].has("Damage Boost")) { 
+            if (special["weaponSpecialEffects"].has("Damage Boost")) {
                 let name = special["weaponSpecialName"];
                 if (name === "Courage" || name === "Curse" || name == "Wind Prison") { // Master mod all the way
-                    stats.set("damMult."+name, special.weaponSpecialEffects.get("Damage Boost")[power-1]);
+                    stats.set("damMult." + name, special.weaponSpecialEffects.get("Damage Boost")[power - 1]);
                     // legacy
-                    stats.set("poisonPct", special.weaponSpecialEffects.get("Damage Boost")[power-1]);
+                    stats.set("poisonPct", special.weaponSpecialEffects.get("Damage Boost")[power - 1]);
                 }
             }
         }
@@ -128,7 +128,7 @@ class PowderSpecialDisplayNode extends ComputeNode {
         const powder_specials = input_map.get('powder-specials');
         const stats = input_map.get('stats');
         const weapon = input_map.get('build').weapon;
-        displayPowderSpecials(document.getElementById("powder-special-stats"), powder_specials, stats, weapon.statMap); 
+        displayPowderSpecials(document.getElementById("powder-special-stats"), powder_specials, stats, weapon.statMap);
     }
 }
 
@@ -164,8 +164,8 @@ class ItemInputNode extends InputNode {
         }
 
         let item;
-        if (item_text.slice(0, 3) == "CI-") { item = decodeCustom({hash: item_text.substring(3)}); }
-        else if (item_text.slice(0, 3) == "CR-") { item = decodeCraft({hash: item_text.substring(3)}); }
+        if (item_text.slice(0, 3) == "CI-") { item = decodeCustom({ hash: item_text.substring(3) }); }
+        else if (item_text.slice(0, 3) == "CR-") { item = decodeCraft({ hash: item_text.substring(3) }); }
         else if (itemMap.has(item_text)) { item = new Item(itemMap.get(item_text)); }
         else if (tomeMap.has(item_text)) { item = new Item(tomeMap.get(item_text)); }
 
@@ -201,7 +201,7 @@ class ItemInputNode extends InputNode {
             }
         }
         else if (this.none_item.statMap.get('category') === 'weapon' && item_text.startsWith("Morph-")) {
-            let replace_items = [ "Morph-Stardust",
+            let replace_items = ["Morph-Stardust",
                 "Morph-Steel",
                 "Morph-Iron",
                 "Morph-Gold",
@@ -214,7 +214,7 @@ class ItemInputNode extends InputNode {
 
             for (const [i, x] of zip2(equipment_inputs, replace_items)) { setValue(i, x); }
 
-            for (const node of equip_inputs) { 
+            for (const node of equip_inputs) {
                 if (node !== this) {
                     // save a tiny bit of compute
                     calcSchedule(node, 10);
@@ -261,9 +261,9 @@ class ItemInputDisplayNode extends ComputeNode {
 
     constructor(name, eq, item_image) {
         super(name);
-        this.input_field = document.getElementById(eq+"-choice");
-        this.health_field = document.getElementById(eq+"-health");
-        this.level_field = document.getElementById(eq+"-lv");
+        this.input_field = document.getElementById(eq + "-choice");
+        this.health_field = document.getElementById(eq + "-health");
+        this.level_field = document.getElementById(eq + "-lv");
         this.image = item_image;
         this.fail_cb = true;
     }
@@ -324,7 +324,7 @@ class ItemDisplayNode extends ComputeNode {
         const [item] = input_map.values();  // Extract values, pattern match it into size one list and bind to first element
 
         displayExpandedItem(item.statMap, this.target_elem);
-        collapse_element("#"+this.target_elem);
+        collapse_element("#" + this.target_elem);
     }
 }
 
@@ -347,7 +347,7 @@ class WeaponInputDisplayNode extends ComputeNode {
 
         const type = item.statMap.get('type');
         this.image.style.backgroundPosition = itemBGPositions[type];
-        
+
         let dps = get_base_dps(item.statMap);
         if (isNaN(dps)) {
             dps = dps[1];
@@ -570,34 +570,34 @@ function getDefenseStats(stats) {
     let ehp = [totalHp, totalHp];
     let defMult = (2 - stats.get("classDef"));
     for (const [k, v] of stats.get("defMult").entries()) {
-        defMult *= (1 - v/100);
+        defMult *= (1 - v / 100);
     }
     // agility bonuses
-    let agi_reduction = (100-stats.get("agiDef"))/100;
+    let agi_reduction = (100 - stats.get("agiDef")) / 100;
     // newehp = oldehp / [A'(x) * A(x) + (1 - A(x)) * (1 - D(x))]
-    ehp[0] = ehp[0] / (agi_reduction*agi_pct + (1-agi_pct) * (1-def_pct));
+    ehp[0] = ehp[0] / (agi_reduction * agi_pct + (1 - agi_pct) * (1 - def_pct));
     ehp[0] /= defMult;
     // ehp[0] /= (1-def_pct)*(1-agi_pct)*defMult;
-    ehp[1] /= (1-def_pct)*defMult;
+    ehp[1] /= (1 - def_pct) * defMult;
     defenseStats.push(ehp);
     //HPR
-    let totalHpr = rawToPct(stats.get("hprRaw"), stats.get("hprPct")/100.);
+    let totalHpr = rawToPct(stats.get("hprRaw"), stats.get("hprPct") / 100.);
     defenseStats.push(totalHpr);
     //EHPR
     let ehpr = [totalHpr, totalHpr];
-    ehpr[0] = ehpr[0] / (agi_reduction*agi_pct + (1-agi_pct) * (1-def_pct));
+    ehpr[0] = ehpr[0] / (agi_reduction * agi_pct + (1 - agi_pct) * (1 - def_pct));
     ehpr[0] /= defMult;
-    ehpr[1] /= (1-def_pct)*defMult;
+    ehpr[1] /= (1 - def_pct) * defMult;
     defenseStats.push(ehpr);
     //skp stats
-    defenseStats.push([ def_pct*100, agi_pct*100]);
+    defenseStats.push([def_pct * 100, agi_pct * 100]);
     //eledefs - TODO POWDERS
     let eledefs = [0, 0, 0, 0, 0];
-    for(const i in skp_elements){ //kinda jank but ok
-        eledefs[i] = rawToPctUncapped(stats.get(skp_elements[i] + "Def"), (stats.get(skp_elements[i] + "DefPct") + stats.get("rDefPct"))/100.);
+    for (const i in skp_elements) { //kinda jank but ok
+        eledefs[i] = rawToPctUncapped(stats.get(skp_elements[i] + "Def"), (stats.get(skp_elements[i] + "DefPct") + stats.get("rDefPct")) / 100.);
     }
     defenseStats.push(eledefs);
-    
+
     //[total hp, [ehp w/ agi, ehp w/o agi], total hpr, [ehpr w/ agi, ehpr w/o agi], [def%, agi%], [edef,tdef,wdef,fdef,adef]]
     return defenseStats;
 }
@@ -612,7 +612,7 @@ function getDefenseStats(stats) {
  */
 class SpellDamageCalcNode extends ComputeNode {
     constructor(spell) {
-        super("builder-spell"+spell.base_spell+"-calc");
+        super("builder-spell" + spell.base_spell + "-calc");
         this.spell = spell;
     }
 
@@ -634,8 +634,8 @@ class SpellDamageCalcNode extends ComputeNode {
         let use_spell = (('scaling' in spell) ? spell.scaling === 'spell' : true);
 
         for (const part of spell_parts) {
-            const {name, display=true} = part;
-            spell_result_map.set(name, {type: "need_eval", store_part: part});
+            const { name, display = true } = part;
+            spell_result_map.set(name, { type: "need_eval", store_part: part });
         }
 
         function eval_part(part_name) {
@@ -653,8 +653,8 @@ class SpellDamageCalcNode extends ComputeNode {
             if ('multipliers' in part) { // damage type spell
                 const use_str = (('use_str' in part) ? part.use_str : true);
                 const ignored_mults = (('ignored_mults' in part) ? part.ignored_mults : []);
-                if('scaling' in part) {use_spell = spell.scaling;}
-                if('use_atkspd' in part) {use_speed = spell.scaling;}
+                if ('scaling' in part) { use_spell = spell.scaling; }
+                if ('use_atkspd' in part) { use_speed = spell.scaling; }
 
                 let results = calculateSpellDamage(stats, weapon, part.multipliers, use_spell, !use_speed, part_id, !use_str, ignored_mults);
                 spell_result = {
@@ -680,7 +680,7 @@ class SpellDamageCalcNode extends ComputeNode {
                             continue;
                         }
                     }
-                    heal_mult *= (1 + v/100);
+                    heal_mult *= (1 + v / 100);
                 }
                 let _heal_amount = part.power * getDefenseStats(stats)[0] * heal_mult;
                 spell_result = {
@@ -722,7 +722,7 @@ class SpellDamageCalcNode extends ComputeNode {
                     }
                 }
             }
-            const {name, display = true} = part;
+            const { name, display = true } = part;
             spell_result.name = name;
             spell_result.display = display;
             spell_result_map.set(name, spell_result);
@@ -749,7 +749,7 @@ class SpellDamageCalcNode extends ComputeNode {
  */
 class SpellDisplayNode extends ComputeNode {
     constructor(spell) {
-        super("builder-spell"+spell.base_spell+"-display");
+        super("builder-spell" + spell.base_spell + "-display");
         this.spell = spell;
     }
 
@@ -759,8 +759,8 @@ class SpellDisplayNode extends ComputeNode {
         const spell = this.spell;
 
         const i = this.spell.base_spell;
-        let parent_elem = document.getElementById("spell"+i+"-info");
-        let overallparent_elem = document.getElementById("spell"+i+"-infoAvg");
+        let parent_elem = document.getElementById("spell" + i + "-info");
+        let overallparent_elem = document.getElementById("spell" + i + "-infoAvg");
         displaySpellDamage(parent_elem, overallparent_elem, stats, spell, i, damages);
     }
 }
@@ -800,29 +800,33 @@ class DisplayBuildWarningsNode extends ComputeNode {
         const min_assigned = build.base_skillpoints;
         const base_totals = build.total_skillpoints;
         const skillpoints = [
-                input_map.get('str'),
-                input_map.get('dex'),
-                input_map.get('int'),
-                input_map.get('def'),
-                input_map.get('agi')
-            ];
-        let skp_effects = ["% damage","% crit","% cost red.","% resist","% dodge"];
+            input_map.get('str'),
+            input_map.get('dex'),
+            input_map.get('int'),
+            input_map.get('def'),
+            input_map.get('agi')
+        ];
+        const tome_skp = build.tomes[6].statMap.get("skillpoints") || [0, 0, 0, 0, 0];
+        let skp_effects = ["% damage", "% crit", "% cost red.", "% resist", "% dodge"];
         let total_assigned = 0;
-        for (let i in skp_order){ //big bren
+        const assigned_per_type = [];
+        for (let i in skp_order) { //big bren
             const assigned = skillpoints[i] - base_totals[i] + min_assigned[i]
             setText(skp_order[i] + "-skp-base", "Original: " + base_totals[i]);
-            setText(skp_order[i] + "-skp-assign", "Assign: " + assigned);
+            const tome_bonus = tome_skp[i];
+            setText(skp_order[i] + "-skp-assign", "Assign: " + assigned + (tome_bonus ? " (+" + tome_bonus + ")" : ""));
             setValue(skp_order[i] + "-skp", skillpoints[i]);
             let linebreak = document.createElement("br");
             linebreak.classList.add("itemp");
-            setText(skp_order[i] + "-skp-pct", (skillPointsToPercentage(skillpoints[i])*100*skillpoint_final_mult[i]).toFixed(1).concat(skp_effects[i]));
-            document.getElementById(skp_order[i]+"-warnings").textContent = ''
+            setText(skp_order[i] + "-skp-pct", (skillPointsToPercentage(skillpoints[i]) * 100 * skillpoint_final_mult[i]).toFixed(1).concat(skp_effects[i]));
+            document.getElementById(skp_order[i] + "-warnings").textContent = ''
             if (assigned > 100) {
                 let skp_warning = document.createElement("p");
                 skp_warning.classList.add("warning", "small-text");
-                skp_warning.textContent += "Cannot assign " + assigned + " skillpoints in " + ["Strength","Dexterity","Intelligence","Defense","Agility"][i] + " manually.";
-                document.getElementById(skp_order[i]+"-warnings").appendChild(skp_warning);
+                skp_warning.textContent += "Cannot assign " + assigned + " skillpoints in " + ["Strength", "Dexterity", "Intelligence", "Defense", "Agility"][i] + " manually.";
+                document.getElementById(skp_order[i] + "-warnings").appendChild(skp_warning);
             }
+            assigned_per_type.push(assigned);
             total_assigned += assigned;
         }
 
@@ -839,16 +843,52 @@ class DisplayBuildWarningsNode extends ComputeNode {
         remainingSkp.append(remainingSkpContent);
 
         summarybox.append(remainingSkp);
-        if(total_assigned > levelToSkillPoints(build.level)){
-            let skpWarning = document.createElement("span");
-            //skpWarning.classList.add("itemp");
-            skpWarning.classList.add("warning");
-            skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
-            let skpCount = document.createElement("p");
-            skpCount.classList.add("warning");
-            skpCount.textContent = "For level " + (build.level>101 ? "101+" : build.level)  + ", there are only " + levelToSkillPoints(build.level) + " skill points available.";
-            summarybox.append(skpWarning);
-            summarybox.append(skpCount);
+        if (total_assigned > levelToSkillPoints(build.level)) {
+            const noGuildTome = build.tomes[6].statMap.has('NONE');
+            if (noGuildTome) {
+                const deficit = total_assigned - levelToSkillPoints(build.level);
+
+                // Check focused tomes: +4 to one type (5 patterns)
+                let focused_works = false;
+                for (let i = 0; i < 5; i++) {
+                    if (Math.min(4, assigned_per_type[i]) >= deficit) { focused_works = true; break; }
+                }
+
+                // Check rainbow/Assimilator: +1 to all 5
+                let rainbow_savings = 0;
+                for (let i = 0; i < 5; i++) rainbow_savings += Math.min(1, assigned_per_type[i]);
+                const rainbow_works = rainbow_savings >= deficit;
+
+                if (focused_works) {
+                    let skpWarning = document.createElement("span");
+                    skpWarning.classList.add("warning-yellow");
+                    skpWarning.textContent = "WARNING: Build requires a guild tome.";
+                    summarybox.append(skpWarning);
+                } else if (rainbow_works) {
+                    let skpWarning = document.createElement("span");
+                    skpWarning.classList.add("warning-yellow");
+                    skpWarning.textContent = "WARNING: Build requires the Assimilator guild tome.";
+                    summarybox.append(skpWarning);
+                } else {
+                    let skpWarning = document.createElement("span");
+                    skpWarning.classList.add("warning");
+                    skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
+                    let skpCount = document.createElement("p");
+                    skpCount.classList.add("warning");
+                    skpCount.textContent = "For level " + (build.level > 101 ? "101+" : build.level) + ", there are only " + levelToSkillPoints(build.level) + " skill points available.";
+                    summarybox.append(skpWarning);
+                    summarybox.append(skpCount);
+                }
+            } else {
+                let skpWarning = document.createElement("span");
+                skpWarning.classList.add("warning");
+                skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
+                let skpCount = document.createElement("p");
+                skpCount.classList.add("warning");
+                skpCount.textContent = "For level " + (build.level > 101 ? "101+" : build.level) + ", there are only " + levelToSkillPoints(build.level) + " skill points available.";
+                summarybox.append(skpWarning);
+                summarybox.append(skpCount);
+            }
         }
         let lvlWarning;
         for (const item of build.items) {
@@ -867,17 +907,17 @@ class DisplayBuildWarningsNode extends ComputeNode {
                     lvlWarning.classList.add("itemp"); lvlWarning.classList.add("warning");
                     lvlWarning.textContent = "WARNING: A level " + build.level + " player cannot use some piece(s) of this build."
                 }
-                let baditem = document.createElement("p"); 
-                    baditem.classList.add("nocolor"); baditem.classList.add("itemp"); 
-                    baditem.textContent = item.statMap.get("displayName") + " requires level " + item_lvl + " to use.";
-                    lvlWarning.appendChild(baditem);
+                let baditem = document.createElement("p");
+                baditem.classList.add("nocolor"); baditem.classList.add("itemp");
+                baditem.textContent = item.statMap.get("displayName") + " requires level " + item_lvl + " to use.";
+                lvlWarning.appendChild(baditem);
             }
         }
-        if(lvlWarning){
+        if (lvlWarning) {
             summarybox.append(lvlWarning);
         }
         for (const [setName, count] of build.activeSetCounts) {
-            const bonus = sets.get(setName).bonuses[count-1];
+            const bonus = sets.get(setName).bonuses[count - 1];
             if (bonus["illegal"]) {
                 let setWarning = document.createElement("p");
                 setWarning.classList.add("itemp"); setWarning.classList.add("warning");
@@ -908,25 +948,25 @@ class AggregateStatsNode extends ComputeNode {
 }
 
 let radiance_affected = [ /*"hp"*/, "fDef", "wDef", "aDef", "tDef", "eDef", "hprPct", "mr", "sdPct", "mdPct", "ls", "ms",
-// "xpb", "lb",
-"ref",
-/*"str", "dex", "int", "agi", "def",*/  // TODO its affected but i have to make it not affect req
-"thorns", "expd", "spd", "atkTier", "poison", "hpBonus", "spRegen", "eSteal", "hprRaw", "sdRaw", "mdRaw", "fDamPct", "wDamPct", "aDamPct", "tDamPct", "eDamPct", "fDefPct", "wDefPct", "aDefPct", "tDefPct", "eDefPct", "fixID", "category", "spPct1", "spRaw1", "spPct2", "spRaw2", "spPct3", "spRaw3", "spPct4", "spRaw4", "rSdRaw", "sprint", "sprintReg", "jh",
+    // "xpb", "lb",
+    "ref",
+    /*"str", "dex", "int", "agi", "def",*/  // TODO its affected but i have to make it not affect req
+    "thorns", "expd", "spd", "atkTier", "poison", "hpBonus", "spRegen", "eSteal", "hprRaw", "sdRaw", "mdRaw", "fDamPct", "wDamPct", "aDamPct", "tDamPct", "eDamPct", "fDefPct", "wDefPct", "aDefPct", "tDefPct", "eDefPct", "fixID", "category", "spPct1", "spRaw1", "spPct2", "spRaw2", "spPct3", "spRaw3", "spPct4", "spRaw4", "rSdRaw", "sprint", "sprintReg", "jh",
 
-// "lq", "gXp", "gSpd",
+    // "lq", "gXp", "gSpd",
 
-// wynn2 damages.
-"eMdPct","eMdRaw","eSdPct","eSdRaw",/*"eDamPct,"*/"eDamRaw",//"eDamAddMin","eDamAddMax",
-"tMdPct","tMdRaw","tSdPct","tSdRaw",/*"tDamPct,"*/"tDamRaw",//"tDamAddMin","tDamAddMax",
-"wMdPct","wMdRaw","wSdPct","wSdRaw",/*"wDamPct,"*/"wDamRaw",//"wDamAddMin","wDamAddMax",
-"fMdPct","fMdRaw","fSdPct","fSdRaw",/*"fDamPct,"*/"fDamRaw",//"fDamAddMin","fDamAddMax",
-"aMdPct","aMdRaw","aSdPct","aSdRaw",/*"aDamPct,"*/"aDamRaw",//"aDamAddMin","aDamAddMax",
-"nMdPct","nMdRaw","nSdPct","nSdRaw","nDamPct","nDamRaw",//"nDamAddMin","nDamAddMax",      // neutral which is now an element
-/*"mdPct","mdRaw","sdPct","sdRaw",*/"damPct","damRaw",//"damAddMin","damAddMax",          // These are the old ids. Become proportional.
-"rMdPct","rMdRaw","rSdPct",/*"rSdRaw",*/"rDamPct","rDamRaw",//"rDamAddMin","rDamAddMax",  // rainbow (the "element" of all minus neutral). rSdRaw is rainraw
-"critDamPct",
-//"spPct1Final", "spPct2Final", "spPct3Final", "spPct4Final",
-"healPct", "kb", "weakenEnemy", "slowEnemy", "rDefPct"
+    // wynn2 damages.
+    "eMdPct", "eMdRaw", "eSdPct", "eSdRaw",/*"eDamPct,"*/"eDamRaw",//"eDamAddMin","eDamAddMax",
+    "tMdPct", "tMdRaw", "tSdPct", "tSdRaw",/*"tDamPct,"*/"tDamRaw",//"tDamAddMin","tDamAddMax",
+    "wMdPct", "wMdRaw", "wSdPct", "wSdRaw",/*"wDamPct,"*/"wDamRaw",//"wDamAddMin","wDamAddMax",
+    "fMdPct", "fMdRaw", "fSdPct", "fSdRaw",/*"fDamPct,"*/"fDamRaw",//"fDamAddMin","fDamAddMax",
+    "aMdPct", "aMdRaw", "aSdPct", "aSdRaw",/*"aDamPct,"*/"aDamRaw",//"aDamAddMin","aDamAddMax",
+    "nMdPct", "nMdRaw", "nSdPct", "nSdRaw", "nDamPct", "nDamRaw",//"nDamAddMin","nDamAddMax",      // neutral which is now an element
+/*"mdPct","mdRaw","sdPct","sdRaw",*/"damPct", "damRaw",//"damAddMin","damAddMax",          // These are the old ids. Become proportional.
+    "rMdPct", "rMdRaw", "rSdPct",/*"rSdRaw",*/"rDamPct", "rDamRaw",//"rDamAddMin","rDamAddMax",  // rainbow (the "element" of all minus neutral). rSdRaw is rainraw
+    "critDamPct",
+    //"spPct1Final", "spPct2Final", "spPct3Final", "spPct4Final",
+    "healPct", "kb", "weakenEnemy", "slowEnemy", "rDefPct"
 ];
 /**
  * Scale stats if radiance is enabled.
@@ -1039,7 +1079,7 @@ class EditableIDSetterNode extends ComputeNode {
         for (const id of editable_item_fields) {
             const val = build.statMap.get(id);
             document.getElementById(id).value = val;
-            document.getElementById(id+'-base').textContent = 'Original Value: ' + val;
+            document.getElementById(id + '-base').textContent = 'Original Value: ' + val;
         }
     }
 
@@ -1076,20 +1116,20 @@ class SkillPointSetterNode extends ComputeNode {
         const [build] = input_map.values();  // Extract values, pattern match it into size one list and bind to first element
 
         for (const [idx, elem] of skp_order.entries()) {
-            document.getElementById(elem+'-skp').value = build.total_skillpoints[idx];
+            document.getElementById(elem + '-skp').value = build.total_skillpoints[idx];
         }
 
         if (this.skillpoints !== null) {
             for (const [idx, elem] of skp_order.entries()) {
                 if (this.skillpoints[idx] !== null) {
-                    document.getElementById(elem+'-skp').value = this.skillpoints[idx];
+                    document.getElementById(elem + '-skp').value = this.skillpoints[idx];
                 }
             }
             this.skillpoints = null;
         }
     }
 
-    update(skillpoints=null) {
+    update(skillpoints = null) {
         this.skillpoints = skillpoints;
         return super.update()
     }
@@ -1109,14 +1149,14 @@ class SumNumberInputNode extends InputNode {
         if (value.includes("+")) {
             let skp = value.split("+");
             for (const s of skp) {
-                const val = parseInt(s,10);
+                const val = parseInt(s, 10);
                 if (isNaN(val)) {
                     return null;
                 }
                 input_num += val;
             }
         } else {
-            input_num = parseInt(value,10);
+            input_num = parseInt(value, 10);
             if (isNaN(input_num)) {
                 return null;
             }
@@ -1144,7 +1184,7 @@ function generateTomeTooltip(tooltip_elem, tome) {
     if (skp_bonuses) {
         for (let [i, skp] of skp_order.entries()) {
             if (skp_bonuses[i] != 0) {
-                let skp_div = make_elem("div", ["col"], { });
+                let skp_div = make_elem("div", ["col"], {});
                 let skp_title = make_elem("span", ["mc-white"], {
                     textContent: `${idPrefixes[skp]}`
                 });
@@ -1167,11 +1207,11 @@ function generateTomeTooltip(tooltip_elem, tome) {
         let value_max = maxRolls.get(id);
 
         let style = value < 0 ? "negative" : "positive";
-        if(reversedIDs.includes(id)){
+        if (reversedIDs.includes(id)) {
             style === "positive" ? style = "negative" : style = "positive";
         }
-        let id_row = make_elem("div", ["col"], { });
-        let col_row = make_elem("div", ["row"], { });
+        let id_row = make_elem("div", ["col"], {});
+        let col_row = make_elem("div", ["row"], {});
 
         let minElem = make_elem("div", [style, "col", "text-start"], {
             textContent: `${value}${idSuffixes[id]}`
@@ -1260,37 +1300,37 @@ function builder_graph_init(skillpoints) {
 
     // Bind item input fields to input nodes, and some display stuff (for auto colorizing stuff).
     for (const [eq, display_elem, none_item] of zip3(equipment_fields, build_fields, none_items)) {
-        let input_field = document.getElementById(eq+"-choice");
-        let item_image = document.getElementById(eq+"-img");
+        let input_field = document.getElementById(eq + "-choice");
+        let item_image = document.getElementById(eq + "-img");
 
-        let item_input = new ItemInputNode(eq+'-input', input_field, none_item);
+        let item_input = new ItemInputNode(eq + '-input', input_field, none_item);
         equip_inputs.push(item_input);
-        if (powder_inputs.includes(eq+'-powder')) { // TODO: fragile
-            const powder_name = eq+'-powder';
+        if (powder_inputs.includes(eq + '-powder')) { // TODO: fragile
+            const powder_name = eq + '-powder';
             let powder_node = new PowderInputNode(powder_name, document.getElementById(powder_name))
-                    .link_to(item_input, 'item');
+                .link_to(item_input, 'item');
             powder_nodes.push(powder_node);
             build_encode_node.link_to(powder_node, powder_name);
-            let item_powdering = new ItemPowderingNode(eq+'-powder-apply')
-                    .link_to(powder_node, 'powdering').link_to(item_input, 'item');
+            let item_powdering = new ItemPowderingNode(eq + '-powder-apply')
+                .link_to(powder_node, 'powdering').link_to(item_input, 'item');
             item_input = item_powdering;
         }
         item_final_nodes.push(item_input);
-        new ItemInputDisplayNode(eq+'-input-display', eq, item_image).link_to(item_input);
-        new ItemDisplayNode(eq+'-item-display', display_elem).link_to(item_input);
+        new ItemInputDisplayNode(eq + '-input-display', eq, item_image).link_to(item_input);
+        new ItemDisplayNode(eq + '-item-display', display_elem).link_to(item_input);
         //new PrintNode(eq+'-debug').link_to(item_input);
         //document.querySelector("#"+eq+"-tooltip").setAttribute("onclick", "collapse_element('#"+ eq +"-tooltip');"); //toggle_plus_minus('" + eq + "-pm'); 
         build_node.link_to(item_input, eq);
     }
 
     for (const [eq, none_item] of zip2(tome_fields, [none_tomes[0], none_tomes[0], none_tomes[1], none_tomes[1], none_tomes[1], none_tomes[1], none_tomes[2], none_tomes[3], none_tomes[4], none_tomes[4], none_tomes[5], none_tomes[5], none_tomes[6], none_tomes[6]])) {
-        let input_field = document.getElementById(eq+"-choice");
-        let item_image = document.getElementById(eq+"-img");
+        let input_field = document.getElementById(eq + "-choice");
+        let item_image = document.getElementById(eq + "-img");
 
-        let item_input = new ItemInputNode(eq+'-input', input_field, none_item);
+        let item_input = new ItemInputNode(eq + '-input', input_field, none_item);
         equip_inputs.push(item_input);
         item_final_nodes.push(item_input);
-        new ItemInputDisplayNode(eq+'-input-display', eq, item_image).link_to(item_input);
+        new ItemInputDisplayNode(eq + '-input-display', eq, item_image).link_to(item_input);
         let tomeDropdown = document.getElementById('tomes-dropdown');
         let tomeImage = document.getElementById(`${eq}-img-loc`);
         new TomeHoverRenderNode(`{eq}-render`, tomeImage, tomeDropdown).link_to(item_input, 'tooltip-args');
@@ -1318,7 +1358,7 @@ function builder_graph_init(skillpoints) {
     for (const field of editable_item_fields) {
         // Create nodes that listens to each editable id input, the node name should match the "id"
         const elem = document.getElementById(field);
-        const node = new SumNumberInputNode('builder-'+field+'-input', elem);
+        const node = new SumNumberInputNode('builder-' + field + '-input', elem);
 
         edit_agg_node.link_to(node, field);
         edit_input_nodes.push(node);
@@ -1329,8 +1369,8 @@ function builder_graph_init(skillpoints) {
     edit_agg_node.link_to(edit_id_output, 'edit-id-setter');
 
     for (const skp of skp_order) {
-        const elem = document.getElementById(skp+'-skp');
-        const node = new SumNumberInputNode('builder-'+skp+'-input', elem);
+        const elem = document.getElementById(skp + '-skp');
+        const node = new SumNumberInputNode('builder-' + skp + '-input', elem);
 
         edit_agg_node.link_to(node, skp);
         build_encode_node.link_to(node, skp);
@@ -1356,17 +1396,17 @@ function builder_graph_init(skillpoints) {
     aspect_agg_node = new AspectAggregateNode('final-aspects');
     const aspects_dropdown = document.getElementById('aspects-dropdown');
     for (const field of aspect_fields) {
-        const aspect_input_field = document.getElementById(field+'-choice');
-        const aspect_tier_input_field = document.getElementById(field+'-tier-choice');
-        const aspect_image_div = document.getElementById(field+'-img');
-        const aspect_image_loc_div = document.getElementById(field+'-img-loc');
-        new AspectAutocompleteInitNode(field+'-autocomplete', field).link_to(class_node, 'player-class');
-        const aspect_input = new AspectInputNode(field+'-input', aspect_input_field).link_to(class_node, 'player-class');
-        new AspectInputDisplayNode(field+'-input', aspect_input_field, aspect_image_div).link_to(aspect_input, "aspect-spec");
+        const aspect_input_field = document.getElementById(field + '-choice');
+        const aspect_tier_input_field = document.getElementById(field + '-tier-choice');
+        const aspect_image_div = document.getElementById(field + '-img');
+        const aspect_image_loc_div = document.getElementById(field + '-img-loc');
+        new AspectAutocompleteInitNode(field + '-autocomplete', field).link_to(class_node, 'player-class');
+        const aspect_input = new AspectInputNode(field + '-input', aspect_input_field).link_to(class_node, 'player-class');
+        new AspectInputDisplayNode(field + '-input', aspect_input_field, aspect_image_div).link_to(aspect_input, "aspect-spec");
         aspect_inputs.push(aspect_input);
-        const aspect_tier_input = new AspectTierInputNode(field+'-tier-input', aspect_tier_input_field).link_to(aspect_input, 'aspect-spec');
-        new AspectRenderNode(field+'-render', aspect_image_loc_div, aspects_dropdown).link_to(aspect_tier_input, 'tooltip-args');
-        aspect_agg_node.link_to(aspect_tier_input, field+'-tiered');
+        const aspect_tier_input = new AspectTierInputNode(field + '-tier-input', aspect_tier_input_field).link_to(aspect_input, 'aspect-spec');
+        new AspectRenderNode(field + '-render', aspect_image_loc_div, aspects_dropdown).link_to(aspect_tier_input, 'tooltip-args');
+        aspect_agg_node.link_to(aspect_tier_input, field + '-tiered');
     }
     build_encode_node.link_to(aspect_agg_node, 'aspects');
 
@@ -1384,7 +1424,7 @@ function builder_graph_init(skillpoints) {
 
 
     atree_graph_creator = new AbilityTreeEnsureNodesNode(build_node, stat_agg_node)
-                                    .link_to(atree_collect_spells, 'spells');
+        .link_to(atree_collect_spells, 'spells');
 
     // kinda janky, manually set atree and update. Some wasted compute here
     if (atree_data !== null && atree_node.value !== null) { // janky check if atree is valid
