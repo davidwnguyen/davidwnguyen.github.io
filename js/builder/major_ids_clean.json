@@ -2098,7 +2098,7 @@
     },
     "DAUNTLESS_INFERNO": {
         "displayName": "Dauntless Inferno",
-        "description": "Courage casts a series of 5 infernos that expand after the last, dealing [fire]125% each, and grants 20% resistance instead of a damage boost.",
+        "description": "Courage casts a series of 5 infernos that expand after the last, dealing [fire]150% each, and grants 20% resistance instead of a damage boost.",
         "abilities": [
             {
                 "class": "Any",
@@ -2189,7 +2189,7 @@
     },
     "SUPERCONDUCTOR": {
         "displayName": "Superconductor",
-        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]225% and stunning them for 1s. You take 10% more damage for 4s.",
+        "description": "Chain Lightning channels three massive lightning bolts through you, arcing to enemies within 8 blocks for [thunder]270% and stunning them for 1s. You take 10% more damage for 4s.",
         "abilities": [
             {
                 "class": "Any",
