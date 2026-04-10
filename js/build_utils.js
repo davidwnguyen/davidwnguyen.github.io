@@ -216,7 +216,12 @@ function expandItem(item) {
     } else { //The item does not have fixed IDs.
         for (const id of rolledIDs) {
             let val = (item[id] || 0);
-            if (val == 0) {
+
+            if (typeof val == 'object' && val['static']) {
+                // Static IDs that are per-item based
+                maxRolls.set(id,val['raw']);
+                minRolls.set(id,val['raw']);
+            } else if (val == 0) {
                 // NOTE: DO NOT remove this case! idRound behavior does not round to 0!
                 maxRolls.set(id,0);
                 minRolls.set(id,0);
