@@ -1001,8 +1001,15 @@ function shareBuild(build) {
         `> ${build.weapon.statMap.get("displayName")} [${build_powders[4].map(x => powderNames.get(x)).join("")}]`
     ];
 
-    if (!build.tomes.every(tome => tome.statMap.has("NONE"))) {
-        lines.push("> (Has Tomes)")
+    const hasTomes = !build.tomes.every(tome => tome.statMap.has("NONE"));
+    const hasAspects = aspect_agg_node && aspect_agg_node.value
+        && !aspect_agg_node.value.every(([aspect, _]) => aspect.NONE);
+    if (hasTomes && hasAspects) {
+        lines.push("> (Has Tomes and Aspects)");
+    } else if (hasTomes) {
+        lines.push("> (Has Tomes)");
+    } else if (hasAspects) {
+        lines.push("> (Has Aspects)");
     }
 
     const text = lines.join('\n');
