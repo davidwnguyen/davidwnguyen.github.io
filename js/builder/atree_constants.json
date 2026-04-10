@@ -9325,7 +9325,8 @@
             "base_abil": "Distortion",
             "parents": [
                 "Meteor Shower",
-                "Arcane Speed"
+                "Arcane Speed",
+                "Incandescence"
             ],
             "dependencies": [
                 "Distortion"
