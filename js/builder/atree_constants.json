@@ -7411,7 +7411,7 @@
         },
         {
             "display_name": "Enlightenment",
-            "desc": "Add +1 additional charge to Mantle of the Bovemists. </br> Shield Strike will grant 1 charge of Mantle of the Bovemist to nearby allies for every 2 broken mantles used. </br> </br>Area of Effect: 16 Blocks (Circle-Shaped)",
+            "desc": "Add +1 additional charge to Mantle of the Bovemists. </br> Shield Strike will deal more damage and grant 1 charge of Mantle of the Bovemist to nearby allies for every 2 broken mantles used. </br> </br><span class='mc-white'>Total Damage</span>: +150% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +120%)   </br>&emsp;(<span class='fDam'>Fire</span>: +30%) </br>Area of Effect: 16 Blocks (Circle-Shaped)",
             "base_abil": "Mantle of the Bovemists",
             "archetype": "Paladin",
             "parents": [
@@ -7428,7 +7428,22 @@
             "properties": {
                 "charges": 1
             },
-            "effects": []
+            "effects": [
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "Damage per Shield",
+                    "behavior": "modify",
+                    "base_spell": 6,
+                    "multipliers": [
+                        120,
+                        0,
+                        0,
+                        0,
+                        30,
+                        0
+                    ]
+                }
+            ]
         },
         {
             "display_name": "Beyond Salvation",
@@ -8153,7 +8168,7 @@
         },
         {
             "display_name": "Etheric Slash",
-            "desc": "When using Teleport, slash through the air and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='aDam'>Air</span>: 50%) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
+            "desc": "When using Teleport, slash through reality and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='aDam'>Air</span>: 50%) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
             "archetype": "Riftwalker",
             "base_abil": "Teleport",
             "parents": [
@@ -8169,7 +8184,9 @@
                 "col": 4,
                 "icon": "node_2"
             },
-            "properties": {},
+            "properties": {
+                "blink_count": 1
+            },
             "effects": [
                 {
                     "type": "add_spell_prop",
@@ -8199,14 +8216,14 @@
                     "base_spell": 2,
                     "display": "Total Damage",
                     "hits": {
-                        "Etheric Slash Total": 1
+                        "Etheric Slash Total": "Teleport.blink_count"
                     }
                 }
             ]
         },
         {
             "display_name": "Astral Fragmentation",
-            "desc": "Meteor scatters into debris upon landing, dealing additional damage. </br> </br><span class='mc-white'>Total Damage</span>: +120% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +90%)   </br>&emsp;(<span class='eDam'>Earth</span>: +30%) </br>Area of Effect: 6 Blocks (Circle-Shaped)",
+            "desc": "Meteor scatters into debris upon landing, dealing additional damage. </br> Ophanim draws light from the stars, dealing additional damage. </br> </br><span class='mc-white'>Total Damage</span>: +120% (of your DPS, for Meteor)   </br>&emsp;(<span class='nDam'>Damage</span>: +90%)   </br>&emsp;(<span class='eDam'>Earth</span>: +30%) </br><span class='mc-white'>Total Damage</span>: +40% (of your DPS, for Ophanim)   </br>&emsp;(<span class='nDam'>Damage</span>: +30%)   </br>&emsp;(<span class='eDam'>Earth</span>: +10%) </br>Meteor Area of Effect: 6 Blocks (Circle-Shaped)",
             "base_abil": "Meteor",
             "archetype": "Riftwalker",
             "parents": [
@@ -8216,9 +8233,7 @@
             "dependencies": [
                 "Meteor"
             ],
-            "blockers": [
-                "Ophanim"
-            ],
+            "blockers": [],
             "cost": 2,
             "display": {
                 "row": 16,
@@ -8230,10 +8245,25 @@
                 {
                     "type": "add_spell_prop",
                     "target_part": "Meteor Damage",
+                    "behavior": "modify",
                     "base_spell": 3,
                     "multipliers": [
                         90,
                         30,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "Per Orb",
+                    "behavior": "modify",
+                    "base_spell": 3,
+                    "multipliers": [
+                        30,
+                        10,
                         0,
                         0,
                         0,
@@ -8471,8 +8501,7 @@
                         {
                             "name": "Per Melee (max)",
                             "hits": {
-                                "Per Orb": "Ophanim.num_orbs",
-                                "Winded Damage": "Ophanim.num_orbs"
+                                "Per Orb": "Ophanim.num_orbs"
                             }
                         }
                     ]
@@ -8481,38 +8510,12 @@
                     "type": "add_spell_prop",
                     "base_spell": 3,
                     "cost": 30
-                },
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Winded",
-                    "behavior": "modify",
-                    "output": {
-                        "type": "stat",
-                        "name": "nConvBase:3.Winded Damage"
-                    },
-                    "scaling": [
-                        -18
-                    ]
-                },
-                {
-                    "type": "stat_scaling",
-                    "slider": true,
-                    "slider_name": "Winded",
-                    "behavior": "modify",
-                    "output": {
-                        "type": "stat",
-                        "name": "eConvBase:3.Winded Damage"
-                    },
-                    "scaling": [
-                        -4
-                    ]
                 }
             ]
         },
         {
             "display_name": "Arcane Transfer",
-            "desc": "Meteor, Ice Snake, and Etheric Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado adds 4 Mana to the Mana Bank every hit. With Meteor Shower, Mana gain from Meteor is reduced to 4. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
+            "desc": "Meteor, Ice Snake, and Etheric Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado and Meteor Shower will add 4 Mana. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
             "archetype": "Arcanist",
             "archetype_req": 2,
             "parents": [
@@ -9098,7 +9101,7 @@
         },
         {
             "display_name": "Meteor Shower",
-            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 15 Meteors) </br> Meteor and Astral Fragmentation become smaller, dealing -25% Damage and losing -30% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
+            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 15 Meteors, only one Meteor Shower can be active at the same time.) </br> Meteor and Astral Fragmentation become smaller, dealing -25% Damage and losing -30% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "parents": [
@@ -9122,7 +9125,8 @@
             },
             "properties": {
                 "meteorCount": 1,
-                "meteorRate": 0.05
+                "meteorRate": 0.05,
+                "meteor_attack_frequency": 4
             },
             "effects": [
                 {
@@ -9138,8 +9142,16 @@
                 {
                     "type": "add_spell_prop",
                     "base_spell": 3,
+                    "target_part": "Meteor Shower DPS",
+                    "display": "Meteor Shower DPS",
+                    "hits": {
+                        "Total Damage": "Distortion.meteor_attack_frequency"
+                    }
+                },
+                {
+                    "type": "add_spell_prop",
+                    "base_spell": 3,
                     "target_part": "Total Meteor Shower",
-                    "display": "Total Meteor Shower",
                     "hits": {
                         "Total Damage": "Distortion.meteorCount"
                     }
@@ -9498,7 +9510,7 @@
         },
         {
             "display_name": "Vacuokinesis",
-            "desc": "Your Main Attack is imbued with vacuum, dealing additional damage. </br> For every +1 Distortion, Vacuokinesis deals +1% Damage. </br> </br><span class='mc-white'>Total Damage</span>: 100% (Main Attack Damage)   </br>&emsp;(<span class='nDam'>Damage</span>: 100%) </br>Area of Effect: 3 Blocks (Circle-Shaped)",
+            "desc": "Your Main Attack is imbued with vacuum, dealing additional damage. </br> For every +1 Distortion, Vacuokinesis deals +1% Damage. </br> </br><span class='mc-white'>Total Damage</span>: 80% (Main Attack Damage)   </br>&emsp;(<span class='nDam'>Damage</span>: 80%) </br>Area of Effect: 3 Blocks (Circle-Shaped)",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "archetype_req": 0,
@@ -9524,7 +9536,7 @@
                     "target_part": "Vacuokinesis",
                     "base_spell": 0,
                     "multipliers": [
-                        100,
+                        80,
                         0,
                         0,
                         0,
@@ -9611,7 +9623,7 @@
         },
         {
             "display_name": "Rift Rupture",
-            "desc": "Dimensional Tear erupts violently when created, damaging enemies inside it. </br> While Riftbound, Etheric Slash implodes your bound rift instead, damaging nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 1000% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 800%)   </br>&emsp;(<span class='eDam'>Earth</span>: 100%)   </br>&emsp;(<span class='aDam'>Air</span>: 100%) </br>Area of Effect: 8 Blocks (Circle-Shaped) </br>Cooldown: 3s (Riftbound)",
+            "desc": "Dimensional Tear erupts violently when created, damaging enemies inside it. </br> While Riftbound, Etheric Slash implodes your bound rift instead, damaging nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 1000% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 800%)   </br>&emsp;(<span class='eDam'>Earth</span>: 100%)   </br>&emsp;(<span class='aDam'>Air</span>: 100%) </br>Area of Effect: 8 Blocks (Circle-Shaped) </br>Cooldown: 2s (Riftbound)",
             "base_abil": "Teleport",
             "archetype": "Riftwalker",
             "parents": [
@@ -9904,7 +9916,7 @@
         },
         {
             "display_name": "Arcane Power",
-            "desc": "Meteor, Ice Snake, and Etheric Slash will add +8 Mana to your Mana Bank for each aggressive enemy you hit. Frozen Tornado adds +2 Mana to the Mana Bank every hit. With Meteor Shower, Meteor only adds +2 Mana. </br> Arcane Restoration will restore mana 0.1s faster.",
+            "desc": "Meteor, Ice Snake, and Wind Slash will add +8 Mana to your Mana Bank for each aggressive enemy you hit. Frozen Tornado and Meteor Shower will add +4 Mana. </br> Arcane Restoration will restore mana 0.1s faster.",
             "base_abil": "Arcane Transfer",
             "archetype": "Arcanist",
             "archetype_req": 0,
@@ -10090,6 +10102,17 @@
                         0,
                         0,
                         35
+                    ]
+                },
+                {
+                    "type": "raw_stat",
+                    "bonuses": [
+                        {
+                            "type": "prop",
+                            "abil": "Distortion",
+                            "name": "meteor_attack_frequency",
+                            "value": 1
+                        }
                     ]
                 }
             ]
@@ -10806,7 +10829,7 @@
         },
         {
             "display_name": "Paradox",
-            "desc": "Casting Heal applies Paradox to yourself. </br> Paradox sends 25% of the damage you you take to the future, dealing it over 10s and borrows mana from the past, refunding 20% of your spent mana over 10s. </br> For every +1 Distortion, the duration is increased by +0.05s. </br> </br>Duration: 6s </br>Cooldown: 15s",
+            "desc": "Casting Heal applies Paradox to yourself. </br> Paradox sends 25% of the damage you you take to the future, dealing it over 10s and borrows mana from the past, refunding 30% of your spent mana over 10s. </br> For every +1 Distortion, the duration is increased by +0.05s. </br> </br>Duration: 6s </br>Cooldown: 15s",
             "archetype": "Riftwalker",
             "parents": [
                 "Portal to the Beyond",
@@ -10828,7 +10851,7 @@
         },
         {
             "display_name": "Gravitational Collapse",
-            "desc": "Click Combo: F </br> Your Dimensional Tear overloads, growing in size and damage while pulling all enemies in. </br> While it is overloaded, it deals +300% increased damage, turns your Teleport into a deadly ray that fires off 5 times in quick succession, provides flight, and prevents mana drain. </br> The Dimensional Tear collapses when it expires, dealing massive damage to nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 600% (of your DPS, Deadly Beam)   </br>&emsp;(<span class='nDam'>Damage</span>: 475%)   </br>&emsp;(<span class='aDam'>Air</span>: 125%) </br><span class='mc-white'>Total Damage</span>: 6000% (of your DPS, Collapse)   </br>&emsp;(<span class='nDam'>Damage</span>: 4500%)   </br>&emsp;(<span class='eDam'>Earth</span>: 750%)   </br>&emsp;(<span class='aDam'>Air</span>: 750%) </br>Area of Effect: +100% </br>Duration: 10s </br> Activate abilities to charge your Ultimate Meter to 100%",
+            "desc": "Click Combo: F </br> Your Dimensional Tear overloads, growing in size and damage while pulling all enemies in. </br> While it is overloaded, it deals +400% increased damage, turns your Teleport into a deadly ray that fires off 5 times in quick succession, provides flight, and prevents mana drain. </br> The Dimensional Tear collapses when it expires, dealing massive damage to nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 600% (of your DPS, Deadly Beam)   </br>&emsp;(<span class='nDam'>Damage</span>: 475%)   </br>&emsp;(<span class='aDam'>Air</span>: 125%) </br><span class='mc-white'>Total Damage</span>: 8000% (of your DPS, Collapse)   </br>&emsp;(<span class='nDam'>Damage</span>: 6000%)   </br>&emsp;(<span class='eDam'>Earth</span>: 1000%)   </br>&emsp;(<span class='aDam'>Air</span>: 1000%) </br>Area of Effect: +100% </br>Duration: 10s </br> Activate abilities to charge your Ultimate Meter to 100%",
             "archetype": "Riftwalker",
             "archetype_req": 16,
             "parents": [
@@ -10858,6 +10881,22 @@
                             "type": "stat",
                             "name": "damMult.GravitationalCollapse:8.Riftspawn Damage",
                             "value": 300
+                        },
+                        {
+                            "type": "stat",
+                            "name": "nConvBase:2.Etheric Slash",
+                            "value": 325
+                        },
+                        {
+                            "type": "stat",
+                            "name": "aConvBase:2.Etheric Slash",
+                            "value": 75
+                        },
+                        {
+                            "type": "prop",
+                            "abil": "Teleport",
+                            "name": "blink_count",
+                            "value": 4
                         }
                     ]
                 },
@@ -10871,15 +10910,24 @@
                             "name": "Rift Implosion",
                             "type": "damage",
                             "multipliers": [
-                                4500,
-                                750,
+                                6000,
+                                1000,
                                 0,
                                 0,
                                 0,
-                                750
+                                1000
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "Blink DPS",
+                    "base_spell": 2,
+                    "display": "Blink DPS",
+                    "hits": {
+                        "Etheric Slash Total": 10
+                    }
                 }
             ]
         },
@@ -16546,7 +16594,7 @@
         },
         {
             "display_name": "Depersonalization",
-            "desc": "Masquerade will trigger after -1 less Mask switch. Reduces mana bonus by -10.",
+            "desc": "Masquerade will trigger after -1 less Mask switch. Reduces mana  bonus by -10.",
             "archetype": "Ritualist",
             "archetype_req": 7,
             "base_abil": "Uproot",
@@ -17777,7 +17825,7 @@
         },
         {
             "display_name": "Crystal Knives",
-            "desc": "Your Puppet's knives become stronger, and can pass through walls and enemies. (Max 2 enemies) </br> </br><span class='mc-white'>Total Damage</span>: +5% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +3%)   </br>&emsp;(<span class='eDam'>Earth</span>: +2%)",
+            "desc": "Your Puppet's knives become stronger, and can pass through walls and enemies. (Max 2 enemies) </br> </br><span class='mc-white'>Total Damage</span>: +10% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +3%)   </br>&emsp;(<span class='eDam'>Earth</span>: +2%)",
             "archetype": "Summoner",
             "archetype_req": 8,
             "base_abil": "Puppet Master",
