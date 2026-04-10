@@ -934,21 +934,6 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Distortion"
-                ],
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "slider_max_mult": 2
-                    }
-                ]
-            },
-            {
-                "class": "Mage",
-                "base_abil": "Distortion",
-                "dependencies": [
                     "Devitalize"
                 ],
                 "effects": [
@@ -969,62 +954,16 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Time Vortex"
+                    "Etheric Slash"
                 ],
                 "effects": [
                     {
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Distortion",
-                        "requirement": 25,
                         "output": {
                             "type": "stat",
-                            "name": "damMult.Distortion:4.Damage per Tick"
-                        },
-                        "scaling": [
-                            -0.64
-                        ]
-                    }
-                ]
-            },
-            {
-                "class": "Mage",
-                "base_abil": "Distortion",
-                "dependencies": [
-                    "Time Vortex",
-                    "Influx Shift"
-                ],
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "requirement": 25,
-                        "output": {
-                            "type": "stat",
-                            "name": "damMult.Distortion:4.Damage per Tick"
-                        },
-                        "scaling": [
-                            -0.224
-                        ]
-                    }
-                ]
-            },
-            {
-                "class": "Mage",
-                "base_abil": "Distortion",
-                "dependencies": [
-                    "Vacuokinesis"
-                ],
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "requirement": 40,
-                        "output": {
-                            "type": "stat",
-                            "name": "damMult.Distortion:0.Vacuokinesis"
+                            "name": "damRaw"
                         },
                         "scaling": [
                             -0.4
@@ -1036,24 +975,12 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Vacuokinesis",
-                    "Influx Shift"
+                    "Meteor Shower"
                 ],
-                "effects": [
-                    {
-                        "type": "stat_scaling",
-                        "slider": true,
-                        "slider_name": "Distortion",
-                        "requirement": 40,
-                        "output": {
-                            "type": "stat",
-                            "name": "damMult.Distortion:0.Vacuokinesis"
-                        },
-                        "scaling": [
-                            -0.14
-                        ]
-                    }
-                ]
+                "properties": {
+                    "meteorRate": -0.02
+                },
+                "effects": []
             }
         ]
     },
@@ -1104,12 +1031,12 @@
                         "target_part": "Per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            25,
-                            25,
-                            25,
-                            25,
-                            25,
-                            25
+                            0,
+                            24,
+                            24,
+                            24,
+                            24,
+                            24
                         ]
                     }
                 ]
@@ -1128,12 +1055,36 @@
                         "target_part": "Swan Dive Explosion per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            16,
-                            16,
-                            16,
-                            16,
-                            16,
-                            16
+                            0,
+                            19.2,
+                            19.2,
+                            19.2,
+                            19.2,
+                            19.2
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Assassin",
+                "base_abil": "Serpent's Garden",
+                "dependencies": [
+                    "Serpent's Garden"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 16,
+                        "target_part": "Damage per Tick",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            0,
+                            80,
+                            80,
+                            80,
+                            80,
+                            80
                         ]
                     }
                 ]
@@ -2955,6 +2906,26 @@
                         }
                     }
                 ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Induced Instability",
+                "dependencies": [
+                    "Thunderstorm"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Unstable",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.Unstable:3.Lightning Damage",
+                                "value": 400
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -3539,12 +3510,38 @@
     "UNSTABLE_REACTION": {
         "displayName": "Unstable Reaction",
         "description": "Judrajim no longer ramps in damage after each hit. When it expires, it releases 115% of its potential in an explosion.",
-        "abilities": []
-    },
-    "": {
-        "displayName": "֎",
-        "description": "֎",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Arcane Transfer",
+                "dependencies": [
+                    "Judrajim"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Scaled Tick",
+                                "value": 15
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Ramp Tick",
+                                "value": 15
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Ramp Base",
+                                "value": 15
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "LIVING_MUSEUM": {
         "displayName": "Living Museum",
