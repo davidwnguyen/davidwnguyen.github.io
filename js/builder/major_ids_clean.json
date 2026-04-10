@@ -1064,6 +1064,30 @@
                         ]
                     }
                 ]
+            },
+            {
+                "class": "Assassin",
+                "base_abil": "Serpent's Garden",
+                "dependencies": [
+                    "Serpent's Garden"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 16,
+                        "target_part": "Damage per Tick",
+                        "behavior": "overwrite",
+                        "multipliers": [
+                            0,
+                            19.2,
+                            19.2,
+                            19.2,
+                            19.2,
+                            19.2
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -3486,12 +3510,38 @@
     "UNSTABLE_REACTION": {
         "displayName": "Unstable Reaction",
         "description": "Judrajim no longer ramps in damage after each hit. When it expires, it releases 115% of its potential in an explosion.",
-        "abilities": []
-    },
-    "": {
-        "displayName": "֎",
-        "description": "֎",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Arcane Transfer",
+                "dependencies": [
+                    "Judrajim"
+                ],
+                "properties": {},
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Scaled Tick",
+                                "value": 15
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Ramp Tick",
+                                "value": 15
+                            },
+                            {
+                                "type": "stat",
+                                "name": "damMult.UnstableReaction:10.Ramp Base",
+                                "value": 15
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "LIVING_MUSEUM": {
         "displayName": "Living Museum",

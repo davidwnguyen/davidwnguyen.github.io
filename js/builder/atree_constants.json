@@ -10275,13 +10275,16 @@
                 "col": 7,
                 "icon": "node_3"
             },
-            "properties": {},
+            "properties": {
+                "linear_hits": 1,
+                "ramp_hits": -1
+            },
             "effects": [
                 {
                     "type": "replace_spell",
                     "name": "Judrajim",
                     "base_spell": 10,
-                    "display": "Total DPS",
+                    "display": "Total Damage",
                     "parts": [
                         {
                             "name": "Damage per Tick",
@@ -10296,9 +10299,51 @@
                             ]
                         },
                         {
-                            "name": "Total DPS",
+                            "name": "Scaled Tick",
+                            "type": "damage",
+                            "multipliers": [
+                                30,
+                                0,
+                                5,
+                                5,
+                                0,
+                                0
+                            ],
+                            "display": false
+                        },
+                        {
+                            "name": "Ramp Tick",
+                            "type": "damage",
+                            "multipliers": [
+                                30,
+                                0,
+                                5,
+                                5,
+                                0,
+                                0
+                            ],
+                            "display": false
+                        },
+                        {
+                            "name": "Ramp Base",
+                            "type": "damage",
+                            "multipliers": [
+                                30,
+                                0,
+                                5,
+                                5,
+                                0,
+                                0
+                            ],
+                            "display": false
+                        },
+                        {
+                            "name": "Total Damage",
                             "hits": {
-                                "Damage per Tick": 2.5
+                                "Damage per Tick": "Arcane Transfer.linear_hits",
+                                "Ramp Tick": "Arcane Transfer.ramp_hits",
+                                "Scaled Tick": 6,
+                                "Ramp Base": -5
                             }
                         }
                     ]
@@ -10306,13 +10351,39 @@
                 {
                     "type": "stat_scaling",
                     "slider": true,
-                    "slider_name": "Judrajim Drain",
+                    "slider_name": "Subsequent Judrajim Hits",
+                    "slider_max": 32,
+                    "output": {
+                        "type": "prop",
+                        "name": "linear_hits",
+                        "abil": "Arcane Transfer"
+                    },
+                    "scaling": [
+                        1
+                    ]
+                },
+                {
+                    "type": "stat_scaling",
+                    "slider": true,
+                    "slider_name": "Subsequent Judrajim Hits",
+                    "output": {
+                        "type": "prop",
+                        "name": "ramp_hits",
+                        "abil": "Arcane Transfer"
+                    },
+                    "scaling": [
+                        -1
+                    ]
+                },
+                {
+                    "type": "stat_scaling",
+                    "slider": true,
+                    "slider_name": "Subsequent Judrajim Hits",
                     "multiplicative": true,
                     "output": {
                         "type": "stat",
-                        "name": "damMult.Judrajim:10.Damage per Tick"
+                        "name": "damMult.Judrajim:10.Scaled Tick"
                     },
-                    "slider_max": 32,
                     "scaling": [
                         20
                     ]
