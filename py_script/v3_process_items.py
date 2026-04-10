@@ -291,6 +291,10 @@ for item in items:
     if 'lore' in item:
         item['lore'] = re.sub('<[^<]+?>', '', item['lore']).strip()
 
+    # why have you done this to us nepmia
+    if 'restrict' in item and item['restrict'] == "none":
+        del item['restrict']
+
     if not (item["name"] in id_map):
         while max_id in used_ids:
             max_id += 1
