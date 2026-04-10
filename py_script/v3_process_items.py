@@ -122,6 +122,14 @@ tome_type_translation = {
     'lootrun_tome': 'lootrunTome',
 }
 
+known_static_ids = {
+    'rawStrength',
+    'rawDexterity',
+    'rawIntelligence',
+    'rawDefence',
+    'rawAgility'
+}
+
 def translate_entry(entry):
     """
     Convert an api entry into an appropriate parsed item.
@@ -132,6 +140,12 @@ def translate_entry(entry):
     """
     # sketchily infer what kind of item we're dealing with, and translate it appropriately.
     if "type" in entry:
+        # this is disgusting! turn IDs static based off of having no range
+        if 'identifications' in entry and 'identified' not in entry:
+            for (id, value) in entry['identifications'].items():
+                if not isinstance(value, dict) and abs(value) > 1 and id not in known_static_ids: # yay! we have a rollable item with a static id
+                    entry['identifications'][id] = {'static': True, 'raw':value}
+
         if entry['type'] in ['weapon', 'armour']:
             # only items have this field.
             res = recursive_translate(entry, {}, "item", translate_single_item)
