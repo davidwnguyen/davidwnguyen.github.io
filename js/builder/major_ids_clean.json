@@ -1031,12 +1031,12 @@
                         "target_part": "Per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            24,
-                            24,
-                            24,
-                            24,
-                            24
+                            20,
+                            20,
+                            20,
+                            20,
+                            20,
+                            20
                         ]
                     }
                 ]
@@ -1055,12 +1055,12 @@
                         "target_part": "Swan Dive Explosion per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            19.2,
-                            19.2,
-                            19.2,
-                            19.2,
-                            19.2
+                            16,
+                            16,
+                            16,
+                            16,
+                            16,
+                            16
                         ]
                     }
                 ]
@@ -1079,12 +1079,12 @@
                         "target_part": "Damage per Tick",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            80,
-                            80,
-                            80,
-                            80,
-                            80
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66
                         ]
                     }
                 ]
