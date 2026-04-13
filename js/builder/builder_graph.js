@@ -808,8 +808,12 @@ class DisplayBuildWarningsNode extends ComputeNode {
         ];
         const tome_skp = build.tomes[6].statMap.get("skillpoints") || [0, 0, 0, 0, 0];
         let skp_effects = ["% damage", "% crit", "% cost red.", "% resist", "% dodge"];
+        const skp_type_names = ["Strength", "Dexterity", "Intelligence", "Defense", "Agility"];
         let total_assigned = 0;
         const assigned_per_type = [];
+        const levelCap = levelToSkillPoints(build.level);
+        const noGuildTome = build.tomes[6].statMap.has('NONE');
+
         for (let i in skp_order) { //big bren
             const assigned = skillpoints[i] - base_totals[i] + min_assigned[i]
             setText(skp_order[i] + "-skp-base", "Original: " + base_totals[i]);
@@ -819,15 +823,39 @@ class DisplayBuildWarningsNode extends ComputeNode {
             let linebreak = document.createElement("br");
             linebreak.classList.add("itemp");
             setText(skp_order[i] + "-skp-pct", (skillPointsToPercentage(skillpoints[i]) * 100 * skillpoint_final_mult[i]).toFixed(1).concat(skp_effects[i]));
-            document.getElementById(skp_order[i] + "-warnings").textContent = ''
-            if (assigned > 100) {
-                let skp_warning = document.createElement("p");
-                skp_warning.classList.add("warning", "small-text");
-                skp_warning.textContent += "Cannot assign " + assigned + " skillpoints in " + ["Strength", "Dexterity", "Intelligence", "Defense", "Agility"][i] + " manually.";
-                document.getElementById(skp_order[i] + "-warnings").appendChild(skp_warning);
-            }
             assigned_per_type.push(assigned);
             total_assigned += assigned;
+        }
+
+        // Pre-compute which guild tome (if any) saves the build
+        const over_indices = [];
+        for (let i = 0; i < 5; i++) if (assigned_per_type[i] > 100) over_indices.push(i);
+        const deficit = total_assigned - levelCap;
+        let focused_tome_idx = -1;
+        let any_focused_works = false;
+        if (noGuildTome && deficit <= 4) {
+            if (over_indices.length === 1 && assigned_per_type[over_indices[0]] <= 104) {
+                focused_tome_idx = over_indices[0];
+            } else if (over_indices.length === 0 && deficit > 0) {
+                any_focused_works = true;
+            }
+        }
+        const rainbow_works = noGuildTome && deficit <= 5
+            && over_indices.every(i => assigned_per_type[i] <= 101);
+        const tome_needed = deficit > 0 || over_indices.length > 0;
+
+        for (let i = 0; i < 5; i++) {
+            document.getElementById(skp_order[i] + "-warnings").textContent = '';
+            const assigned = assigned_per_type[i];
+            if (assigned > 100) {
+                const focusedCovers = focused_tome_idx === i;
+                const rainbowCovers = focused_tome_idx === -1 && rainbow_works && assigned <= 101;
+                if (focusedCovers || rainbowCovers) continue;
+                let skp_warning = document.createElement("p");
+                skp_warning.classList.add("warning", "small-text");
+                skp_warning.textContent = "Cannot assign " + assigned + " skillpoints in " + skp_type_names[i] + " manually.";
+                document.getElementById(skp_order[i] + "-warnings").appendChild(skp_warning);
+            }
         }
 
         let summarybox = document.getElementById("summary-box");
@@ -843,52 +871,30 @@ class DisplayBuildWarningsNode extends ComputeNode {
         remainingSkp.append(remainingSkpContent);
 
         summarybox.append(remainingSkp);
-        if (total_assigned > levelToSkillPoints(build.level)) {
-            const noGuildTome = build.tomes[6].statMap.has('NONE');
-            if (noGuildTome) {
-                const deficit = total_assigned - levelToSkillPoints(build.level);
-
-                // Check focused tomes: +4 to one type (5 patterns)
-                let focused_works = false;
-                for (let i = 0; i < 5; i++) {
-                    if (Math.min(4, assigned_per_type[i]) >= deficit) { focused_works = true; break; }
-                }
-
-                // Check rainbow/Assimilator: +1 to all 5
-                let rainbow_savings = 0;
-                for (let i = 0; i < 5; i++) rainbow_savings += Math.min(1, assigned_per_type[i]);
-                const rainbow_works = rainbow_savings >= deficit;
-
-                if (focused_works) {
-                    let skpWarning = document.createElement("span");
-                    skpWarning.classList.add("warning-yellow");
-                    skpWarning.textContent = "WARNING: Build requires a guild tome.";
-                    summarybox.append(skpWarning);
-                } else if (rainbow_works) {
-                    let skpWarning = document.createElement("span");
-                    skpWarning.classList.add("warning-yellow");
-                    skpWarning.textContent = "WARNING: Build requires the Assimilator guild tome.";
-                    summarybox.append(skpWarning);
-                } else {
-                    let skpWarning = document.createElement("span");
-                    skpWarning.classList.add("warning");
-                    skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
-                    let skpCount = document.createElement("p");
-                    skpCount.classList.add("warning");
-                    skpCount.textContent = "For level " + (build.level > 101 ? "101+" : build.level) + ", there are only " + levelToSkillPoints(build.level) + " skill points available.";
-                    summarybox.append(skpWarning);
-                    summarybox.append(skpCount);
-                }
-            } else {
-                let skpWarning = document.createElement("span");
-                skpWarning.classList.add("warning");
-                skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
-                let skpCount = document.createElement("p");
-                skpCount.classList.add("warning");
-                skpCount.textContent = "For level " + (build.level > 101 ? "101+" : build.level) + ", there are only " + levelToSkillPoints(build.level) + " skill points available.";
-                summarybox.append(skpWarning);
-                summarybox.append(skpCount);
-            }
+        if (tome_needed && focused_tome_idx !== -1) {
+            let skpWarning = document.createElement("span");
+            skpWarning.classList.add("warning-yellow");
+            skpWarning.textContent = "WARNING: Build requires a " + skp_type_names[focused_tome_idx] + " guild tome.";
+            summarybox.append(skpWarning);
+        } else if (tome_needed && any_focused_works) {
+            let skpWarning = document.createElement("span");
+            skpWarning.classList.add("warning-yellow");
+            skpWarning.textContent = "WARNING: Build requires a guild tome.";
+            summarybox.append(skpWarning);
+        } else if (tome_needed && rainbow_works) {
+            let skpWarning = document.createElement("span");
+            skpWarning.classList.add("warning-yellow");
+            skpWarning.textContent = "WARNING: Build requires the Assimilator guild tome.";
+            summarybox.append(skpWarning);
+        } else if (total_assigned > levelCap) {
+            let skpWarning = document.createElement("span");
+            skpWarning.classList.add("warning");
+            skpWarning.textContent = "WARNING: Too many skillpoints need to be assigned!";
+            let skpCount = document.createElement("p");
+            skpCount.classList.add("warning");
+            skpCount.textContent = "For level " + (build.level > 101 ? "101+" : build.level) + ", there are only " + levelCap + " skill points available.";
+            summarybox.append(skpWarning);
+            summarybox.append(skpCount);
         }
         let lvlWarning;
         for (const item of build.items) {
