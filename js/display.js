@@ -132,6 +132,29 @@ function displayBuildStats(parent_id, build, command_group, stats) {
             last_command = command;
         }
 
+        else if (command === "maxManaTotal") {
+            let max_mana = stats.get("maxMana") || 0;
+            let modifier_shown = false;
+            if (max_mana != 0) {
+                let style = max_mana > 0 ? "positive" : "negative";
+                displayFixedID(parent_div, "maxMana", max_mana, elemental_format, style);
+                modifier_shown = true;
+            }
+            let int_mana = Math.floor(skillPointsToPercentage(stats.get('int') ?? 0) * 100);
+            let total_mana = 100 + max_mana + int_mana;
+            let row = make_elem('div', ['row']);
+            let value_elem = make_elem('div', ['col', 'text-end']);
+            let prefix_elem = make_elem('b', [], {
+                textContent: (modifier_shown ? "\u279C " : "") + "Total Mana: "
+            });
+            let number_elem = make_elem('b', [], { textContent: total_mana.toString() });
+            value_elem.append(prefix_elem);
+            value_elem.append(number_elem);
+            row.appendChild(value_elem);
+            parent_div.appendChild(row);
+            last_command = command;
+        }
+
         else {
             let id = command;
             if (stats.get(id)) {
