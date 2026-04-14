@@ -954,7 +954,18 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Etheric Slash"
+                    "Meteor Shower"
+                ],
+                "properties": {
+                    "meteorRate": -0.02
+                },
+                "effects": []
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex"
                 ],
                 "effects": [
                     {
@@ -963,7 +974,51 @@
                         "slider_name": "Distortion",
                         "output": {
                             "type": "stat",
-                            "name": "damRaw"
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.64
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex",
+                    "Influx Shift"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.224
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Vacuokinesis"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 40,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
                         },
                         "scaling": [
                             -0.4
@@ -975,12 +1030,23 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Meteor Shower"
+                    "Vacuokinesis",
+                    "Influx Shift"
                 ],
-                "properties": {
-                    "meteorRate": -0.02
-                },
-                "effects": []
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
+                        },
+                        "scaling": [
+                            -0.14
+                        ]
+                    }
+                ]
             }
         ]
     },
