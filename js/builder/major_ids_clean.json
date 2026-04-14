@@ -954,7 +954,18 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Etheric Slash"
+                    "Meteor Shower"
+                ],
+                "properties": {
+                    "meteorRate": -0.02
+                },
+                "effects": []
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex"
                 ],
                 "effects": [
                     {
@@ -963,7 +974,51 @@
                         "slider_name": "Distortion",
                         "output": {
                             "type": "stat",
-                            "name": "damRaw"
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.64
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Time Vortex",
+                    "Influx Shift"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:4.Damage per Tick"
+                        },
+                        "scaling": [
+                            -0.224
+                        ]
+                    }
+                ]
+            },
+            {
+                "class": "Mage",
+                "base_abil": "Distortion",
+                "dependencies": [
+                    "Vacuokinesis"
+                ],
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "requirement": 40,
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
                         },
                         "scaling": [
                             -0.4
@@ -975,12 +1030,23 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Meteor Shower"
+                    "Vacuokinesis",
+                    "Influx Shift"
                 ],
-                "properties": {
-                    "meteorRate": -0.02
-                },
-                "effects": []
+                "effects": [
+                    {
+                        "type": "stat_scaling",
+                        "slider": true,
+                        "slider_name": "Distortion",
+                        "output": {
+                            "type": "stat",
+                            "name": "damMult.Distortion:0.Vacuokinesis"
+                        },
+                        "scaling": [
+                            -0.14
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -1031,12 +1097,12 @@
                         "target_part": "Per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            24,
-                            24,
-                            24,
-                            24,
-                            24
+                            20,
+                            20,
+                            20,
+                            20,
+                            20,
+                            20
                         ]
                     }
                 ]
@@ -1055,12 +1121,12 @@
                         "target_part": "Swan Dive Explosion per Hit",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            19.2,
-                            19.2,
-                            19.2,
-                            19.2,
-                            19.2
+                            16,
+                            16,
+                            16,
+                            16,
+                            16,
+                            16
                         ]
                     }
                 ]
@@ -1079,12 +1145,12 @@
                         "target_part": "Damage per Tick",
                         "behavior": "overwrite",
                         "multipliers": [
-                            0,
-                            80,
-                            80,
-                            80,
-                            80,
-                            80
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66,
+                            66.66
                         ]
                     }
                 ]
@@ -2934,7 +3000,7 @@
         "description": "Ice Snake moves much more slowly, but deals massive knockback, [neutral]275%, and [water]155%.",
         "abilities": [
             {
-                "class": "Archer",
+                "class": "Mage",
                 "base_abil": "Ice Snake",
                 "effects": [
                     {
