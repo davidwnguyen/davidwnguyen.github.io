@@ -2934,7 +2934,7 @@
         "description": "Ice Snake moves much more slowly, but deals massive knockback, [neutral]275%, and [water]155%.",
         "abilities": [
             {
-                "class": "Archer",
+                "class": "Mage",
                 "base_abil": "Ice Snake",
                 "effects": [
                     {
