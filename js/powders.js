@@ -31,6 +31,9 @@ let powderStats = [
     _p(2,6,11,3,1), _p(3,9,14,6,2), _p(4,11,17,10,3), _p(5,11,22,16,5), _p(7,12,28,23,7), _p(8,15,35,30,8), _p(9,17,42,38,13)
 ];
 
+// Thankfully, powders on armors give the same HP regardless of element
+let powderArmorHealth = [5, 10, 20, 30, 45, 60, 75]
+
 //Ordering: [weapon special name, weapon special effects, armor special name, armor special effects]
 class PowderSpecial{
     constructor(wSpName, wSpEff, aSpName, aSpEff, cap){
@@ -83,6 +86,7 @@ function applyArmorPowders(expandedItem) {
         let prevName = skp_elements[(skp_elements.indexOf(name) + 4 )% 5];
         expandedItem.set(name+"Def", (expandedItem.get(name+"Def") || 0) + powder["defPlus"]);
         expandedItem.set(prevName+"Def", (expandedItem.get(prevName+"Def") || 0) - powder["defMinus"]);
+        expandedItem.set("hp", (expandedItem.get("hp") || 0) + powderArmorHealth[id % POWDER_TIERS]);
     }
 }
 

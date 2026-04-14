@@ -3529,7 +3529,7 @@
             "display": {
                 "row": 45,
                 "col": 5,
-                "icon": "node_4"
+                "icon": "node_2"
             },
             "properties": {},
             "effects": []
@@ -3787,7 +3787,7 @@
             "display_name": "Extinction Event",
             "desc": "Click Combo: F </br> Calls forth a flock of tactical crows which will perform a carpet bombing of a large area in front of you. </br> Bombs will leave behind Basaltic Traps and occasionally Chilling Snares. </br> </br><span class='mc-white'>Total Damage</span>: 3000% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 2400%)   </br>&emsp;(<span class='fDam'>Fire</span>: 600%) </br>Range: 25 Blocks </br>Area of Effect: 15 Blocks (Circle-Shaped) </br> Activate abilities to charge your Ultimate Meter to 100%",
             "archetype": "Trapper",
-            "archetype_req": 17,
+            "archetype_req": 16,
             "parents": [
                 "Overgrowth"
             ],
@@ -9101,7 +9101,7 @@
         },
         {
             "display_name": "Meteor Shower",
-            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 15 Meteors, only one Meteor Shower can be active at the same time.) </br> Meteor and Astral Fragmentation become smaller, dealing -25% Damage and losing -30% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
+            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 15 Meteors, only one Meteor Shower can be active at the same time.) </br> Meteor and Astral Fragmentation become smaller, dealing -10% Damage and losing -20% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "parents": [
@@ -9135,7 +9135,7 @@
                         {
                             "type": "stat",
                             "name": "damMult.MeteorShower:3.Meteor Damage",
-                            "value": -25
+                            "value": -10
                         }
                     ]
                 },
@@ -14481,7 +14481,7 @@
         },
         {
             "display_name": "Pierce the Veil",
-            "desc": "Click Combo: F </br> Cloak yourself in shadow, gaining all benefits of Vanish for the duration. Health and mana will still generate, and this state cannot be canceled. </br> While cloaked, nearby enemies will gain +1 Mark every 0.25s. </br> </br>Area of Effect: 5 Blocks (Circle-Shaped) </br>Duration: 10s </br> Activate abilities to charge your Ultimate Meter to 100%",
+            "desc": "Click Combo: F </br> Cloak yourself in shadow, gaining all benefits of Vanish for the duration. Health and mana will still generate, and this state cannot be canceled. </br> While cloaked, nearby enemies will gain +1 Mark every 0.25s. </br> </br>Area of Effect: 10 Blocks (Circle-Shaped) </br>Duration: 12s </br> Activate abilities to charge your Ultimate Meter to 100%",
             "archetype": "Shadestepper",
             "archetype_req": 16,
             "parents": [

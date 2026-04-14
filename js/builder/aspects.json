@@ -1526,22 +1526,22 @@
       "tiers": [
         {
           "threshold": 1,
-          "description": "Reduces Sniffer Dog's cooldown by -0.35s.",
+          "description": "Reduces Sniffer Dog's cooldown by -0.15s.",
           "abilities": []
         },
         {
           "threshold": 5,
-          "description": "Reduces Sniffer Dog's cooldown by -0.6s.",
+          "description": "Reduces Sniffer Dog's cooldown by -0.25s.",
           "abilities": []
         },
         {
           "threshold": 30,
-          "description": "Reduces Sniffer Dog's cooldown by -0.85s.",
+          "description": "Reduces Sniffer Dog's cooldown by -0.35s.",
           "abilities": []
         },
         {
           "threshold": 150,
-          "description": "Reduces Sniffer Dog's cooldown by -1s.",
+          "description": "Reduces Sniffer Dog's cooldown by -0.4s.",
           "abilities": []
         }
       ],
@@ -2647,7 +2647,13 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Harmony",
-                  "slider_max": 1
+                  "output": {
+                      "type": "stat",
+                      "name": "damMult.Harmony"
+                  },
+                  "scaling": [
+                      0.8
+                  ]
                 }
               ]
             }
@@ -2667,7 +2673,13 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Harmony",
-                  "slider_max": 2
+                  "output": {
+                      "type": "stat",
+                      "name": "damMult.Harmony"
+                  },
+                  "scaling": [
+                      1
+                  ]
                 }
               ]
             }
@@ -2687,7 +2699,13 @@
                   "type": "stat_scaling",
                   "slider": true,
                   "slider_name": "Harmony",
-                  "slider_max": 3
+                  "output": {
+                      "type": "stat",
+                      "name": "damMult.Harmony"
+                  },
+                  "scaling": [
+                      1.2
+                  ]
                 }
               ]
             }
@@ -2695,7 +2713,7 @@
         }
       ],
       "aliases": [
-        "harmonyCap"
+        "harmonyStrength"
       ]
     },
     {
