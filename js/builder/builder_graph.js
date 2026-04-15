@@ -840,8 +840,9 @@ class DisplayBuildWarningsNode extends ComputeNode {
                 any_focused_works = true;
             }
         }
-        const rainbow_works = noGuildTome && deficit <= 5
-            && over_indices.every(i => assigned_per_type[i] <= 101);
+        const rainbow_works = noGuildTome
+            && assigned_per_type.every(v => v <= 101)
+            && deficit <= assigned_per_type.filter(v => v > 0).length;
         const tome_needed = deficit > 0 || over_indices.length > 0;
 
         for (let i = 0; i < 5; i++) {
