@@ -25,11 +25,6 @@ function checkComparable(v) {
 
 // The shared queries between items and ingredients
 function commonQueryProps({ prop, maxId, sum, props }) {
-  prop('str', 'number', (i, ie) => i.str);
-  prop('dex', 'number', (i, ie) => i.dex);
-  prop('int', 'number', (i, ie) => i.int);
-  prop('def', 'number', (i, ie) => i.def);
-  prop('agi', 'number', (i, ie) => i.agi);
   sum(['skillpoints', 'skillpts', 'attributes', 'attrs'], props.str, props.dex, props.int, props.def, props.agi);
 
   maxId(['earthdmg%', 'earthdam%', 'edmg%', 'edam%', 'edampct', 'edpct'], 'eDamPct');
@@ -230,6 +225,12 @@ const itemQueryProps = (function() {
   prop(['restrict', 'restriction'], 'string', (i, ie) => i.restrict || "");
   prop(['itemid', 'id'], 'number', (i, ie) => i.id);
 
+  prop('str', 'number', (i, ie) => i.str);
+  prop('dex', 'number', (i, ie) => i.dex);
+  prop('int', 'number', (i, ie) => i.int);
+  prop('def', 'number', (i, ie) => i.def);
+  prop('agi', 'number', (i, ie) => i.agi);
+
   commonQueryProps({prop, maxId, sum, props});
   prop(['level', 'lvl', 'combatlevel', 'combatlvl'], 'number', (i, ie) => i.lvl);
   prop(['strmin', 'strreq'], 'number', (i, ie) => i.strReq);
@@ -353,6 +354,12 @@ const ingredientQueryProps = (function() {
   ]) {
     modProp(entry.map(i => i.toLowerCase()), entry[0]);
   }
+
+  maxId('str', 'str');
+  maxId('dex', 'dex');
+  maxId('int', 'int');
+  maxId('def', 'def');
+  maxId('agi', 'agi');
 
   prop(['strmin', 'strreq'], 'number', (i, ie) => i["itemIDs"].strReq);
   prop(['dexmin', 'dexreq'], 'number', (i, ie) => i["itemIDs"].dexReq);
