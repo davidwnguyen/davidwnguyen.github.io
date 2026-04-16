@@ -2657,7 +2657,7 @@
     },
     "DESPERATE_MEASURES": {
         "displayName": "Desperate Measures",
-        "description": "Walk Speed increases by 1% and Jump Height increases by 2% for every 1% hp missing",
+        "description": "Walk Speed increases by 1% and Jump Height increases by 2% for every 1% hp missing.",
         "abilities": []
     },
     "PIROUETTE": {
@@ -2750,7 +2750,7 @@
     },
     "GUNK_SHOT": {
         "displayName": "Gunk Shot",
-        "description": "Shocking Bomb's velocity is doubled but loses -66% radius. Arrow Bomb and Grape Bomb suffer a -20% damage penalty.",
+        "description": "Arrow Bomb's velocity is doubled but loses -66% radius and -20% damage.",
         "abilities": [
             {
                 "class": "Archer",
@@ -2765,11 +2765,6 @@
                             {
                                 "type": "stat",
                                 "name": "damMult.GunkShot:3.Arrow Bomb",
-                                "value": -20
-                            },
-                            {
-                                "type": "stat",
-                                "name": "damMult.GunkShot:3.Grape Bomb",
                                 "value": -20
                             }
                         ]
@@ -2883,7 +2878,7 @@
     },
     "ONESELF_UNTO_ALL": {
         "displayName": "Oneself Unto All",
-        "description": "Radiance's radius extends 4 blocks beyond Bash and buffs allies with your stats instead of theirs",
+        "description": "Radiance's radius extends 4 blocks beyond Bash and buffs allies with your stats instead of theirs.",
         "abilities": []
     },
     "BATTLEFIELD_BRILLIANCE": {
@@ -3342,7 +3337,7 @@
     },
     "REGICIDES_VANTAGE": {
         "displayName": "Regicide",
-        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%",
+        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%.",
         "abilities": [
             {
                 "class": "Archer",
@@ -3575,7 +3570,7 @@
     },
     "UNSTABLE_REACTION": {
         "displayName": "Unstable Reaction",
-        "description": "Judrajim no longer ramps in damage after each hit. When it expires, it releases 115% of its potential in an explosion.",
+        "description": "Judrajim no longer ramps in damage after each hit. When it expires, it releases 115% of its potential in an explosion of 20 blocks.",
         "abilities": [
             {
                 "class": "Mage",
@@ -3621,7 +3616,7 @@
     },
     "OUTBREAK": {
         "displayName": "Outbreak",
-        "description": "When you are within Totem range, the Totem becomes Primed, adding 4% of your Poison ID every 0.25s. Hitting a Primed totem with Uproot will create a 4 block wide poison cloud instantly dealing the stored Poison.",
+        "description": "When you are within Totem range, the Totem becomes Primed, adding 4% of your Poison ID every 0.25s. Hitting a Primed totem with Uproot will create a 6 block wide poison cloud instantly dealing the stored Poison.",
         "abilities": []
     },
     "ENLIGHTENMENT": {
