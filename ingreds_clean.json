@@ -8,7 +8,7 @@
         "name": "ingredient.compressedPowders",
         "customModelData": {
           "rangeDispatch": [
-            1782
+            1792
           ]
         }
       },
@@ -74,7 +74,7 @@
         "name": "ingredient.forsakenCatalyst",
         "customModelData": {
           "rangeDispatch": [
-            1925
+            1942
           ]
         }
       },
@@ -126,10 +126,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.spirographTablet",
+        "name": "ingredient.imageOfALovedOne",
         "customModelData": {
           "rangeDispatch": [
-            2377
+            2042
           ]
         }
       },
@@ -219,16 +219,8 @@
     "name": "Manifestation of Agony",
     "type": "ingredient",
     "icon": {
-      "value": {
-        "id": "minecraft:potion",
-        "name": "ingredient.thercksChain",
-        "customModelData": {
-          "rangeDispatch": [
-            2427
-          ]
-        }
-      },
-      "format": "attribute"
+      "value": "ecfe408f9e14d9afa90982312ae8793a0e347c70dc52420449e054a1c255698d",
+      "format": "skin"
     },
     "emblem": "square",
     "tier": 3,
@@ -275,10 +267,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.dernicHydroid",
+        "name": "ingredient.rapidFireMechanism",
         "customModelData": {
           "rangeDispatch": [
-            1843
+            2268
           ]
         }
       },
@@ -327,16 +319,8 @@
     "name": "Rayscorched Plating",
     "type": "ingredient",
     "icon": {
-      "value": {
-        "id": "minecraft:potion",
-        "name": "ingredient.blessedHeart",
-        "customModelData": {
-          "rangeDispatch": [
-            1721
-          ]
-        }
-      },
-      "format": "attribute"
+      "value": "a918f1832f2e3541e2d71342ea0f9a7165dcf3ddce00c7dd7d7dec0c2ad831ae",
+      "format": "skin"
     },
     "emblem": "square",
     "tier": 3,
@@ -385,16 +369,8 @@
     "name": "Veil of Hatred",
     "type": "ingredient",
     "icon": {
-      "value": {
-        "id": "minecraft:potion",
-        "name": "ingredient.tatteredMagicCloth",
-        "customModelData": {
-          "rangeDispatch": [
-            2419
-          ]
-        }
-      },
-      "format": "attribute"
+      "value": "211356b836fa35bda472c2a3925cc7c270ee03a1a358ee8200b643a9f9d583eb",
+      "format": "skin"
     },
     "emblem": "square",
     "tier": 3,
@@ -416,8 +392,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": 90,
-        "maximum": 105
+        "minimum": 126,
+        "maximum": 147
       }
     },
     "consumableIDs": {
@@ -449,10 +425,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.outdatedNewspaper",
+        "name": "ingredient.ancientScripture",
         "customModelData": {
           "rangeDispatch": [
-            2160
+            1688
           ]
         }
       },
@@ -503,10 +479,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.routerShield",
+        "name": "ingredient.butterflyBuckler",
         "customModelData": {
           "rangeDispatch": [
-            2276
+            1755
           ]
         }
       },
@@ -524,8 +500,8 @@
         "maximum": 945
       },
       "hprRaw": {
-        "minimum": 60,
-        "maximum": 65
+        "minimum": 84,
+        "maximum": 91
       }
     },
     "consumableIDs": {
@@ -557,10 +533,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.brightPetal",
+        "name": "ingredient.ceruleanRectrix",
         "customModelData": {
           "rangeDispatch": [
-            1735
+            1768
           ]
         }
       },
@@ -575,8 +551,8 @@
     ],
     "ids": {
       "aDamPct": {
-        "minimum": -60,
-        "maximum": -45
+        "minimum": 8,
+        "maximum": 11
       },
       "spd": {
         "minimum": 12,
@@ -612,10 +588,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.sealedBlaze",
+        "name": "ingredient.combustionShard",
         "customModelData": {
           "rangeDispatch": [
-            2301
+            1790
           ]
         }
       },
@@ -630,7 +606,7 @@
     "ids": {
       "mr": {
         "minimum": -4,
-        "maximum": 3
+        "maximum": -3
       },
       "fSdRaw": {
         "minimum": 45,
@@ -670,10 +646,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.ancientCoins",
+        "name": "ingredient.delectableMorsel",
         "customModelData": {
           "rangeDispatch": [
-            1677
+            1851
           ]
         }
       },
@@ -691,8 +667,8 @@
         "maximum": -500
       },
       "hprRaw": {
-        "minimum": 50,
-        "maximum": 55
+        "minimum": 70,
+        "maximum": 77
       }
     },
     "consumableIDs": {
@@ -727,7 +703,7 @@
         "name": "ingredient.jaggedRime",
         "customModelData": {
           "rangeDispatch": [
-            2038
+            2062
           ]
         }
       },
@@ -779,10 +755,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.forestWeb",
+        "name": "ingredient.mothAntennae",
         "customModelData": {
           "rangeDispatch": [
-            1922
+            2147
           ]
         }
       },
@@ -837,7 +813,7 @@
         "name": "ingredient.mulchedDevilWurst",
         "customModelData": {
           "rangeDispatch": [
-            2121
+            2151
           ]
         }
       },
@@ -859,8 +835,8 @@
         "maximum": 14
       },
       "hprRaw": {
-        "minimum": -100,
-        "maximum": -80
+        "minimum": -140,
+        "maximum": -112
       }
     },
     "consumableIDs": {
@@ -892,10 +868,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.serpentTongue",
+        "name": "ingredient.ornamentalHorn",
         "customModelData": {
           "rangeDispatch": [
-            2311
+            2188
           ]
         }
       },
@@ -949,7 +925,7 @@
         "name": "ingredient.qualityStackpeakEgg",
         "customModelData": {
           "rangeDispatch": [
-            2227
+            2259
           ]
         }
       },
@@ -1007,7 +983,7 @@
         "name": "ingredient.quickClaw",
         "customModelData": {
           "rangeDispatch": [
-            2230
+            2262
           ]
         }
       },
@@ -1066,7 +1042,7 @@
         "name": "ingredient.suspiciousMixture",
         "customModelData": {
           "rangeDispatch": [
-            2409
+            2451
           ]
         }
       },
@@ -1126,10 +1102,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.redScale",
+        "name": "ingredient.wrathfulCatalyst",
         "customModelData": {
           "rangeDispatch": [
-            2243
+            2551
           ]
         }
       },
@@ -1184,7 +1160,7 @@
         "name": "ingredient.agedCheese",
         "customModelData": {
           "rangeDispatch": [
-            1667
+            1671
           ]
         }
       },
@@ -1231,10 +1207,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.scarabHusk",
+        "name": "ingredient.bottomlessEmeraldPouch",
         "customModelData": {
           "rangeDispatch": [
-            2292
+            1739
           ]
         }
       },
@@ -1285,10 +1261,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.severedHeart",
+        "name": "ingredient.congealingViscera",
         "customModelData": {
           "rangeDispatch": [
-            2312
+            1798
           ]
         }
       },
@@ -1339,10 +1315,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.boneMeal",
+        "name": "ingredient.crumpledPropaganda",
         "customModelData": {
           "rangeDispatch": [
-            1731
+            1824
           ]
         }
       },
@@ -1401,7 +1377,7 @@
         "name": "ingredient.gildedRegalia",
         "customModelData": {
           "rangeDispatch": [
-            1949
+            1968
           ]
         }
       },
@@ -1424,8 +1400,8 @@
         "maximum": 7
       },
       "hprRaw": {
-        "minimum": 140,
-        "maximum": 150
+        "minimum": 196,
+        "maximum": 210
       }
     },
     "consumableIDs": {
@@ -1460,7 +1436,7 @@
         "name": "ingredient.highExplosive",
         "customModelData": {
           "rangeDispatch": [
-            1993
+            2015
           ]
         }
       },
@@ -1508,10 +1484,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.gollierIron",
+        "name": "ingredient.looseAmmunition",
         "customModelData": {
           "rangeDispatch": [
-            1966
+            2093
           ]
         }
       },
@@ -1565,7 +1541,7 @@
         "name": "ingredient.manufacturedShortsword",
         "customModelData": {
           "rangeDispatch": [
-            2098
+            2125
           ]
         }
       },
@@ -1619,7 +1595,7 @@
         "name": "ingredient.ospreyEgg",
         "customModelData": {
           "rangeDispatch": [
-            2158
+            2189
           ]
         }
       },
@@ -1674,7 +1650,7 @@
         "name": "ingredient.ostentatiousCape",
         "customModelData": {
           "rangeDispatch": [
-            2159
+            2190
           ]
         }
       },
@@ -1733,7 +1709,7 @@
         "name": "ingredient.rustedOperatingScissors",
         "customModelData": {
           "rangeDispatch": [
-            2280
+            2315
           ]
         }
       },
@@ -1787,7 +1763,7 @@
         "name": "ingredient.stackpeakEgg",
         "customModelData": {
           "rangeDispatch": [
-            2385
+            2426
           ]
         }
       },
@@ -1845,7 +1821,7 @@
         "name": "ingredient.tailoredGarments",
         "customModelData": {
           "rangeDispatch": [
-            2415
+            2457
           ]
         }
       },
@@ -1896,10 +1872,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.fightingStick",
+        "name": "ingredient.venomTippedBolt",
         "customModelData": {
           "rangeDispatch": [
-            1906
+            2509
           ]
         }
       },
@@ -1953,7 +1929,7 @@
         "name": "ingredient.dampHairs",
         "customModelData": {
           "rangeDispatch": [
-            1822
+            1835
           ]
         }
       },
@@ -2009,7 +1985,7 @@
         "name": "ingredient.hardenedIcicle",
         "customModelData": {
           "rangeDispatch": [
-            1982
+            2004
           ]
         }
       },
@@ -2063,7 +2039,7 @@
         "name": "ingredient.honouredCommandersMedal",
         "customModelData": {
           "rangeDispatch": [
-            1996
+            2018
           ]
         }
       },
@@ -2105,10 +2081,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.navalShard",
+        "name": "ingredient.iridescentFortrepace",
         "customModelData": {
           "rangeDispatch": [
-            2132
+            2055
           ]
         }
       },
@@ -2167,10 +2143,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.outdatedNewspaper",
+        "name": "ingredient.misprintedNewspaper",
         "customModelData": {
           "rangeDispatch": [
-            2160
+            2140
           ]
         }
       },
@@ -2224,7 +2200,7 @@
         "name": "ingredient.peacockPlume",
         "customModelData": {
           "rangeDispatch": [
-            2168
+            2199
           ]
         }
       },
@@ -2296,7 +2272,7 @@
         "name": "ingredient.stackpeakPlumage",
         "customModelData": {
           "rangeDispatch": [
-            2386
+            2427
           ]
         }
       },
@@ -2346,7 +2322,7 @@
         "name": "ingredient.warmParka",
         "customModelData": {
           "rangeDispatch": [
-            2478
+            2524
           ]
         }
       },
@@ -2365,8 +2341,8 @@
         "maximum": 3
       },
       "hprRaw": {
-        "minimum": 35,
-        "maximum": 40
+        "minimum": 49,
+        "maximum": 56
       }
     },
     "consumableIDs": {
@@ -2401,7 +2377,7 @@
         "name": "ingredient.youngCheese",
         "customModelData": {
           "rangeDispatch": [
-            2509
+            2557
           ]
         }
       },
@@ -2455,7 +2431,7 @@
         "name": "ingredient.cardboardBat",
         "customModelData": {
           "rangeDispatch": [
-            1755
+            1762
           ]
         }
       },
@@ -2506,10 +2482,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.captainsGlass",
+        "name": "ingredient.commanderSpyglass",
         "customModelData": {
           "rangeDispatch": [
-            1753
+            1791
           ]
         }
       },
@@ -2560,7 +2536,7 @@
         "name": "ingredient.crabLegs",
         "customModelData": {
           "rangeDispatch": [
-            1804
+            1815
           ]
         }
       },
@@ -2611,10 +2587,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.blazingStimulants",
+        "name": "ingredient.crazyHorseGlue",
         "customModelData": {
           "rangeDispatch": [
-            1720
+            1821
           ]
         }
       },
@@ -2633,7 +2609,7 @@
       }
     },
     "consumableIDs": {
-      "dura": -180,
+      "dura": -181,
       "charges": 0
     },
     "posMods": {
@@ -2661,10 +2637,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.crackedSkin",
+        "name": "ingredient.delectableEscargot",
         "customModelData": {
           "rangeDispatch": [
-            1806
+            1850
           ]
         }
       },
@@ -2715,10 +2691,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.blazingStimulants",
+        "name": "ingredient.emergencyStimulant",
         "customModelData": {
           "rangeDispatch": [
-            1720
+            1888
           ]
         }
       },
@@ -2770,10 +2746,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.ivoryTusk",
+        "name": "ingredient.giantIvoryTusk",
         "customModelData": {
           "rangeDispatch": [
-            2035
+            1963
           ]
         }
       },
@@ -2791,8 +2767,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": 30,
-        "maximum": 35
+        "minimum": 42,
+        "maximum": 49
       }
     },
     "consumableIDs": {
@@ -2824,10 +2800,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.congealedSlime",
+        "name": "ingredient.glisteningSlime",
         "customModelData": {
           "rangeDispatch": [
-            1787
+            1973
           ]
         }
       },
@@ -2878,10 +2854,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.acidulousPlating",
+        "name": "ingredient.mangledTitaniumScrap",
         "customModelData": {
           "rangeDispatch": [
-            1661
+            2121
           ]
         }
       },
@@ -2935,7 +2911,7 @@
         "name": "ingredient.potentVenom",
         "customModelData": {
           "rangeDispatch": [
-            2205
+            2236
           ]
         }
       },
@@ -2983,10 +2959,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.vistaMist",
+        "name": "ingredient.premiumNectar",
         "customModelData": {
           "rangeDispatch": [
-            2469
+            2240
           ]
         }
       },
@@ -3004,8 +2980,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": 45,
-        "maximum": 50
+        "minimum": 63,
+        "maximum": 70
       }
     },
     "consumableIDs": {
@@ -3040,7 +3016,7 @@
         "name": "ingredient.queenBeeStinger",
         "customModelData": {
           "rangeDispatch": [
-            2229
+            2261
           ]
         }
       },
@@ -3096,7 +3072,7 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.snakeTooth",
+        "name": "ingredient.serratedCanine",
         "customModelData": {
           "rangeDispatch": [
             2347
@@ -3150,10 +3126,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.sharpClaw",
+        "name": "ingredient.sharperClaw",
         "customModelData": {
           "rangeDispatch": [
-            2317
+            2352
           ]
         }
       },
@@ -3208,7 +3184,7 @@
         "name": "ingredient.skeletonKey",
         "customModelData": {
           "rangeDispatch": [
-            2333
+            2370
           ]
         }
       },
@@ -3259,10 +3235,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.viscousSlime",
+        "name": "ingredient.sluggishSubstance",
         "customModelData": {
           "rangeDispatch": [
-            2468
+            2380
           ]
         }
       },
@@ -3313,10 +3289,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.goldBar",
+        "name": "ingredient.stolenHeirloom",
         "customModelData": {
           "rangeDispatch": [
-            1963
+            2435
           ]
         }
       },
@@ -3370,7 +3346,7 @@
         "name": "ingredient.thornyShoot",
         "customModelData": {
           "rangeDispatch": [
-            2434
+            2477
           ]
         }
       },
@@ -3421,10 +3397,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.crackedSkin",
+        "name": "ingredient.titanicTail",
         "customModelData": {
           "rangeDispatch": [
-            1806
+            2479
           ]
         }
       },
@@ -3437,11 +3413,11 @@
       "COOKING"
     ],
     "ids": {
-      "eMdRaw": {
+      "eMdPct": {
         "minimum": 10,
         "maximum": 14
       },
-      "wMdRaw": {
+      "wMdPct": {
         "minimum": 8,
         "maximum": 12
       }
@@ -3478,7 +3454,7 @@
         "name": "ingredient.wingedHelmet",
         "customModelData": {
           "rangeDispatch": [
-            2491
+            2537
           ]
         }
       },
@@ -3533,7 +3509,7 @@
         "name": "ingredient.glaiveHead",
         "customModelData": {
           "rangeDispatch": [
-            1951
+            1970
           ]
         }
       },
@@ -3585,10 +3561,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.resilientStone",
+        "name": "ingredient.graniteMaul",
         "customModelData": {
           "rangeDispatch": [
-            2255
+            1987
           ]
         }
       },
@@ -3639,10 +3615,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.greenScale",
+        "name": "ingredient.greenFin",
         "customModelData": {
           "rangeDispatch": [
-            1970
+            1989
           ]
         }
       },
@@ -3696,7 +3672,7 @@
         "name": "ingredient.pipistrelleWing",
         "customModelData": {
           "rangeDispatch": [
-            2185
+            2216
           ]
         }
       },
@@ -3755,7 +3731,7 @@
         "name": "ingredient.pocketTorch",
         "customModelData": {
           "rangeDispatch": [
-            2196
+            2227
           ]
         }
       },
@@ -3811,7 +3787,7 @@
         "name": "ingredient.prehistoricBread",
         "customModelData": {
           "rangeDispatch": [
-            2207
+            2238
           ]
         }
       },
@@ -3865,7 +3841,7 @@
         "name": "ingredient.barbedStinger",
         "customModelData": {
           "rangeDispatch": [
-            1704
+            1709
           ]
         }
       },
@@ -3919,7 +3895,7 @@
         "name": "ingredient.decomposingSnapdragon",
         "customModelData": {
           "rangeDispatch": [
-            1830
+            1843
           ]
         }
       },
@@ -3978,7 +3954,7 @@
         "name": "ingredient.moonlightEssence",
         "customModelData": {
           "rangeDispatch": [
-            2117
+            2145
           ]
         }
       },
@@ -4036,7 +4012,7 @@
         "name": "ingredient.nobleRibbon",
         "customModelData": {
           "rangeDispatch": [
-            2137
+            2167
           ]
         }
       },
@@ -4087,10 +4063,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.muscle",
+        "name": "ingredient.slipperyMuscle",
         "customModelData": {
           "rangeDispatch": [
-            2124
+            2377
           ]
         }
       },
@@ -4141,10 +4117,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.banditRations",
+        "name": "ingredient.soldierRations",
         "customModelData": {
           "rangeDispatch": [
-            1703
+            2398
           ]
         }
       },
@@ -4198,7 +4174,7 @@
         "name": "ingredient.spectralHorns",
         "customModelData": {
           "rangeDispatch": [
-            2368
+            2408
           ]
         }
       },
@@ -4253,10 +4229,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.mixedSeeds",
+        "name": "ingredient.spikyVine",
         "customModelData": {
           "rangeDispatch": [
-            2115
+            2417
           ]
         }
       },
@@ -4313,7 +4289,7 @@
         "name": "ingredient.warmHide",
         "customModelData": {
           "rangeDispatch": [
-            2477
+            2523
           ]
         }
       },
@@ -4365,10 +4341,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.cocoaCaps",
+        "name": "ingredient.mruck",
         "customModelData": {
           "rangeDispatch": [
-            1780
+            2149
           ]
         }
       },
@@ -4427,7 +4403,7 @@
         "name": "ingredient.oddlyUntouchedMarshmallow",
         "customModelData": {
           "rangeDispatch": [
-            2146
+            2176
           ]
         }
       },
@@ -4474,7 +4450,7 @@
         "name": "ingredient.saltpetre",
         "customModelData": {
           "rangeDispatch": [
-            2285
+            2320
           ]
         }
       },
@@ -4530,7 +4506,7 @@
         "name": "ingredient.radioactiveSoil",
         "customModelData": {
           "rangeDispatch": [
-            2234
+            2266
           ]
         }
       },
@@ -4550,8 +4526,8 @@
         "maximum": 5200
       },
       "hprRaw": {
-        "minimum": -70,
-        "maximum": -60
+        "minimum": -98,
+        "maximum": -84
       },
       "damPct": {
         "minimum": 11,
@@ -4587,10 +4563,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.outdatedNewspaper",
+        "name": "ingredient.evictionNotice",
         "customModelData": {
           "rangeDispatch": [
-            2160
+            1904
           ]
         }
       },
@@ -4641,10 +4617,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.hardenedMandible",
+        "name": "ingredient.giantStinger",
         "customModelData": {
           "rangeDispatch": [
-            1984
+            1965
           ]
         }
       },
@@ -4695,10 +4671,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.poorlyMadePouch",
+        "name": "ingredient.filchedPurse",
         "customModelData": {
           "rangeDispatch": [
-            2200
+            1924
           ]
         }
       },
@@ -4749,7 +4725,7 @@
         "name": "ingredient.inscribedCollar",
         "customModelData": {
           "rangeDispatch": [
-            2028
+            2051
           ]
         }
       },
@@ -4803,7 +4779,7 @@
         "name": "ingredient.mealScraps",
         "customModelData": {
           "rangeDispatch": [
-            2106
+            2133
           ]
         }
       },
@@ -4855,7 +4831,7 @@
         "name": "ingredient.staleBread",
         "customModelData": {
           "rangeDispatch": [
-            2387
+            2428
           ]
         }
       },
@@ -4905,7 +4881,7 @@
         "name": "ingredient.deceptivelyLargeBag",
         "customModelData": {
           "rangeDispatch": [
-            1829
+            1842
           ]
         }
       },
@@ -4964,7 +4940,7 @@
         "name": "ingredient.frogEyeball",
         "customModelData": {
           "rangeDispatch": [
-            1933
+            1950
           ]
         }
       },
@@ -5022,7 +4998,7 @@
         "name": "ingredient.mucoidMatter",
         "customModelData": {
           "rangeDispatch": [
-            2120
+            2150
           ]
         }
       },
@@ -5076,7 +5052,7 @@
         "name": "ingredient.preservedRelic",
         "customModelData": {
           "rangeDispatch": [
-            2209
+            2241
           ]
         }
       },
@@ -5134,7 +5110,7 @@
         "name": "ingredient.pristineLiffLeaf",
         "customModelData": {
           "rangeDispatch": [
-            2216
+            2248
           ]
         }
       },
@@ -5185,10 +5161,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.muralShard",
+        "name": "ingredient.wingsArmourFragment",
         "customModelData": {
           "rangeDispatch": [
-            2123
+            2538
           ]
         }
       },
@@ -5243,7 +5219,7 @@
         "name": "ingredient.discardedJunk",
         "customModelData": {
           "rangeDispatch": [
-            1849
+            1864
           ]
         }
       },
@@ -5300,7 +5276,7 @@
         "name": "ingredient.exquisiteMarshScale",
         "customModelData": {
           "rangeDispatch": [
-            1890
+            1907
           ]
         }
       },
@@ -5355,7 +5331,7 @@
         "name": "ingredient.lintyFiber",
         "customModelData": {
           "rangeDispatch": [
-            2061
+            2085
           ]
         }
       },
@@ -5410,7 +5386,7 @@
         "name": "ingredient.ripeAureateFruit",
         "customModelData": {
           "rangeDispatch": [
-            2260
+            2295
           ]
         }
       },
@@ -5470,7 +5446,7 @@
         "name": "ingredient.sphagnumMoss",
         "customModelData": {
           "rangeDispatch": [
-            2371
+            2411
           ]
         }
       },
@@ -5488,8 +5464,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": -25,
-        "maximum": -20
+        "minimum": -35,
+        "maximum": -28
       }
     },
     "consumableIDs": {
@@ -5524,7 +5500,7 @@
         "name": "ingredient.waterDropwort",
         "customModelData": {
           "rangeDispatch": [
-            2480
+            2526
           ]
         }
       },
@@ -5578,7 +5554,7 @@
         "name": "ingredient.bloodstainedSteel",
         "customModelData": {
           "rangeDispatch": [
-            1725
+            1730
           ]
         }
       },
@@ -5631,7 +5607,7 @@
         "name": "ingredient.cherishedHeirloom",
         "customModelData": {
           "rangeDispatch": [
-            1766
+            1774
           ]
         }
       },
@@ -5686,7 +5662,7 @@
         "name": "ingredient.foxCoat",
         "customModelData": {
           "rangeDispatch": [
-            1928
+            1945
           ]
         }
       },
@@ -5745,7 +5721,7 @@
         "name": "ingredient.incendiaryAlloy",
         "customModelData": {
           "rangeDispatch": [
-            2021
+            2044
           ]
         }
       },
@@ -5803,7 +5779,7 @@
         "name": "ingredient.raccoonTail",
         "customModelData": {
           "rangeDispatch": [
-            2232
+            2264
           ]
         }
       },
@@ -5858,7 +5834,7 @@
         "name": "ingredient.tornFabric",
         "customModelData": {
           "rangeDispatch": [
-            2437
+            2481
           ]
         }
       },
@@ -5994,7 +5970,7 @@
         "name": "ingredient.depurinatedGenome",
         "customModelData": {
           "rangeDispatch": [
-            1842
+            1857
           ]
         }
       },
@@ -6069,7 +6045,7 @@
         "name": "ingredient.dernicSludgebomb",
         "customModelData": {
           "rangeDispatch": [
-            1845
+            1860
           ]
         }
       },
@@ -6128,7 +6104,7 @@
         "name": "ingredient.disturbedDye",
         "customModelData": {
           "rangeDispatch": [
-            1851
+            1866
           ]
         }
       },
@@ -6221,7 +6197,7 @@
         "name": "ingredient.earthenwareClay",
         "customModelData": {
           "rangeDispatch": [
-            1865
+            1880
           ]
         }
       },
@@ -6277,7 +6253,7 @@
         "name": "ingredient.electromagneticShieldPlating",
         "customModelData": {
           "rangeDispatch": [
-            1869
+            1884
           ]
         }
       },
@@ -6335,7 +6311,7 @@
         "name": "ingredient.expelledShrapnel",
         "customModelData": {
           "rangeDispatch": [
-            1889
+            1906
           ]
         }
       },
@@ -6442,8 +6418,8 @@
         "maximum": 7
       },
       "hprRaw": {
-        "minimum": 115,
-        "maximum": 130
+        "minimum": 161,
+        "maximum": 182
       }
     },
     "consumableIDs": {
@@ -6478,7 +6454,7 @@
         "name": "ingredient.glowBulbSeeds",
         "customModelData": {
           "rangeDispatch": [
-            1958
+            1978
           ]
         }
       },
@@ -6493,8 +6469,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 130,
-        "maximum": 140
+        "minimum": 182,
+        "maximum": 196
       },
       "int": {
         "minimum": 9,
@@ -6537,7 +6513,7 @@
         "name": "ingredient.grookivaFeather",
         "customModelData": {
           "rangeDispatch": [
-            1973
+            1995
           ]
         }
       },
@@ -6587,7 +6563,7 @@
         "name": "ingredient.gruesomeCarnassial",
         "customModelData": {
           "rangeDispatch": [
-            1976
+            1998
           ]
         }
       },
@@ -6641,7 +6617,7 @@
         "name": "ingredient.invertedGrotesque",
         "customModelData": {
           "rangeDispatch": [
-            2031
+            2054
           ]
         }
       },
@@ -6703,7 +6679,7 @@
         "name": "ingredient.malignantNuclei",
         "customModelData": {
           "rangeDispatch": [
-            2093
+            2118
           ]
         }
       },
@@ -6761,7 +6737,7 @@
         "name": "ingredient.mapleBark",
         "customModelData": {
           "rangeDispatch": [
-            2099
+            2126
           ]
         }
       },
@@ -6811,7 +6787,7 @@
         "name": "ingredient.negativeRafflesia",
         "customModelData": {
           "rangeDispatch": [
-            2134
+            2164
           ]
         }
       },
@@ -6866,7 +6842,7 @@
         "name": "ingredient.photophobicKelp",
         "customModelData": {
           "rangeDispatch": [
-            2173
+            2204
           ]
         }
       },
@@ -6928,7 +6904,7 @@
         "name": "ingredient.planeOfNonexistence",
         "customModelData": {
           "rangeDispatch": [
-            2189
+            2220
           ]
         }
       },
@@ -6994,7 +6970,7 @@
         "name": "ingredient.portalRift",
         "customModelData": {
           "rangeDispatch": [
-            2203
+            2234
           ]
         }
       },
@@ -7123,10 +7099,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.brownMushroom",
+        "name": "ingredient.reishiMushroom",
         "customModelData": {
           "rangeDispatch": [
-            1745
+            2282
           ]
         }
       },
@@ -7180,7 +7156,7 @@
         "name": "ingredient.rigidFin",
         "customModelData": {
           "rangeDispatch": [
-            2259
+            2294
           ]
         }
       },
@@ -7234,7 +7210,7 @@
         "name": "ingredient.sandyLoam",
         "customModelData": {
           "rangeDispatch": [
-            2289
+            2324
           ]
         }
       },
@@ -7288,7 +7264,7 @@
         "name": "ingredient.shatteredAmmunition",
         "customModelData": {
           "rangeDispatch": [
-            2316
+            2353
           ]
         }
       },
@@ -7392,7 +7368,7 @@
         "name": "ingredient.solidUltravioletRay",
         "customModelData": {
           "rangeDispatch": [
-            2359
+            2399
           ]
         }
       },
@@ -7415,8 +7391,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": 110,
-        "maximum": 120
+        "minimum": 154,
+        "maximum": 168
       },
       "int": {
         "minimum": 5,
@@ -7455,7 +7431,7 @@
         "name": "ingredient.subjoinedBrain",
         "customModelData": {
           "rangeDispatch": [
-            2404
+            2446
           ]
         }
       },
@@ -7515,10 +7491,10 @@
     "icon": {
       "value": {
         "id": "minecraft:potion",
-        "name": "ingredient.redMushroom",
+        "name": "ingredient.teaTreeMushroom",
         "customModelData": {
           "rangeDispatch": [
-            2242
+            2462
           ]
         }
       },
@@ -7669,7 +7645,7 @@
         "name": "ingredient.acidulousPlating",
         "customModelData": {
           "rangeDispatch": [
-            1661
+            1665
           ]
         }
       },
@@ -7691,8 +7667,8 @@
         "maximum": 7
       },
       "hprRaw": {
-        "minimum": -60,
-        "maximum": -45
+        "minimum": -84,
+        "maximum": -63
       }
     },
     "consumableIDs": {
@@ -7727,7 +7703,7 @@
         "name": "ingredient.cavitatedBone",
         "customModelData": {
           "rangeDispatch": [
-            1760
+            1767
           ]
         }
       },
@@ -7786,7 +7762,7 @@
         "name": "ingredient.denseVoidHoleChunk",
         "customModelData": {
           "rangeDispatch": [
-            1839
+            1854
           ]
         }
       },
@@ -7840,7 +7816,7 @@
         "name": "ingredient.dernicHydroid",
         "customModelData": {
           "rangeDispatch": [
-            1843
+            1858
           ]
         }
       },
@@ -7898,7 +7874,7 @@
         "name": "ingredient.dernicParasite",
         "customModelData": {
           "rangeDispatch": [
-            1844
+            1859
           ]
         }
       },
@@ -7956,7 +7932,7 @@
         "name": "ingredient.extremophilePelt",
         "customModelData": {
           "rangeDispatch": [
-            1892
+            1909
           ]
         }
       },
@@ -8112,7 +8088,7 @@
         "name": "ingredient.infectedMass",
         "customModelData": {
           "rangeDispatch": [
-            2023
+            2046
           ]
         }
       },
@@ -8158,7 +8134,7 @@
         "name": "ingredient.liffLeaf",
         "customModelData": {
           "rangeDispatch": [
-            2058
+            2082
           ]
         }
       },
@@ -8277,7 +8253,7 @@
         "name": "ingredient.neonSeawater",
         "customModelData": {
           "rangeDispatch": [
-            2135
+            2165
           ]
         }
       },
@@ -8331,7 +8307,7 @@
         "name": "ingredient.rejectedGeode",
         "customModelData": {
           "rangeDispatch": [
-            2248
+            2283
           ]
         }
       },
@@ -8354,8 +8330,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": -90,
-        "maximum": -70
+        "minimum": -126,
+        "maximum": -98
       }
     },
     "consumableIDs": {
@@ -8390,7 +8366,7 @@
         "name": "ingredient.retinalBarbs",
         "customModelData": {
           "rangeDispatch": [
-            2257
+            2292
           ]
         }
       },
@@ -8445,7 +8421,7 @@
         "name": "ingredient.sentientLeukocyte",
         "customModelData": {
           "rangeDispatch": [
-            2304
+            2339
           ]
         }
       },
@@ -8507,7 +8483,7 @@
         "name": "ingredient.ultramarineMinnow",
         "customModelData": {
           "rangeDispatch": [
-            2454
+            2498
           ]
         }
       },
@@ -8562,7 +8538,7 @@
         "name": "ingredient.vimVeins",
         "customModelData": {
           "rangeDispatch": [
-            2466
+            2512
           ]
         }
       },
@@ -8617,7 +8593,7 @@
         "name": "ingredient.alnamarMeat",
         "customModelData": {
           "rangeDispatch": [
-            1673
+            1677
           ]
         }
       },
@@ -8675,7 +8651,7 @@
         "name": "ingredient.decayingArteries",
         "customModelData": {
           "rangeDispatch": [
-            1827
+            1840
           ]
         }
       },
@@ -8693,8 +8669,8 @@
         "maximum": 9
       },
       "hprRaw": {
-        "minimum": -72,
-        "maximum": -66
+        "minimum": -101,
+        "maximum": -92
       }
     },
     "consumableIDs": {
@@ -8729,7 +8705,7 @@
         "name": "ingredient.doomStone",
         "customModelData": {
           "rangeDispatch": [
-            1854
+            1869
           ]
         }
       },
@@ -8822,7 +8798,7 @@
         "name": "ingredient.greenFoot",
         "customModelData": {
           "rangeDispatch": [
-            1968
+            1990
           ]
         }
       },
@@ -8880,7 +8856,7 @@
         "name": "ingredient.gunkfueledCore",
         "customModelData": {
           "rangeDispatch": [
-            1977
+            1999
           ]
         }
       },
@@ -8903,8 +8879,8 @@
         "maximum": 9
       },
       "hprRaw": {
-        "minimum": -150,
-        "maximum": -130
+        "minimum": -210,
+        "maximum": -182
       }
     },
     "consumableIDs": {
@@ -8939,7 +8915,7 @@
         "name": "ingredient.insanityStar",
         "customModelData": {
           "rangeDispatch": [
-            2027
+            2050
           ]
         }
       },
@@ -9010,7 +8986,7 @@
         "name": "ingredient.lacticAcidCrystal",
         "customModelData": {
           "rangeDispatch": [
-            2045
+            2069
           ]
         }
       },
@@ -9064,7 +9040,7 @@
         "name": "ingredient.larbonicSheddings",
         "customModelData": {
           "rangeDispatch": [
-            2046
+            2070
           ]
         }
       },
@@ -9122,7 +9098,7 @@
         "name": "ingredient.legEaterTooth",
         "customModelData": {
           "rangeDispatch": [
-            2055
+            2079
           ]
         }
       },
@@ -9180,7 +9156,7 @@
         "name": "ingredient.olmicArtifact",
         "customModelData": {
           "rangeDispatch": [
-            2150
+            2180
           ]
         }
       },
@@ -9198,8 +9174,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": 60,
-        "maximum": 75
+        "minimum": 84,
+        "maximum": 105
       }
     },
     "consumableIDs": {
@@ -9234,7 +9210,7 @@
         "name": "ingredient.pluripotentTissue",
         "customModelData": {
           "rangeDispatch": [
-            2194
+            2225
           ]
         }
       },
@@ -9288,7 +9264,7 @@
         "name": "ingredient.plutoniumWaste",
         "customModelData": {
           "rangeDispatch": [
-            2195
+            2226
           ]
         }
       },
@@ -9342,7 +9318,7 @@
         "name": "ingredient.scopaesthesia",
         "customModelData": {
           "rangeDispatch": [
-            2294
+            2329
           ]
         }
       },
@@ -9412,7 +9388,7 @@
         "name": "ingredient.soulEssence",
         "customModelData": {
           "rangeDispatch": [
-            2365
+            2405
           ]
         }
       },
@@ -9466,7 +9442,7 @@
         "name": "ingredient.toxxulousRipperLegs",
         "customModelData": {
           "rangeDispatch": [
-            2444
+            2488
           ]
         }
       },
@@ -9525,7 +9501,7 @@
         "name": "ingredient.voidtossedMemory",
         "customModelData": {
           "rangeDispatch": [
-            2471
+            2517
           ]
         }
       },
@@ -9579,7 +9555,7 @@
         "name": "ingredient.acidicRemains",
         "customModelData": {
           "rangeDispatch": [
-            1659
+            1663
           ]
         }
       },
@@ -9598,8 +9574,8 @@
         "maximum": 10
       },
       "hprRaw": {
-        "minimum": -72,
-        "maximum": -60
+        "minimum": -101,
+        "maximum": -84
       }
     },
     "consumableIDs": {
@@ -9634,7 +9610,7 @@
         "name": "ingredient.ancientCurrency",
         "customModelData": {
           "rangeDispatch": [
-            1679
+            1683
           ]
         }
       },
@@ -9688,7 +9664,7 @@
         "name": "ingredient.calcifiedLigament",
         "customModelData": {
           "rangeDispatch": [
-            1749
+            1756
           ]
         }
       },
@@ -9743,7 +9719,7 @@
         "name": "ingredient.condensedDarkness",
         "customModelData": {
           "rangeDispatch": [
-            1784
+            1794
           ]
         }
       },
@@ -9802,7 +9778,7 @@
         "name": "ingredient.cysticLard",
         "customModelData": {
           "rangeDispatch": [
-            1821
+            1834
           ]
         }
       },
@@ -9853,7 +9829,7 @@
         "name": "ingredient.poppedPustule",
         "customModelData": {
           "rangeDispatch": [
-            2201
+            2232
           ]
         }
       },
@@ -9953,7 +9929,7 @@
         "name": "ingredient.skyboundRemnant",
         "customModelData": {
           "rangeDispatch": [
-            2334
+            2371
           ]
         }
       },
@@ -10007,7 +9983,7 @@
         "name": "ingredient.sludgeParasite",
         "customModelData": {
           "rangeDispatch": [
-            2341
+            2379
           ]
         }
       },
@@ -10061,7 +10037,7 @@
         "name": "ingredient.toxicLumps",
         "customModelData": {
           "rangeDispatch": [
-            2442
+            2486
           ]
         }
       },
@@ -10119,7 +10095,7 @@
         "name": "ingredient.vileStone",
         "customModelData": {
           "rangeDispatch": [
-            2465
+            2511
           ]
         }
       },
@@ -10174,7 +10150,7 @@
         "name": "ingredient.viralTentacle",
         "customModelData": {
           "rangeDispatch": [
-            2467
+            2513
           ]
         }
       },
@@ -10228,7 +10204,7 @@
         "name": "ingredient.fragmentation",
         "customModelData": {
           "rangeDispatch": [
-            1929
+            1946
           ]
         }
       },
@@ -10283,7 +10259,7 @@
         "name": "ingredient.giantSwordShard",
         "customModelData": {
           "rangeDispatch": [
-            1947
+            1966
           ]
         }
       },
@@ -10345,7 +10321,7 @@
         "name": "ingredient.opticFiber",
         "customModelData": {
           "rangeDispatch": [
-            2152
+            2182
           ]
         }
       },
@@ -10395,7 +10371,7 @@
         "name": "ingredient.voidParticulates",
         "customModelData": {
           "rangeDispatch": [
-            2473
+            2519
           ]
         }
       },
@@ -10470,7 +10446,7 @@
         "name": "ingredient.adamastorsFaceplate",
         "customModelData": {
           "rangeDispatch": [
-            1664
+            1668
           ]
         }
       },
@@ -10529,7 +10505,7 @@
         "name": "ingredient.aspectOfTheVoid",
         "customModelData": {
           "rangeDispatch": [
-            1697
+            1702
           ]
         }
       },
@@ -10575,7 +10551,7 @@
         "name": "ingredient.blackHole",
         "customModelData": {
           "rangeDispatch": [
-            1715
+            1720
           ]
         }
       },
@@ -10674,7 +10650,7 @@
         "name": "ingredient.cataratite",
         "customModelData": {
           "rangeDispatch": [
-            1756
+            1763
           ]
         }
       },
@@ -10725,7 +10701,7 @@
         "name": "ingredient.clawOfDemise",
         "customModelData": {
           "rangeDispatch": [
-            1772
+            1780
           ]
         }
       },
@@ -10784,7 +10760,7 @@
         "name": "ingredient.crystallizedOrgan",
         "customModelData": {
           "rangeDispatch": [
-            1813
+            1826
           ]
         }
       },
@@ -10834,7 +10810,7 @@
         "name": "ingredient.darkIris",
         "customModelData": {
           "rangeDispatch": [
-            1823
+            1836
           ]
         }
       },
@@ -10848,8 +10824,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 120,
-        "maximum": 150
+        "minimum": 168,
+        "maximum": 210
       },
       "xpb": {
         "minimum": -15,
@@ -10888,7 +10864,7 @@
         "name": "ingredient.deepIceCore",
         "customModelData": {
           "rangeDispatch": [
-            1832
+            1845
           ]
         }
       },
@@ -10952,7 +10928,7 @@
         "name": "ingredient.dogunAlertSigil",
         "customModelData": {
           "rangeDispatch": [
-            1852
+            1867
           ]
         }
       },
@@ -10971,8 +10947,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": 70,
-        "maximum": 80
+        "minimum": 98,
+        "maximum": 112
       },
       "fSdRaw": {
         "minimum": 50,
@@ -11062,7 +11038,7 @@
         "name": "ingredient.flowOfFate",
         "customModelData": {
           "rangeDispatch": [
-            1917
+            1934
           ]
         }
       },
@@ -11116,7 +11092,7 @@
         "name": "ingredient.greenOpal",
         "customModelData": {
           "rangeDispatch": [
-            1969
+            1991
           ]
         }
       },
@@ -11134,8 +11110,8 @@
         "maximum": 6
       },
       "hprRaw": {
-        "minimum": 40,
-        "maximum": 48
+        "minimum": 56,
+        "maximum": 67
       }
     },
     "consumableIDs": {
@@ -11213,7 +11189,7 @@
         "name": "ingredient.psionicQuill",
         "customModelData": {
           "rangeDispatch": [
-            2220
+            2252
           ]
         }
       },
@@ -11268,7 +11244,7 @@
         "name": "ingredient.retinalMembrane",
         "customModelData": {
           "rangeDispatch": [
-            2258
+            2293
           ]
         }
       },
@@ -11318,7 +11294,7 @@
         "name": "ingredient.serafite",
         "customModelData": {
           "rangeDispatch": [
-            2309
+            2344
           ]
         }
       },
@@ -11376,7 +11352,7 @@
         "name": "ingredient.undiscoveredPlant",
         "customModelData": {
           "rangeDispatch": [
-            2456
+            2500
           ]
         }
       },
@@ -11477,7 +11453,7 @@
         "name": "ingredient.vistaMist",
         "customModelData": {
           "rangeDispatch": [
-            2469
+            2515
           ]
         }
       },
@@ -11531,7 +11507,7 @@
         "name": "ingredient.vortexExpulsion",
         "customModelData": {
           "rangeDispatch": [
-            2476
+            2522
           ]
         }
       },
@@ -11587,7 +11563,7 @@
         "name": "ingredient.windOrnament",
         "customModelData": {
           "rangeDispatch": [
-            2492
+            2539
           ]
         }
       },
@@ -11641,7 +11617,7 @@
         "name": "ingredient.cursedWings",
         "customModelData": {
           "rangeDispatch": [
-            1818
+            1831
           ]
         }
       },
@@ -11700,7 +11676,7 @@
         "name": "ingredient.demonicBlood",
         "customModelData": {
           "rangeDispatch": [
-            1838
+            1853
           ]
         }
       },
@@ -11756,7 +11732,7 @@
         "name": "ingredient.essenceOfDissolution",
         "customModelData": {
           "rangeDispatch": [
-            1884
+            1900
           ]
         }
       },
@@ -11810,7 +11786,7 @@
         "name": "ingredient.extremelyDensePebble",
         "customModelData": {
           "rangeDispatch": [
-            1891
+            1908
           ]
         }
       },
@@ -11868,7 +11844,7 @@
         "name": "ingredient.fairyPowder",
         "customModelData": {
           "rangeDispatch": [
-            1896
+            1913
           ]
         }
       },
@@ -11926,7 +11902,7 @@
         "name": "ingredient.farcorsTrust",
         "customModelData": {
           "rangeDispatch": [
-            1899
+            1916
           ]
         }
       },
@@ -11980,7 +11956,7 @@
         "name": "ingredient.haphazardSerum",
         "customModelData": {
           "rangeDispatch": [
-            1981
+            2003
           ]
         }
       },
@@ -12038,7 +12014,7 @@
         "name": "ingredient.impureNullity",
         "customModelData": {
           "rangeDispatch": [
-            2020
+            2043
           ]
         }
       },
@@ -12092,7 +12068,7 @@
         "name": "ingredient.infernalAntifreeze",
         "customModelData": {
           "rangeDispatch": [
-            2024
+            2047
           ]
         }
       },
@@ -12154,7 +12130,7 @@
         "name": "ingredient.rockySpirit",
         "customModelData": {
           "rangeDispatch": [
-            2266
+            2301
           ]
         }
       },
@@ -12209,7 +12185,7 @@
         "name": "ingredient.skyFlux",
         "customModelData": {
           "rangeDispatch": [
-            2336
+            2373
           ]
         }
       },
@@ -12263,7 +12239,7 @@
         "name": "ingredient.skyraiderCoin",
         "customModelData": {
           "rangeDispatch": [
-            2335
+            2372
           ]
         }
       },
@@ -12317,7 +12293,7 @@
         "name": "ingredient.angelicGem",
         "customModelData": {
           "rangeDispatch": [
-            1685
+            1690
           ]
         }
       },
@@ -12383,7 +12359,7 @@
         "name": "ingredient.dragonAura",
         "customModelData": {
           "rangeDispatch": [
-            1858
+            1873
           ]
         }
       },
@@ -12437,7 +12413,7 @@
         "name": "ingredient.dragonlingEgg",
         "customModelData": {
           "rangeDispatch": [
-            1856
+            1871
           ]
         }
       },
@@ -12495,7 +12471,7 @@
         "name": "ingredient.dragonlingScale",
         "customModelData": {
           "rangeDispatch": [
-            1857
+            1872
           ]
         }
       },
@@ -12553,7 +12529,7 @@
         "name": "ingredient.fissuredTablet",
         "customModelData": {
           "rangeDispatch": [
-            1911
+            1928
           ]
         }
       },
@@ -12607,7 +12583,7 @@
         "name": "ingredient.floatStone",
         "customModelData": {
           "rangeDispatch": [
-            1916
+            1933
           ]
         }
       },
@@ -12661,7 +12637,7 @@
         "name": "ingredient.ghostlyPlume",
         "customModelData": {
           "rangeDispatch": [
-            1945
+            1962
           ]
         }
       },
@@ -12712,7 +12688,7 @@
         "name": "ingredient.holyPowder",
         "customModelData": {
           "rangeDispatch": [
-            1995
+            2017
           ]
         }
       },
@@ -12730,8 +12706,8 @@
         "maximum": 12
       },
       "hprRaw": {
-        "minimum": 85,
-        "maximum": 90
+        "minimum": 119,
+        "maximum": 126
       }
     },
     "consumableIDs": {
@@ -12766,7 +12742,7 @@
         "name": "ingredient.oceaSteel",
         "customModelData": {
           "rangeDispatch": [
-            2143
+            2173
           ]
         }
       },
@@ -12833,7 +12809,7 @@
         "name": "ingredient.redMercury",
         "customModelData": {
           "rangeDispatch": [
-            2241
+            2275
           ]
         }
       },
@@ -12851,8 +12827,8 @@
         "maximum": 800
       },
       "hprRaw": {
-        "minimum": -120,
-        "maximum": -90
+        "minimum": -168,
+        "maximum": -126
       }
     },
     "consumableIDs": {
@@ -12887,7 +12863,7 @@
         "name": "ingredient.sylphidTears",
         "customModelData": {
           "rangeDispatch": [
-            2413
+            2455
           ]
         }
       },
@@ -12941,7 +12917,7 @@
         "name": "ingredient.angelsBlessing",
         "customModelData": {
           "rangeDispatch": [
-            1686
+            1691
           ]
         }
       },
@@ -13005,8 +12981,8 @@
         "maximum": 12
       },
       "hprRaw": {
-        "minimum": -35,
-        "maximum": -15
+        "minimum": -49,
+        "maximum": -21
       },
       "eMdRaw": {
         "minimum": 40,
@@ -13045,7 +13021,7 @@
         "name": "ingredient.glimmeringBeak",
         "customModelData": {
           "rangeDispatch": [
-            1952
+            1971
           ]
         }
       },
@@ -13146,7 +13122,7 @@
         "name": "ingredient.hydrofluoricAcid",
         "customModelData": {
           "rangeDispatch": [
-            2000
+            2022
           ]
         }
       },
@@ -13208,8 +13184,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 30,
-        "maximum": 35
+        "minimum": 42,
+        "maximum": 49
       },
       "sdRaw": {
         "minimum": 40,
@@ -13252,7 +13228,7 @@
         "name": "ingredient.ominousPearl",
         "customModelData": {
           "rangeDispatch": [
-            2151
+            2181
           ]
         }
       },
@@ -13302,7 +13278,7 @@
         "name": "ingredient.plasteelPlating",
         "customModelData": {
           "rangeDispatch": [
-            2190
+            2221
           ]
         }
       },
@@ -13348,7 +13324,7 @@
         "name": "ingredient.soulfireMatterweave",
         "customModelData": {
           "rangeDispatch": [
-            2363
+            2403
           ]
         }
       },
@@ -13444,7 +13420,7 @@
         "name": "ingredient.brokenPick",
         "customModelData": {
           "rangeDispatch": [
-            1741
+            1747
           ]
         }
       },
@@ -13498,7 +13474,7 @@
         "name": "ingredient.calmedThunder",
         "customModelData": {
           "rangeDispatch": [
-            1750
+            1757
           ]
         }
       },
@@ -13553,7 +13529,7 @@
         "name": "ingredient.draconicBoneMarrow",
         "customModelData": {
           "rangeDispatch": [
-            1855
+            1870
           ]
         }
       },
@@ -13599,7 +13575,7 @@
         "name": "ingredient.forgottenPickaxe",
         "customModelData": {
           "rangeDispatch": [
-            1924
+            1941
           ]
         }
       },
@@ -13654,7 +13630,7 @@
         "name": "ingredient.greyCloud",
         "customModelData": {
           "rangeDispatch": [
-            1971
+            1993
           ]
         }
       },
@@ -13708,7 +13684,7 @@
         "name": "ingredient.silverFeather",
         "customModelData": {
           "rangeDispatch": [
-            2332
+            2369
           ]
         }
       },
@@ -13762,7 +13738,7 @@
         "name": "ingredient.soughtAfterOre",
         "customModelData": {
           "rangeDispatch": [
-            2360
+            2400
           ]
         }
       },
@@ -13812,7 +13788,7 @@
         "name": "ingredient.stolenBurnmilk",
         "customModelData": {
           "rangeDispatch": [
-            2390
+            2431
           ]
         }
       },
@@ -13830,8 +13806,8 @@
         "maximum": 13
       },
       "hprRaw": {
-        "minimum": -85,
-        "maximum": -70
+        "minimum": -119,
+        "maximum": -98
       },
       "healPct": {
         "minimum": -10,
@@ -13870,7 +13846,7 @@
         "name": "ingredient.stormHorn",
         "customModelData": {
           "rangeDispatch": [
-            2398
+            2440
           ]
         }
       },
@@ -13924,7 +13900,7 @@
         "name": "ingredient.voidstoneSample",
         "customModelData": {
           "rangeDispatch": [
-            2470
+            2516
           ]
         }
       },
@@ -13979,7 +13955,7 @@
         "name": "ingredient.demonicAshes",
         "customModelData": {
           "rangeDispatch": [
-            1837
+            1852
           ]
         }
       },
@@ -14033,7 +14009,7 @@
         "name": "ingredient.gravitationCrystal",
         "customModelData": {
           "rangeDispatch": [
-            1967
+            1988
           ]
         }
       },
@@ -14088,7 +14064,7 @@
         "name": "ingredient.linearAccelerator",
         "customModelData": {
           "rangeDispatch": [
-            2060
+            2084
           ]
         }
       },
@@ -14147,7 +14123,7 @@
         "name": "ingredient.luuLuuVertebrae",
         "customModelData": {
           "rangeDispatch": [
-            2083
+            2108
           ]
         }
       },
@@ -14197,7 +14173,7 @@
         "name": "ingredient.manisCarapace",
         "customModelData": {
           "rangeDispatch": [
-            2097
+            2124
           ]
         }
       },
@@ -14247,7 +14223,7 @@
         "name": "ingredient.mixedJewelDeposit",
         "customModelData": {
           "rangeDispatch": [
-            2113
+            2141
           ]
         }
       },
@@ -14301,7 +14277,7 @@
         "name": "ingredient.mixedMineralDeposit",
         "customModelData": {
           "rangeDispatch": [
-            2114
+            2142
           ]
         }
       },
@@ -14362,7 +14338,7 @@
         "name": "ingredient.muralShard",
         "customModelData": {
           "rangeDispatch": [
-            2123
+            2153
           ]
         }
       },
@@ -14459,7 +14435,7 @@
         "name": "ingredient.remedialPaste",
         "customModelData": {
           "rangeDispatch": [
-            2251
+            2286
           ]
         }
       },
@@ -14517,7 +14493,7 @@
         "name": "ingredient.shinyMineralDeposit",
         "customModelData": {
           "rangeDispatch": [
-            2327
+            2364
           ]
         }
       },
@@ -14583,7 +14559,7 @@
         "name": "ingredient.silverBullet",
         "customModelData": {
           "rangeDispatch": [
-            2331
+            2368
           ]
         }
       },
@@ -14637,7 +14613,7 @@
         "name": "ingredient.skySnailShell",
         "customModelData": {
           "rangeDispatch": [
-            2337
+            2374
           ]
         }
       },
@@ -14696,7 +14672,7 @@
         "name": "ingredient.voidEssence",
         "customModelData": {
           "rangeDispatch": [
-            2472
+            2518
           ]
         }
       },
@@ -14756,8 +14732,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 70,
-        "maximum": 75
+        "minimum": 98,
+        "maximum": 105
       }
     },
     "consumableIDs": {
@@ -14792,7 +14768,7 @@
         "name": "ingredient.ashstainedBasalt",
         "customModelData": {
           "rangeDispatch": [
-            1696
+            1701
           ]
         }
       },
@@ -14846,7 +14822,7 @@
         "name": "ingredient.infernalFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2025
+            2048
           ]
         }
       },
@@ -14904,7 +14880,7 @@
         "name": "ingredient.kaianScroll",
         "customModelData": {
           "rangeDispatch": [
-            2041
+            2065
           ]
         }
       },
@@ -14954,7 +14930,7 @@
         "name": "ingredient.fathomfloodedFlesh",
         "customModelData": {
           "rangeDispatch": [
-            1900
+            1917
           ]
         }
       },
@@ -15020,7 +14996,7 @@
         "name": "ingredient.prizedFeather",
         "customModelData": {
           "rangeDispatch": [
-            2217
+            2249
           ]
         }
       },
@@ -15074,7 +15050,7 @@
         "name": "ingredient.roastedTissue",
         "customModelData": {
           "rangeDispatch": [
-            2263
+            2298
           ]
         }
       },
@@ -15187,7 +15163,7 @@
         "name": "ingredient.serpentsFang",
         "customModelData": {
           "rangeDispatch": [
-            2310
+            2346
           ]
         }
       },
@@ -15242,7 +15218,7 @@
         "name": "ingredient.soulboundCinders",
         "customModelData": {
           "rangeDispatch": [
-            2361
+            2401
           ]
         }
       },
@@ -15300,7 +15276,7 @@
         "name": "ingredient.bioluminescentBlood",
         "customModelData": {
           "rangeDispatch": [
-            1712
+            1717
           ]
         }
       },
@@ -15354,7 +15330,7 @@
         "name": "ingredient.brokenHelmet",
         "customModelData": {
           "rangeDispatch": [
-            1740
+            1746
           ]
         }
       },
@@ -15454,7 +15430,7 @@
         "name": "ingredient.flerisiBark",
         "customModelData": {
           "rangeDispatch": [
-            1914
+            1931
           ]
         }
       },
@@ -15513,7 +15489,7 @@
         "name": "ingredient.frostboundMemory",
         "customModelData": {
           "rangeDispatch": [
-            1935
+            1952
           ]
         }
       },
@@ -15571,7 +15547,7 @@
         "name": "ingredient.glacialAnomaly",
         "customModelData": {
           "rangeDispatch": [
-            1950
+            1969
           ]
         }
       },
@@ -15626,7 +15602,7 @@
         "name": "ingredient.marrowDust",
         "customModelData": {
           "rangeDispatch": [
-            2103
+            2130
           ]
         }
       },
@@ -15640,8 +15616,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 50,
-        "maximum": 70
+        "minimum": 70,
+        "maximum": 98
       }
     },
     "consumableIDs": {
@@ -15676,7 +15652,7 @@
         "name": "ingredient.myocardialLeg",
         "customModelData": {
           "rangeDispatch": [
-            2126
+            2156
           ]
         }
       },
@@ -15734,7 +15710,7 @@
         "name": "ingredient.mythicalHoof",
         "customModelData": {
           "rangeDispatch": [
-            2128
+            2158
           ]
         }
       },
@@ -15800,7 +15776,7 @@
         "name": "ingredient.pegasusFeather",
         "customModelData": {
           "rangeDispatch": [
-            2170
+            2201
           ]
         }
       },
@@ -15858,7 +15834,7 @@
         "name": "ingredient.sentientShadow",
         "customModelData": {
           "rangeDispatch": [
-            2306
+            2341
           ]
         }
       },
@@ -15912,7 +15888,7 @@
         "name": "ingredient.stolenSeeds",
         "customModelData": {
           "rangeDispatch": [
-            2395
+            2437
           ]
         }
       },
@@ -16013,7 +15989,7 @@
         "name": "ingredient.unmeltableIce",
         "customModelData": {
           "rangeDispatch": [
-            2460
+            2504
           ]
         }
       },
@@ -16068,7 +16044,7 @@
         "name": "ingredient.witheredRoot",
         "customModelData": {
           "rangeDispatch": [
-            2493
+            2540
           ]
         }
       },
@@ -16122,7 +16098,7 @@
         "name": "ingredient.acidMagma",
         "customModelData": {
           "rangeDispatch": [
-            1662
+            1666
           ]
         }
       },
@@ -16177,7 +16153,7 @@
         "name": "ingredient.anglersLight",
         "customModelData": {
           "rangeDispatch": [
-            1687
+            1692
           ]
         }
       },
@@ -16231,7 +16207,7 @@
         "name": "ingredient.deepbornScavenger",
         "customModelData": {
           "rangeDispatch": [
-            1831
+            1844
           ]
         }
       },
@@ -16285,7 +16261,7 @@
         "name": "ingredient.hardenedMandible",
         "customModelData": {
           "rangeDispatch": [
-            1984
+            2006
           ]
         }
       },
@@ -16340,7 +16316,7 @@
         "name": "ingredient.obsidianShards",
         "customModelData": {
           "rangeDispatch": [
-            2140
+            2170
           ]
         }
       },
@@ -16358,8 +16334,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": -40,
-        "maximum": -32
+        "minimum": -56,
+        "maximum": -45
       }
     },
     "consumableIDs": {
@@ -16394,7 +16370,7 @@
         "name": "ingredient.repairToolkit",
         "customModelData": {
           "rangeDispatch": [
-            2252
+            2287
           ]
         }
       },
@@ -16448,7 +16424,7 @@
         "name": "ingredient.7YottabyteStorageComponent",
         "customModelData": {
           "rangeDispatch": [
-            1656
+            1660
           ]
         }
       },
@@ -16495,7 +16471,7 @@
         "name": "ingredient.ashenHide",
         "customModelData": {
           "rangeDispatch": [
-            1695
+            1700
           ]
         }
       },
@@ -16545,7 +16521,7 @@
         "name": "ingredient.enhancedBehaviourMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1877
+            1893
           ]
         }
       },
@@ -16601,7 +16577,7 @@
         "name": "ingredient.enhancedDynamicsMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1878
+            1894
           ]
         }
       },
@@ -16657,7 +16633,7 @@
         "name": "ingredient.enhancedPathfindingMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1879
+            1895
           ]
         }
       },
@@ -16713,7 +16689,7 @@
         "name": "ingredient.enhancedPhysicsMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1880
+            1896
           ]
         }
       },
@@ -16769,7 +16745,7 @@
         "name": "ingredient.enhancedPostProcessingMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1881
+            1897
           ]
         }
       },
@@ -16825,7 +16801,7 @@
         "name": "ingredient.enhancedPotentialMicrochip",
         "customModelData": {
           "rangeDispatch": [
-            1882
+            1898
           ]
         }
       },
@@ -16881,7 +16857,7 @@
         "name": "ingredient.fiberglassFrame",
         "customModelData": {
           "rangeDispatch": [
-            1903
+            1920
           ]
         }
       },
@@ -16936,7 +16912,7 @@
         "name": "ingredient.igneousThread",
         "customModelData": {
           "rangeDispatch": [
-            2011
+            2033
           ]
         }
       },
@@ -16990,7 +16966,7 @@
         "name": "ingredient.incrementalMappingModule",
         "customModelData": {
           "rangeDispatch": [
-            2022
+            2045
           ]
         }
       },
@@ -17049,7 +17025,7 @@
         "name": "ingredient.marsufosaPelt",
         "customModelData": {
           "rangeDispatch": [
-            2104
+            2131
           ]
         }
       },
@@ -17099,7 +17075,7 @@
         "name": "ingredient.opticLens",
         "customModelData": {
           "rangeDispatch": [
-            2153
+            2183
           ]
         }
       },
@@ -17153,7 +17129,7 @@
         "name": "ingredient.overheatedProcessor",
         "customModelData": {
           "rangeDispatch": [
-            2162
+            2193
           ]
         }
       },
@@ -17211,7 +17187,7 @@
         "name": "ingredient.perkishPotato",
         "customModelData": {
           "rangeDispatch": [
-            2172
+            2203
           ]
         }
       },
@@ -17261,7 +17237,7 @@
         "name": "ingredient.pirateBeard",
         "customModelData": {
           "rangeDispatch": [
-            2188
+            2219
           ]
         }
       },
@@ -17315,7 +17291,7 @@
         "name": "ingredient.rottenTeeth",
         "customModelData": {
           "rangeDispatch": [
-            2273
+            2308
           ]
         }
       },
@@ -17369,7 +17345,7 @@
         "name": "ingredient.shortingWire",
         "customModelData": {
           "rangeDispatch": [
-            2329
+            2366
           ]
         }
       },
@@ -17423,7 +17399,7 @@
         "name": "ingredient.sunkenScales",
         "customModelData": {
           "rangeDispatch": [
-            2408
+            2450
           ]
         }
       },
@@ -17477,7 +17453,7 @@
         "name": "ingredient.throbbingAvosHeart",
         "customModelData": {
           "rangeDispatch": [
-            2435
+            2478
           ]
         }
       },
@@ -17495,8 +17471,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": 20,
-        "maximum": 25
+        "minimum": 28,
+        "maximum": 35
       }
     },
     "consumableIDs": {
@@ -17531,7 +17507,7 @@
         "name": "ingredient.turtleShell",
         "customModelData": {
           "rangeDispatch": [
-            2451
+            2495
           ]
         }
       },
@@ -17585,7 +17561,7 @@
         "name": "ingredient.twistedCoral",
         "customModelData": {
           "rangeDispatch": [
-            2452
+            2496
           ]
         }
       },
@@ -17603,8 +17579,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": -75,
-        "maximum": -65
+        "minimum": -105,
+        "maximum": -91
       }
     },
     "consumableIDs": {
@@ -17649,8 +17625,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": 25,
-        "maximum": 30
+        "minimum": 35,
+        "maximum": 42
       }
     },
     "consumableIDs": {
@@ -17685,7 +17661,7 @@
         "name": "ingredient.wybelFluff",
         "customModelData": {
           "rangeDispatch": [
-            2506
+            2554
           ]
         }
       },
@@ -17735,7 +17711,7 @@
         "name": "ingredient.charcoalLump",
         "customModelData": {
           "rangeDispatch": [
-            1763
+            1771
           ]
         }
       },
@@ -17785,7 +17761,7 @@
         "name": "ingredient.chunkyAsh",
         "customModelData": {
           "rangeDispatch": [
-            1771
+            1779
           ]
         }
       },
@@ -17843,7 +17819,7 @@
         "name": "ingredient.fightingStick",
         "customModelData": {
           "rangeDispatch": [
-            1906
+            1923
           ]
         }
       },
@@ -17902,7 +17878,7 @@
         "name": "ingredient.fluffyFur",
         "customModelData": {
           "rangeDispatch": [
-            1918
+            1935
           ]
         }
       },
@@ -17956,7 +17932,7 @@
         "name": "ingredient.meltedSteel",
         "customModelData": {
           "rangeDispatch": [
-            2109
+            2136
           ]
         }
       },
@@ -18011,7 +17987,7 @@
         "name": "ingredient.pandaKingsCrown",
         "customModelData": {
           "rangeDispatch": [
-            2164
+            2195
           ]
         }
       },
@@ -18082,7 +18058,7 @@
         "name": "ingredient.pandaKingsCrown",
         "customModelData": {
           "rangeDispatch": [
-            2164
+            2195
           ]
         }
       },
@@ -18153,7 +18129,7 @@
         "name": "ingredient.serpentTongue",
         "customModelData": {
           "rangeDispatch": [
-            2311
+            2345
           ]
         }
       },
@@ -18257,7 +18233,7 @@
         "name": "ingredient.colossusShard",
         "customModelData": {
           "rangeDispatch": [
-            1781
+            1789
           ]
         }
       },
@@ -18311,7 +18287,7 @@
         "name": "ingredient.fieryAura",
         "customModelData": {
           "rangeDispatch": [
-            1904
+            1921
           ]
         }
       },
@@ -18365,7 +18341,7 @@
         "name": "ingredient.rockyMind",
         "customModelData": {
           "rangeDispatch": [
-            2265
+            2300
           ]
         }
       },
@@ -18419,7 +18395,7 @@
         "name": "ingredient.terraSteel",
         "customModelData": {
           "rangeDispatch": [
-            2426
+            2469
           ]
         }
       },
@@ -18474,7 +18450,7 @@
         "name": "ingredient.antlerFragment",
         "customModelData": {
           "rangeDispatch": [
-            1689
+            1694
           ]
         }
       },
@@ -18532,7 +18508,7 @@
         "name": "ingredient.charredCarapace",
         "customModelData": {
           "rangeDispatch": [
-            1765
+            1773
           ]
         }
       },
@@ -18586,7 +18562,7 @@
         "name": "ingredient.crystallineGrowth",
         "customModelData": {
           "rangeDispatch": [
-            1812
+            1825
           ]
         }
       },
@@ -18641,7 +18617,7 @@
         "name": "ingredient.hardenedMagma",
         "customModelData": {
           "rangeDispatch": [
-            1983
+            2005
           ]
         }
       },
@@ -18692,7 +18668,7 @@
         "name": "ingredient.hybridSkin",
         "customModelData": {
           "rangeDispatch": [
-            1999
+            2021
           ]
         }
       },
@@ -18746,7 +18722,7 @@
         "name": "ingredient.lostSpirit",
         "customModelData": {
           "rangeDispatch": [
-            2071
+            2096
           ]
         }
       },
@@ -18801,7 +18777,7 @@
         "name": "ingredient.mountainsHeart",
         "customModelData": {
           "rangeDispatch": [
-            2119
+            2148
           ]
         }
       },
@@ -18855,7 +18831,7 @@
         "name": "ingredient.splinteredGreathammer",
         "customModelData": {
           "rangeDispatch": [
-            2378
+            2419
           ]
         }
       },
@@ -18914,7 +18890,7 @@
         "name": "ingredient.elephelkTrunk",
         "customModelData": {
           "rangeDispatch": [
-            1872
+            1887
           ]
         }
       },
@@ -18972,7 +18948,7 @@
         "name": "ingredient.goldenAviaFeather",
         "customModelData": {
           "rangeDispatch": [
-            1961
+            1981
           ]
         }
       },
@@ -19018,7 +18994,7 @@
         "name": "ingredient.ivoryTusk",
         "customModelData": {
           "rangeDispatch": [
-            2035
+            2059
           ]
         }
       },
@@ -19036,8 +19012,8 @@
         "maximum": -310
       },
       "hprRaw": {
-        "minimum": 24,
-        "maximum": 32
+        "minimum": 34,
+        "maximum": 45
       }
     },
     "consumableIDs": {
@@ -19072,7 +19048,7 @@
         "name": "ingredient.razorSharpTooth",
         "customModelData": {
           "rangeDispatch": [
-            2238
+            2272
           ]
         }
       },
@@ -19127,7 +19103,7 @@
         "name": "ingredient.sliverOfSunrise",
         "customModelData": {
           "rangeDispatch": [
-            2340
+            2378
           ]
         }
       },
@@ -19186,7 +19162,7 @@
         "name": "ingredient.wateryAura",
         "customModelData": {
           "rangeDispatch": [
-            2483
+            2529
           ]
         }
       },
@@ -19240,7 +19216,7 @@
         "name": "ingredient.burningSoul",
         "customModelData": {
           "rangeDispatch": [
-            1748
+            1754
           ]
         }
       },
@@ -19295,7 +19271,7 @@
         "name": "ingredient.defectiveCircuits",
         "customModelData": {
           "rangeDispatch": [
-            1833
+            1846
           ]
         }
       },
@@ -19353,7 +19329,7 @@
         "name": "ingredient.elephantToenail",
         "customModelData": {
           "rangeDispatch": [
-            1871
+            1886
           ]
         }
       },
@@ -19403,7 +19379,7 @@
         "name": "ingredient.fancyPelt",
         "customModelData": {
           "rangeDispatch": [
-            1898
+            1915
           ]
         }
       },
@@ -19457,7 +19433,7 @@
         "name": "ingredient.magicalFire",
         "customModelData": {
           "rangeDispatch": [
-            2087
+            2112
           ]
         }
       },
@@ -19519,7 +19495,7 @@
         "name": "ingredient.magmaticSkin",
         "customModelData": {
           "rangeDispatch": [
-            2090
+            2115
           ]
         }
       },
@@ -19575,7 +19551,7 @@
         "name": "ingredient.oldExplosives",
         "customModelData": {
           "rangeDispatch": [
-            2148
+            2178
           ]
         }
       },
@@ -19630,7 +19606,7 @@
         "name": "ingredient.parasiticChitin",
         "customModelData": {
           "rangeDispatch": [
-            2167
+            2198
           ]
         }
       },
@@ -19689,7 +19665,7 @@
         "name": "ingredient.piercingTalons",
         "customModelData": {
           "rangeDispatch": [
-            2175
+            2206
           ]
         }
       },
@@ -19744,7 +19720,7 @@
         "name": "ingredient.piquantPorkFillet",
         "customModelData": {
           "rangeDispatch": [
-            2186
+            2217
           ]
         }
       },
@@ -19794,7 +19770,7 @@
         "name": "ingredient.protectiveFabric",
         "customModelData": {
           "rangeDispatch": [
-            2219
+            2251
           ]
         }
       },
@@ -19860,7 +19836,7 @@
         "name": "ingredient.robotAntenna",
         "customModelData": {
           "rangeDispatch": [
-            2264
+            2299
           ]
         }
       },
@@ -19910,7 +19886,7 @@
         "name": "ingredient.sharpClaw",
         "customModelData": {
           "rangeDispatch": [
-            2317
+            2354
           ]
         }
       },
@@ -19965,7 +19941,7 @@
         "name": "ingredient.succulentCrabMeat",
         "customModelData": {
           "rangeDispatch": [
-            2406
+            2448
           ]
         }
       },
@@ -20019,7 +19995,7 @@
         "name": "ingredient.tenderPorkFillet",
         "customModelData": {
           "rangeDispatch": [
-            2420
+            2463
           ]
         }
       },
@@ -20069,7 +20045,7 @@
         "name": "ingredient.tentacle",
         "customModelData": {
           "rangeDispatch": [
-            2423
+            2466
           ]
         }
       },
@@ -20123,7 +20099,7 @@
         "name": "ingredient.thornedTusk",
         "customModelData": {
           "rangeDispatch": [
-            2433
+            2476
           ]
         }
       },
@@ -20220,7 +20196,7 @@
         "name": "ingredient.earthlyAura",
         "customModelData": {
           "rangeDispatch": [
-            1866
+            1881
           ]
         }
       },
@@ -20274,7 +20250,7 @@
         "name": "ingredient.flameheart",
         "customModelData": {
           "rangeDispatch": [
-            1912
+            1929
           ]
         }
       },
@@ -20293,8 +20269,8 @@
         "maximum": 680
       },
       "hprRaw": {
-        "minimum": 65,
-        "maximum": 80
+        "minimum": 91,
+        "maximum": 112
       }
     },
     "consumableIDs": {
@@ -20329,7 +20305,7 @@
         "name": "ingredient.harpyWing",
         "customModelData": {
           "rangeDispatch": [
-            1987
+            2009
           ]
         }
       },
@@ -20384,7 +20360,7 @@
         "name": "ingredient.illusoryIdol",
         "customModelData": {
           "rangeDispatch": [
-            2019
+            2041
           ]
         }
       },
@@ -20442,7 +20418,7 @@
         "name": "ingredient.insulatedWiring",
         "customModelData": {
           "rangeDispatch": [
-            2029
+            2052
           ]
         }
       },
@@ -20500,7 +20476,7 @@
         "name": "ingredient.toughSkin",
         "customModelData": {
           "rangeDispatch": [
-            2441
+            2485
           ]
         }
       },
@@ -20555,7 +20531,7 @@
         "name": "ingredient.zealousIlluminator",
         "customModelData": {
           "rangeDispatch": [
-            2510
+            2558
           ]
         }
       },
@@ -20608,7 +20584,7 @@
         "name": "ingredient.altitudeShard",
         "customModelData": {
           "rangeDispatch": [
-            1675
+            1679
           ]
         }
       },
@@ -20666,7 +20642,7 @@
         "name": "ingredient.catTail",
         "customModelData": {
           "rangeDispatch": [
-            1759
+            1766
           ]
         }
       },
@@ -20716,7 +20692,7 @@
         "name": "ingredient.catsEars",
         "customModelData": {
           "rangeDispatch": [
-            1757
+            1764
           ]
         }
       },
@@ -20774,7 +20750,7 @@
         "name": "ingredient.cortrichEggs",
         "customModelData": {
           "rangeDispatch": [
-            1802
+            1813
           ]
         }
       },
@@ -20824,7 +20800,7 @@
         "name": "ingredient.engravedTablet",
         "customModelData": {
           "rangeDispatch": [
-            1876
+            1892
           ]
         }
       },
@@ -20879,7 +20855,7 @@
         "name": "ingredient.fluidLight",
         "customModelData": {
           "rangeDispatch": [
-            1920
+            1937
           ]
         }
       },
@@ -20934,7 +20910,7 @@
         "name": "ingredient.goblinTooth",
         "customModelData": {
           "rangeDispatch": [
-            1959
+            1979
           ]
         }
       },
@@ -20988,7 +20964,7 @@
         "name": "ingredient.helioWing",
         "customModelData": {
           "rangeDispatch": [
-            1989
+            2011
           ]
         }
       },
@@ -21047,7 +21023,7 @@
         "name": "ingredient.marbleStatuette",
         "customModelData": {
           "rangeDispatch": [
-            2100
+            2127
           ]
         }
       },
@@ -21105,7 +21081,7 @@
         "name": "ingredient.megaFern",
         "customModelData": {
           "rangeDispatch": [
-            2108
+            2135
           ]
         }
       },
@@ -21124,8 +21100,8 @@
         "maximum": 425
       },
       "hprRaw": {
-        "minimum": 60,
-        "maximum": 65
+        "minimum": 84,
+        "maximum": 91
       },
       "sdRaw": {
         "minimum": 30,
@@ -21168,7 +21144,7 @@
         "name": "ingredient.noseRing",
         "customModelData": {
           "rangeDispatch": [
-            2138
+            2168
           ]
         }
       },
@@ -21222,7 +21198,7 @@
         "name": "ingredient.parasiticAbscission",
         "customModelData": {
           "rangeDispatch": [
-            2166
+            2197
           ]
         }
       },
@@ -21273,7 +21249,7 @@
         "name": "ingredient.pluckedFeather",
         "customModelData": {
           "rangeDispatch": [
-            2193
+            2224
           ]
         }
       },
@@ -21328,7 +21304,7 @@
         "name": "ingredient.rockHardBeak",
         "customModelData": {
           "rangeDispatch": [
-            2267
+            2302
           ]
         }
       },
@@ -21383,7 +21359,7 @@
         "name": "ingredient.shatteredBlade",
         "customModelData": {
           "rangeDispatch": [
-            2319
+            2356
           ]
         }
       },
@@ -21433,7 +21409,7 @@
         "name": "ingredient.shinyPebble",
         "customModelData": {
           "rangeDispatch": [
-            2328
+            2365
           ]
         }
       },
@@ -21487,7 +21463,7 @@
         "name": "ingredient.stolenGoods",
         "customModelData": {
           "rangeDispatch": [
-            2392
+            2433
           ]
         }
       },
@@ -21542,7 +21518,7 @@
         "name": "ingredient.suspiciousShrubs",
         "customModelData": {
           "rangeDispatch": [
-            2411
+            2453
           ]
         }
       },
@@ -21600,7 +21576,7 @@
         "name": "ingredient.agedTome",
         "customModelData": {
           "rangeDispatch": [
-            1668
+            1672
           ]
         }
       },
@@ -21655,7 +21631,7 @@
         "name": "ingredient.cloudtwine",
         "customModelData": {
           "rangeDispatch": [
-            1775
+            1783
           ]
         }
       },
@@ -21714,7 +21690,7 @@
         "name": "ingredient.platinumIngot",
         "customModelData": {
           "rangeDispatch": [
-            2192
+            2223
           ]
         }
       },
@@ -21769,7 +21745,7 @@
         "name": "ingredient.harpyBone",
         "customModelData": {
           "rangeDispatch": [
-            1986
+            2008
           ]
         }
       },
@@ -21820,7 +21796,7 @@
         "name": "ingredient.stonePlating",
         "customModelData": {
           "rangeDispatch": [
-            2397
+            2439
           ]
         }
       },
@@ -21875,7 +21851,7 @@
         "name": "ingredient.windyAura",
         "customModelData": {
           "rangeDispatch": [
-            2490
+            2536
           ]
         }
       },
@@ -21929,7 +21905,7 @@
         "name": "ingredient.agulloBeak",
         "customModelData": {
           "rangeDispatch": [
-            1669
+            1673
           ]
         }
       },
@@ -21983,7 +21959,7 @@
         "name": "ingredient.corbysInnards",
         "customModelData": {
           "rangeDispatch": [
-            1793
+            1804
           ]
         }
       },
@@ -21997,8 +21973,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 15,
-        "maximum": 20
+        "minimum": 21,
+        "maximum": 28
       }
     },
     "consumableIDs": {
@@ -22033,7 +22009,7 @@
         "name": "ingredient.jeNeSaisQuoi",
         "customModelData": {
           "rangeDispatch": [
-            2039
+            2063
           ]
         }
       },
@@ -22087,7 +22063,7 @@
         "name": "ingredient.lockpickingKit",
         "customModelData": {
           "rangeDispatch": [
-            2068
+            2092
           ]
         }
       },
@@ -22142,7 +22118,7 @@
         "name": "ingredient.memoryDye",
         "customModelData": {
           "rangeDispatch": [
-            2110
+            2137
           ]
         }
       },
@@ -22204,7 +22180,7 @@
         "name": "ingredient.poorlyMadePouch",
         "customModelData": {
           "rangeDispatch": [
-            2200
+            2231
           ]
         }
       },
@@ -22316,7 +22292,7 @@
         "name": "ingredient.rootsOfEternity",
         "customModelData": {
           "rangeDispatch": [
-            2268
+            2303
           ]
         }
       },
@@ -22370,7 +22346,7 @@
         "name": "ingredient.azureBlossom",
         "customModelData": {
           "rangeDispatch": [
-            1700
+            1705
           ]
         }
       },
@@ -22424,7 +22400,7 @@
         "name": "ingredient.ballOfSlime",
         "customModelData": {
           "rangeDispatch": [
-            1701
+            1706
           ]
         }
       },
@@ -22479,7 +22455,7 @@
         "name": "ingredient.bamboo",
         "customModelData": {
           "rangeDispatch": [
-            1702
+            1707
           ]
         }
       },
@@ -22536,7 +22512,7 @@
         "name": "ingredient.chromaticBloom",
         "customModelData": {
           "rangeDispatch": [
-            1770
+            1778
           ]
         }
       },
@@ -22610,7 +22586,7 @@
         "name": "ingredient.coagulatedBloodGelatin",
         "customModelData": {
           "rangeDispatch": [
-            1776
+            1784
           ]
         }
       },
@@ -22665,7 +22641,7 @@
         "name": "ingredient.congealedSlime",
         "customModelData": {
           "rangeDispatch": [
-            1787
+            1797
           ]
         }
       },
@@ -22719,7 +22695,7 @@
         "name": "ingredient.diseasedFluids",
         "customModelData": {
           "rangeDispatch": [
-            1850
+            1865
           ]
         }
       },
@@ -22774,7 +22750,7 @@
         "name": "ingredient.energeticAura",
         "customModelData": {
           "rangeDispatch": [
-            1875
+            1891
           ]
         }
       },
@@ -22828,7 +22804,7 @@
         "name": "ingredient.lotusSeedpod",
         "customModelData": {
           "rangeDispatch": [
-            2073
+            2098
           ]
         }
       },
@@ -22848,8 +22824,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": -20,
-        "maximum": -15
+        "minimum": -28,
+        "maximum": -21
       }
     },
     "consumableIDs": {
@@ -22884,7 +22860,7 @@
         "name": "ingredient.magicFeather",
         "customModelData": {
           "rangeDispatch": [
-            2089
+            2114
           ]
         }
       },
@@ -22898,8 +22874,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 20,
-        "maximum": 24
+        "minimum": 28,
+        "maximum": 34
       }
     },
     "consumableIDs": {
@@ -22934,7 +22910,7 @@
         "name": "ingredient.majorsBadge",
         "customModelData": {
           "rangeDispatch": [
-            2092
+            2117
           ]
         }
       },
@@ -22984,7 +22960,7 @@
         "name": "ingredient.spreadingFireweed",
         "customModelData": {
           "rangeDispatch": [
-            2380
+            2421
           ]
         }
       },
@@ -23042,7 +23018,7 @@
         "name": "ingredient.transformativity",
         "customModelData": {
           "rangeDispatch": [
-            2445
+            2489
           ]
         }
       },
@@ -23087,7 +23063,7 @@
         "name": "ingredient.volatileLight",
         "customModelData": {
           "rangeDispatch": [
-            2474
+            2520
           ]
         }
       },
@@ -23158,7 +23134,7 @@
         "name": "ingredient.giantPetal",
         "customModelData": {
           "rangeDispatch": [
-            1946
+            1964
           ]
         }
       },
@@ -23214,7 +23190,7 @@
         "name": "ingredient.ritualCatalyst",
         "customModelData": {
           "rangeDispatch": [
-            2261
+            2296
           ]
         }
       },
@@ -23278,7 +23254,7 @@
         "name": "ingredient.adaptiveTissue",
         "customModelData": {
           "rangeDispatch": [
-            1665
+            1669
           ]
         }
       },
@@ -23332,7 +23308,7 @@
         "name": "ingredient.ancientMoss",
         "customModelData": {
           "rangeDispatch": [
-            1682
+            1686
           ]
         }
       },
@@ -23388,7 +23364,7 @@
         "name": "ingredient.antiqueMetal",
         "customModelData": {
           "rangeDispatch": [
-            1688
+            1693
           ]
         }
       },
@@ -23443,7 +23419,7 @@
         "name": "ingredient.braveheart",
         "customModelData": {
           "rangeDispatch": [
-            1734
+            1740
           ]
         }
       },
@@ -23462,8 +23438,8 @@
         "maximum": 15
       },
       "hprRaw": {
-        "minimum": 50,
-        "maximum": 55
+        "minimum": 70,
+        "maximum": 77
       }
     },
     "consumableIDs": {
@@ -23498,7 +23474,7 @@
         "name": "ingredient.cherrySapling",
         "customModelData": {
           "rangeDispatch": [
-            1767
+            1775
           ]
         }
       },
@@ -23552,7 +23528,7 @@
         "name": "ingredient.depthsGem",
         "customModelData": {
           "rangeDispatch": [
-            1841
+            1856
           ]
         }
       },
@@ -23607,7 +23583,7 @@
         "name": "ingredient.ethericFern",
         "customModelData": {
           "rangeDispatch": [
-            1887
+            1903
           ]
         }
       },
@@ -23652,7 +23628,7 @@
         "name": "ingredient.gertSkin",
         "customModelData": {
           "rangeDispatch": [
-            1942
+            1959
           ]
         }
       },
@@ -23702,7 +23678,7 @@
         "name": "ingredient.huntersDisguise",
         "customModelData": {
           "rangeDispatch": [
-            1998
+            2020
           ]
         }
       },
@@ -23752,7 +23728,7 @@
         "name": "ingredient.pigsRemains",
         "customModelData": {
           "rangeDispatch": [
-            2179
+            2210
           ]
         }
       },
@@ -23766,8 +23742,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 15,
-        "maximum": 18
+        "minimum": 21,
+        "maximum": 25
       }
     },
     "consumableIDs": {
@@ -23844,7 +23820,7 @@
         "name": "ingredient.primordialSoul",
         "customModelData": {
           "rangeDispatch": [
-            2213
+            2245
           ]
         }
       },
@@ -23890,7 +23866,7 @@
         "name": "ingredient.regenerativePins",
         "customModelData": {
           "rangeDispatch": [
-            2245
+            2279
           ]
         }
       },
@@ -23946,7 +23922,7 @@
         "name": "ingredient.resilientStone",
         "customModelData": {
           "rangeDispatch": [
-            2255
+            2290
           ]
         }
       },
@@ -24000,7 +23976,7 @@
         "name": "ingredient.slimySkin",
         "customModelData": {
           "rangeDispatch": [
-            2339
+            2376
           ]
         }
       },
@@ -24058,7 +24034,7 @@
         "name": "ingredient.alginateDressing",
         "customModelData": {
           "rangeDispatch": [
-            1672
+            1676
           ]
         }
       },
@@ -24112,7 +24088,7 @@
         "name": "ingredient.blessedHeart",
         "customModelData": {
           "rangeDispatch": [
-            1721
+            1726
           ]
         }
       },
@@ -24212,7 +24188,7 @@
         "name": "ingredient.durableSkin",
         "customModelData": {
           "rangeDispatch": [
-            1864
+            1879
           ]
         }
       },
@@ -24322,7 +24298,7 @@
         "name": "ingredient.evolvingSpores",
         "customModelData": {
           "rangeDispatch": [
-            1888
+            1905
           ]
         }
       },
@@ -24396,7 +24372,7 @@
         "name": "ingredient.flytrapFangs",
         "customModelData": {
           "rangeDispatch": [
-            1921
+            1938
           ]
         }
       },
@@ -24450,7 +24426,7 @@
         "name": "ingredient.gyliaEssence",
         "customModelData": {
           "rangeDispatch": [
-            1979
+            2001
           ]
         }
       },
@@ -24508,7 +24484,7 @@
         "name": "ingredient.larvaeCluster",
         "customModelData": {
           "rangeDispatch": [
-            2049
+            2073
           ]
         }
       },
@@ -24562,7 +24538,7 @@
         "name": "ingredient.organicExplosive",
         "customModelData": {
           "rangeDispatch": [
-            2157
+            2187
           ]
         }
       },
@@ -24617,7 +24593,7 @@
         "name": "ingredient.pigsBlood",
         "customModelData": {
           "rangeDispatch": [
-            2178
+            2209
           ]
         }
       },
@@ -24667,7 +24643,7 @@
         "name": "ingredient.pureRainStone",
         "customModelData": {
           "rangeDispatch": [
-            2223
+            2255
           ]
         }
       },
@@ -24717,7 +24693,7 @@
         "name": "ingredient.worldIlluminator",
         "customModelData": {
           "rangeDispatch": [
-            2500
+            2547
           ]
         }
       },
@@ -24772,7 +24748,7 @@
         "name": "ingredient.accursedEffigy",
         "customModelData": {
           "rangeDispatch": [
-            1657
+            1661
           ]
         }
       },
@@ -24831,7 +24807,7 @@
         "name": "ingredient.astralAlloy",
         "customModelData": {
           "rangeDispatch": [
-            1699
+            1704
           ]
         }
       },
@@ -24939,7 +24915,7 @@
         "name": "ingredient.luminousRune",
         "customModelData": {
           "rangeDispatch": [
-            2078
+            2103
           ]
         }
       },
@@ -25101,8 +25077,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": -65,
-        "maximum": -65
+        "minimum": -91,
+        "maximum": -91
       },
       "mdPct": {
         "minimum": 15,
@@ -25141,7 +25117,7 @@
         "name": "ingredient.royalBugsBlood",
         "customModelData": {
           "rangeDispatch": [
-            2277
+            2312
           ]
         }
       },
@@ -25251,7 +25227,7 @@
         "name": "ingredient.soggyStone",
         "customModelData": {
           "rangeDispatch": [
-            2358
+            2397
           ]
         }
       },
@@ -25306,7 +25282,7 @@
         "name": "ingredient.arcaneAnomaly",
         "customModelData": {
           "rangeDispatch": [
-            1693
+            1698
           ]
         }
       },
@@ -25429,8 +25405,8 @@
         "maximum": 8
       },
       "hprRaw": {
-        "minimum": 70,
-        "maximum": 70
+        "minimum": 98,
+        "maximum": 98
       },
       "mdRaw": {
         "minimum": -80,
@@ -25469,7 +25445,7 @@
         "name": "ingredient.fishScales",
         "customModelData": {
           "rangeDispatch": [
-            1909
+            1926
           ]
         }
       },
@@ -25523,7 +25499,7 @@
         "name": "ingredient.hatchlingRemnant",
         "customModelData": {
           "rangeDispatch": [
-            1988
+            2010
           ]
         }
       },
@@ -25578,7 +25554,7 @@
         "name": "ingredient.iceberries",
         "customModelData": {
           "rangeDispatch": [
-            2002
+            2024
           ]
         }
       },
@@ -25683,7 +25659,7 @@
         "name": "ingredient.illuminatedSpirit",
         "customModelData": {
           "rangeDispatch": [
-            2018
+            2040
           ]
         }
       },
@@ -25737,7 +25713,7 @@
         "name": "ingredient.magiculeSample",
         "customModelData": {
           "rangeDispatch": [
-            2088
+            2113
           ]
         }
       },
@@ -25795,7 +25771,7 @@
         "name": "ingredient.sentientWater",
         "customModelData": {
           "rangeDispatch": [
-            2308
+            2343
           ]
         }
       },
@@ -25849,7 +25825,7 @@
         "name": "ingredient.unholyWater",
         "customModelData": {
           "rangeDispatch": [
-            2458
+            2502
           ]
         }
       },
@@ -25904,7 +25880,7 @@
         "name": "ingredient.unicornHorn",
         "customModelData": {
           "rangeDispatch": [
-            2459
+            2503
           ]
         }
       },
@@ -26006,7 +25982,7 @@
         "name": "ingredient.woodScrap",
         "customModelData": {
           "rangeDispatch": [
-            2495
+            2542
           ]
         }
       },
@@ -26057,7 +26033,7 @@
         "name": "ingredient.gildedBark",
         "customModelData": {
           "rangeDispatch": [
-            1948
+            1967
           ]
         }
       },
@@ -26079,8 +26055,8 @@
         "maximum": 14
       },
       "hprRaw": {
-        "minimum": 30,
-        "maximum": 50
+        "minimum": 42,
+        "maximum": 70
       }
     },
     "consumableIDs": {
@@ -26115,7 +26091,7 @@
         "name": "ingredient.goldenCoin",
         "customModelData": {
           "rangeDispatch": [
-            1962
+            1982
           ]
         }
       },
@@ -26170,7 +26146,7 @@
         "name": "ingredient.gollierIron",
         "customModelData": {
           "rangeDispatch": [
-            1966
+            1986
           ]
         }
       },
@@ -26225,7 +26201,7 @@
         "name": "ingredient.radiantSeeds",
         "customModelData": {
           "rangeDispatch": [
-            2233
+            2265
           ]
         }
       },
@@ -26283,7 +26259,7 @@
         "name": "ingredient.shadowOfRuin",
         "customModelData": {
           "rangeDispatch": [
-            2314
+            2350
           ]
         }
       },
@@ -26297,8 +26273,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": -42,
-        "maximum": -35
+        "minimum": -59,
+        "maximum": -49
       },
       "mdPct": {
         "minimum": 12,
@@ -26337,7 +26313,7 @@
         "name": "ingredient.brightPetal",
         "customModelData": {
           "rangeDispatch": [
-            1735
+            1741
           ]
         }
       },
@@ -26391,7 +26367,7 @@
         "name": "ingredient.brokenDagger",
         "customModelData": {
           "rangeDispatch": [
-            1738
+            1744
           ]
         }
       },
@@ -26441,7 +26417,7 @@
         "name": "ingredient.ivySprout",
         "customModelData": {
           "rangeDispatch": [
-            2036
+            2060
           ]
         }
       },
@@ -26499,7 +26475,7 @@
         "name": "ingredient.luxicPlasma",
         "customModelData": {
           "rangeDispatch": [
-            2084
+            2109
           ]
         }
       },
@@ -26558,7 +26534,7 @@
         "name": "ingredient.novaBloom",
         "customModelData": {
           "rangeDispatch": [
-            2139
+            2169
           ]
         }
       },
@@ -26617,7 +26593,7 @@
         "name": "ingredient.pricklyGrass",
         "customModelData": {
           "rangeDispatch": [
-            2210
+            2242
           ]
         }
       },
@@ -26668,7 +26644,7 @@
         "name": "ingredient.purestTear",
         "customModelData": {
           "rangeDispatch": [
-            2221
+            2253
           ]
         }
       },
@@ -26718,7 +26694,7 @@
         "name": "ingredient.smokeBomb",
         "customModelData": {
           "rangeDispatch": [
-            2342
+            2381
           ]
         }
       },
@@ -26776,7 +26752,7 @@
         "name": "ingredient.stackOfCoins",
         "customModelData": {
           "rangeDispatch": [
-            2384
+            2425
           ]
         }
       },
@@ -26830,7 +26806,7 @@
         "name": "ingredient.beastialViscera",
         "customModelData": {
           "rangeDispatch": [
-            1708
+            1713
           ]
         }
       },
@@ -26884,7 +26860,7 @@
         "name": "ingredient.conflagrite",
         "customModelData": {
           "rangeDispatch": [
-            1786
+            1796
           ]
         }
       },
@@ -26939,7 +26915,7 @@
         "name": "ingredient.fairyDust",
         "customModelData": {
           "rangeDispatch": [
-            1895
+            1912
           ]
         }
       },
@@ -26989,7 +26965,7 @@
         "name": "ingredient.generatorChip",
         "customModelData": {
           "rangeDispatch": [
-            1941
+            1958
           ]
         }
       },
@@ -27044,7 +27020,7 @@
         "name": "ingredient.glowingScales",
         "customModelData": {
           "rangeDispatch": [
-            1956
+            1976
           ]
         }
       },
@@ -27098,7 +27074,7 @@
         "name": "ingredient.prismaticSpores",
         "customModelData": {
           "rangeDispatch": [
-            2214
+            2246
           ]
         }
       },
@@ -27152,7 +27128,7 @@
         "name": "ingredient.recluseVenomSac",
         "customModelData": {
           "rangeDispatch": [
-            2239
+            2273
           ]
         }
       },
@@ -27203,7 +27179,7 @@
         "name": "ingredient.shiningWool",
         "customModelData": {
           "rangeDispatch": [
-            2325
+            2362
           ]
         }
       },
@@ -27270,7 +27246,7 @@
         "name": "ingredient.werewolfTail",
         "customModelData": {
           "rangeDispatch": [
-            2488
+            2534
           ]
         }
       },
@@ -27325,7 +27301,7 @@
         "name": "ingredient.foulFluid",
         "customModelData": {
           "rangeDispatch": [
-            1927
+            1944
           ]
         }
       },
@@ -27344,8 +27320,8 @@
         "maximum": 1380
       },
       "hprRaw": {
-        "minimum": -36,
-        "maximum": -24
+        "minimum": -50,
+        "maximum": -34
       }
     },
     "consumableIDs": {
@@ -27380,7 +27356,7 @@
         "name": "ingredient.lostTalisman",
         "customModelData": {
           "rangeDispatch": [
-            2072
+            2097
           ]
         }
       },
@@ -27436,7 +27412,7 @@
         "name": "ingredient.myconidSpores",
         "customModelData": {
           "rangeDispatch": [
-            2125
+            2155
           ]
         }
       },
@@ -27502,7 +27478,7 @@
         "name": "ingredient.brokenAmulet",
         "customModelData": {
           "rangeDispatch": [
-            1736
+            1742
           ]
         }
       },
@@ -27613,7 +27589,7 @@
         "name": "ingredient.freshGame",
         "customModelData": {
           "rangeDispatch": [
-            1931
+            1948
           ]
         }
       },
@@ -27663,7 +27639,7 @@
         "name": "ingredient.ghostlyMembrane",
         "customModelData": {
           "rangeDispatch": [
-            1944
+            1961
           ]
         }
       },
@@ -27714,7 +27690,7 @@
         "name": "ingredient.ironwoodChips",
         "customModelData": {
           "rangeDispatch": [
-            2033
+            2057
           ]
         }
       },
@@ -27731,8 +27707,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 80,
-        "maximum": 90
+        "minimum": 112,
+        "maximum": 126
       },
       "atkTier": {
         "minimum": -1,
@@ -27775,7 +27751,7 @@
         "name": "ingredient.largeTitaniumChunk",
         "customModelData": {
           "rangeDispatch": [
-            2048
+            2072
           ]
         }
       },
@@ -27934,7 +27910,7 @@
         "name": "ingredient.pearlescentJewel",
         "customModelData": {
           "rangeDispatch": [
-            2169
+            2200
           ]
         }
       },
@@ -27988,7 +27964,7 @@
         "name": "ingredient.pristineClaw",
         "customModelData": {
           "rangeDispatch": [
-            2215
+            2247
           ]
         }
       },
@@ -28042,7 +28018,7 @@
         "name": "ingredient.rancidFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2235
+            2267
           ]
         }
       },
@@ -28093,7 +28069,7 @@
         "name": "ingredient.subsumingDarkness",
         "customModelData": {
           "rangeDispatch": [
-            2405
+            2447
           ]
         }
       },
@@ -28148,7 +28124,7 @@
         "name": "ingredient.titaniumChunk",
         "customModelData": {
           "rangeDispatch": [
-            2436
+            2480
           ]
         }
       },
@@ -28203,7 +28179,7 @@
         "name": "ingredient.wrigglingDarkness",
         "customModelData": {
           "rangeDispatch": [
-            2504
+            2552
           ]
         }
       },
@@ -28258,7 +28234,7 @@
         "name": "ingredient.severedHeart",
         "customModelData": {
           "rangeDispatch": [
-            2312
+            2348
           ]
         }
       },
@@ -28276,8 +28252,8 @@
         "maximum": 20
       },
       "hprRaw": {
-        "minimum": -20,
-        "maximum": -15
+        "minimum": -28,
+        "maximum": -21
       }
     },
     "consumableIDs": {
@@ -28362,7 +28338,7 @@
         "name": "ingredient.irisdescentElytra",
         "customModelData": {
           "rangeDispatch": [
-            2032
+            2056
           ]
         }
       },
@@ -28422,7 +28398,7 @@
         "name": "ingredient.leafyStalk",
         "customModelData": {
           "rangeDispatch": [
-            2053
+            2077
           ]
         }
       },
@@ -28438,8 +28414,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 5,
-        "maximum": 15
+        "minimum": 7,
+        "maximum": 21
       }
     },
     "consumableIDs": {
@@ -28517,7 +28493,7 @@
         "name": "ingredient.ignitedFaebloom",
         "customModelData": {
           "rangeDispatch": [
-            2012
+            2034
           ]
         }
       },
@@ -28589,7 +28565,7 @@
         "name": "ingredient.phrumkinSeeds",
         "customModelData": {
           "rangeDispatch": [
-            2174
+            2205
           ]
         }
       },
@@ -28643,7 +28619,7 @@
         "name": "ingredient.shatteredDawnlight",
         "customModelData": {
           "rangeDispatch": [
-            2320
+            2357
           ]
         }
       },
@@ -28705,7 +28681,7 @@
         "name": "ingredient.curseGland",
         "customModelData": {
           "rangeDispatch": [
-            1819
+            1832
           ]
         }
       },
@@ -28797,7 +28773,7 @@
         "name": "ingredient.kerasotSporehead",
         "customModelData": {
           "rangeDispatch": [
-            2044
+            2068
           ]
         }
       },
@@ -28855,7 +28831,7 @@
         "name": "ingredient.leopardBlood",
         "customModelData": {
           "rangeDispatch": [
-            2056
+            2080
           ]
         }
       },
@@ -28909,7 +28885,7 @@
         "name": "ingredient.mahoganyHeartwood",
         "customModelData": {
           "rangeDispatch": [
-            2091
+            2116
           ]
         }
       },
@@ -28968,7 +28944,7 @@
         "name": "ingredient.snakeSkin",
         "customModelData": {
           "rangeDispatch": [
-            2346
+            2385
           ]
         }
       },
@@ -29026,7 +29002,7 @@
         "name": "ingredient.cocoaCaps",
         "customModelData": {
           "rangeDispatch": [
-            1780
+            1788
           ]
         }
       },
@@ -29077,7 +29053,7 @@
         "name": "ingredient.cursedAshes",
         "customModelData": {
           "rangeDispatch": [
-            1816
+            1829
           ]
         }
       },
@@ -29127,7 +29103,7 @@
         "name": "ingredient.faebloomPetal",
         "customModelData": {
           "rangeDispatch": [
-            1894
+            1911
           ]
         }
       },
@@ -29228,7 +29204,7 @@
         "name": "ingredient.ironwoodScale",
         "customModelData": {
           "rangeDispatch": [
-            2034
+            2058
           ]
         }
       },
@@ -29286,7 +29262,7 @@
         "name": "ingredient.nastyResidue",
         "customModelData": {
           "rangeDispatch": [
-            2130
+            2160
           ]
         }
       },
@@ -29340,7 +29316,7 @@
         "name": "ingredient.sanctifiedSheepSoul",
         "customModelData": {
           "rangeDispatch": [
-            2287
+            2322
           ]
         }
       },
@@ -29402,7 +29378,7 @@
         "name": "ingredient.sugarStick",
         "customModelData": {
           "rangeDispatch": [
-            2407
+            2449
           ]
         }
       },
@@ -29453,7 +29429,7 @@
         "name": "ingredient.tenebrousPlasma",
         "customModelData": {
           "rangeDispatch": [
-            2422
+            2465
           ]
         }
       },
@@ -29511,7 +29487,7 @@
         "name": "ingredient.thermalReplication",
         "customModelData": {
           "rangeDispatch": [
-            2428
+            2471
           ]
         }
       },
@@ -29566,7 +29542,7 @@
         "name": "ingredient.tribalTome",
         "customModelData": {
           "rangeDispatch": [
-            2446
+            2490
           ]
         }
       },
@@ -29624,7 +29600,7 @@
         "name": "ingredient.wybelTaffy",
         "customModelData": {
           "rangeDispatch": [
-            2507
+            2555
           ]
         }
       },
@@ -29675,7 +29651,7 @@
         "name": "ingredient.ancientMetal",
         "customModelData": {
           "rangeDispatch": [
-            1681
+            1685
           ]
         }
       },
@@ -29727,7 +29703,7 @@
         "name": "ingredient.chitinPlate",
         "customModelData": {
           "rangeDispatch": [
-            1769
+            1777
           ]
         }
       },
@@ -29784,7 +29760,7 @@
         "name": "ingredient.defiledLuxroot",
         "customModelData": {
           "rangeDispatch": [
-            1835
+            1848
           ]
         }
       },
@@ -29839,7 +29815,7 @@
         "name": "ingredient.essenceOfDusk",
         "customModelData": {
           "rangeDispatch": [
-            1885
+            1901
           ]
         }
       },
@@ -29894,7 +29870,7 @@
         "name": "ingredient.luxrootCuttings",
         "customModelData": {
           "rangeDispatch": [
-            2085
+            2110
           ]
         }
       },
@@ -29949,7 +29925,7 @@
         "name": "ingredient.ruinsShard",
         "customModelData": {
           "rangeDispatch": [
-            2278
+            2313
           ]
         }
       },
@@ -30007,7 +29983,7 @@
         "name": "ingredient.soulAmalgamate",
         "customModelData": {
           "rangeDispatch": [
-            2364
+            2404
           ]
         }
       },
@@ -30069,7 +30045,7 @@
         "name": "ingredient.windsweptRoots",
         "customModelData": {
           "rangeDispatch": [
-            2489
+            2535
           ]
         }
       },
@@ -30128,7 +30104,7 @@
         "name": "ingredient.brokenFiddle",
         "customModelData": {
           "rangeDispatch": [
-            1739
+            1745
           ]
         }
       },
@@ -30186,7 +30162,7 @@
         "name": "ingredient.devilishDelight",
         "customModelData": {
           "rangeDispatch": [
-            1847
+            1862
           ]
         }
       },
@@ -30240,7 +30216,7 @@
         "name": "ingredient.hellishCinders",
         "customModelData": {
           "rangeDispatch": [
-            1990
+            2012
           ]
         }
       },
@@ -30299,7 +30275,7 @@
         "name": "ingredient.lashingHellfire",
         "customModelData": {
           "rangeDispatch": [
-            2051
+            2075
           ]
         }
       },
@@ -30345,7 +30321,7 @@
         "name": "ingredient.lithoflesh",
         "customModelData": {
           "rangeDispatch": [
-            2064
+            2088
           ]
         }
       },
@@ -30395,7 +30371,7 @@
         "name": "ingredient.maroferrous",
         "customModelData": {
           "rangeDispatch": [
-            2101
+            2128
           ]
         }
       },
@@ -30450,7 +30426,7 @@
         "name": "ingredient.maromagnetite",
         "customModelData": {
           "rangeDispatch": [
-            2102
+            2129
           ]
         }
       },
@@ -30549,7 +30525,7 @@
         "name": "ingredient.navalShard",
         "customModelData": {
           "rangeDispatch": [
-            2132
+            2162
           ]
         }
       },
@@ -30603,7 +30579,7 @@
         "name": "ingredient.navalStone",
         "customModelData": {
           "rangeDispatch": [
-            2133
+            2163
           ]
         }
       },
@@ -30657,7 +30633,7 @@
         "name": "ingredient.orcSkin",
         "customModelData": {
           "rangeDispatch": [
-            2155
+            2185
           ]
         }
       },
@@ -30712,7 +30688,7 @@
         "name": "ingredient.strangeTrinket",
         "customModelData": {
           "rangeDispatch": [
-            2400
+            2442
           ]
         }
       },
@@ -30779,7 +30755,7 @@
         "name": "ingredient.tangyNectar",
         "customModelData": {
           "rangeDispatch": [
-            2416
+            2458
           ]
         }
       },
@@ -30837,7 +30813,7 @@
         "name": "ingredient.tungstenChunk",
         "customModelData": {
           "rangeDispatch": [
-            2450
+            2494
           ]
         }
       },
@@ -30891,7 +30867,7 @@
         "name": "ingredient.ancientSpringWater",
         "customModelData": {
           "rangeDispatch": [
-            1684
+            1689
           ]
         }
       },
@@ -30938,7 +30914,7 @@
         "name": "ingredient.blackSteel",
         "customModelData": {
           "rangeDispatch": [
-            1716
+            1721
           ]
         }
       },
@@ -30989,7 +30965,7 @@
         "name": "ingredient.felineClaws",
         "customModelData": {
           "rangeDispatch": [
-            1902
+            1919
           ]
         }
       },
@@ -31043,7 +31019,7 @@
         "name": "ingredient.putridSpores",
         "customModelData": {
           "rangeDispatch": [
-            2225
+            2257
           ]
         }
       },
@@ -31093,7 +31069,7 @@
         "name": "ingredient.scuttlingSyenite",
         "customModelData": {
           "rangeDispatch": [
-            2297
+            2332
           ]
         }
       },
@@ -31111,8 +31087,8 @@
         "maximum": 20
       },
       "hprRaw": {
-        "minimum": 15,
-        "maximum": 18
+        "minimum": 21,
+        "maximum": 25
       }
     },
     "consumableIDs": {
@@ -31147,7 +31123,7 @@
         "name": "ingredient.softSilk",
         "customModelData": {
           "rangeDispatch": [
-            2355
+            2394
           ]
         }
       },
@@ -31202,7 +31178,7 @@
         "name": "ingredient.soulcrystalHorn",
         "customModelData": {
           "rangeDispatch": [
-            2362
+            2402
           ]
         }
       },
@@ -31260,7 +31236,7 @@
         "name": "ingredient.spectralSpike",
         "customModelData": {
           "rangeDispatch": [
-            2369
+            2409
           ]
         }
       },
@@ -31314,7 +31290,7 @@
         "name": "ingredient.terramarineDust",
         "customModelData": {
           "rangeDispatch": [
-            2425
+            2468
           ]
         }
       },
@@ -31369,7 +31345,7 @@
         "name": "ingredient.unholySpirit",
         "customModelData": {
           "rangeDispatch": [
-            2457
+            2501
           ]
         }
       },
@@ -31420,7 +31396,7 @@
         "name": "ingredient.freshBone",
         "customModelData": {
           "rangeDispatch": [
-            1930
+            1947
           ]
         }
       },
@@ -31475,7 +31451,7 @@
         "name": "ingredient.lootedAlloy",
         "customModelData": {
           "rangeDispatch": [
-            2069
+            2094
           ]
         }
       },
@@ -31529,7 +31505,7 @@
         "name": "ingredient.overgrownBones",
         "customModelData": {
           "rangeDispatch": [
-            2161
+            2192
           ]
         }
       },
@@ -31544,8 +31520,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 8,
-        "maximum": 12
+        "minimum": 11,
+        "maximum": 17
       }
     },
     "consumableIDs": {
@@ -31580,7 +31556,7 @@
         "name": "ingredient.pilferedSilver",
         "customModelData": {
           "rangeDispatch": [
-            2180
+            2211
           ]
         }
       },
@@ -31635,7 +31611,7 @@
         "name": "ingredient.acidicSolution",
         "customModelData": {
           "rangeDispatch": [
-            1660
+            1664
           ]
         }
       },
@@ -31686,7 +31662,7 @@
         "name": "ingredient.adventurersDiary",
         "customModelData": {
           "rangeDispatch": [
-            1666
+            1670
           ]
         }
       },
@@ -31736,7 +31712,7 @@
         "name": "ingredient.alga",
         "customModelData": {
           "rangeDispatch": [
-            1670
+            1674
           ]
         }
       },
@@ -31790,7 +31766,7 @@
         "name": "ingredient.aquaVitae",
         "customModelData": {
           "rangeDispatch": [
-            1692
+            1697
           ]
         }
       },
@@ -31840,7 +31816,7 @@
         "name": "ingredient.aquaticBeauty",
         "customModelData": {
           "rangeDispatch": [
-            1691
+            1696
           ]
         }
       },
@@ -31906,7 +31882,7 @@
         "name": "ingredient.bigJawbreaker",
         "customModelData": {
           "rangeDispatch": [
-            1711
+            1716
           ]
         }
       },
@@ -31957,7 +31933,7 @@
         "name": "ingredient.candyButton",
         "customModelData": {
           "rangeDispatch": [
-            1751
+            1758
           ]
         }
       },
@@ -32008,7 +31984,7 @@
         "name": "ingredient.climbersPadding",
         "customModelData": {
           "rangeDispatch": [
-            1774
+            1782
           ]
         }
       },
@@ -32063,7 +32039,7 @@
         "name": "ingredient.consecratedIvory",
         "customModelData": {
           "rangeDispatch": [
-            1789
+            1800
           ]
         }
       },
@@ -32118,7 +32094,7 @@
         "name": "ingredient.ibjubFruit",
         "customModelData": {
           "rangeDispatch": [
-            2001
+            2023
           ]
         }
       },
@@ -32172,7 +32148,7 @@
         "name": "ingredient.licoriceRopes",
         "customModelData": {
           "rangeDispatch": [
-            2057
+            2081
           ]
         }
       },
@@ -32227,7 +32203,7 @@
         "name": "ingredient.redScale",
         "customModelData": {
           "rangeDispatch": [
-            2243
+            2277
           ]
         }
       },
@@ -32282,7 +32258,7 @@
         "name": "ingredient.resistantStrain",
         "customModelData": {
           "rangeDispatch": [
-            2256
+            2291
           ]
         }
       },
@@ -32344,7 +32320,7 @@
         "name": "ingredient.rustyAxeHead",
         "customModelData": {
           "rangeDispatch": [
-            2281
+            2316
           ]
         }
       },
@@ -32394,7 +32370,7 @@
         "name": "ingredient.shinyGravel",
         "customModelData": {
           "rangeDispatch": [
-            2326
+            2363
           ]
         }
       },
@@ -32448,7 +32424,7 @@
         "name": "ingredient.spikedCapsule",
         "customModelData": {
           "rangeDispatch": [
-            2375
+            2415
           ]
         }
       },
@@ -32549,7 +32525,7 @@
         "name": "ingredient.ancientCoins",
         "customModelData": {
           "rangeDispatch": [
-            1677
+            1681
           ]
         }
       },
@@ -32609,7 +32585,7 @@
         "name": "ingredient.scorchingHorn",
         "customModelData": {
           "rangeDispatch": [
-            2295
+            2330
           ]
         }
       },
@@ -32663,7 +32639,7 @@
         "name": "ingredient.sealedBlaze",
         "customModelData": {
           "rangeDispatch": [
-            2301
+            2336
           ]
         }
       },
@@ -32729,7 +32705,7 @@
         "name": "ingredient.secretHerb",
         "customModelData": {
           "rangeDispatch": [
-            2303
+            2338
           ]
         }
       },
@@ -32745,8 +32721,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 25,
-        "maximum": 30
+        "minimum": 35,
+        "maximum": 42
       },
       "healPct": {
         "minimum": 1,
@@ -32785,7 +32761,7 @@
         "name": "ingredient.slateSheet",
         "customModelData": {
           "rangeDispatch": [
-            2338
+            2375
           ]
         }
       },
@@ -32839,7 +32815,7 @@
         "name": "ingredient.soapstone",
         "customModelData": {
           "rangeDispatch": [
-            2350
+            2389
           ]
         }
       },
@@ -32894,7 +32870,7 @@
         "name": "ingredient.blazingStimulants",
         "customModelData": {
           "rangeDispatch": [
-            1720
+            1725
           ]
         }
       },
@@ -32916,8 +32892,8 @@
         "maximum": 19
       },
       "hprRaw": {
-        "minimum": -40,
-        "maximum": -35
+        "minimum": -56,
+        "maximum": -49
       }
     },
     "consumableIDs": {
@@ -32952,7 +32928,7 @@
         "name": "ingredient.bloodstainedRemains",
         "customModelData": {
           "rangeDispatch": [
-            1724
+            1729
           ]
         }
       },
@@ -32970,8 +32946,8 @@
         "maximum": 30
       },
       "hprRaw": {
-        "minimum": -24,
-        "maximum": -20
+        "minimum": -34,
+        "maximum": -28
       }
     },
     "consumableIDs": {
@@ -33006,7 +32982,7 @@
         "name": "ingredient.crumblyRock",
         "customModelData": {
           "rangeDispatch": [
-            1811
+            1823
           ]
         }
       },
@@ -33057,7 +33033,7 @@
         "name": "ingredient.rototilledSoil",
         "customModelData": {
           "rangeDispatch": [
-            2270
+            2305
           ]
         }
       },
@@ -33111,7 +33087,7 @@
         "name": "ingredient.squidBrain",
         "customModelData": {
           "rangeDispatch": [
-            2382
+            2423
           ]
         }
       },
@@ -33166,7 +33142,7 @@
         "name": "ingredient.zhightWeirdMagicRock",
         "customModelData": {
           "rangeDispatch": [
-            2514
+            2562
           ]
         }
       },
@@ -33223,7 +33199,7 @@
         "name": "ingredient.bottledDecay",
         "customModelData": {
           "rangeDispatch": [
-            1732
+            1737
           ]
         }
       },
@@ -33245,8 +33221,8 @@
         "maximum": 18
       },
       "hprRaw": {
-        "minimum": -45,
-        "maximum": -40
+        "minimum": -63,
+        "maximum": -56
       }
     },
     "consumableIDs": {
@@ -33281,7 +33257,7 @@
         "name": "ingredient.gloomyOrb",
         "customModelData": {
           "rangeDispatch": [
-            1955
+            1975
           ]
         }
       },
@@ -33335,7 +33311,7 @@
         "name": "ingredient.sentientSlimeball",
         "customModelData": {
           "rangeDispatch": [
-            2307
+            2342
           ]
         }
       },
@@ -33393,7 +33369,7 @@
         "name": "ingredient.tackyGoop",
         "customModelData": {
           "rangeDispatch": [
-            2414
+            2456
           ]
         }
       },
@@ -33448,7 +33424,7 @@
         "name": "ingredient.zhightCoralPiece",
         "customModelData": {
           "rangeDispatch": [
-            2511
+            2559
           ]
         }
       },
@@ -33503,7 +33479,7 @@
         "name": "ingredient.zhightShinyStone",
         "customModelData": {
           "rangeDispatch": [
-            2513
+            2561
           ]
         }
       },
@@ -33558,7 +33534,7 @@
         "name": "ingredient.bigCarapace",
         "customModelData": {
           "rangeDispatch": [
-            1710
+            1715
           ]
         }
       },
@@ -33613,7 +33589,7 @@
         "name": "ingredient.brokenRamHorn",
         "customModelData": {
           "rangeDispatch": [
-            1742
+            1748
           ]
         }
       },
@@ -33664,7 +33640,7 @@
         "name": "ingredient.herbstzeitlose",
         "customModelData": {
           "rangeDispatch": [
-            1992
+            2014
           ]
         }
       },
@@ -33718,7 +33694,7 @@
         "name": "ingredient.mangroveRoot",
         "customModelData": {
           "rangeDispatch": [
-            2096
+            2122
           ]
         }
       },
@@ -33776,7 +33752,7 @@
         "name": "ingredient.metalScraps",
         "customModelData": {
           "rangeDispatch": [
-            2111
+            2138
           ]
         }
       },
@@ -33826,7 +33802,7 @@
         "name": "ingredient.rottingBandage",
         "customModelData": {
           "rangeDispatch": [
-            2274
+            2309
           ]
         }
       },
@@ -33880,7 +33856,7 @@
         "name": "ingredient.severedLeg",
         "customModelData": {
           "rangeDispatch": [
-            2313
+            2349
           ]
         }
       },
@@ -33930,7 +33906,7 @@
         "name": "ingredient.theGrootslangsHeart",
         "customModelData": {
           "rangeDispatch": [
-            2429
+            2472
           ]
         }
       },
@@ -33989,7 +33965,7 @@
         "name": "ingredient.bioluminescentMoss",
         "customModelData": {
           "rangeDispatch": [
-            1713
+            1718
           ]
         }
       },
@@ -34043,7 +34019,7 @@
         "name": "ingredient.bloatedArtery",
         "customModelData": {
           "rangeDispatch": [
-            1723
+            1728
           ]
         }
       },
@@ -34098,7 +34074,7 @@
         "name": "ingredient.brokenAnticBead",
         "customModelData": {
           "rangeDispatch": [
-            1737
+            1743
           ]
         }
       },
@@ -34152,7 +34128,7 @@
         "name": "ingredient.brokenSteelBlade",
         "customModelData": {
           "rangeDispatch": [
-            1743
+            1749
           ]
         }
       },
@@ -34206,7 +34182,7 @@
         "name": "ingredient.brokenSteelHook",
         "customModelData": {
           "rangeDispatch": [
-            1744
+            1750
           ]
         }
       },
@@ -34260,7 +34236,7 @@
         "name": "ingredient.creepvineCluster",
         "customModelData": {
           "rangeDispatch": [
-            1810
+            1822
           ]
         }
       },
@@ -34365,7 +34341,7 @@
         "name": "ingredient.grootslangFin",
         "customModelData": {
           "rangeDispatch": [
-            1975
+            1997
           ]
         }
       },
@@ -34419,7 +34395,7 @@
         "name": "ingredient.lizardTail",
         "customModelData": {
           "rangeDispatch": [
-            2067
+            2091
           ]
         }
       },
@@ -34438,8 +34414,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": 6,
-        "maximum": 9
+        "minimum": 8,
+        "maximum": 13
       }
     },
     "consumableIDs": {
@@ -34474,7 +34450,7 @@
         "name": "ingredient.mineralCinder",
         "customModelData": {
           "rangeDispatch": [
-            2112
+            2139
           ]
         }
       },
@@ -34525,7 +34501,7 @@
         "name": "ingredient.nagaTail",
         "customModelData": {
           "rangeDispatch": [
-            2129
+            2159
           ]
         }
       },
@@ -34575,7 +34551,7 @@
         "name": "ingredient.redCrystalDust",
         "customModelData": {
           "rangeDispatch": [
-            2240
+            2274
           ]
         }
       },
@@ -34629,7 +34605,7 @@
         "name": "ingredient.tatteredMagicCloth",
         "customModelData": {
           "rangeDispatch": [
-            2419
+            2461
           ]
         }
       },
@@ -34683,7 +34659,7 @@
         "name": "ingredient.wormSign",
         "customModelData": {
           "rangeDispatch": [
-            2501
+            2548
           ]
         }
       },
@@ -34740,7 +34716,7 @@
         "name": "ingredient.zhightHerbalMix",
         "customModelData": {
           "rangeDispatch": [
-            2512
+            2560
           ]
         }
       },
@@ -34796,7 +34772,7 @@
         "name": "ingredient.galvanicStone",
         "customModelData": {
           "rangeDispatch": [
-            1939
+            1956
           ]
         }
       },
@@ -34903,7 +34879,7 @@
         "name": "ingredient.zombieEye",
         "customModelData": {
           "rangeDispatch": [
-            2516
+            2564
           ]
         }
       },
@@ -34960,7 +34936,7 @@
         "name": "ingredient.bionicFiber",
         "customModelData": {
           "rangeDispatch": [
-            1714
+            1719
           ]
         }
       },
@@ -35014,7 +34990,7 @@
         "name": "ingredient.cursedVenomSac",
         "customModelData": {
           "rangeDispatch": [
-            1817
+            1830
           ]
         }
       },
@@ -35064,7 +35040,7 @@
         "name": "ingredient.cycloneBlueLeaves",
         "customModelData": {
           "rangeDispatch": [
-            1820
+            1833
           ]
         }
       },
@@ -35118,7 +35094,7 @@
         "name": "ingredient.deathWhistleLeaf",
         "customModelData": {
           "rangeDispatch": [
-            1826
+            1839
           ]
         }
       },
@@ -35165,7 +35141,7 @@
         "name": "ingredient.lizardScale",
         "customModelData": {
           "rangeDispatch": [
-            2066
+            2090
           ]
         }
       },
@@ -35219,7 +35195,7 @@
         "name": "ingredient.pinkPelulite",
         "customModelData": {
           "rangeDispatch": [
-            2182
+            2213
           ]
         }
       },
@@ -35274,7 +35250,7 @@
         "name": "ingredient.pinkPelute",
         "customModelData": {
           "rangeDispatch": [
-            2183
+            2214
           ]
         }
       },
@@ -35330,7 +35306,7 @@
         "name": "ingredient.stolenHarvest",
         "customModelData": {
           "rangeDispatch": [
-            2393
+            2434
           ]
         }
       },
@@ -35344,8 +35320,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 6,
-        "maximum": 8
+        "minimum": 8,
+        "maximum": 11
       }
     },
     "consumableIDs": {
@@ -35380,7 +35356,7 @@
         "name": "ingredient.thickVines",
         "customModelData": {
           "rangeDispatch": [
-            2431
+            2474
           ]
         }
       },
@@ -35435,7 +35411,7 @@
         "name": "ingredient.tropicalHoneysuckle",
         "customModelData": {
           "rangeDispatch": [
-            2448
+            2492
           ]
         }
       },
@@ -35457,8 +35433,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": 20,
-        "maximum": 25
+        "minimum": 28,
+        "maximum": 35
       }
     },
     "consumableIDs": {
@@ -35493,7 +35469,7 @@
         "name": "ingredient.gelatinousSlimeChunk",
         "customModelData": {
           "rangeDispatch": [
-            1940
+            1957
           ]
         }
       },
@@ -35545,7 +35521,7 @@
         "name": "ingredient.reptileScales",
         "customModelData": {
           "rangeDispatch": [
-            2253
+            2288
           ]
         }
       },
@@ -35600,7 +35576,7 @@
         "name": "ingredient.corrodedChunk",
         "customModelData": {
           "rangeDispatch": [
-            1795
+            1806
           ]
         }
       },
@@ -35655,7 +35631,7 @@
         "name": "ingredient.primitiveDelicacy",
         "customModelData": {
           "rangeDispatch": [
-            2212
+            2244
           ]
         }
       },
@@ -35705,7 +35681,7 @@
         "name": "ingredient.viscousSlime",
         "customModelData": {
           "rangeDispatch": [
-            2468
+            2514
           ]
         }
       },
@@ -35756,7 +35732,7 @@
         "name": "ingredient.ancientCore",
         "customModelData": {
           "rangeDispatch": [
-            1678
+            1682
           ]
         }
       },
@@ -35861,7 +35837,7 @@
         "name": "ingredient.dominantForce",
         "customModelData": {
           "rangeDispatch": [
-            1853
+            1868
           ]
         }
       },
@@ -35907,7 +35883,7 @@
         "name": "ingredient.enchantedChainLink",
         "customModelData": {
           "rangeDispatch": [
-            1874
+            1890
           ]
         }
       },
@@ -35966,7 +35942,7 @@
         "name": "ingredient.eyeOfTheBeast",
         "customModelData": {
           "rangeDispatch": [
-            1893
+            1910
           ]
         }
       },
@@ -36020,7 +35996,7 @@
         "name": "ingredient.fleshForgedCircuit",
         "customModelData": {
           "rangeDispatch": [
-            1915
+            1932
           ]
         }
       },
@@ -36075,7 +36051,7 @@
         "name": "ingredient.nightmareFuel",
         "customModelData": {
           "rangeDispatch": [
-            2136
+            2166
           ]
         }
       },
@@ -36130,7 +36106,7 @@
         "name": "ingredient.tornSkin",
         "customModelData": {
           "rangeDispatch": [
-            2439
+            2483
           ]
         }
       },
@@ -36180,7 +36156,7 @@
         "name": "ingredient.wrigglingWoodenArm",
         "customModelData": {
           "rangeDispatch": [
-            2505
+            2553
           ]
         }
       },
@@ -36234,7 +36210,7 @@
         "name": "ingredient.largeLapis",
         "customModelData": {
           "rangeDispatch": [
-            2047
+            2071
           ]
         }
       },
@@ -36288,7 +36264,7 @@
         "name": "ingredient.soulStone",
         "customModelData": {
           "rangeDispatch": [
-            2366
+            2406
           ]
         }
       },
@@ -36343,7 +36319,7 @@
         "name": "ingredient.ghostlyEssence",
         "customModelData": {
           "rangeDispatch": [
-            1943
+            1960
           ]
         }
       },
@@ -36398,7 +36374,7 @@
         "name": "ingredient.icyCrampons",
         "customModelData": {
           "rangeDispatch": [
-            2009
+            2031
           ]
         }
       },
@@ -36454,7 +36430,7 @@
         "name": "ingredient.yetiFur",
         "customModelData": {
           "rangeDispatch": [
-            2508
+            2556
           ]
         }
       },
@@ -36513,7 +36489,7 @@
         "name": "ingredient.flashfrost",
         "customModelData": {
           "rangeDispatch": [
-            1913
+            1930
           ]
         }
       },
@@ -36567,7 +36543,7 @@
         "name": "ingredient.lostHeirloom",
         "customModelData": {
           "rangeDispatch": [
-            2070
+            2095
           ]
         }
       },
@@ -36625,7 +36601,7 @@
         "name": "ingredient.pillagedFragment",
         "customModelData": {
           "rangeDispatch": [
-            2181
+            2212
           ]
         }
       },
@@ -36679,7 +36655,7 @@
         "name": "ingredient.pykrete",
         "customModelData": {
           "rangeDispatch": [
-            2226
+            2258
           ]
         }
       },
@@ -36730,7 +36706,7 @@
         "name": "ingredient.vikingStone",
         "customModelData": {
           "rangeDispatch": [
-            2464
+            2510
           ]
         }
       },
@@ -36787,7 +36763,7 @@
         "name": "ingredient.banditRations",
         "customModelData": {
           "rangeDispatch": [
-            1703
+            1708
           ]
         }
       },
@@ -36837,7 +36813,7 @@
         "name": "ingredient.frozenGhostlyEssence",
         "customModelData": {
           "rangeDispatch": [
-            1936
+            1953
           ]
         }
       },
@@ -36895,7 +36871,7 @@
         "name": "ingredient.orcTeeth",
         "customModelData": {
           "rangeDispatch": [
-            2156
+            2186
           ]
         }
       },
@@ -36949,7 +36925,7 @@
         "name": "ingredient.penguinEgg",
         "customModelData": {
           "rangeDispatch": [
-            2171
+            2202
           ]
         }
       },
@@ -37004,7 +36980,7 @@
         "name": "ingredient.ancientHeart",
         "customModelData": {
           "rangeDispatch": [
-            1680
+            1684
           ]
         }
       },
@@ -37058,7 +37034,7 @@
         "name": "ingredient.archaicMedallion",
         "customModelData": {
           "rangeDispatch": [
-            1694
+            1699
           ]
         }
       },
@@ -37112,7 +37088,7 @@
         "name": "ingredient.blackSulphur",
         "customModelData": {
           "rangeDispatch": [
-            1717
+            1722
           ]
         }
       },
@@ -37167,7 +37143,7 @@
         "name": "ingredient.bloodweb",
         "customModelData": {
           "rangeDispatch": [
-            1726
+            1731
           ]
         }
       },
@@ -37221,7 +37197,7 @@
         "name": "ingredient.bottledFairy",
         "customModelData": {
           "rangeDispatch": [
-            1733
+            1738
           ]
         }
       },
@@ -37272,7 +37248,7 @@
         "name": "ingredient.chippedQuartz",
         "customModelData": {
           "rangeDispatch": [
-            1768
+            1776
           ]
         }
       },
@@ -37327,7 +37303,7 @@
         "name": "ingredient.emptyCasings",
         "customModelData": {
           "rangeDispatch": [
-            1873
+            1889
           ]
         }
       },
@@ -37381,7 +37357,7 @@
         "name": "ingredient.icyShard",
         "customModelData": {
           "rangeDispatch": [
-            2010
+            2032
           ]
         }
       },
@@ -37435,7 +37411,7 @@
         "name": "ingredient.jaggedIcicle",
         "customModelData": {
           "rangeDispatch": [
-            2037
+            2061
           ]
         }
       },
@@ -37489,7 +37465,7 @@
         "name": "ingredient.primevalSkin",
         "customModelData": {
           "rangeDispatch": [
-            2211
+            2243
           ]
         }
       },
@@ -37547,7 +37523,7 @@
         "name": "ingredient.pureQuartz",
         "customModelData": {
           "rangeDispatch": [
-            2222
+            2254
           ]
         }
       },
@@ -37604,7 +37580,7 @@
         "name": "ingredient.quartzCluster",
         "customModelData": {
           "rangeDispatch": [
-            2228
+            2260
           ]
         }
       },
@@ -37659,7 +37635,7 @@
         "name": "ingredient.snowClump",
         "customModelData": {
           "rangeDispatch": [
-            2348
+            2387
           ]
         }
       },
@@ -37713,7 +37689,7 @@
         "name": "ingredient.frostbittenFlesh",
         "customModelData": {
           "rangeDispatch": [
-            1934
+            1951
           ]
         }
       },
@@ -37768,7 +37744,7 @@
         "name": "ingredient.greenScale",
         "customModelData": {
           "rangeDispatch": [
-            1970
+            1992
           ]
         }
       },
@@ -37823,7 +37799,7 @@
         "name": "ingredient.orcEye",
         "customModelData": {
           "rangeDispatch": [
-            2154
+            2184
           ]
         }
       },
@@ -37878,7 +37854,7 @@
         "name": "ingredient.poisonSac",
         "customModelData": {
           "rangeDispatch": [
-            2198
+            2229
           ]
         }
       },
@@ -37928,7 +37904,7 @@
         "name": "ingredient.ursineClaw",
         "customModelData": {
           "rangeDispatch": [
-            2462
+            2506
           ]
         }
       },
@@ -37986,7 +37962,7 @@
         "name": "ingredient.wendigoBone",
         "customModelData": {
           "rangeDispatch": [
-            2487
+            2533
           ]
         }
       },
@@ -38005,8 +37981,8 @@
         "maximum": 35
       },
       "hprRaw": {
-        "minimum": -18,
-        "maximum": -15
+        "minimum": -25,
+        "maximum": -21
       }
     },
     "consumableIDs": {
@@ -38041,7 +38017,7 @@
         "name": "ingredient.acidicBlood",
         "customModelData": {
           "rangeDispatch": [
-            1658
+            1662
           ]
         }
       },
@@ -38092,7 +38068,7 @@
         "name": "ingredient.foulFairyDust",
         "customModelData": {
           "rangeDispatch": [
-            1926
+            1943
           ]
         }
       },
@@ -38147,7 +38123,7 @@
         "name": "ingredient.owlFeather",
         "customModelData": {
           "rangeDispatch": [
-            2163
+            2194
           ]
         }
       },
@@ -38198,7 +38174,7 @@
         "name": "ingredient.runnersBandages",
         "customModelData": {
           "rangeDispatch": [
-            2279
+            2314
           ]
         }
       },
@@ -38249,7 +38225,7 @@
         "name": "ingredient.snowHeart",
         "customModelData": {
           "rangeDispatch": [
-            2349
+            2388
           ]
         }
       },
@@ -38304,7 +38280,7 @@
         "name": "ingredient.spiderLeg",
         "customModelData": {
           "rangeDispatch": [
-            2374
+            2414
           ]
         }
       },
@@ -38358,7 +38334,7 @@
         "name": "ingredient.tornRawhide",
         "customModelData": {
           "rangeDispatch": [
-            2438
+            2482
           ]
         }
       },
@@ -38412,7 +38388,7 @@
         "name": "ingredient.twistedOrgan",
         "customModelData": {
           "rangeDispatch": [
-            2453
+            2497
           ]
         }
       },
@@ -38466,7 +38442,7 @@
         "name": "ingredient.woodShavings",
         "customModelData": {
           "rangeDispatch": [
-            2496
+            2543
           ]
         }
       },
@@ -38517,7 +38493,7 @@
         "name": "ingredient.defishious",
         "customModelData": {
           "rangeDispatch": [
-            1836
+            1849
           ]
         }
       },
@@ -38567,7 +38543,7 @@
         "name": "ingredient.fishTail",
         "customModelData": {
           "rangeDispatch": [
-            1910
+            1927
           ]
         }
       },
@@ -38621,7 +38597,7 @@
         "name": "ingredient.goblinTrinket",
         "customModelData": {
           "rangeDispatch": [
-            1960
+            1980
           ]
         }
       },
@@ -38679,7 +38655,7 @@
         "name": "ingredient.goldNugget",
         "customModelData": {
           "rangeDispatch": [
-            1964
+            1984
           ]
         }
       },
@@ -38729,7 +38705,7 @@
         "name": "ingredient.iceSilver",
         "customModelData": {
           "rangeDispatch": [
-            2007
+            2029
           ]
         }
       },
@@ -38784,7 +38760,7 @@
         "name": "ingredient.naturalNitrates",
         "customModelData": {
           "rangeDispatch": [
-            2131
+            2161
           ]
         }
       },
@@ -38834,7 +38810,7 @@
         "name": "ingredient.trollHair",
         "customModelData": {
           "rangeDispatch": [
-            2447
+            2491
           ]
         }
       },
@@ -38888,7 +38864,7 @@
         "name": "ingredient.iceFishingBait",
         "customModelData": {
           "rangeDispatch": [
-            2003
+            2025
           ]
         }
       },
@@ -38946,7 +38922,7 @@
         "name": "ingredient.iceFishingHook",
         "customModelData": {
           "rangeDispatch": [
-            2004
+            2026
           ]
         }
       },
@@ -39004,7 +38980,7 @@
         "name": "ingredient.iceFishingNet",
         "customModelData": {
           "rangeDispatch": [
-            2005
+            2027
           ]
         }
       },
@@ -39063,7 +39039,7 @@
         "name": "ingredient.iceFishingTwine",
         "customModelData": {
           "rangeDispatch": [
-            2006
+            2028
           ]
         }
       },
@@ -39163,7 +39139,7 @@
         "name": "ingredient.wolfFang",
         "customModelData": {
           "rangeDispatch": [
-            2494
+            2541
           ]
         }
       },
@@ -39217,7 +39193,7 @@
         "name": "ingredient.iceSliver",
         "customModelData": {
           "rangeDispatch": [
-            2008
+            2030
           ]
         }
       },
@@ -39268,7 +39244,7 @@
         "name": "ingredient.rabbitCarcass",
         "customModelData": {
           "rangeDispatch": [
-            2231
+            2263
           ]
         }
       },
@@ -39334,7 +39310,7 @@
         "name": "ingredient.regretlessTalisman",
         "customModelData": {
           "rangeDispatch": [
-            2246
+            2280
           ]
         }
       },
@@ -39392,7 +39368,7 @@
         "name": "ingredient.shimmeringJewel",
         "customModelData": {
           "rangeDispatch": [
-            2323
+            2360
           ]
         }
       },
@@ -39447,7 +39423,7 @@
         "name": "ingredient.stretchedRawhide",
         "customModelData": {
           "rangeDispatch": [
-            2401
+            2443
           ]
         }
       },
@@ -39501,7 +39477,7 @@
         "name": "ingredient.corruptedMetalScrap",
         "customModelData": {
           "rangeDispatch": [
-            1800
+            1811
           ]
         }
       },
@@ -39556,7 +39532,7 @@
         "name": "ingredient.moldyWrapping",
         "customModelData": {
           "rangeDispatch": [
-            2116
+            2144
           ]
         }
       },
@@ -39615,7 +39591,7 @@
         "name": "ingredient.stolenEgg",
         "customModelData": {
           "rangeDispatch": [
-            2391
+            2432
           ]
         }
       },
@@ -39633,8 +39609,8 @@
         "maximum": 7
       },
       "hprRaw": {
-        "minimum": 18,
-        "maximum": 24
+        "minimum": 25,
+        "maximum": 34
       }
     },
     "consumableIDs": {
@@ -39669,7 +39645,7 @@
         "name": "ingredient.lavaBlisters",
         "customModelData": {
           "rangeDispatch": [
-            2052
+            2076
           ]
         }
       },
@@ -39719,7 +39695,7 @@
         "name": "ingredient.lunarCharm",
         "customModelData": {
           "rangeDispatch": [
-            2079
+            2104
           ]
         }
       },
@@ -39766,7 +39742,7 @@
         "name": "ingredient.squidBeak",
         "customModelData": {
           "rangeDispatch": [
-            2381
+            2422
           ]
         }
       },
@@ -39823,7 +39799,7 @@
         "name": "ingredient.ancientPanel",
         "customModelData": {
           "rangeDispatch": [
-            1683
+            1687
           ]
         }
       },
@@ -39877,7 +39853,7 @@
         "name": "ingredient.batHeart",
         "customModelData": {
           "rangeDispatch": [
-            1706
+            1711
           ]
         }
       },
@@ -39935,7 +39911,7 @@
         "name": "ingredient.eternalFlame",
         "customModelData": {
           "rangeDispatch": [
-            1886
+            1902
           ]
         }
       },
@@ -39957,8 +39933,8 @@
         "maximum": -8
       },
       "hprRaw": {
-        "minimum": 20,
-        "maximum": 24
+        "minimum": 28,
+        "maximum": 34
       },
       "mdPct": {
         "minimum": -10,
@@ -39997,7 +39973,7 @@
         "name": "ingredient.gunpowder",
         "customModelData": {
           "rangeDispatch": [
-            1978
+            2000
           ]
         }
       },
@@ -40048,7 +40024,7 @@
         "name": "ingredient.limestoneCore",
         "customModelData": {
           "rangeDispatch": [
-            2059
+            2083
           ]
         }
       },
@@ -40102,7 +40078,7 @@
         "name": "ingredient.luckyRabbitsFoot",
         "customModelData": {
           "rangeDispatch": [
-            2075
+            2100
           ]
         }
       },
@@ -40159,7 +40135,7 @@
         "name": "ingredient.shinestingScorpionTail",
         "customModelData": {
           "rangeDispatch": [
-            2324
+            2361
           ]
         }
       },
@@ -40214,7 +40190,7 @@
         "name": "ingredient.spirographTablet",
         "customModelData": {
           "rangeDispatch": [
-            2377
+            2418
           ]
         }
       },
@@ -40288,7 +40264,7 @@
         "name": "ingredient.swooperWing",
         "customModelData": {
           "rangeDispatch": [
-            2412
+            2454
           ]
         }
       },
@@ -40342,7 +40318,7 @@
         "name": "ingredient.algaeMat",
         "customModelData": {
           "rangeDispatch": [
-            1671
+            1675
           ]
         }
       },
@@ -40396,7 +40372,7 @@
         "name": "ingredient.burialTalisman",
         "customModelData": {
           "rangeDispatch": [
-            1747
+            1753
           ]
         }
       },
@@ -40454,7 +40430,7 @@
         "name": "ingredient.contrabandAbsinthe",
         "customModelData": {
           "rangeDispatch": [
-            1790
+            1801
           ]
         }
       },
@@ -40520,7 +40496,7 @@
         "name": "ingredient.contrabandHibiscus",
         "customModelData": {
           "rangeDispatch": [
-            1791
+            1802
           ]
         }
       },
@@ -40586,7 +40562,7 @@
         "name": "ingredient.contrabandMiracleBerry",
         "customModelData": {
           "rangeDispatch": [
-            1792
+            1803
           ]
         }
       },
@@ -40640,7 +40616,7 @@
         "name": "ingredient.lunarChunk",
         "customModelData": {
           "rangeDispatch": [
-            2080
+            2105
           ]
         }
       },
@@ -40691,7 +40667,7 @@
         "name": "ingredient.rustySpurs",
         "customModelData": {
           "rangeDispatch": [
-            2282
+            2317
           ]
         }
       },
@@ -40745,7 +40721,7 @@
         "name": "ingredient.weatheredIdol",
         "customModelData": {
           "rangeDispatch": [
-            2485
+            2531
           ]
         }
       },
@@ -40803,7 +40779,7 @@
         "name": "ingredient.chainLoop",
         "customModelData": {
           "rangeDispatch": [
-            1761
+            1769
           ]
         }
       },
@@ -40857,7 +40833,7 @@
         "name": "ingredient.condorFeather",
         "customModelData": {
           "rangeDispatch": [
-            1785
+            1795
           ]
         }
       },
@@ -40907,7 +40883,7 @@
         "name": "ingredient.crystalDust",
         "customModelData": {
           "rangeDispatch": [
-            1814
+            1827
           ]
         }
       },
@@ -40962,7 +40938,7 @@
         "name": "ingredient.pokeyCactus",
         "customModelData": {
           "rangeDispatch": [
-            2199
+            2230
           ]
         }
       },
@@ -41021,7 +40997,7 @@
         "name": "ingredient.sentientMagmaticGem",
         "customModelData": {
           "rangeDispatch": [
-            2305
+            2340
           ]
         }
       },
@@ -41071,7 +41047,7 @@
         "name": "ingredient.sharpEdge",
         "customModelData": {
           "rangeDispatch": [
-            2318
+            2355
           ]
         }
       },
@@ -41125,7 +41101,7 @@
         "name": "ingredient.stolenPearls",
         "customModelData": {
           "rangeDispatch": [
-            2394
+            2436
           ]
         }
       },
@@ -41175,7 +41151,7 @@
         "name": "ingredient.stonewalkerCore",
         "customModelData": {
           "rangeDispatch": [
-            2396
+            2438
           ]
         }
       },
@@ -41230,7 +41206,7 @@
         "name": "ingredient.tannedFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2417
+            2459
           ]
         }
       },
@@ -41280,7 +41256,7 @@
         "name": "ingredient.coyoteFang",
         "customModelData": {
           "rangeDispatch": [
-            1803
+            1814
           ]
         }
       },
@@ -41330,7 +41306,7 @@
         "name": "ingredient.lunarShard",
         "customModelData": {
           "rangeDispatch": [
-            2082
+            2107
           ]
         }
       },
@@ -41381,7 +41357,7 @@
         "name": "ingredient.prizedPelt",
         "customModelData": {
           "rangeDispatch": [
-            2218
+            2250
           ]
         }
       },
@@ -41435,7 +41411,7 @@
         "name": "ingredient.salt",
         "customModelData": {
           "rangeDispatch": [
-            2283
+            2318
           ]
         }
       },
@@ -41480,7 +41456,7 @@
         "name": "ingredient.sandyBonemeal",
         "customModelData": {
           "rangeDispatch": [
-            2288
+            2323
           ]
         }
       },
@@ -41535,7 +41511,7 @@
         "name": "ingredient.scaldingSand",
         "customModelData": {
           "rangeDispatch": [
-            2291
+            2326
           ]
         }
       },
@@ -41589,7 +41565,7 @@
         "name": "ingredient.driedKelp",
         "customModelData": {
           "rangeDispatch": [
-            1861
+            1876
           ]
         }
       },
@@ -41641,7 +41617,7 @@
         "name": "ingredient.dryBone",
         "customModelData": {
           "rangeDispatch": [
-            1862
+            1877
           ]
         }
       },
@@ -41687,7 +41663,7 @@
         "name": "ingredient.illicitHelmlock",
         "customModelData": {
           "rangeDispatch": [
-            2013
+            2035
           ]
         }
       },
@@ -41742,7 +41718,7 @@
         "name": "ingredient.illicitQuince",
         "customModelData": {
           "rangeDispatch": [
-            2014
+            2036
           ]
         }
       },
@@ -41797,7 +41773,7 @@
         "name": "ingredient.illicitTingflower",
         "customModelData": {
           "rangeDispatch": [
-            2015
+            2037
           ]
         }
       },
@@ -41852,7 +41828,7 @@
         "name": "ingredient.illicitWhitethorn",
         "customModelData": {
           "rangeDispatch": [
-            2016
+            2038
           ]
         }
       },
@@ -41907,7 +41883,7 @@
         "name": "ingredient.illicitYarrow",
         "customModelData": {
           "rangeDispatch": [
-            2017
+            2039
           ]
         }
       },
@@ -41962,7 +41938,7 @@
         "name": "ingredient.terracottaChunk",
         "customModelData": {
           "rangeDispatch": [
-            2424
+            2467
           ]
         }
       },
@@ -42012,7 +41988,7 @@
         "name": "ingredient.crawlerEye",
         "customModelData": {
           "rangeDispatch": [
-            1807
+            1818
           ]
         }
       },
@@ -42066,7 +42042,7 @@
         "name": "ingredient.grittyRocks",
         "customModelData": {
           "rangeDispatch": [
-            1972
+            1994
           ]
         }
       },
@@ -42120,7 +42096,7 @@
         "name": "ingredient.lunarDust",
         "customModelData": {
           "rangeDispatch": [
-            2081
+            2106
           ]
         }
       },
@@ -42171,7 +42147,7 @@
         "name": "ingredient.scarabHusk",
         "customModelData": {
           "rangeDispatch": [
-            2292
+            2327
           ]
         }
       },
@@ -42222,7 +42198,7 @@
         "name": "ingredient.seaSalt",
         "customModelData": {
           "rangeDispatch": [
-            2302
+            2337
           ]
         }
       },
@@ -42268,7 +42244,7 @@
         "name": "ingredient.snakeScale",
         "customModelData": {
           "rangeDispatch": [
-            2345
+            2384
           ]
         }
       },
@@ -42323,7 +42299,7 @@
         "name": "ingredient.crawlerWeb",
         "customModelData": {
           "rangeDispatch": [
-            1809
+            1820
           ]
         }
       },
@@ -42373,7 +42349,7 @@
         "name": "ingredient.deadNavalShard",
         "customModelData": {
           "rangeDispatch": [
-            1825
+            1838
           ]
         }
       },
@@ -42423,7 +42399,7 @@
         "name": "ingredient.glitteringSilt",
         "customModelData": {
           "rangeDispatch": [
-            1954
+            1974
           ]
         }
       },
@@ -42478,7 +42454,7 @@
         "name": "ingredient.goldBar",
         "customModelData": {
           "rangeDispatch": [
-            1963
+            1983
           ]
         }
       },
@@ -42532,7 +42508,7 @@
         "name": "ingredient.redShale",
         "customModelData": {
           "rangeDispatch": [
-            2244
+            2278
           ]
         }
       },
@@ -42586,7 +42562,7 @@
         "name": "ingredient.sparkOfTheOasis",
         "customModelData": {
           "rangeDispatch": [
-            2367
+            2407
           ]
         }
       },
@@ -42641,7 +42617,7 @@
         "name": "ingredient.chaoticEmbers",
         "customModelData": {
           "rangeDispatch": [
-            1762
+            1770
           ]
         }
       },
@@ -42737,7 +42713,7 @@
         "name": "ingredient.crackedSkin",
         "customModelData": {
           "rangeDispatch": [
-            1806
+            1817
           ]
         }
       },
@@ -42792,7 +42768,7 @@
         "name": "ingredient.desertFossil",
         "customModelData": {
           "rangeDispatch": [
-            1846
+            1861
           ]
         }
       },
@@ -42846,7 +42822,7 @@
         "name": "ingredient.fieryEssence",
         "customModelData": {
           "rangeDispatch": [
-            1905
+            1922
           ]
         }
       },
@@ -42897,7 +42873,7 @@
         "name": "ingredient.harosBrokenBadge",
         "customModelData": {
           "rangeDispatch": [
-            1985
+            2007
           ]
         }
       },
@@ -42951,7 +42927,7 @@
         "name": "ingredient.mashedInsect",
         "customModelData": {
           "rangeDispatch": [
-            2105
+            2132
           ]
         }
       },
@@ -42969,8 +42945,8 @@
         "maximum": 2
       },
       "hprRaw": {
-        "minimum": 4,
-        "maximum": 5
+        "minimum": 6,
+        "maximum": 7
       }
     },
     "consumableIDs": {
@@ -43005,7 +42981,7 @@
         "name": "ingredient.oceanicSand",
         "customModelData": {
           "rangeDispatch": [
-            2141
+            2171
           ]
         }
       },
@@ -43059,7 +43035,7 @@
         "name": "ingredient.powderyBone",
         "customModelData": {
           "rangeDispatch": [
-            2206
+            2237
           ]
         }
       },
@@ -43109,7 +43085,7 @@
         "name": "ingredient.routerShield",
         "customModelData": {
           "rangeDispatch": [
-            2276
+            2311
           ]
         }
       },
@@ -43163,7 +43139,7 @@
         "name": "ingredient.scoriaPollen",
         "customModelData": {
           "rangeDispatch": [
-            2296
+            2331
           ]
         }
       },
@@ -43218,7 +43194,7 @@
         "name": "ingredient.softSand",
         "customModelData": {
           "rangeDispatch": [
-            2354
+            2393
           ]
         }
       },
@@ -43272,7 +43248,7 @@
         "name": "ingredient.portalEmanation",
         "customModelData": {
           "rangeDispatch": [
-            2202
+            2233
           ]
         }
       },
@@ -43329,7 +43305,7 @@
         "name": "ingredient.captainsGlass",
         "customModelData": {
           "rangeDispatch": [
-            1753
+            1760
           ]
         }
       },
@@ -43384,7 +43360,7 @@
         "name": "ingredient.catFood",
         "customModelData": {
           "rangeDispatch": [
-            1758
+            1765
           ]
         }
       },
@@ -43439,7 +43415,7 @@
         "name": "ingredient.lionFang",
         "customModelData": {
           "rangeDispatch": [
-            2062
+            2086
           ]
         }
       },
@@ -43494,7 +43470,7 @@
         "name": "ingredient.saltedSalmon",
         "customModelData": {
           "rangeDispatch": [
-            2284
+            2319
           ]
         }
       },
@@ -43544,7 +43520,7 @@
         "name": "ingredient.squidInk",
         "customModelData": {
           "rangeDispatch": [
-            2383
+            2424
           ]
         }
       },
@@ -43595,7 +43571,7 @@
         "name": "ingredient.strangeGeode",
         "customModelData": {
           "rangeDispatch": [
-            2399
+            2441
           ]
         }
       },
@@ -43649,7 +43625,7 @@
         "name": "ingredient.enragedSoul",
         "customModelData": {
           "rangeDispatch": [
-            1883
+            1899
           ]
         }
       },
@@ -43700,7 +43676,7 @@
         "name": "ingredient.intermittenstirrups",
         "customModelData": {
           "rangeDispatch": [
-            2030
+            2053
           ]
         }
       },
@@ -43756,7 +43732,7 @@
         "name": "ingredient.lionHeart",
         "customModelData": {
           "rangeDispatch": [
-            2063
+            2087
           ]
         }
       },
@@ -43814,7 +43790,7 @@
         "name": "ingredient.oceanicSilt",
         "customModelData": {
           "rangeDispatch": [
-            2142
+            2172
           ]
         }
       },
@@ -43864,7 +43840,7 @@
         "name": "ingredient.seabirdEgg",
         "customModelData": {
           "rangeDispatch": [
-            2298
+            2333
           ]
         }
       },
@@ -43918,7 +43894,7 @@
         "name": "ingredient.spikedResidue",
         "customModelData": {
           "rangeDispatch": [
-            2376
+            2416
           ]
         }
       },
@@ -43973,7 +43949,7 @@
         "name": "ingredient.sunStainedSkin",
         "customModelData": {
           "rangeDispatch": [
-            2410
+            2452
           ]
         }
       },
@@ -43995,8 +43971,8 @@
         "maximum": 2
       },
       "hprRaw": {
-        "minimum": 8,
-        "maximum": 12
+        "minimum": 11,
+        "maximum": 17
       }
     },
     "consumableIDs": {
@@ -44031,7 +44007,7 @@
         "name": "ingredient.blazePowder",
         "customModelData": {
           "rangeDispatch": [
-            1718
+            1723
           ]
         }
       },
@@ -44086,7 +44062,7 @@
         "name": "ingredient.electroplasm",
         "customModelData": {
           "rangeDispatch": [
-            1870
+            1885
           ]
         }
       },
@@ -44139,7 +44115,7 @@
         "name": "ingredient.glimmeringCoin",
         "customModelData": {
           "rangeDispatch": [
-            1953
+            1972
           ]
         }
       },
@@ -44164,8 +44140,8 @@
         "maximum": 5
       },
       "hprRaw": {
-        "minimum": -25,
-        "maximum": -20
+        "minimum": -35,
+        "maximum": -28
       }
     },
     "consumableIDs": {
@@ -44200,7 +44176,7 @@
         "name": "ingredient.mangledSoul",
         "customModelData": {
           "rangeDispatch": [
-            2095
+            2120
           ]
         }
       },
@@ -44252,7 +44228,7 @@
         "name": "ingredient.premiumHayBale",
         "customModelData": {
           "rangeDispatch": [
-            2208
+            2239
           ]
         }
       },
@@ -44310,7 +44286,7 @@
         "name": "ingredient.seabirdFeather",
         "customModelData": {
           "rangeDispatch": [
-            2299
+            2334
           ]
         }
       },
@@ -44365,7 +44341,7 @@
         "name": "ingredient.wornCoin",
         "customModelData": {
           "rangeDispatch": [
-            2502
+            2549
           ]
         }
       },
@@ -44422,7 +44398,7 @@
         "name": "ingredient.medallion",
         "customModelData": {
           "rangeDispatch": [
-            2107
+            2134
           ]
         }
       },
@@ -44477,7 +44453,7 @@
         "name": "ingredient.beefTongue",
         "customModelData": {
           "rangeDispatch": [
-            1709
+            1714
           ]
         }
       },
@@ -44531,7 +44507,7 @@
         "name": "ingredient.conscriptionLetter",
         "customModelData": {
           "rangeDispatch": [
-            1788
+            1799
           ]
         }
       },
@@ -44581,7 +44557,7 @@
         "name": "ingredient.corruptedBracken",
         "customModelData": {
           "rangeDispatch": [
-            1797
+            1808
           ]
         }
       },
@@ -44636,7 +44612,7 @@
         "name": "ingredient.crawlerSludge",
         "customModelData": {
           "rangeDispatch": [
-            1808
+            1819
           ]
         }
       },
@@ -44691,7 +44667,7 @@
         "name": "ingredient.goldTooth",
         "customModelData": {
           "rangeDispatch": [
-            1965
+            1985
           ]
         }
       },
@@ -44741,7 +44717,7 @@
         "name": "ingredient.mysteriousMist",
         "customModelData": {
           "rangeDispatch": [
-            2127
+            2157
           ]
         }
       },
@@ -44799,7 +44775,7 @@
         "name": "ingredient.ocelotTail",
         "customModelData": {
           "rangeDispatch": [
-            2145
+            2175
           ]
         }
       },
@@ -44854,7 +44830,7 @@
         "name": "ingredient.piranhaJaw",
         "customModelData": {
           "rangeDispatch": [
-            2187
+            2218
           ]
         }
       },
@@ -44909,7 +44885,7 @@
         "name": "ingredient.reinforcedLeather",
         "customModelData": {
           "rangeDispatch": [
-            2247
+            2281
           ]
         }
       },
@@ -44964,7 +44940,7 @@
         "name": "ingredient.savannahStone",
         "customModelData": {
           "rangeDispatch": [
-            2290
+            2325
           ]
         }
       },
@@ -45018,7 +44994,7 @@
         "name": "ingredient.shatteredMemoryShard",
         "customModelData": {
           "rangeDispatch": [
-            2321
+            2358
           ]
         }
       },
@@ -45073,7 +45049,7 @@
         "name": "ingredient.snakeTooth",
         "customModelData": {
           "rangeDispatch": [
-            2347
+            2386
           ]
         }
       },
@@ -45128,7 +45104,7 @@
         "name": "ingredient.stickyFern",
         "customModelData": {
           "rangeDispatch": [
-            2388
+            2429
           ]
         }
       },
@@ -45179,7 +45155,7 @@
         "name": "ingredient.unsettlingSoul",
         "customModelData": {
           "rangeDispatch": [
-            2461
+            2505
           ]
         }
       },
@@ -45229,7 +45205,7 @@
         "name": "ingredient.crackedGeode",
         "customModelData": {
           "rangeDispatch": [
-            1805
+            1816
           ]
         }
       },
@@ -45280,7 +45256,7 @@
         "name": "ingredient.residualSpirit",
         "customModelData": {
           "rangeDispatch": [
-            2254
+            2289
           ]
         }
       },
@@ -45334,7 +45310,7 @@
         "name": "ingredient.tendonClump",
         "customModelData": {
           "rangeDispatch": [
-            2421
+            2464
           ]
         }
       },
@@ -45385,7 +45361,7 @@
         "name": "ingredient.carapaceFragment",
         "customModelData": {
           "rangeDispatch": [
-            1754
+            1761
           ]
         }
       },
@@ -45440,7 +45416,7 @@
         "name": "ingredient.cornHusk",
         "customModelData": {
           "rangeDispatch": [
-            1794
+            1805
           ]
         }
       },
@@ -45455,8 +45431,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 4,
-        "maximum": 7
+        "minimum": 6,
+        "maximum": 10
       }
     },
     "consumableIDs": {
@@ -45491,7 +45467,7 @@
         "name": "ingredient.fumingLavaRock",
         "customModelData": {
           "rangeDispatch": [
-            1937
+            1954
           ]
         }
       },
@@ -45547,7 +45523,7 @@
         "name": "ingredient.halevaPlant",
         "customModelData": {
           "rangeDispatch": [
-            1980
+            2002
           ]
         }
       },
@@ -45602,7 +45578,7 @@
         "name": "ingredient.ocelotPelt",
         "customModelData": {
           "rangeDispatch": [
-            2144
+            2174
           ]
         }
       },
@@ -45652,7 +45628,7 @@
         "name": "ingredient.riverClay",
         "customModelData": {
           "rangeDispatch": [
-            2262
+            2297
           ]
         }
       },
@@ -45708,7 +45684,7 @@
         "name": "ingredient.seagrass",
         "customModelData": {
           "rangeDispatch": [
-            2300
+            2335
           ]
         }
       },
@@ -45762,7 +45738,7 @@
         "name": "ingredient.shreddedBone",
         "customModelData": {
           "rangeDispatch": [
-            2330
+            2367
           ]
         }
       },
@@ -45813,7 +45789,7 @@
         "name": "ingredient.spiderEggs",
         "customModelData": {
           "rangeDispatch": [
-            2372
+            2412
           ]
         }
       },
@@ -45864,7 +45840,7 @@
         "name": "ingredient.bugParts",
         "customModelData": {
           "rangeDispatch": [
-            1746
+            1752
           ]
         }
       },
@@ -45919,7 +45895,7 @@
         "name": "ingredient.decayingSkin",
         "customModelData": {
           "rangeDispatch": [
-            1828
+            1841
           ]
         }
       },
@@ -45969,7 +45945,7 @@
         "name": "ingredient.horseMane",
         "customModelData": {
           "rangeDispatch": [
-            1997
+            2019
           ]
         }
       },
@@ -46024,7 +46000,7 @@
         "name": "ingredient.kaolinClay",
         "customModelData": {
           "rangeDispatch": [
-            2042
+            2066
           ]
         }
       },
@@ -46082,7 +46058,7 @@
         "name": "ingredient.laryngealFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2050
+            2074
           ]
         }
       },
@@ -46136,7 +46112,7 @@
         "name": "ingredient.toughBone",
         "customModelData": {
           "rangeDispatch": [
-            2440
+            2484
           ]
         }
       },
@@ -46187,7 +46163,7 @@
         "name": "ingredient.boneMeal",
         "customModelData": {
           "rangeDispatch": [
-            1731
+            1736
           ]
         }
       },
@@ -46238,7 +46214,7 @@
         "name": "ingredient.muscle",
         "customModelData": {
           "rangeDispatch": [
-            2124
+            2154
           ]
         }
       },
@@ -46293,7 +46269,7 @@
         "name": "ingredient.saltWater",
         "customModelData": {
           "rangeDispatch": [
-            2286
+            2321
           ]
         }
       },
@@ -46344,7 +46320,7 @@
         "name": "ingredient.stickyMudball",
         "customModelData": {
           "rangeDispatch": [
-            2389
+            2430
           ]
         }
       },
@@ -46399,7 +46375,7 @@
         "name": "ingredient.thickMud",
         "customModelData": {
           "rangeDispatch": [
-            2430
+            2473
           ]
         }
       },
@@ -46454,7 +46430,7 @@
         "name": "ingredient.blightedBrain",
         "customModelData": {
           "rangeDispatch": [
-            1722
+            1727
           ]
         }
       },
@@ -46508,7 +46484,7 @@
         "name": "ingredient.drySeeds",
         "customModelData": {
           "rangeDispatch": [
-            1863
+            1878
           ]
         }
       },
@@ -46563,7 +46539,7 @@
         "name": "ingredient.mixedSeeds",
         "customModelData": {
           "rangeDispatch": [
-            2115
+            2143
           ]
         }
       },
@@ -46614,7 +46590,7 @@
         "name": "ingredient.oldBone",
         "customModelData": {
           "rangeDispatch": [
-            2147
+            2177
           ]
         }
       },
@@ -46665,7 +46641,7 @@
         "name": "ingredient.rottingBone",
         "customModelData": {
           "rangeDispatch": [
-            2275
+            2310
           ]
         }
       },
@@ -46719,7 +46695,7 @@
         "name": "ingredient.snakeEye",
         "customModelData": {
           "rangeDispatch": [
-            2344
+            2383
           ]
         }
       },
@@ -46769,7 +46745,7 @@
         "name": "ingredient.splitEssence",
         "customModelData": {
           "rangeDispatch": [
-            2379
+            2420
           ]
         }
       },
@@ -46825,7 +46801,7 @@
         "name": "ingredient.truffle",
         "customModelData": {
           "rangeDispatch": [
-            2449
+            2493
           ]
         }
       },
@@ -46879,7 +46855,7 @@
         "name": "ingredient.volatileMatter",
         "customModelData": {
           "rangeDispatch": [
-            2475
+            2521
           ]
         }
       },
@@ -46939,7 +46915,7 @@
         "name": "ingredient.waterloggedBranch",
         "customModelData": {
           "rangeDispatch": [
-            2482
+            2528
           ]
         }
       },
@@ -46994,7 +46970,7 @@
         "name": "ingredient.coastalShell",
         "customModelData": {
           "rangeDispatch": [
-            1779
+            1787
           ]
         }
       },
@@ -47044,7 +47020,7 @@
         "name": "ingredient.canyonParsley",
         "customModelData": {
           "rangeDispatch": [
-            1752
+            1759
           ]
         }
       },
@@ -47102,7 +47078,7 @@
         "name": "ingredient.infusedGold",
         "customModelData": {
           "rangeDispatch": [
-            2026
+            2049
           ]
         }
       },
@@ -47152,7 +47128,7 @@
         "name": "ingredient.rose",
         "customModelData": {
           "rangeDispatch": [
-            2269
+            2304
           ]
         }
       },
@@ -47203,7 +47179,7 @@
         "name": "ingredient.smoothSilt",
         "customModelData": {
           "rangeDispatch": [
-            2343
+            2382
           ]
         }
       },
@@ -47258,7 +47234,7 @@
         "name": "ingredient.spellboundAsh",
         "customModelData": {
           "rangeDispatch": [
-            2370
+            2410
           ]
         }
       },
@@ -47308,7 +47284,7 @@
         "name": "ingredient.highlandBasil",
         "customModelData": {
           "rangeDispatch": [
-            1994
+            2016
           ]
         }
       },
@@ -47366,7 +47342,7 @@
         "name": "ingredient.munchedGrass",
         "customModelData": {
           "rangeDispatch": [
-            2122
+            2152
           ]
         }
       },
@@ -47421,7 +47397,7 @@
         "name": "ingredient.platinumGrookEgg",
         "customModelData": {
           "rangeDispatch": [
-            2191
+            2222
           ]
         }
       },
@@ -47479,7 +47455,7 @@
         "name": "ingredient.toxicSpores",
         "customModelData": {
           "rangeDispatch": [
-            2443
+            2487
           ]
         }
       },
@@ -47533,7 +47509,7 @@
         "name": "ingredient.woodSnippet",
         "customModelData": {
           "rangeDispatch": [
-            2497
+            2544
           ]
         }
       },
@@ -47584,7 +47560,7 @@
         "name": "ingredient.wornMemorabilia",
         "customModelData": {
           "rangeDispatch": [
-            2503
+            2550
           ]
         }
       },
@@ -47635,7 +47611,7 @@
         "name": "ingredient.alteredAsh",
         "customModelData": {
           "rangeDispatch": [
-            1674
+            1678
           ]
         }
       },
@@ -47686,7 +47662,7 @@
         "name": "ingredient.batEar",
         "customModelData": {
           "rangeDispatch": [
-            1705
+            1710
           ]
         }
       },
@@ -47736,7 +47712,7 @@
         "name": "ingredient.corruptedBeef",
         "customModelData": {
           "rangeDispatch": [
-            1796
+            1807
           ]
         }
       },
@@ -47790,7 +47766,7 @@
         "name": "ingredient.cultistAshes",
         "customModelData": {
           "rangeDispatch": [
-            1815
+            1828
           ]
         }
       },
@@ -47811,8 +47787,8 @@
         "maximum": 10
       },
       "hprRaw": {
-        "minimum": -5,
-        "maximum": -3
+        "minimum": -7,
+        "maximum": -4
       }
     },
     "consumableIDs": {
@@ -47847,7 +47823,7 @@
         "name": "ingredient.depreciatingFlesh",
         "customModelData": {
           "rangeDispatch": [
-            1840
+            1855
           ]
         }
       },
@@ -47898,7 +47874,7 @@
         "name": "ingredient.driedGill",
         "customModelData": {
           "rangeDispatch": [
-            1860
+            1875
           ]
         }
       },
@@ -47952,7 +47928,7 @@
         "name": "ingredient.fireflyDust",
         "customModelData": {
           "rangeDispatch": [
-            1908
+            1925
           ]
         }
       },
@@ -48003,7 +47979,7 @@
         "name": "ingredient.livelyApple",
         "customModelData": {
           "rangeDispatch": [
-            2065
+            2089
           ]
         }
       },
@@ -48017,8 +47993,8 @@
     ],
     "ids": {
       "hprRaw": {
-        "minimum": 3,
-        "maximum": 5
+        "minimum": 4,
+        "maximum": 7
       }
     },
     "consumableIDs": {
@@ -48053,7 +48029,7 @@
         "name": "ingredient.relicOfTheFuture",
         "customModelData": {
           "rangeDispatch": [
-            2249
+            2284
           ]
         }
       },
@@ -48108,7 +48084,7 @@
         "name": "ingredient.relicOfThePast",
         "customModelData": {
           "rangeDispatch": [
-            2250
+            2285
           ]
         }
       },
@@ -48162,7 +48138,7 @@
         "name": "ingredient.scarredLeather",
         "customModelData": {
           "rangeDispatch": [
-            2293
+            2328
           ]
         }
       },
@@ -48216,7 +48192,7 @@
         "name": "ingredient.undeadHeart",
         "customModelData": {
           "rangeDispatch": [
-            2455
+            2499
           ]
         }
       },
@@ -48271,7 +48247,7 @@
         "name": "ingredient.waterfallThyme",
         "customModelData": {
           "rangeDispatch": [
-            2481
+            2527
           ]
         }
       },
@@ -48325,7 +48301,7 @@
         "name": "ingredient.boneAsh",
         "customModelData": {
           "rangeDispatch": [
-            1730
+            1735
           ]
         }
       },
@@ -48376,7 +48352,7 @@
         "name": "ingredient.glowingTreeSap",
         "customModelData": {
           "rangeDispatch": [
-            1957
+            1977
           ]
         }
       },
@@ -48434,7 +48410,7 @@
         "name": "ingredient.herbalExtract",
         "customModelData": {
           "rangeDispatch": [
-            1991
+            2013
           ]
         }
       },
@@ -48492,7 +48468,7 @@
         "name": "ingredient.luciolum",
         "customModelData": {
           "rangeDispatch": [
-            2074
+            2099
           ]
         }
       },
@@ -48547,7 +48523,7 @@
         "name": "ingredient.luminescentInk",
         "customModelData": {
           "rangeDispatch": [
-            2077
+            2102
           ]
         }
       },
@@ -48597,7 +48573,7 @@
         "name": "ingredient.pigmanIvory",
         "customModelData": {
           "rangeDispatch": [
-            2176
+            2207
           ]
         }
       },
@@ -48652,7 +48628,7 @@
         "name": "ingredient.warpedSkin",
         "customModelData": {
           "rangeDispatch": [
-            2479
+            2525
           ]
         }
       },
@@ -48703,7 +48679,7 @@
         "name": "ingredient.forgottenAxe",
         "customModelData": {
           "rangeDispatch": [
-            1923
+            1940
           ]
         }
       },
@@ -48753,7 +48729,7 @@
         "name": "ingredient.joltingGeode",
         "customModelData": {
           "rangeDispatch": [
-            2040
+            2064
           ]
         }
       },
@@ -48807,7 +48783,7 @@
         "name": "ingredient.outdatedNewspaper",
         "customModelData": {
           "rangeDispatch": [
-            2160
+            2191
           ]
         }
       },
@@ -48865,7 +48841,7 @@
         "name": "ingredient.digestibleFungi",
         "customModelData": {
           "rangeDispatch": [
-            1848
+            1863
           ]
         }
       },
@@ -48923,7 +48899,7 @@
         "name": "ingredient.drainedBone",
         "customModelData": {
           "rangeDispatch": [
-            1859
+            1874
           ]
         }
       },
@@ -48974,7 +48950,7 @@
         "name": "ingredient.mooshroomEar",
         "customModelData": {
           "rangeDispatch": [
-            2118
+            2146
           ]
         }
       },
@@ -49024,7 +49000,7 @@
         "name": "ingredient.pigmanMeat",
         "customModelData": {
           "rangeDispatch": [
-            2177
+            2208
           ]
         }
       },
@@ -49075,7 +49051,7 @@
         "name": "ingredient.weakeningCatalyst",
         "customModelData": {
           "rangeDispatch": [
-            2484
+            2530
           ]
         }
       },
@@ -49133,7 +49109,7 @@
         "name": "ingredient.apple",
         "customModelData": {
           "rangeDispatch": [
-            1690
+            1695
           ]
         }
       },
@@ -49183,7 +49159,7 @@
         "name": "ingredient.corruptedIchor",
         "customModelData": {
           "rangeDispatch": [
-            1799
+            1810
           ]
         }
       },
@@ -49274,7 +49250,7 @@
         "name": "ingredient.familiarEssence",
         "customModelData": {
           "rangeDispatch": [
-            1897
+            1914
           ]
         }
       },
@@ -49325,7 +49301,7 @@
         "name": "ingredient.softBlueWool",
         "customModelData": {
           "rangeDispatch": [
-            2351
+            2390
           ]
         }
       },
@@ -49376,7 +49352,7 @@
         "name": "ingredient.softGreenWool",
         "customModelData": {
           "rangeDispatch": [
-            2352
+            2391
           ]
         }
       },
@@ -49427,7 +49403,7 @@
         "name": "ingredient.softRedWool",
         "customModelData": {
           "rangeDispatch": [
-            2353
+            2392
           ]
         }
       },
@@ -49478,7 +49454,7 @@
         "name": "ingredient.softWhiteWool",
         "customModelData": {
           "rangeDispatch": [
-            2356
+            2395
           ]
         }
       },
@@ -49529,7 +49505,7 @@
         "name": "ingredient.softYellowWool",
         "customModelData": {
           "rangeDispatch": [
-            2357
+            2396
           ]
         }
       },
@@ -49580,7 +49556,7 @@
         "name": "ingredient.webbedOffshoot",
         "customModelData": {
           "rangeDispatch": [
-            2486
+            2532
           ]
         }
       },
@@ -49635,7 +49611,7 @@
         "name": "ingredient.woolyArmour",
         "customModelData": {
           "rangeDispatch": [
-            2499
+            2546
           ]
         }
       },
@@ -49689,7 +49665,7 @@
         "name": "ingredient.assortedSeeds",
         "customModelData": {
           "rangeDispatch": [
-            1698
+            1703
           ]
         }
       },
@@ -49746,7 +49722,7 @@
         "name": "ingredient.boarMeat",
         "customModelData": {
           "rangeDispatch": [
-            1728
+            1733
           ]
         }
       },
@@ -49842,7 +49818,7 @@
         "name": "ingredient.charredBone",
         "customModelData": {
           "rangeDispatch": [
-            1764
+            1772
           ]
         }
       },
@@ -49893,7 +49869,7 @@
         "name": "ingredient.beakOfTheNivlanBeauty",
         "customModelData": {
           "rangeDispatch": [
-            1707
+            1712
           ]
         }
       },
@@ -49945,7 +49921,7 @@
         "name": "ingredient.bloodOfTheNivlanBeauty",
         "customModelData": {
           "rangeDispatch": [
-            1727
+            1732
           ]
         }
       },
@@ -50001,7 +49977,7 @@
         "name": "ingredient.featherOfGrace",
         "customModelData": {
           "rangeDispatch": [
-            1901
+            1918
           ]
         }
       },
@@ -50052,7 +50028,7 @@
         "name": "ingredient.flugsvampCap",
         "customModelData": {
           "rangeDispatch": [
-            1919
+            1936
           ]
         }
       },
@@ -50102,7 +50078,7 @@
         "name": "ingredient.luckySpiderEgg",
         "customModelData": {
           "rangeDispatch": [
-            2076
+            2101
           ]
         }
       },
@@ -50195,7 +50171,7 @@
         "name": "ingredient.rottenBone",
         "customModelData": {
           "rangeDispatch": [
-            2271
+            2306
           ]
         }
       },
@@ -50250,7 +50226,7 @@
         "name": "ingredient.sheepHoof",
         "customModelData": {
           "rangeDispatch": [
-            2322
+            2359
           ]
         }
       },
@@ -50301,7 +50277,7 @@
         "name": "ingredient.thinQuill",
         "customModelData": {
           "rangeDispatch": [
-            2432
+            2475
           ]
         }
       },
@@ -50353,7 +50329,7 @@
         "name": "ingredient.coagulatedClot",
         "customModelData": {
           "rangeDispatch": [
-            1777
+            1785
           ]
         }
       },
@@ -50404,7 +50380,7 @@
         "name": "ingredient.corruptedFragment",
         "customModelData": {
           "rangeDispatch": [
-            1798
+            1809
           ]
         }
       },
@@ -50465,7 +50441,7 @@
         "name": "ingredient.corruptionShard",
         "customModelData": {
           "rangeDispatch": [
-            1801
+            1812
           ]
         }
       },
@@ -50517,7 +50493,7 @@
         "name": "ingredient.fungiSpores",
         "customModelData": {
           "rangeDispatch": [
-            1938
+            1955
           ]
         }
       },
@@ -50567,7 +50543,7 @@
         "name": "ingredient.karlJohanCap",
         "customModelData": {
           "rangeDispatch": [
-            2043
+            2067
           ]
         }
       },
@@ -50617,7 +50593,7 @@
         "name": "ingredient.manaExtract",
         "customModelData": {
           "rangeDispatch": [
-            2094
+            2119
           ]
         }
       },
@@ -50671,7 +50647,7 @@
         "name": "ingredient.paralyzingSpores",
         "customModelData": {
           "rangeDispatch": [
-            2165
+            2196
           ]
         }
       },
@@ -50791,7 +50767,7 @@
         "name": "ingredient.blazingFireball",
         "customModelData": {
           "rangeDispatch": [
-            1719
+            1724
           ]
         }
       },
@@ -50842,7 +50818,7 @@
         "name": "ingredient.defendersStone",
         "customModelData": {
           "rangeDispatch": [
-            1834
+            1847
           ]
         }
       },
@@ -50901,7 +50877,7 @@
         "name": "ingredient.earthlyPebble",
         "customModelData": {
           "rangeDispatch": [
-            1867
+            1882
           ]
         }
       },
@@ -50951,7 +50927,7 @@
         "name": "ingredient.oldTreasure",
         "customModelData": {
           "rangeDispatch": [
-            2149
+            2179
           ]
         }
       },
@@ -51005,7 +50981,7 @@
         "name": "ingredient.sharpeningStone",
         "customModelData": {
           "rangeDispatch": [
-            2315
+            2351
           ]
         }
       },
@@ -51059,7 +51035,7 @@
         "name": "ingredient.usedFireball",
         "customModelData": {
           "rangeDispatch": [
-            2463
+            2507
           ]
         }
       },
@@ -51156,7 +51132,7 @@
         "name": "ingredient.freshWater",
         "customModelData": {
           "rangeDispatch": [
-            1932
+            1949
           ]
         }
       },
@@ -51208,7 +51184,7 @@
         "name": "ingredient.grookFeather",
         "customModelData": {
           "rangeDispatch": [
-            1974
+            1996
           ]
         }
       },
@@ -51304,7 +51280,7 @@
         "name": "ingredient.poisonousSpiderEye",
         "customModelData": {
           "rangeDispatch": [
-            2197
+            2228
           ]
         }
       },
@@ -51355,7 +51331,7 @@
         "name": "ingredient.spiderFang",
         "customModelData": {
           "rangeDispatch": [
-            2373
+            2413
           ]
         }
       },
@@ -51406,7 +51382,7 @@
         "name": "ingredient.tarnishedGoldFoil",
         "customModelData": {
           "rangeDispatch": [
-            2418
+            2460
           ]
         }
       },
@@ -51457,7 +51433,7 @@
         "name": "ingredient.activeFireball",
         "customModelData": {
           "rangeDispatch": [
-            1663
+            1667
           ]
         }
       },
@@ -51509,7 +51485,7 @@
         "name": "ingredient.bobsTear",
         "customModelData": {
           "rangeDispatch": [
-            1729
+            1734
           ]
         }
       },
@@ -51558,7 +51534,7 @@
         "name": "ingredient.putridGunk",
         "customModelData": {
           "rangeDispatch": [
-            2224
+            2256
           ]
         }
       },
@@ -51608,7 +51584,7 @@
         "name": "ingredient.zombieBrain",
         "customModelData": {
           "rangeDispatch": [
-            2515
+            2563
           ]
         }
       },
@@ -51659,7 +51635,7 @@
         "name": "ingredient.cleanedSaccharum",
         "customModelData": {
           "rangeDispatch": [
-            1773
+            1781
           ]
         }
       },
@@ -51714,7 +51690,7 @@
         "name": "ingredient.forestWeb",
         "customModelData": {
           "rangeDispatch": [
-            1922
+            1939
           ]
         }
       },
@@ -51766,7 +51742,7 @@
         "name": "ingredient.luxuriousSilk",
         "customModelData": {
           "rangeDispatch": [
-            2086
+            2111
           ]
         }
       },
@@ -51816,7 +51792,7 @@
         "name": "ingredient.ratHair",
         "customModelData": {
           "rangeDispatch": [
-            2237
+            2270
           ]
         }
       },
@@ -51867,7 +51843,7 @@
         "name": "ingredient.strongFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2402
+            2444
           ]
         }
       },
@@ -51924,7 +51900,7 @@
         "name": "ingredient.egg",
         "customModelData": {
           "rangeDispatch": [
-            1868
+            1883
           ]
         }
       },
@@ -51974,7 +51950,7 @@
         "name": "ingredient.leather",
         "customModelData": {
           "rangeDispatch": [
-            2054
+            2078
           ]
         }
       },
@@ -52025,7 +52001,7 @@
         "name": "ingredient.pinkWool",
         "customModelData": {
           "rangeDispatch": [
-            2184
+            2215
           ]
         }
       },
@@ -52083,7 +52059,7 @@
         "name": "ingredient.brownMushroom",
         "customModelData": {
           "rangeDispatch": [
-            1745
+            1751
           ]
         }
       },
@@ -52133,7 +52109,7 @@
         "name": "ingredient.coastalSand",
         "customModelData": {
           "rangeDispatch": [
-            1778
+            1786
           ]
         }
       },
@@ -52183,7 +52159,7 @@
         "name": "ingredient.potato",
         "customModelData": {
           "rangeDispatch": [
-            2204
+            2235
           ]
         }
       },
@@ -52233,7 +52209,7 @@
         "name": "ingredient.rarePotato",
         "customModelData": {
           "rangeDispatch": [
-            2236
+            2269
           ]
         }
       },
@@ -52283,7 +52259,7 @@
         "name": "ingredient.redMushroom",
         "customModelData": {
           "rangeDispatch": [
-            2242
+            2276
           ]
         }
       },
@@ -52333,7 +52309,7 @@
         "name": "ingredient.rottenFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2272
+            2307
           ]
         }
       },
@@ -52431,7 +52407,7 @@
         "name": "ingredient.sturdyFlesh",
         "customModelData": {
           "rangeDispatch": [
-            2403
+            2445
           ]
         }
       },
@@ -52484,7 +52460,7 @@
         "name": "ingredient.thercksChain",
         "customModelData": {
           "rangeDispatch": [
-            2427
+            2470
           ]
         }
       },
@@ -52541,7 +52517,7 @@
         "name": "ingredient.wool",
         "customModelData": {
           "rangeDispatch": [
-            2498
+            2545
           ]
         }
       },
