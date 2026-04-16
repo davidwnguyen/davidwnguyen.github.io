@@ -128,16 +128,21 @@ const translate_mappings = {
 };
 
 const special_mappings = {
-    "Sum (skill points)": "str+dex+int+def+agi",
-    "Sum (Mana Sustain)": "mr+ms",
+    "Sum (Effectiveness)": "7/3 * touching + 8/3 * nottouching + 2/3 * (top + bottom) + 1/2 * (left + right)",
+    "Sum (Skill Points)": "str+dex+int+def+agi",
+    "Sum (Mana Sustain)": "mr/5+ms/3",
     "Sum (Life Sustain)": "hpr+ls",
-    "Sum (Effectiveness)": "7/3 * touching + 8/3 * nottouching + 2/3 * (top + bottom) + 1/2 * (left + right)"
+    "Sum (Melee Damage Raw)": "summeleedamraw+sumdamraw",
+    "Sum (Spell Damage Raw)": "sumspelldamraw+sumdamraw",
+    "Sum (Spell Damages %)": "sumspelldampct+sumdampct",
+    "Sum (Melee Damages %)": "summeleedampct+sumdampct"
 };
 
-for (let x in translate_mappings) {
+for (let x in special_mappings) {
     item_filters.push(x);
 }
-for (let x in special_mappings) {
+
+for (let x in translate_mappings) {
     item_filters.push(x);
 }
 
