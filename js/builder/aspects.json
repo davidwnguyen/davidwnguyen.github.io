@@ -3545,16 +3545,10 @@
           "abilities": [
             {
               "base_abil": "Lightweaver",
-              "effects": [
-                {
-                  "type": "add_spell_prop",
-                  "target_part": "Orb DPS",
-                  "base_spell": 5,
-                  "hits": {
-                    "Single Orb": 1
-                  }
-                }
-              ]
+              "properties": {
+                "num_orbs": 2
+              },
+              "effects": []
             }
           ]
         },
@@ -3571,16 +3565,10 @@
             },
             {
               "base_abil": "Lightweaver",
-              "effects": [
-                {
-                  "type": "add_spell_prop",
-                  "target_part": "Orb DPS",
-                  "base_spell": 5,
-                  "hits": {
-                    "Single Orb": 1
-                  }
-                }
-              ]
+              "properties": {
+                "num_orbs": 2
+              },
+              "effects": []
             }
           ]
         },
@@ -3597,16 +3585,10 @@
             },
             {
               "base_abil": "Lightweaver",
-              "effects": [
-                {
-                  "type": "add_spell_prop",
-                  "target_part": "Orb DPS",
-                  "base_spell": 5,
-                  "hits": {
-                    "Single Orb": 1.5
-                  }
-                }
-              ]
+              "properties": {
+                "num_orbs": 3
+              },
+              "effects": []
             }
           ]
         }
@@ -3883,26 +3865,110 @@
         {
           "threshold": 1,
           "description": "Vacuokinesis gains +8% Damage from Distortion.",
-          "abilities": []
+          "abilities": [
+            {
+              "base_abil": "Distortion",
+              "dependencies": [
+                "Vacuokinesis"
+              ],
+              "effects": [
+                {
+                  "type": "stat_scaling",
+                  "slider": true,
+                  "slider_name": "Distortion",
+                  "output": {
+                    "type": "stat",
+                    "name": "damMult.Distortion:0.Vacuokinesis"
+                  },
+                  "scaling": [
+                    0.08
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "threshold": 5,
           "description": "Vacuokinesis gains +12 Damage from Distortion.",
-          "abilities": []
+          "abilities": [
+            {
+              "base_abil": "Distortion",
+              "dependencies": [
+                "Vacuokinesis"
+              ],
+              "effects": [
+                {
+                  "type": "stat_scaling",
+                  "slider": true,
+                  "slider_name": "Distortion",
+                  "output": {
+                    "type": "stat",
+                    "name": "damMult.Distortion:0.Vacuokinesis"
+                  },
+                  "scaling": [
+                    0.12
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "threshold": 30,
           "description": "Vacuokinesis gains +16% Damage from Distortion.",
-          "abilities": []
+          "abilities": [
+            {
+              "base_abil": "Distortion",
+              "dependencies": [
+                "Vacuokinesis"
+              ],
+              "effects": [
+                {
+                  "type": "stat_scaling",
+                  "slider": true,
+                  "slider_name": "Distortion",
+                  "output": {
+                    "type": "stat",
+                    "name": "damMult.Distortion:0.Vacuokinesis"
+                  },
+                  "scaling": [
+                    0.16
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "threshold": 150,
           "description": "Vacuokinesis gains +20% Damage from Distortion.",
-          "abilities": []
+          "abilities": [
+                      {
+              "base_abil": "Distortion",
+              "dependencies": [
+                "Vacuokinesis"
+              ],
+              "effects": [
+                {
+                  "type": "stat_scaling",
+                  "slider": true,
+                  "slider_name": "Distortion",
+                  "output": {
+                    "type": "stat",
+                    "name": "damMult.Distortion:0.Vacuokinesis"
+                  },
+                  "scaling": [
+                    0.2
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "aliases": [
-        "vacuokinesisThreshold"
+        "vacuokinesisScaling"
       ]
     },
     {

@@ -3385,8 +3385,8 @@
                             "name": "damMult.DivineRight:3.Smite Damage"
                         },
                         "scaling": [
-                            0.004,
-                            0.004
+                            0.005,
+                            0.005
                         ],
                         "max": 200
                     }
@@ -3555,17 +3555,165 @@
     "DEATH_SENTENCE": {
         "displayName": "Death Sentence",
         "description": "Courage will immediately combust Guardian Angels, dealing [neutral]4000% and enkindling Buckshot's arrows with [neutral]20% Main Attack damage.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Archer",
+                "base_abil": "Arrow Shield",
+                "dependencies": [
+                    "Guardian Angels"
+                ],
+                "effects": [
+                    {
+                        "type": "replace_spell",
+                        "name": "Death Sentence",
+                        "base_spell": 23,
+                        "display": "Total Damage",
+                        "parts": [
+                            {
+                                "name": "Combustion Damage",
+                                "type": "damage",
+                                "multipliers": [
+                                    4000,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "name": "Buckshot Enkindle Damage",
+                                "type": "damage",
+                                "scaling": "melee",
+                                "use_atkspd": false,
+                                "multipliers": [
+                                    20,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "name": "Total Damage",
+                                "type": "total",
+                                "hits": {
+                                    "Combustion Damage": 1,
+                                    "Buckshot Enkindle Damage": 75
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "BLINDING_LIGHTS": {
         "displayName": "Blinding Lights",
         "description": "All Ophanim orbs become closer-range Lightweaver orbs. Using Main Attack causes all orbs to spin faster. Crystallize stacks are reduced by -2 per hit.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Ophanim",
+                "properties": {
+                    "blinding_lights_atkrate": 0.5
+                },
+                "effects": [
+                    {
+                        "type": "replace_spell",
+                        "name": "Blinding Lights",
+                        "base_spell": 3,
+                        "display": "Total Orb DPS",
+                        "parts": [
+                            {
+                                "name": "Ophanim Damage per Hit",
+                                "type": "damage",
+                                "multipliers": [
+                                    400,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "name": "Total Orb DPS",
+                                "type": "total",
+                                "hits": {
+                                    "Per Orb DPS": "Ophanim.num_orbs"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Per Orb DPS",
+                        "hits": {
+                            "Ophanim Damage per Hit": "Ophanim.blinding_lights_atkrate"
+                        },
+                        "hide": true
+                    },
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 3,
+                        "target_part": "Maximum Orb DPS",
+                        "hits": {
+                            "Ophanim Damage per Hit": "Ophanim.num_orbs"
+                        }
+                    },
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Blinding Lights",
+                        "bonuses": [
+                            {
+                                "type": "prop",
+                                "abil": "Lightweaver",
+                                "name": "atk_rate",
+                                "value": 0.3
+                            },
+                            {
+                                "type": "prop",
+                                "abil": "Ophanim",
+                                "name": "blinding_lights_atkrate",
+                                "value": 0.3
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "ORBWALK": {
         "displayName": "Orbwalk",
         "description": "Lightweaver Orbs gain +1 area of effect, [neutral]20%, and [air]20%, but move slower.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Mage",
+                "base_abil": "Lightweaver",
+                "properties": {
+                    "atk_rate": -0.214285714286
+                },
+                "effects": [
+                    {
+                        "type": "add_spell_prop",
+                        "base_spell": 5,
+                        "target_part": "Single Orb",
+                        "behavior": "modify",
+                        "multipliers": [
+                            20,
+                            0,
+                            0,
+                            0,
+                            0,
+                            20
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "UNSTABLE_REACTION": {
         "displayName": "Unstable Reaction",
@@ -3606,7 +3754,45 @@
     "LIVING_MUSEUM": {
         "displayName": "Living Museum",
         "description": "Players within 10 blocks of Mirage, Shadow, or Another Self clones will get 20% resistance, and be healed 10%, 20%, or 50% max health when the respective clone is destroyed.",
-        "abilities": []
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": 999,
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Living Museum",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "defMult.LivingMuseum",
+                                "value": 20
+                            }
+                        ]
+                    },
+                    {
+                        "type": "replace_spell",
+                        "name": "Living Museum",
+                        "base_spell": 23,
+                        "display": "Mirage Clone Heal",
+                        "parts": [
+                            {
+                                "name": "Mirage Clone Heal",
+                                "power": 0.1
+                            },
+                            {
+                                "name": "Shadow Clone Heal",
+                                "power": 0.2
+                            },
+                            {
+                                "name": "Another Self Clone Heal",
+                                "power": 0.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "STARCROSSED": {
         "displayName": "Starcrossed",
