@@ -1015,7 +1015,6 @@
                         "type": "stat_scaling",
                         "slider": true,
                         "slider_name": "Distortion",
-                        "requirement": 40,
                         "output": {
                             "type": "stat",
                             "name": "damMult.Distortion:0.Vacuokinesis"
