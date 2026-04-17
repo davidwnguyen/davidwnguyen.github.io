@@ -109,30 +109,7 @@ function displayBuildStats(parent_id, build, command_group, stats) {
             }
         }
 
-        // id instruction
-        else if (command === "mrTotal") {
-            let mr_val = stats.get("mr") || 0;
-            if (mr_val != 0) {
-                let mr_style = mr_val > 0 ? "positive" : "negative";
-                displayFixedID(parent_div, "mr", mr_val, elemental_format, mr_style);
-
-                let row = make_elem('div', ['row']);
-                let value_elem = make_elem('div', ['col', 'text-end']);
-                let prefix_elem = make_elem('b', [], { textContent: "\u279C Total with base: " });
-                let total_mr = mr_val + 25;
-                let total_style = total_mr > 0 ? "positive" : total_mr < 0 ? "negative" : null;
-                let number_elem = make_elem('b', total_style ? [total_style] : [], {
-                    textContent: total_mr + "/5s"
-                });
-                value_elem.append(prefix_elem);
-                value_elem.append(number_elem);
-                row.appendChild(value_elem);
-                parent_div.appendChild(row);
-            }
-            last_command = command;
-        }
-
-        else if (command === "maxManaTotal") {
+        else if (command === "#maxManaTotal") {
             let max_mana = stats.get("maxMana") || 0;
             let modifier_shown = false;
             if (max_mana != 0) {
@@ -155,6 +132,7 @@ function displayBuildStats(parent_id, build, command_group, stats) {
             last_command = command;
         }
 
+        // id instruction
         else {
             let id = command;
             if (stats.get(id)) {
