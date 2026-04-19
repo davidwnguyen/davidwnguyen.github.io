@@ -49,7 +49,7 @@ function _ps(a,b,c,d,e) { return new PowderSpecial(a,b,c,d,e); } //bruh moment
 let powderSpecialStats = [
     _ps("Quake",new Map([["Radius",[4.5,5,5.5,6,6.5,7,7.5]], ["Damage",[240,280,320,360,400,440,480]] ]),"Rage",new Map([ ["Damage", [0.4,0.5,0.6,0.7,0.8,0.9,1.0]],["Description", "% " + "\u2764" + " Missing below 75%"] ]),240), //e
     _ps("Chain Lightning",new Map([ ["Chains", [5,6,7,8,9,10,11]], ["Damage", [200,225,250,275,300,325,350]] ]),"Kill Streak",new Map([ ["Damage", [6,7.5,9,10.5,12,13.5,15]],["Duration", [5,5,5,5,5,5,5]],["Description", "Mob Killed"] ]),150), //t
-    _ps("Curse",new Map([ ["Duration", [4,4,4,4,4,4,4]],["Damage Boost", [10,12.5,15,17.5,20,22.5,25]] ]),"Concentration",new Map([ ["Damage", [0.05,0.075,0.1,0.125,0.15,0.175,0.2]],["Duration",[1,1,1,1,1]],["Description", "Mana Used"] ]),120), //w
+    _ps("Curse",new Map([ ["Duration", [4,4,4,4,4,4,4]],["Damage Boost", [10,12.5,15,17.5,20,22.5,25]] ]),"Concentration",new Map([ ["Damage", [0.05,0.075,0.1,0.125,0.15,0.175,0.2]],["Duration",[1,1,1,1,1,1,1]],["Description", "Mana Used"] ]),120), //w
     _ps("Courage",new Map([ ["Duration", [4,4,4,4,4,4,4]],["Damage", [110,125,140,155,170,185,200]],["Damage Boost", [10,12.5,15,17.5,20,22.5,25]] ]),"Endurance",new Map([ ["Damage", [2,3,4,5,6,7,8]],["Duration", [8,8,8,8,8,8,8]],["Description", "Hit Taken"] ]),120), //f
     _ps("Wind Prison",new Map([ ["Duration", [5,5,5,5,5,5,5]],["Damage Boost", [100,125,150,175,200,225,250]],["Knockback", [8,12,16,20,24,24,24]] ]),"Dodge",new Map([ ["Damage",[2,3,4,5,6,7,8]],["Duration",[20,20,20,20,20,20,20]],["Description","Near Mobs"] ]),120) //a
 ];

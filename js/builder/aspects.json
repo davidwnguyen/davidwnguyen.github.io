@@ -5569,45 +5569,24 @@
           "abilities": [
             {
               "base_abil": "Uproot",
-              "properties": {},
-              "effects": [
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "lunatic_damage",
-                      "mult": true,
-                      "value": 1.15
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "fanatic_res",
-                      "mult": true,
-                      "value": 1.15
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "heretic_speed",
-                      "mult": true,
-                      "value": 1.15
-                    }
-                  ]
-                }
-              ]
+              "properties": {
+                "lunatic_damage": 2.25,
+                "fanatic_res": 3.75,
+                "heretic_speed": 7.5
+              },
+              "effects": []
+            },
+            {
+              "base_abil": "Uproot",
+              "dependencies": [
+                "Meticulous Act"
+              ],
+              "properties": {
+                "lunatic_damage": 3.75,
+                "fanatic_res": 3,
+                "heretic_speed": 6
+              },
+              "effects": []
             }
           ]
         },
@@ -5617,45 +5596,24 @@
           "abilities": [
             {
               "base_abil": "Uproot",
-              "properties": {},
-              "effects": [
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "lunatic_damage",
-                      "mult": true,
-                      "value": 1.2
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "fanatic_res",
-                      "mult": true,
-                      "value": 1.2
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "heretic_speed",
-                      "mult": true,
-                      "value": 1.2
-                    }
-                  ]
-                }
-              ]
+              "properties": {
+                "lunatic_damage": 3,
+                "fanatic_res": 5,
+                "heretic_speed": 10
+              },
+              "effects": []
+            },
+            {
+              "base_abil": "Uproot",
+              "dependencies": [
+                "Meticulous Act"
+              ],
+              "properties": {
+                "lunatic_damage": 5,
+                "fanatic_res": 4,
+                "heretic_speed": 8
+              },
+              "effects": []
             }
           ]
         },
@@ -5665,45 +5623,24 @@
           "abilities": [
             {
               "base_abil": "Uproot",
-              "properties": {},
-              "effects": [
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "lunatic_damage",
-                      "mult": true,
-                      "value": 1.25
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "fanatic_res",
-                      "mult": true,
-                      "value": 1.25
-                    }
-                  ]
-                },
-                {
-                  "type": "raw_stat",
-                  "bonuses": [
-                    {
-                      "type": "prop",
-                      "abil": "Uproot",
-                      "name": "heretic_speed",
-                      "mult": true,
-                      "value": 1.25
-                    }
-                  ]
-                }
-              ]
+              "properties": {
+                "lunatic_damage": 3.75,
+                "fanatic_res": 6.25,
+                "heretic_speed": 12.5
+              },
+              "effects": []
+            },
+            {
+              "base_abil": "Uproot",
+              "dependencies": [
+                "Meticulous Act"
+              ],
+              "properties": {
+                "lunatic_damage": 6.25,
+                "fanatic_res": 5,
+                "heretic_speed": 10
+              },
+              "effects": []
             }
           ]
         }

@@ -2214,7 +2214,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Superconductor",
-                        "base_spell": 20,
+                        "base_spell": 27,
                         "scaling": "melee",
                         "use_atkspd": false,
                         "display": "Total Damage",
@@ -2325,7 +2325,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Orbital Chain",
-                        "base_spell": 21,
+                        "base_spell": 28,
                         "display": "Explosion Damage",
                         "parts": [
                             {
@@ -2367,7 +2367,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Earthen Splinter",
-                        "base_spell": 21,
+                        "base_spell": 29,
                         "scaling": "melee",
                         "use_atkspd": false,
                         "display": "Quake Root Damage",
@@ -2401,7 +2401,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Troll Barge",
-                        "base_spell": 21,
+                        "base_spell": 30,
                         "scaling": "melee",
                         "use_atkspd": false,
                         "display": "Total Damage",
@@ -3206,7 +3206,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Flain Remnants",
-                        "base_spell": 23,
+                        "base_spell": 24,
                         "display": "Total Remnant DPS",
                         "parts": [
                             {
@@ -3566,7 +3566,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Death Sentence",
-                        "base_spell": 23,
+                        "base_spell": 25,
                         "display": "Total Damage",
                         "parts": [
                             {
@@ -3773,7 +3773,7 @@
                     {
                         "type": "replace_spell",
                         "name": "Living Museum",
-                        "base_spell": 23,
+                        "base_spell": 26,
                         "display": "Mirage Clone Heal",
                         "parts": [
                             {

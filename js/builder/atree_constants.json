@@ -7466,7 +7466,7 @@
                 {
                     "type": "replace_spell",
                     "name": "Beyond Salvation",
-                    "base_spell": 9,
+                    "base_spell": 13,
                     "display": "Total Damage",
                     "parts": [
                         {
@@ -7530,7 +7530,7 @@
                 {
                     "type": "replace_spell",
                     "name": "Zenith Stance",
-                    "base_spell": 11,
+                    "base_spell": 12,
                     "display": "Total DPS",
                     "parts": [
                         {
@@ -7581,7 +7581,7 @@
                 {
                     "type": "replace_spell",
                     "name": "Judgement",
-                    "base_spell": 10,
+                    "base_spell": 11,
                     "display": "Sword Impact Damage",
                     "parts": [
                         {
