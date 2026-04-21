@@ -93,15 +93,24 @@ function calculate_skillpoints(equipment, weapon) {
     // Calculate equipment equipping order and required skillpoints.
     // Return value: [equip_order, best_skillpoints, final_skillpoints, best_total];
     let crafted_items = [];
+    let total_item_skillpoints = [0, 0, 0, 0, 0];
     weapon.skillpoints = weapon.get('skillpoints');
     weapon.reqs = weapon.get('reqs');
     weapon.set = weapon.get('set');
+    for (const i in skp_order) {
+        total_item_skillpoints[i] += weapon.skillpoints[i];
+    }
+
     for (const item of equipment) {
         item.skillpoints = item.get('skillpoints');
         item.reqs = item.get('reqs');
         item.set = item.get('set');
         if (item.get("crafted")) {
             crafted_items.push(item);
+        }
+
+        for (const i in skp_order) {
+            total_item_skillpoints[i] += item.skillpoints[i];
         }
     }
 
@@ -244,12 +253,13 @@ function calculate_skillpoints(equipment, weapon) {
         for (const i in skp_order) {
             const delta = (bonus[skp_order[i]] || 0);
             final_skillpoints[i] += delta;
+            total_item_skillpoints[i] += delta;
         }
     }
 
     const end = performance.now();
     console.log(end - start, "ms elapsed");
     console.log(items_tried, "item equips,", full_tried, "full builds evaluated", checks, "items checked for satisfaction");
-    return [best_order, best_skillpoints, final_skillpoints, best_total, best_activeSetCounts];
+    return [best_order, best_skillpoints, final_skillpoints, best_total, best_activeSetCounts, total_item_skillpoints];
 }
 

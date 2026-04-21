@@ -1012,12 +1012,13 @@ const radiance_node = new (class extends ComputeNode {
                     }
                 }
             }
-            // const dam_mults = new Map(ret.get('damMult'));
-            // dam_mults.set('tome', dam_mults.get('tome') * 1.2)
-            // ret.set('damMult', dam_mults)
-            // const def_mults = new Map(ret.get('defMult'));
-            // def_mults.set('tome', def_mults.get('tome') * 1.2)
-            // ret.set('defMult', def_mults)
+            
+            // Radiance only affects the skillpoints granted from items (and consu apparently?)
+            skp_order.forEach((skp, i) => {
+                if ((player_build.total_item_skillpoints[i] || 0) > 0) {
+                    ret.set(skp, Math.floor((ret.get(skp) || 0) + player_build.total_item_skillpoints[i] * (boost-1)));
+                }
+            });
             return ret;
         }
         else {

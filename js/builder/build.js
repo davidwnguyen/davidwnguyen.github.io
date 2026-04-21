@@ -57,6 +57,8 @@ class Build {
         // How many skillpoints assigned (1 number, sum of base_skillpoints)
         this.assigned_skillpoints = result[3];
         this.activeSetCounts = result[4];
+        // How many skillpoints are from items (used for radiance)
+        this.total_item_skillpoints = result[5];
 
         this.initBuildStats();
     }  
