@@ -965,7 +965,7 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Time Vortex"
+                    "Frozen Tornado"
                 ],
                 "effects": [
                     {
@@ -977,7 +977,7 @@
                             "name": "damMult.Distortion:4.Damage per Tick"
                         },
                         "scaling": [
-                            -0.64
+                            -0.48
                         ]
                     }
                 ]
@@ -986,7 +986,7 @@
                 "class": "Mage",
                 "base_abil": "Distortion",
                 "dependencies": [
-                    "Time Vortex",
+                    "Frozen Tornado",
                     "Influx Shift"
                 ],
                 "effects": [
@@ -999,7 +999,7 @@
                             "name": "damMult.Distortion:4.Damage per Tick"
                         },
                         "scaling": [
-                            -0.224
+                            -0.168
                         ]
                     }
                 ]
@@ -2691,46 +2691,8 @@
     },
     "SPLIT_SECOND": {
         "displayName": "Split Second",
-        "description": "Commander charges three times faster, but only boosts puppet attack speed by 10%, and Main Attack damage by 2%.",
-        "abilities": [
-            {
-                "class": "Shaman",
-                "base_abil": "Commander",
-                "properties": {},
-                "effects": [
-                    {
-                        "type": "raw_stat",
-                        "toggle": "Commander",
-                        "bonuses": [
-                            {
-                                "type": "prop",
-                                "abil": "Puppet Master",
-                                "name": "attack_frequency",
-                                "value": -0.3
-                            }
-                        ]
-                    },
-                    {
-                        "type": "stat_scaling",
-                        "slider": false,
-                        "inputs": [
-                            {
-                                "type": "prop",
-                                "abil": "Puppet Master",
-                                "name": "rallied_puppets"
-                            }
-                        ],
-                        "output": {
-                            "type": "stat",
-                            "name": "damMult.Commander:0.Single Beam"
-                        },
-                        "scaling": [
-                            -3
-                        ]
-                    }
-                ]
-            }
-        ]
+        "description": "Aura now travels faster with Invigorating Wave unlocked, but no longer gives mana.",
+        "abilities": []
     },
     "MOB_MENTALITY": {
         "displayName": "Mob Mentality",
@@ -3118,7 +3080,7 @@
     },
     "WAVEBREAK": {
         "displayName": "Wavebreak",
-        "description": "Meteor's [earth] damage is replaced by [water] damage.\nPsychokinesis can bounce up to 5 times, dealing [neutral]100% and [water]50% area damage, as well\nas [neutral]200% and [water]100% direct hit damage, increasing by 10% after each bounce. Mana Bank gains -3 less mana from Meteor.",
+        "description": "Meteor's [earth] damage is replaced by [water] damage.\nPsychokinesis can bounce up to 5 times, dealing [neutral]100% and [water]50% area damage, as well\nas [neutral]200% and [water]100% direct hit damage, increasing by 10% after each bounce. Mana Bank gains 3 less mana from Meteor.",
         "abilities": [
             {
                 "class": "Mage",
@@ -3336,7 +3298,7 @@
     },
     "REGICIDES_VANTAGE": {
         "displayName": "Regicide",
-        "description": "Your projectiles and abilities deal more damage the further away you are from your target, by 2% per block, up to a cap of 120%.",
+        "description": "Your deal 2% more damage for every block you are away from your target (Max 120%).",
         "abilities": [
             {
                 "class": "Archer",
@@ -3821,7 +3783,28 @@
     },
     "TORMENT_LITURGY": {
         "displayName": "Torment Liturgy",
-        "description": "Shadow Siphon now immediately refreshes Vanish when triggered.",
-        "abilities": []
+        "description": "Shadow Siphon now immediately refreshes Vanish when triggered, but reduces Surprise Strike's multiplier by -30%.",
+        "abilities": [
+            {
+                "class": "Assassin",
+                "base_abil": "Dash",
+                "dependencies": [
+                    "Surprise Strike"
+                ],
+                "effects": [
+                    {
+                        "type": "raw_stat",
+                        "toggle": "Activate Surprise Strike",
+                        "bonuses": [
+                            {
+                                "type": "stat",
+                                "name": "damMult.SurpriseStrike",
+                                "value": -30
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

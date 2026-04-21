@@ -6247,7 +6247,7 @@
         },
         {
             "display_name": "Axe Kick",
-            "desc": "Increases the damage and mana cost of Uppercut. </br> Mana Cost: +5 + 20% </br><span class='mc-white'>Total Damage</span>: +100% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +100%)",
+            "desc": "Increases the damage and mana cost of Uppercut. </br> Mana Cost: +5 Mana Cost: +20% </br><span class='mc-white'>Total Damage</span>: +100% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +100%)",
             "base_abil": "Uppercut",
             "parents": [
                 "Riposte",
@@ -8168,7 +8168,7 @@
         },
         {
             "display_name": "Etheric Slash",
-            "desc": "When using Teleport, slash through reality and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='aDam'>Air</span>: 50%) </br>Area of Effect: 2 Blocks (Circle-Shaped)",
+            "desc": "When using Teleport, slash through reality and deal damage to enemies you pierce. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='aDam'>Air</span>: 50%) </br>Area of Effect: 3 Blocks (Circle-Shaped)",
             "archetype": "Riftwalker",
             "base_abil": "Teleport",
             "parents": [
@@ -8401,7 +8401,7 @@
         },
         {
             "display_name": "Distortion",
-            "desc": "Hitting an enemy with Etheric Slash grants up to +10 Distortion per 2s </br> Each Distortion gives +1 Raw Damage and decays at a rate of -1 per second, increasing as you gain Distortion.",
+            "desc": "Hitting an enemy with Etheric Slash grants up to +20 Distortion per 4s </br> Each Distortion gives +1 Raw Damage and decays at a rate of -1 per second, increasing as you gain Distortion.",
             "archetype": "Riftwalker",
             "archetype_req": 2,
             "parents": [
@@ -8515,7 +8515,7 @@
         },
         {
             "display_name": "Arcane Transfer",
-            "desc": "Meteor, Ice Snake, and Etheric Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado and Meteor Shower will add 4 Mana. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
+            "desc": "Meteor, Ice Snake, and Wind Slash will add 13 Mana to a Mana Bank for every aggressive enemy you hit. Frozen Tornado and Meteor Shower will add 4 Mana. </br> Heal will now transfer the contents of your Mana Bank into usable Mana instead of healing.",
             "archetype": "Arcanist",
             "archetype_req": 2,
             "parents": [
@@ -8645,7 +8645,7 @@
         },
         {
             "display_name": "Frozen Tornado",
-            "desc": "Casting Ice Snake instead summons a frozen tornado that deals damage every 0.5s. </br> For every +1 Distortion, the tornado gains +0.025 </br>Area of Effect and +1.6% Damage. </br> </br><span class='mc-white'>Total Damage</span>: 100% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 70%)   </br>&emsp;(<span class='wDam'>Water</span>: 15%)   </br>&emsp;(<span class='aDam'>Air</span>: 15%) </br>Area of Effect: 6 Blocks (Circle-Shaped) </br>Effect: 50% Slowness to Enemies </br>Tornado Duration: 5s </br>Slow Duration: 1s",
+            "desc": "Casting Ice Snake instead summons a frozen tornado that deals damage every 0.5s. </br> For every +1 Distortion, the tornado gains +0.025 </br>Area of Effect and +1.2% Damage. </br> </br><span class='mc-white'>Total Damage</span>: 80% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 60%)   </br>&emsp;(<span class='wDam'>Water</span>: 10%)   </br>&emsp;(<span class='aDam'>Air</span>: 10%) </br>Area of Effect: 6 Blocks (Circle-Shaped) </br>Effect: 50% Slowness to Enemies </br>Tornado Duration: 5s </br>Slow Duration: 1s",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "parents": [
@@ -8669,18 +8669,18 @@
                     "type": "replace_spell",
                     "name": "Frozen Tornado",
                     "base_spell": 4,
-                    "display": "Total Damage",
+                    "display": "DPS",
                     "parts": [
                         {
                             "name": "Damage per Tick",
                             "type": "damage",
                             "multipliers": [
-                                70,
+                                60,
                                 0,
                                 0,
-                                15,
+                                10,
                                 0,
-                                15
+                                10
                             ]
                         },
                         {
@@ -8706,7 +8706,7 @@
                         "name": "damMult.Distortion:4.Damage per Tick"
                     },
                     "scaling": [
-                        1.6
+                        1.2
                     ]
                 }
             ]
@@ -8905,7 +8905,7 @@
         },
         {
             "display_name": "Warp Blast",
-            "desc": "Hitting an enemy with Main Attack grants up to +4 Distortion per 2s.",
+            "desc": "Hitting an enemy with Main Attack grants up to +8 Distortion per 4s.",
             "archetype": "Riftwalker",
             "parents": [
                 "Frozen Tornado",
@@ -9101,7 +9101,7 @@
         },
         {
             "display_name": "Meteor Shower",
-            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 15 Meteors, only one Meteor Shower can be active at the same time.) </br> Meteor and Astral Fragmentation become smaller, dealing -10% Damage and losing -20% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
+            "desc": "Casting Meteor summons an additional meteor near the target location for every 20 Distortion you have. (Max 20 Meteors, only one Meteor Shower can be active at the same time.) </br> Meteor and Astral Fragmentation become smaller, dealing -10% Damage and losing -20% </br>Area of Effect. </br> </br>Target Radius: 1 Blocks (Circle-Shaped)",
             "base_abil": "Distortion",
             "archetype": "Riftwalker",
             "parents": [
@@ -9919,7 +9919,9 @@
                 "Frigid Grasp",
                 "Time Dilation"
             ],
-            "dependencies": [],
+            "dependencies": [
+                "Time Dilation"
+            ],
             "blockers": [],
             "cost": 1,
             "display": {
@@ -10002,7 +10004,7 @@
                         "name": "damMult.Distortion:4.Damage per Tick"
                     },
                     "scaling": [
-                        0.56
+                        0.42
                     ]
                 },
                 {
@@ -10761,7 +10763,7 @@
         },
         {
             "display_name": "Blitz",
-            "desc": "Increase the damage of Ice Snake and double its speed. </br> Increase the damage of Frozen Tornado and by an additional +5% every time the tornado damages an enemy. </br> </br><span class='mc-white'>Total Damage</span>: +65% (of your DPS, for Ice Snake)   </br>&emsp;(<span class='nDam'>Damage</span>: +40%)   </br>&emsp;(<span class='tDam'>Thunder</span>: +25%) </br><span class='mc-white'>Total Damage</span>: +15% (of your DPS, for Frozen Tornado)   </br>&emsp;(<span class='nDam'>Damage</span>: +10%)   </br>&emsp;(<span class='wDam'>Water</span>: +5%)",
+            "desc": "Increase the damage of Ice Snake and double its speed. </br> Increase the damage of Frozen Tornado by an additional +2% every time the tornado damages an enemy. </br> </br><span class='mc-white'>Total Damage</span>: +65% (of your DPS, for Ice Snake)   </br>&emsp;(<span class='nDam'>Damage</span>: +40%)   </br>&emsp;(<span class='tDam'>Thunder</span>: +25%)",
             "base_abil": "Ice Snake",
             "parents": [
                 "Arcane Overflow",
@@ -10792,20 +10794,6 @@
                     ]
                 },
                 {
-                    "type": "add_spell_prop",
-                    "target_part": "Damage per Tick",
-                    "behavior": "modify",
-                    "base_spell": 4,
-                    "multipliers": [
-                        10,
-                        0,
-                        0,
-                        5,
-                        0,
-                        0
-                    ]
-                },
-                {
                     "type": "stat_scaling",
                     "slider": true,
                     "slider_name": "Tornado Hits",
@@ -10815,14 +10803,14 @@
                     },
                     "slider_max": 10,
                     "scaling": [
-                        5
+                        2
                     ]
                 }
             ]
         },
         {
             "display_name": "Time Vortex",
-            "desc": "Casting Frozen Tornado inside your Dimensional Tear while sneaking infuses it with otherworldly energies, turning it into a Time Vortex. </br> Time Vortex deals damage 25% faster, lasts longer and grants +2 Distortion every time it deals damage to an enemy. </br> </br>Tornado Duration: +3s </br>Cooldown: 8s",
+            "desc": "Casting Frozen Tornado inside your Dimensional Tear infuses it with otherworldly energies, turning it into a Time Vortex. </br> Time Vortex deals damage 25% faster, lasts longer and grants +2 Distortion every time it deals damage to an enemy. </br> </br>Tornado Duration: +3s",
             "archetype": "Riftwalker",
             "archetype_req": 12,
             "parents": [
@@ -10844,12 +10832,20 @@
                     "slider": true,
                     "slider_name": "Distortion",
                     "slider_max": 200
+                },
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "DPS",
+                    "base_spell": 4,
+                    "hits": {
+                        "Damage per Tick": 0.5
+                    }
                 }
             ]
         },
         {
             "display_name": "Paradox",
-            "desc": "Casting Heal applies Paradox to yourself. </br> Paradox sends 25% of the damage you you take to the future, dealing it over 10s and borrows mana from the past, refunding 30% of your spent mana over 10s. </br> For every +1 Distortion, the duration is increased by +0.05s. </br> </br>Duration: 6s </br>Cooldown: 15s",
+            "desc": "You send 25% of the damage you take to the future, dealing it over 10s and borrow mana from the past, refunding 30% of your spent mana over 10s. </br> For every +1 Distortion, the mana is refunded -0.02s faster.",
             "archetype": "Riftwalker",
             "parents": [
                 "Portal to the Beyond",
@@ -10871,7 +10867,7 @@
         },
         {
             "display_name": "Gravitational Collapse",
-            "desc": "Click Combo: F </br> Your Dimensional Tear overloads, growing in size and damage while pulling all enemies in. </br> While it is overloaded, it deals +400% increased damage, turns your Teleport into a deadly ray that fires off 5 times in quick succession, provides flight, and prevents mana drain. </br> The Dimensional Tear collapses when it expires, dealing massive damage to nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 600% (of your DPS, Deadly Beam)   </br>&emsp;(<span class='nDam'>Damage</span>: 475%)   </br>&emsp;(<span class='aDam'>Air</span>: 125%) </br><span class='mc-white'>Total Damage</span>: 8000% (of your DPS, Collapse)   </br>&emsp;(<span class='nDam'>Damage</span>: 6000%)   </br>&emsp;(<span class='eDam'>Earth</span>: 1000%)   </br>&emsp;(<span class='aDam'>Air</span>: 1000%) </br>Area of Effect: +100% </br>Duration: 10s </br> Activate abilities to charge your Ultimate Meter to 100%",
+            "desc": "Click Combo: F </br> Your Dimensional Tear overloads, growing in size and damage while pulling all enemies in. </br> While it is overloaded, it deals +400% increased damage, turns your Teleport into a deadly ray that fires off 5 times in quick succession, provides flight, and prevents mana drain. </br> The Dimensional Tear collapses when it expires, dealing massive damage to nearby enemies. </br> </br><span class='mc-white'>Total Damage</span>: 300% (of your DPS, Deadly Beam)   </br>&emsp;(<span class='nDam'>Damage</span>: 240%)   </br>&emsp;(<span class='aDam'>Air</span>: 60%) </br><span class='mc-white'>Total Damage</span>: 8000% (of your DPS, Collapse)   </br>&emsp;(<span class='nDam'>Damage</span>: 6000%)   </br>&emsp;(<span class='eDam'>Earth</span>: 1000%)   </br>&emsp;(<span class='aDam'>Air</span>: 1000%) </br>Area of Effect: +100% </br>Duration: 10s </br> Activate abilities to charge your Ultimate Meter to 100%",
             "archetype": "Riftwalker",
             "archetype_req": 16,
             "parents": [
@@ -15511,7 +15507,7 @@
         },
         {
             "display_name": "Mystic Masks",
-            "desc": "When casting Uproot, instead wear one of the Mystic Masks. (Shift + Uproot to remove it) </br> \ue024 Lunatic: +15% Damage Bonus to Self    -15% Resistance Bonus to Self </br> \ue023 Fanatic: +25% Resistance to Self    -25% Walk Speed to Self </br> \ue022 Heretic: +50% Walk Speed to Self    -10% Damage Bonus to Self",
+            "desc": "When casting Uproot, instead wear one of the Mystic Masks. (Shift + Uproot to remove it) </br> Lunatic: +15% Damage Bonus to Self    -15% Resistance Bonus to Self </br> Fanatic: +25% Resistance to Self    -25% Walk Speed to Self </br> Heretic: +50% Walk Speed to Self    -10% Damage Bonus to Self",
             "base_abil": "Uproot",
             "archetype": "Ritualist",
             "archetype_req": 2,
@@ -15950,7 +15946,7 @@
         },
         {
             "display_name": "Hymn of Hate",
-            "desc": "When wearing the Mask of the Lunatic, killing an enemy with Aura will cast a new Aura at its location, dealing -50% of its damage.",
+            "desc": "When wearing the Mask of the Lunatic \ue024, killing an enemy with Aura will cast a new Aura at its location, dealing -50% of its damage.",
             "base_abil": "Aura",
             "archetype": "Ritualist",
             "parents": [
@@ -16564,7 +16560,7 @@
         },
         {
             "display_name": "Totemic Shatter",
-            "desc": "While wearing the Mask of the Fanatic, your Totem will shatter upon impacting the ground, rapidly triggering 8s worth of its effects. </br> Regeneration will only heal 50% of its usual amount.",
+            "desc": "While wearing the Mask of the Fanatic \ue023, your Totem will shatter upon impacting the ground, rapidly triggering 8s worth of its effects. </br> Regeneration will only heal 50% of its usual amount.",
             "parents": [
                 "Frog Dance"
             ],
@@ -16713,7 +16709,7 @@
         },
         {
             "display_name": "Tribal Chants",
-            "desc": "When switching masks, cause an effect around yourself. </br> \ue024 Lunatic: +15% Damage Bonus to Allies </br>Duration: 6s </br> \ue023 Fanatic: 45% Resistance Bonus to Allies </br>Duration: 3s </br> \ue022 Heretic: +60% Walk Speed to Allies (-10% of the bonus decays every second) </br> </br>Area of Effect: 8 Blocks (Circle-Shaped) </br>Cooldown: 8s (per Chant)",
+            "desc": "When switching masks, cause an effect around yourself. </br> Lunatic: +15% Damage Bonus to Allies </br>Duration: 6s </br> Fanatic: 45% Resistance Bonus to Allies </br>Duration: 3s </br> Heretic: +60% Walk Speed to Allies (-10% of the bonus decays every second) </br> </br>Area of Effect: 8 Blocks (Circle-Shaped) </br>Cooldown: 8s (per Chant)",
             "base_abil": "Uproot",
             "archetype": "Ritualist",
             "archetype_req": 8,
@@ -16738,7 +16734,7 @@
                     "bonuses": [
                         {
                             "type": "stat",
-                            "name": "damMult.Chant",
+                            "name": "damMult.Potion",
                             "value": 15
                         }
                     ]
@@ -16911,7 +16907,7 @@
         },
         {
             "display_name": "Chorus of the Ancients",
-            "desc": "Increase the power of all Chants. </br> \ue024 Lunatic: +15% Damage Bonus to Allies \ue023 Fanatic: +20% Resistance Bonus to Allies \ue022 Heretic: +60% Walk Speed to Allies",
+            "desc": "Increase the power of all Chants. </br> Lunatic: +15% Damage Bonus to Allies Fanatic: +20% Resistance Bonus to Allies Heretic: +60% Walk Speed to Allies",
             "archetype": "Ritualist",
             "archetype_req": 10,
             "parents": [
@@ -16936,7 +16932,7 @@
                     "bonuses": [
                         {
                             "type": "stat",
-                            "name": "damMult.Chant",
+                            "name": "damMult.Potion",
                             "value": 15
                         }
                     ]
@@ -17106,7 +17102,7 @@
         },
         {
             "display_name": "Meticulous Act",
-            "desc": "Your Masks will give higher bonuses. </br> \ue024 Lunatic: +25% Damage Bonus \ue023 Fanatic: +20% Resistance \ue022 Heretic: +40% Walk Speed",
+            "desc": "Your Masks will give higher bonuses. </br> Lunatic: +25% Damage Bonus Fanatic: +20% Resistance Heretic: +40% Walk Speed",
             "base_abil": "Uproot",
             "archetype": "Ritualist",
             "archetype_req": 11,
@@ -17295,7 +17291,7 @@
         },
         {
             "display_name": "Seeking Totem",
-            "desc": "While wearing the Mask of the Heretic, your Totem will move towards you, unless you are within its range.",
+            "desc": "While wearing the Mask of the Heretic \ue022, your Totem will move towards you, unless you are within its range.",
             "base_abil": "Totem",
             "archetype": "Ritualist",
             "parents": [
@@ -17317,7 +17313,7 @@
         },
         {
             "display_name": "Frog Dance",
-            "desc": "When wearing the Mask of the Heretic, Haul will instead bounce you off the ground 3 times at an increasing speed and damage nearby enemies. (Hold shift to cancel) </br> Frog Dance does not require Totem to be used. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='wDam'>Water</span>: 50%) </br>Area of Effect: 4.5 Blocks (Circle-Shaped)",
+            "desc": "When wearing the Mask of the Heretic \ue022, Haul will instead bounce you off the ground 3 times at an increasing speed and damage nearby enemies. (Hold shift to cancel) </br> Frog Dance does not require Totem to be used. </br> </br><span class='mc-white'>Total Damage</span>: 200% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: 150%)   </br>&emsp;(<span class='wDam'>Water</span>: 50%) </br>Area of Effect: 4.5 Blocks (Circle-Shaped)",
             "archetype": "Ritualist",
             "archetype_req": 4,
             "base_abil": "Haul",
@@ -17384,7 +17380,7 @@
         },
         {
             "display_name": "Artist's Immersion",
-            "desc": "Your Masks reduce the cost of different abilities based on the active mask. </br> \ue024 Lunatic: -30% Aura Cost \ue023 Fanatic: -65% Totem Cost \ue022 Heretic: -50% Haul Cost",
+            "desc": "Your Masks reduce the cost of different abilities based on the active mask. </br> Lunatic: -30% Aura Cost Fanatic: -65% Totem Cost Heretic: -50% Haul Cost",
             "archetype": "Ritualist",
             "base_abil": "Uproot",
             "parents": [
@@ -17935,7 +17931,7 @@
         },
         {
             "display_name": "Egomania",
-            "desc": "When wearing the Mask of the Fanatic, Aura will radiate from yourself instead of your Totem. </br> Increase Aura's damage. </br> </br><span class='mc-white'>Total Damage</span>: +10% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +10%)",
+            "desc": "When wearing the Mask of the Fanatic \ue023, Aura will radiate from yourself instead of your Totem. </br> Increase Aura's damage. </br> </br><span class='mc-white'>Total Damage</span>: +10% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +10%)",
             "parents": [
                 "Crystal Knives",
                 "Freestyle",
@@ -17956,7 +17952,7 @@
         },
         {
             "display_name": "Totemic Hammer",
-            "desc": "When wearing the Mask of the Lunatic, Totem will smash down onto the ground. </br> Increase Totemic Smash's damage. </br> </br><span class='mc-white'>Total Damage</span>: +50% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +40%)   </br>&emsp;(<span class='fDam'>Fire</span>: +10%)",
+            "desc": "When wearing the Mask of the Lunatic \ue024, Totem will smash down onto the ground. </br> Increase Totemic Smash's damage. </br> </br><span class='mc-white'>Total Damage</span>: +50% (of your DPS)   </br>&emsp;(<span class='nDam'>Damage</span>: +40%)   </br>&emsp;(<span class='fDam'>Fire</span>: +10%)",
             "parents": [
                 "Egomania",
                 "Freestyle",

@@ -57,9 +57,9 @@ replace_strings = {
     " \u2698": "", # Puppets
     " \u265a": "", # Awakened
     " \u21f6": "", # Whipped
-    " \ue022": "", # Heretic Mask
-    " \ue023": "", # Fanatic Mask
-    " \ue024": "", # Lunatic Mask
+    "\ue022 ": "", # Heretic Mask
+    "\ue023 ": "", # Fanatic Mask
+    "\ue024 ": "", # Lunatic Mask
 
 
     " \\(\ue00d\\)": "", # Slowness
