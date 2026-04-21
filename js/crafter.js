@@ -190,7 +190,6 @@ function calculateCraft() {
     warning_elem.textContent = ""; //refresh warnings
     warning_elem.classList.add("warning");
     let type = player_craft["recipe"].get("skill");
-    console.log(maxlevel)
     for (const ingred of player_craft["ingreds"]) {
         if (!(ingred.get("skills").includes(type))) {
             let p = document.createElement("p");
@@ -203,8 +202,19 @@ function calculateCraft() {
             warning_elem.appendChild(p);
         }
     }
+    let missing_durability = player_craft.statMap.get("missingDurability");
+    let missing_duration = player_craft.statMap.get("missingDuration");
 
-    
+    if (missing_durability) {
+        let p = document.createElement("p");
+        p.textContent = "WARNING: Recipe requires " + (-missing_durability) +" more durability to work!";
+        warning_elem.appendChild(p);
+    }
+    if (missing_duration) {
+        let p = document.createElement("p");
+        p.textContent = "WARNING: Recipe requires " + (-missing_duration) +" more duration to work!";
+        warning_elem.appendChild(p);
+    }
 }
 
 function decodeCraftPopulateFields(ing_url_tag) {
