@@ -3462,13 +3462,13 @@
         ]
     },
     "COSMIC_CAPTURE": {
-        "displayName": "+Cosmic Capture",
+        "displayName": "Cosmic Capture",
         "description": "Meteor falls twice as fast, has +3 blast radius, and pulls enemies upon impact.",
         "abilities": []
     },
     "GRAND_INFLUENCE": {
-        "displayName": "+Grand Influence",
-        "description": "While above 80% maximum health, nearby allies gain 15% increased health gain from all sources and 25% Walk Speed",
+        "displayName": "Grand Influence",
+        "description": "While above 80% maximum health, nearby allies gain 15% increased health gain from all sources and 25% Walk Speed.",
         "abilities": []
     },
     "IGNITION_WHIRLWIND": {

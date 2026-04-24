@@ -13,17 +13,17 @@ import argparse
 class Items:
     """v3 item wrapping - Synchronous"""
 
-    def fetch(self, url, token):
-        response = requests.get(url, headers={"Authorization": "Bearer " + token})
+    def fetch(self, url):
+        response = requests.get(url)
         return response.json()
 
     def post(self, url, data=None):
         response = requests.post(url, json=data)
         return response.json()
 
-    def get_all_items(self, token=""):
+    def get_all_items(self):
         api_url = "https://api.wynncraft.com/v3/item/database?fullResult"
-        return self.fetch(api_url, token)
+        return self.fetch(api_url)
 
     def get_metadata(self):
         url = "https://api.wynncraft.com/v3/item/metadata?static"

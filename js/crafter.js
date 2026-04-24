@@ -205,14 +205,16 @@ function calculateCraft() {
     let missing_durability = player_craft.statMap.get("missingDurability");
     let missing_duration = player_craft.statMap.get("missingDuration");
 
-    if (missing_durability) {
+    if (player_craft.statMap.get("category") === "consumable") {
+        if (missing_duration) {
+            let p = document.createElement("p");
+            p.textContent = "WARNING: Recipe requires " + (-missing_duration) +" more duration to work!";
+            warning_elem.appendChild(p);
+        }
+    }
+    else if (missing_durability) {
         let p = document.createElement("p");
         p.textContent = "WARNING: Recipe requires " + (-missing_durability) +" more durability to work!";
-        warning_elem.appendChild(p);
-    }
-    if (missing_duration) {
-        let p = document.createElement("p");
-        p.textContent = "WARNING: Recipe requires " + (-missing_duration) +" more duration to work!";
         warning_elem.appendChild(p);
     }
 }

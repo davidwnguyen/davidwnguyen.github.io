@@ -10840,6 +10840,14 @@
                     "hits": {
                         "Damage per Tick": 0.5
                     }
+                },
+                {
+                    "type": "add_spell_prop",
+                    "target_part": "Total Damage",
+                    "base_spell": 4,
+                    "hits": {
+                        "DPS": 3
+                    }
                 }
             ]
         },

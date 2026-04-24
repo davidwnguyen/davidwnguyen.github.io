@@ -22,12 +22,11 @@ from items_common import translate_mappings
 parser = argparse.ArgumentParser(description="Process raw pulled item data.")
 parser.add_argument('infile', help='input file to read data from', default=None, nargs='?')
 #parser.add_argument('outfile', help='output file to dump clean data into')
-parser.add_argument('--token','-T', help='auth token, get one from wynncraft website', default=None)
 args = parser.parse_args()
 if args.infile is None:
     print("Grabbing json data from wynn api")
     from item_wrapper import Items
-    api_data = Items().get_all_items(args.token)
+    api_data = Items().get_all_items()
     #print(api_data)
     json.dump(api_data, open('dump.json', 'w'))
 else:
@@ -193,10 +192,10 @@ with open("../tome_map.json","r") as tome_map_file:
 items = []
 ingreds = []
 tomes = []
-for name, entry in api_data.items():
-    entry['name'] = name
+
+for entry in api_data:
     res, entry_type = translate_entry(entry)
-    print(f"Parsed {name}, type {entry_type}")
+    print(f"Parsed {entry['displayName']}, type {entry_type}")
     if res is None:
         continue
     # TODO: make this a map or smth less ugly code
