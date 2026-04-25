@@ -6268,7 +6268,7 @@
                     "type": "add_spell_prop",
                     "base_spell": 3,
                     "target_part": "Uppercut",
-                    "cost": 10,
+                    "cost": 5,
                     "multipliers": [
                         100,
                         0,
