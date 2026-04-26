@@ -269,6 +269,16 @@ ing_tier_dict = {
     "TIER_3": 3
 }
 
+# Items with duplicate display names will use their internal name instead (primarily ascensions)
+display_names = set()
+duplicates = set()
+for item in items:
+    if 'displayName' in item:
+        if item['displayName'] in display_names:
+            duplicates.add(item['displayName'])
+        else:
+            display_names.add(item['displayName'])
+
 for item in items:
     # NOTE: HACKY ITEM FIXES!
     if 'majorIds' in item and 'persistent' not in item:
@@ -307,6 +317,10 @@ for item in items:
     # why have you done this to us nepmia
     if 'restrict' in item and item['restrict'] == "none":
         del item['restrict']
+    
+    if 'displayName' in item:
+        if item['displayName'] in duplicates:
+            item['displayName'] = item['name']
 
     if not (item["name"] in id_map):
         while max_id in used_ids:
